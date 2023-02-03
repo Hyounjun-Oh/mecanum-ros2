@@ -49,7 +49,7 @@ else:
     import tty
 
 MAX_LIN = 0.3
-MAX_DIA = 0.6
+#MAX_DIA = 0.6
 MAX_ROT = 1.7
 LIN_VEL_STEP_SIZE = 0.01
 ANG_VEL_STEP_SIZE = 0.1
@@ -122,7 +122,7 @@ def check_linear_limit_velocity(velocity):
 
 
 def check_angular_limit_velocity(velocity):
-    return constrain(velocity, -MAX_LIN, MAX_LIN)
+    return constrain(velocity, -MAX_ROT, MAX_ROT)
 
 
 def main():
