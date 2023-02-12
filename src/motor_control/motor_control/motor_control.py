@@ -32,7 +32,7 @@ class CmdVelSubscriber(Node):
         self.subscription  # prevent unused variable warning
         self.width = 0.17 # 중심점으로부터 모터의 가로 위치
         self.length = 0.15 # 중심점으로부터 모터의 세로 위치
-        self.radius = 0.05 # 메카넘휠 지름
+        self.radius = 0.05 # 메카넘휠 반지름
         # self.ser = serial.Serial('/dev/ttyACM0', 37600) #OpenCR Port COM3, MEGE Port COM4
 
     def get_cmd_vel(self, msg):
@@ -58,11 +58,11 @@ class CmdVelSubscriber(Node):
         # elif self.Rz < -0.000001: #CW
         #     rot_mat = np.array([[self.Rz],[0.0],[0.0],[-self.Rz]])
         #     self.rpm_value = self.rpm_value + rot_mat
-        w1 = -self.Vx + self.Vy + self.Rz*(self.length + self.width)
-        w2 = self.Vx + self.Vy - self.Rz*(self.length + self.width)
-        w3 = -self.Vx + self.Vy - self.Rz*(self.length + self.width)
-        w4 = self.Vx + self.Vy + self.Rz*(self.length + self.width)
-        self.rpm_value = np.array([[w1],[w2],[w3],[w4]]) # rad/s -> rpm
+        w1 = (-self.Vx/self.radius) + (self.Vy/self.radius) + self.Rz*(self.length + self.width) # rad/s
+        w2 = (self.Vx/self.radius) + (self.Vy/self.radius) - self.Rz*(self.length + self.width)
+        w3 = -(self.Vx/self.radius) + (self.Vy/self.radius) - self.Rz*(self.length + self.width)
+        w4 = (self.Vx/self.radius) + (self.Vy/self.radius) + self.Rz*(self.length + self.width)
+        self.rpm_value = np.array([[w1*9.5492968],[w2*9.5492968],[w3*9.5492968],[w4*9.5492968]]) # rad/s -> rpm
             
             
 
