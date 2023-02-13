@@ -62,7 +62,7 @@ class CmdVelSubscriber(Node):
         w2 = self.Vx + self.Vy - self.Rz*(self.length + self.width)
         w3 = -self.Vx + self.Vy - self.Rz*(self.length + self.width)
         w4 = self.Vx + self.Vy + self.Rz*(self.length + self.width)
-        self.rpm_value = np.array([[w1],[w2],[w3],[w4]])
+        self.rpm_value = np.array([[w1],[w2],[w3],[w4]]) # rad/s -> rpm
             
             
 
