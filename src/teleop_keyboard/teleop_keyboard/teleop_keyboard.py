@@ -48,9 +48,9 @@ else:
     import termios
     import tty
 
-MAX_LIN = 0.3
+MAX_LIN = 0.25
 #MAX_DIA = 0.6
-MAX_ROT = 1.7
+MAX_ROT = 1.0
 LIN_VEL_STEP_SIZE = 0.01
 ANG_VEL_STEP_SIZE = 0.1
 
@@ -65,7 +65,7 @@ msg = """
 
 w/x : 증가/감소 Vx [최고속도 : 0.3 m/s]
 a/d : 증가/감소 Vy [최고속도 : 0.3 m/s]
-q/e : 증가/감소 Rz [최고속도 : 1.7647 rad/s]
+q/e : 증가/감소 Rz [최고속도 : 1.0rad/s]
 s   : 강제 정지
 CTRL-C : 컨트롤러 종료
 """
