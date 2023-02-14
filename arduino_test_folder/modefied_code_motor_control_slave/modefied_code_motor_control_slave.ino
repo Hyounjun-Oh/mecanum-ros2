@@ -16,10 +16,10 @@
 // Tracks the direction of rotation.
 #define ENC_IN_1_B 19 //4
 #define ENC_IN_2_B 21 //2
-#define MOT_DIR_PIN_1 2
-#define MOT_PWM_PIN_1 3
-#define MOT_DIR_PIN_2 4
-#define MOT_PWM_PIN_2 5
+#define MOT_DIR_PIN_1 4
+#define MOT_PWM_PIN_1 5
+#define MOT_DIR_PIN_2 6
+#define MOT_PWM_PIN_2 7
  
 // True = Forward; False = Reverse
 boolean Direction_motor_1 = true;
@@ -52,7 +52,6 @@ String slaveData;
 void setup() {
  
   // Open the serial port at 9600 bps
-  Serial.begin(115200);
   Serial2.begin(115200);
  
   // Set pin states of the encoder
@@ -161,45 +160,45 @@ void getRPM(){
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
 }
-void Split(String sData, char cSeparator){	
-	int nCount = 0;
-	int nGetIndex = 0 ;
+void Split(String sData, char cSeparator)
+{  
+  int nCount = 0;
+  int nGetIndex = 0 ;
  
-	//임시저장
-	String sTemp = "";
+  //임시저장
+  String sTemp = "";
  
-	//원본 복사
-	String sCopy = sData;
+  //원본 복사
+  String sCopy = sData;
   int i = 0;
   int j = 0;
-	while(true)
-	{
-		//구분자 찾기
-		nGetIndex = sCopy.indexOf(cSeparator);
+  while(true)
+  {
+    //구분자 찾기
+    nGetIndex = sCopy.indexOf(cSeparator);
  
-		//리턴된 인덱스가 있나?
-		if((-1 != nGetIndex) || (j>1))
-		{
-			//있다.
+    //리턴된 인덱스가 있나?
+    if((-1 != nGetIndex) || (j>1))
+    {
+      //있다.
       j+=1;
-			//데이터 넣고
-			sTemp = sCopy.substring(0, nGetIndex);
+      //데이터 넣고
+      sTemp = sCopy.substring(0, nGetIndex);
       targetRPM[i] = sTemp.toFloat();
-		
-			//뺀 데이터 만큼 잘라낸다.
-			sCopy = sCopy.substring(nGetIndex + 1);
-		}
-		else
-		{
-			//없으면 마무리 한다.
-      slaveData = sCopy;
-      Serial2.print(slaveData);
-			break;
-		}
+    
+      //뺀 데이터 만큼 잘라낸다.
+      sCopy = sCopy.substring(nGetIndex + 1);
+    }
+    else
+    {
+      //없으면 마무리 한다.
+      targetRPM[i] = sCopy.toFloat();
+      break;
+    }
  
-		//다음 문자로~
-		++nCount;
+    //다음 문자로~
+    ++nCount;
     ++i;
-	}
+  }
  
 }
