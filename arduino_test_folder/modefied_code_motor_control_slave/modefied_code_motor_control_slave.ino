@@ -11,15 +11,17 @@
  
 // Encoder output to Arduino Interrupt pin. Tracks the pulse count.
 #define ENC_IN_1_A 18 //5
+#define ENC_IN_1_B 19 //4
 #define ENC_IN_2_A 20 //3
+#define ENC_IN_2_B 21 //2
 // Other encoder output to Arduino to keep track of wheel direction
 // Tracks the direction of rotation.
-#define ENC_IN_1_B 19 //4
-#define ENC_IN_2_B 21 //2
-#define MOT_DIR_PIN_1 4
-#define MOT_PWM_PIN_1 5
-#define MOT_DIR_PIN_2 6
-#define MOT_PWM_PIN_2 7
+
+
+#define MOT_DIR_PIN_1 8
+#define MOT_PWM_PIN_1 9
+#define MOT_DIR_PIN_2 10
+#define MOT_PWM_PIN_2 11
  
 // True = Forward; False = Reverse
 boolean Direction_motor_1 = true;
@@ -46,13 +48,14 @@ float ang_velocity_2_deg = 0;
 const float rpm_to_radians = 0.10471975512;
 const float rad_to_deg = 57.29578;
 
-float targetRPM[2] = {0,0};//serial로 받아온 rpm값
-String slaveData;
+float targetRPM[2] = {-30,30};//serial로 받아온 rpm값
+String slaveData = "20,20";
 
 void setup() {
  
   // Open the serial port at 9600 bps
-  Serial2.begin(115200);
+  Serial.begin(115200);
+  //Serial2.begin(115200);
  
   // Set pin states of the encoder
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
@@ -61,14 +64,14 @@ void setup() {
   pinMode(ENC_IN_2_B , INPUT);
   pinMode(MOT_DIR_PIN_1, OUTPUT);
   pinMode(MOT_PWM_PIN_1, OUTPUT);
-  pinMode(MOT_DIR_PIN_1, OUTPUT);
-  pinMode(MOT_PWM_PIN_1, OUTPUT);
+  pinMode(MOT_DIR_PIN_2, OUTPUT);
+  pinMode(MOT_PWM_PIN_2, OUTPUT);
  
   // Every time the pin goes high, this is a pulse
   attachInterrupt(digitalPinToInterrupt(ENC_IN_1_A), motor_1_pulse, RISING);
   attachInterrupt(digitalPinToInterrupt(ENC_IN_2_A), motor_2_pulse, RISING);
 
-  MsTimer2::set(100, getRPM); //getRPM함수를 0.1초마다 실행
+  MsTimer2::set(300, getRPM); //getRPM함수를 0.1초마다 실행
   MsTimer2::start();// 타이머 인터럽트 start
 }
  
@@ -78,10 +81,11 @@ void loop() {
     String inputStr = Serial.readStringUntil('\n');
     Split(inputStr,',');
   }
-  float control_1 = targetRPM[0];
-  float control_2 = targetRPM[1];
-  doMotor_2(MOT_DIR_PIN_2, MOT_PWM_PIN_2,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
+  float control_1 = 20;
+  float control_2 = 20;
   doMotor_1(MOT_DIR_PIN_1, MOT_PWM_PIN_1,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
+  doMotor_2(MOT_DIR_PIN_2, MOT_PWM_PIN_2,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
+
 
 }
  
@@ -140,28 +144,27 @@ void getRPM(){
   ang_velocity_2 = rpm_motor_2 * rpm_to_radians;   
   ang_velocity_2_deg = ang_velocity_2 * rad_to_deg;
     
-  Serial.print(" Motor 1 Pulses: ");
-  Serial.println(motor_1_pulse_count);
-  Serial.print(" Motor 2 Pulses: ");
-  Serial.println(motor_2_pulse_count);
-  Serial.print(" Motor 1 Speed: ");
-  Serial.print(rpm_motor_1);
-  Serial.print(" Motor 2 Speed: ");
-  Serial.print(rpm_motor_2);
-  Serial.println(" RPM");
-  Serial.print(" Angular Velocity: ");
-  Serial.print(rpm_motor_1);
-  Serial.print(" rad per second");
-  Serial.print("\t");
-  Serial.print(ang_velocity_1_deg);
-  Serial.println(" deg per second");
-  Serial.println();
+//  Serial.print(" Motor 1 Pulses: ");
+//  Serial.println(motor_1_pulse_count);
+//  Serial.print(" Motor 2 Pulses: ");
+//  Serial.println(motor_2_pulse_count);
+//  Serial.print(" Motor 1 Speed: ");
+//  Serial.print(rpm_motor_1);
+//  Serial.print(" Motor 2 Speed: ");
+//  Serial.print(rpm_motor_2);
+//  Serial.println(" RPM");
+//  Serial.print(" Angular Velocity: ");
+//  Serial.print(rpm_motor_1);
+//  Serial.print(" rad per second");
+//  Serial.print("\t");
+//  Serial.print(ang_velocity_1_deg);
+//  Serial.println(" deg per second");
+//  Serial.println();
 
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
 }
-void Split(String sData, char cSeparator)
-{  
+void Split(String sData, char cSeparator){  
   int nCount = 0;
   int nGetIndex = 0 ;
  
@@ -192,7 +195,8 @@ void Split(String sData, char cSeparator)
     else
     {
       //없으면 마무리 한다.
-      targetRPM[i] = sCopy.toFloat();
+      slaveData = sCopy;
+      Serial2.print(slaveData);
       break;
     }
  
