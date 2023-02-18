@@ -16,10 +16,10 @@
 // Tracks the direction of rotation.
 #define ENC_IN_1_B 19 //4
 #define ENC_IN_2_B 21 //2
-#define MOT_DIR_PIN_1 2
-#define MOT_PWM_PIN_1 3
-#define MOT_DIR_PIN_2 4
-#define MOT_PWM_PIN_2 5
+#define MOT_DIR_PIN_1 6
+#define MOT_PWM_PIN_1 7
+#define MOT_DIR_PIN_2 10
+#define MOT_PWM_PIN_2 11
  
 // True = Forward; False = Reverse
 boolean Direction_motor_1 = true;
@@ -53,7 +53,7 @@ void setup() {
  
   // Open the serial port at 9600 bps
   Serial.begin(115200);
-  //Serial2.begin(115200);
+  Serial2.begin(115200);
  
   // Set pin states of the encoder
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
@@ -141,22 +141,22 @@ void getRPM(){
   ang_velocity_2 = rpm_motor_2 * rpm_to_radians;   
   ang_velocity_2_deg = ang_velocity_2 * rad_to_deg;
     
-  Serial.print(" Motor 1 Pulses: ");
-  Serial.println(motor_1_pulse_count);
-  Serial.print(" Motor 2 Pulses: ");
-  Serial.println(motor_2_pulse_count);
-  Serial.print(" Motor 1 Speed: ");
-  Serial.print(rpm_motor_1);
-  Serial.print(" Motor 2 Speed: ");
-  Serial.print(rpm_motor_2);
-  Serial.println(" RPM");
-  Serial.print(" Angular Velocity: ");
-  Serial.print(rpm_motor_1);
-  Serial.print(" rad per second");
-  Serial.print("\t");
-  Serial.print(ang_velocity_1_deg);
-  Serial.println(" deg per second");
-  Serial.println();
+//  Serial.print(" Motor 1 Pulses: ");
+//  Serial.println(motor_1_pulse_count);
+//  Serial.print(" Motor 2 Pulses: ");
+//  Serial.println(motor_2_pulse_count);
+//  Serial.print(" Motor 1 Speed: ");
+//  Serial.print(rpm_motor_1);
+//  Serial.print(" Motor 2 Speed: ");
+//  Serial.print(rpm_motor_2);
+//  Serial.println(" RPM");
+//  Serial.print(" Angular Velocity: ");
+//  Serial.print(rpm_motor_1);
+//  Serial.print(" rad per second");
+//  Serial.print("\t");
+//  Serial.print(ang_velocity_1_deg);
+//  Serial.println(" deg per second");
+//  Serial.println();
 
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
@@ -178,7 +178,7 @@ void Split(String sData, char cSeparator){
 		nGetIndex = sCopy.indexOf(cSeparator);
  
 		//리턴된 인덱스가 있나?
-		if((-1 != nGetIndex) || (j>1))
+		if(j < 2)
 		{
 			//있다.
       j+=1;
@@ -194,6 +194,10 @@ void Split(String sData, char cSeparator){
 			//없으면 마무리 한다.
       slaveData = sCopy;
       Serial2.print(slaveData);
+      Serial.println(targetRPM[0]);
+      Serial.println(targetRPM[1]);
+      Serial.println(sCopy);
+
 			break;
 		}
  

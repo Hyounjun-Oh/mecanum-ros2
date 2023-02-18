@@ -6,6 +6,7 @@
  */
  
 // Motor encoder output pulses per 360 degree revolution (measured manually)
+// PWM출력핀을 떨어뜨려서 할당했더니 정상 작동하기 시작했음....
 #include <MsTimer2.h>
 #define ENC_COUNT_REV 1326
  
@@ -16,10 +17,8 @@
 #define ENC_IN_2_B 21 //2
 // Other encoder output to Arduino to keep track of wheel direction
 // Tracks the direction of rotation.
-
-
-#define MOT_DIR_PIN_1 8
-#define MOT_PWM_PIN_1 9
+#define MOT_DIR_PIN_1 6
+#define MOT_PWM_PIN_1 7
 #define MOT_DIR_PIN_2 10
 #define MOT_PWM_PIN_2 11
  
@@ -48,14 +47,13 @@ float ang_velocity_2_deg = 0;
 const float rpm_to_radians = 0.10471975512;
 const float rad_to_deg = 57.29578;
 
-float targetRPM[2] = {-30,30};//serial로 받아온 rpm값
-String slaveData = "20,20";
+float targetRPM[2] = {0,0};//serial로 받아온 rpm값
+String slaveData = "0,0";
 
 void setup() {
  
   // Open the serial port at 9600 bps
-  Serial.begin(115200);
-  //Serial2.begin(115200);
+  Serial2.begin(115200);
  
   // Set pin states of the encoder
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
@@ -76,13 +74,13 @@ void setup() {
 }
  
 void loop() {
-  if(Serial.available() > 0)
+  if(Serial2.available() > 0)
   {
-    String inputStr = Serial.readStringUntil('\n');
+    String inputStr = Serial2.readStringUntil('\n');
     Split(inputStr,',');
   }
-  float control_1 = 20;
-  float control_2 = 20;
+  float control_1 = targetRPM[0];
+  float control_2 = targetRPM[1];
   doMotor_1(MOT_DIR_PIN_1, MOT_PWM_PIN_1,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
   doMotor_2(MOT_DIR_PIN_2, MOT_PWM_PIN_2,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
 
@@ -143,7 +141,7 @@ void getRPM(){
   ang_velocity_1_deg = ang_velocity_1 * rad_to_deg;
   ang_velocity_2 = rpm_motor_2 * rpm_to_radians;   
   ang_velocity_2_deg = ang_velocity_2 * rad_to_deg;
-    
+//    
 //  Serial.print(" Motor 1 Pulses: ");
 //  Serial.println(motor_1_pulse_count);
 //  Serial.print(" Motor 2 Pulses: ");
@@ -164,6 +162,7 @@ void getRPM(){
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
 }
+
 void Split(String sData, char cSeparator){  
   int nCount = 0;
   int nGetIndex = 0 ;
@@ -174,17 +173,15 @@ void Split(String sData, char cSeparator){
   //원본 복사
   String sCopy = sData;
   int i = 0;
-  int j = 0;
   while(true)
   {
     //구분자 찾기
     nGetIndex = sCopy.indexOf(cSeparator);
  
     //리턴된 인덱스가 있나?
-    if((-1 != nGetIndex) || (j>1))
+    if(-1 != nGetIndex)
     {
       //있다.
-      j+=1;
       //데이터 넣고
       sTemp = sCopy.substring(0, nGetIndex);
       targetRPM[i] = sTemp.toFloat();
@@ -195,8 +192,7 @@ void Split(String sData, char cSeparator){
     else
     {
       //없으면 마무리 한다.
-      slaveData = sCopy;
-      Serial2.print(slaveData);
+      targetRPM[i] = sCopy.toFloat();
       break;
     }
  
