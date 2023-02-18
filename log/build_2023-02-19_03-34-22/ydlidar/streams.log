@@ -1,0 +1,31 @@
+[0.321s] Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar -- -j16 -l16
+[0.369s] [ 18%] Built target ydlidar_client
+[0.374s] [100%] Built target ydlidar_node
+[0.381s] Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar -- -j16 -l16
+[0.409s] Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar
+[0.418s] -- Install configuration: ""
+[0.418s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/lib/ydlidar/ydlidar_node
+[0.419s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/lib/ydlidar/ydlidar_client
+[0.419s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/launch
+[0.419s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/launch/ydlidar.py
+[0.419s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/launch/ydlidar_launch.py
+[0.419s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/params
+[0.419s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/params/ydlidar.yaml
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/startup
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/startup/initenv.sh
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ament_index/resource_index/package_run_dependencies/ydlidar
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ament_index/resource_index/parent_prefix_path/ydlidar
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/ament_prefix_path.sh
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/ament_prefix_path.dsv
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/path.sh
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/path.dsv
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.bash
+[0.420s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.sh
+[0.421s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.zsh
+[0.421s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.dsv
+[0.421s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/package.dsv
+[0.421s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ament_index/resource_index/packages/ydlidar
+[0.421s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/cmake/ydlidarConfig.cmake
+[0.421s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/cmake/ydlidarConfig-version.cmake
+[0.425s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/package.xml
+[0.426s] Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar
