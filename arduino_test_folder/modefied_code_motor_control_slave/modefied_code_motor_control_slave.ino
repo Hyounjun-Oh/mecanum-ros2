@@ -54,7 +54,7 @@ void setup() {
  
   // Open the serial port at 9600 bps
   Serial2.begin(115200);
- 
+  Serial2.setTimeout(100);
   // Set pin states of the encoder
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
   pinMode(ENC_IN_1_B , INPUT);

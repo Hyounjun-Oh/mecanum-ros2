@@ -54,7 +54,7 @@ void setup() {
   // Open the serial port at 9600 bps
   Serial.begin(115200);
   Serial2.begin(115200);
-  Serial.setTimeout(2);
+  Serial.setTimeout(100);
  
   // Set pin states of the encoder
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
@@ -84,6 +84,7 @@ void loop() {
   float control_2 = targetRPM[1];
   doMotor_2(MOT_DIR_PIN_2, MOT_PWM_PIN_2,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
   doMotor_1(MOT_DIR_PIN_1, MOT_PWM_PIN_1,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
+  delay(100);
 
 }
  
@@ -195,9 +196,9 @@ void Split(String sData, char cSeparator){
 			//없으면 마무리 한다.
       slaveData = sCopy;
       Serial2.print(slaveData);
-      Serial.println(targetRPM[0]);
-      Serial.println(targetRPM[1]);
-      Serial.println(sCopy);
+      //Serial.println(targetRPM[0]);
+      //Serial.println(targetRPM[1]);
+      //Serial.println(sCopy);
 
 			break;
 		}

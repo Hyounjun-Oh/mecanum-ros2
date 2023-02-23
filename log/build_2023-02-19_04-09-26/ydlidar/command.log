@@ -1,4 +1,0 @@
-Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar -- -j16 -l16
-Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar -- -j16 -l16
-Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar
-Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar

@@ -42,19 +42,19 @@ class CmdVelSubscriber(Node):
         self.Rz = msg.angular.z #rad/s
         self.cmd_vel2rad()
         if self.ser.readable():
-            for motor_num in range(1,5):
-                trans_data = str(motor_num) + "," + str(round(float(self.rpm_value[motor_num -1][0]),2))
-                trans_data = trans_data.encode()
-                self.ser.write(trans_data)
-                self.get_logger().info("Data transfer is successful!")
-                self.get_logger().info(trans_data)
-            #trans_data = str(round(float(self.rpm_value[0][0]),2)) + "," + str(round(float(self.rpm_value[1][0]),2)) + "," + str(round(float(self.rpm_value[2][0]),2)) + "," + str(round(float(self.rpm_value[3][0]),2))
-            #trans_data = trans_data.encode()
-            #self.ser.write(trans_data)
-            #self.get_logger().info("Data transfer is successful!")
-            #self.get_logger().info(trans_data)
-            #time.sleep(1)
-        motor_num = 1
+            #for motor_num in range(1,5):
+            #    trans_data = str(motor_num) + "," + str(round(float(self.rpm_value[motor_num -1][0]),2))
+            #    trans_data = trans_data.encode()
+            #    self.ser.write(trans_data)
+            #    self.get_logger().info("Data transfer is successful!")
+            #    self.get_logger().info(trans_data)
+            trans_data = str(round(float(self.rpm_value[0][0]),2)) + "," + str(round(float(self.rpm_value[1][0]),2)) + "," + str(round(float(self.rpm_value[2][0]),2)) + "," + str(round(float(self.rpm_value[3][0]),2))
+            trans_data = trans_data.encode()
+            self.ser.write(trans_data)
+            self.get_logger().info("Data transfer is successful!")
+            self.get_logger().info(trans_data)
+            time.sleep(0.1)
+        #motor_num = 1
        
     def cmd_vel2rad(self):
         # convert_matrix = np.array([[1, -1, -(self.width + self.length)], [1, 1, (self.width + self.length)], [1, 1, -(self.width + self.length)], [1, -1, (self.width + self.length)]])
