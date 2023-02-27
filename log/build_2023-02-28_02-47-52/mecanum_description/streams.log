@@ -1,0 +1,36 @@
+[0.036s] Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/mecanum_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/mecanum_description
+[0.371s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.372s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.372s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.372s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.372s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.373s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.374s] -- Added test 'lint_cmake' to check CMake code style
+[0.374s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.374s] -- Added test 'xmllint' to check XML markup files
+[0.374s] -- Configuring done
+[0.375s] -- Generating done
+[0.376s] -- Build files have been written to: /home/ohj/mecanum-ros2/build/mecanum_description
+[0.379s] Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/mecanum_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/mecanum_description
+[0.380s] Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_description -- -j16 -l16
+[0.414s] Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_description -- -j16 -l16
+[0.447s] Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_description
+[0.456s] -- Install configuration: ""
+[0.456s] -- Execute custom install script
+[0.457s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description//launch/mecanum.launch.py
+[0.467s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/ament_index/resource_index/package_run_dependencies/mecanum_description
+[0.477s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/ament_index/resource_index/parent_prefix_path/mecanum_description
+[0.482s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/ament_prefix_path.sh
+[0.488s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/ament_prefix_path.dsv
+[0.495s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/path.sh
+[0.502s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/path.dsv
+[0.508s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.bash
+[0.516s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.sh
+[0.525s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.zsh
+[0.532s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.dsv
+[0.541s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/package.dsv
+[0.547s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/ament_index/resource_index/packages/mecanum_description
+[0.554s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/cmake/mecanum_descriptionConfig.cmake
+[0.561s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/cmake/mecanum_descriptionConfig-version.cmake
+[0.568s] -- Symlinking: /home/ohj/mecanum-ros2/install/mecanum_description/share/mecanum_description/package.xml
+[0.576s] Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_description

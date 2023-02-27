@@ -1,0 +1,6 @@
+Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/mecanum_description -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/mecanum_description
+Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/mecanum_description -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/mecanum_description
+Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_description -- -j16 -l16
+Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_description -- -j16 -l16
+Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_description
+Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_description
