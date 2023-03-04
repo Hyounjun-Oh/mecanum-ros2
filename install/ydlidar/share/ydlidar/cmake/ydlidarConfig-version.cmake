@@ -1,1 +1,0 @@
-/home/ohj/mecanum-ros2/build/ydlidar/ament_cmake_core/ydlidarConfig-version.cmake

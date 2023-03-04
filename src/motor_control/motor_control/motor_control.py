@@ -34,7 +34,7 @@ class CmdVelSubscriber(Node):
         self.width = 0.17 # 중심점으로부터 모터의 가로 위치
         self.length = 0.15 # 중심점으로부터 모터의 세로 위치
         self.radius = 0.05 # 메카넘휠 반지름
-        self.ser = serial.Serial('/dev/ttyACM0', 115200,timeout=1) #OpenCR Port COM3, MEGE Port COM4
+        self.ser = serial.Serial('/dev/ttyACM0', 115200) #OpenCR Port COM3, MEGE Port COM4
 
     def get_cmd_vel(self, msg):
         self.Vx = msg.linear.x #m/s
@@ -48,12 +48,15 @@ class CmdVelSubscriber(Node):
             #    self.ser.write(trans_data)
             #    self.get_logger().info("Data transfer is successful!")
             #    self.get_logger().info(trans_data)
-            trans_data = str(round(float(self.rpm_value[0][0]),2)) + "," + str(round(float(self.rpm_value[1][0]),2)) + "," + str(round(float(self.rpm_value[2][0]),2)) + "," + str(round(float(self.rpm_value[3][0]),2))
+            trans_data = str(round(float(self.rpm_value[0][0]),2)) + "," + str(round(float(self.rpm_value[1][0]),2))
             trans_data = trans_data.encode()
             self.ser.write(trans_data)
             self.get_logger().info("Data transfer is successful!")
             self.get_logger().info(trans_data)
-            time.sleep(0.1)
+        self.ser.flush()
+        # 0.001초 딜레이 적용 완료 아두이노는 10ms 간격
+        # 시리얼 통신 실행 이전에 아두이노 초기화가 되어야함?!
+        time.sleep(0.001)
         #motor_num = 1
        
     def cmd_vel2rad(self):

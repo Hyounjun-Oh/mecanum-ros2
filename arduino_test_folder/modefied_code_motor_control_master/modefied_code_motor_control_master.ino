@@ -16,10 +16,12 @@
 // Tracks the direction of rotation.
 #define ENC_IN_1_B 19 //4
 #define ENC_IN_2_B 21 //2
-#define MOT_DIR_PIN_1 6
-#define MOT_PWM_PIN_1 7
-#define MOT_DIR_PIN_2 10
-#define MOT_PWM_PIN_2 11
+#define MOT_IN_1 28 //motor driver in1
+#define MOT_IN_2 29 //motor driver in2
+#define MOT_IN_3 30 //motor driver in3
+#define MOT_IN_4 31 //motor driver in4
+#define MOT_PWM_PIN_A 6 //motor driver enA
+#define MOT_PWM_PIN_B 7 //motor driver enB
  
 // True = Forward; False = Reverse
 boolean Direction_motor_1 = true;
@@ -53,18 +55,19 @@ void setup() {
  
   // Open the serial port at 9600 bps
   Serial.begin(115200);
-  Serial2.begin(115200);
-  Serial.setTimeout(100);
+  Serial.setTimeout(50);
  
   // Set pin states of the encoder
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
   pinMode(ENC_IN_1_B , INPUT);
   pinMode(ENC_IN_2_A , INPUT_PULLUP);
   pinMode(ENC_IN_2_B , INPUT);
-  pinMode(MOT_DIR_PIN_1, OUTPUT);
-  pinMode(MOT_PWM_PIN_1, OUTPUT);
-  pinMode(MOT_DIR_PIN_2, OUTPUT);
-  pinMode(MOT_PWM_PIN_2, OUTPUT);
+  pinMode(MOT_IN_1, OUTPUT);
+  pinMode(MOT_IN_2, OUTPUT);
+  pinMode(MOT_IN_3, OUTPUT);
+  pinMode(MOT_IN_4, OUTPUT);
+  pinMode(MOT_PWM_PIN_A, OUTPUT);
+  pinMode(MOT_PWM_PIN_B, OUTPUT);
  
   // Every time the pin goes high, this is a pulse
   attachInterrupt(digitalPinToInterrupt(ENC_IN_1_A), motor_1_pulse, RISING);
@@ -79,14 +82,15 @@ void loop() {
   {
     String inputStr = Serial.readStringUntil('\n');
     Split(inputStr,',');
+    //Serial.println(inputStr);
   }
   float control_1 = targetRPM[0];
   float control_2 = targetRPM[1];
-  doMotor_2(MOT_DIR_PIN_2, MOT_PWM_PIN_2,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
-  doMotor_1(MOT_DIR_PIN_1, MOT_PWM_PIN_1,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
-  delay(100);
-
-}
+  doMotor_1(MOT_IN_3, MOT_IN_4, MOT_PWM_PIN_B,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
+  doMotor_1(MOT_IN_1, MOT_IN_2, MOT_PWM_PIN_A,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
+  delay(10);
+  Serial.flush();
+}wwwww
  
 // Increment the number of pulses by 1
 void motor_1_pulse() {
@@ -127,9 +131,10 @@ void motor_2_pulse() {
     motor_2_pulse_count--;
   }
 }
-void doMotor_1(int motor_dir_pin, int motor_rpm_pin ,bool dir, int vel){
-  digitalWrite(motor_dir_pin, dir);
-  analogWrite(motor_rpm_pin, dir?(255 - vel):vel);
+void doMotor_1(int motor_in_A, int motor_in_B, int motor_rpm_pin ,bool dir, int vel){
+  digitalWrite(motor_in_A, dir?HIGH:LOW);
+  digitalWrite(motor_in_B, dir?LOW:HIGH);
+  analogWrite(motor_rpm_pin, vel);
 }
 void doMotor_2(int motor_dir_pin, int motor_rpm_pin ,bool dir, int vel){
   digitalWrite(motor_dir_pin, dir);
@@ -148,9 +153,9 @@ void getRPM(){
 //  Serial.print(" Motor 2 Pulses: ");
 //  Serial.println(motor_2_pulse_count);
 //  Serial.print(" Motor 1 Speed: ");
-//  Serial.print(rpm_motor_1);
+//  Serial.println(rpm_motor_1);
 //  Serial.print(" Motor 2 Speed: ");
-//  Serial.print(rpm_motor_2);
+//  Serial.println(rpm_motor_2);
 //  Serial.println(" RPM");
 //  Serial.print(" Angular Velocity: ");
 //  Serial.print(rpm_motor_1);
@@ -159,53 +164,24 @@ void getRPM(){
 //  Serial.print(ang_velocity_1_deg);
 //  Serial.println(" deg per second");
 //  Serial.println();
-
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
 }
+
 void Split(String sData, char cSeparator){	
 	int nCount = 0;
 	int nGetIndex = 0 ;
- 
-	//임시저장
 	String sTemp = "";
- 
-	//원본 복사
 	String sCopy = sData;
-  int i = 0;
-  int j = 0;
-	while(true)
-	{
-		//구분자 찾기
-		nGetIndex = sCopy.indexOf(cSeparator);
- 
-		//리턴된 인덱스가 있나?
-		if(j < 2)
-		{
-			//있다.
-      j+=1;
-			//데이터 넣고
-			sTemp = sCopy.substring(0, nGetIndex);
-      targetRPM[i] = sTemp.toFloat();
-		
-			//뺀 데이터 만큼 잘라낸다.
-			sCopy = sCopy.substring(nGetIndex + 1);
-		}
-		else
-		{
-			//없으면 마무리 한다.
-      slaveData = sCopy;
-      Serial2.print(slaveData);
-      //Serial.println(targetRPM[0]);
-      //Serial.println(targetRPM[1]);
-      //Serial.println(sCopy);
 
-			break;
-		}
- 
-		//다음 문자로~
-		++nCount;
-    ++i;
-	}
- 
+	nGetIndex = sCopy.indexOf(cSeparator);
+	sTemp = sCopy.substring(0, nGetIndex);
+  targetRPM[0] = sTemp.toFloat();
+	sCopy = sCopy.substring(nGetIndex + 1);
+  sTemp = sCopy;
+  targetRPM[1] = sTemp.toFloat();
+  // Debug print
+  //Serial.println(targetRPM[0]);
+  //Serial.println(targetRPM[1]);
+  //Serial.println(sCopy);
 }
