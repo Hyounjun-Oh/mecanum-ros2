@@ -1,0 +1,31 @@
+[0.332s] Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar -- -j16 -l16
+[0.375s] [ 18%] Built target ydlidar_client
+[0.380s] [100%] Built target ydlidar_node
+[0.388s] Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar -- -j16 -l16
+[0.416s] Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar
+[0.421s] -- Install configuration: ""
+[0.421s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/lib/ydlidar/ydlidar_node
+[0.421s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/lib/ydlidar/ydlidar_client
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/launch
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/launch/ydlidar.py
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/launch/ydlidar_launch.py
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/params
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/params/ydlidar.yaml
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/startup
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/startup/initenv.sh
+[0.422s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ament_index/resource_index/package_run_dependencies/ydlidar
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ament_index/resource_index/parent_prefix_path/ydlidar
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/ament_prefix_path.sh
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/ament_prefix_path.dsv
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/path.sh
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/environment/path.dsv
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.bash
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.sh
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.zsh
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/local_setup.dsv
+[0.423s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/package.dsv
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ament_index/resource_index/packages/ydlidar
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/cmake/ydlidarConfig.cmake
+[0.423s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/cmake/ydlidarConfig-version.cmake
+[0.424s] -- Up-to-date: /home/ohj/mecanum-ros2/install/ydlidar/share/ydlidar/package.xml
+[0.428s] Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar

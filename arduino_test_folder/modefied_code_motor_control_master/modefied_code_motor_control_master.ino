@@ -54,7 +54,7 @@ String slaveData;
 void setup() {
  
   // Open the serial port at 9600 bps
-  Serial.begin(115200);
+  Serial.begin(230400); //ACM0 = 115200, ACM1 = 230400
   Serial.setTimeout(50);
  
   // Set pin states of the encoder
@@ -90,7 +90,7 @@ void loop() {
   doMotor_1(MOT_IN_1, MOT_IN_2, MOT_PWM_PIN_A,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
   delay(10);
   Serial.flush();
-}wwwww
+}
  
 // Increment the number of pulses by 1
 void motor_1_pulse() {
