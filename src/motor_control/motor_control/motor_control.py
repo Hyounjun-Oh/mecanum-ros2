@@ -14,7 +14,7 @@
 
 # Editor : Hyoujun Oh
 
-#Arduino Mega - Master Port : /dev/ttyACM0
+#Arduino Mega - 1 : /dev/ttyACM0 2 : /dev/ttyACM1
 import rclpy
 from rclpy.node import Node
 import numpy as np
