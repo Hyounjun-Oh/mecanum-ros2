@@ -54,7 +54,7 @@ String slaveData;
 void setup() {
  
   // Open the serial port at 9600 bps
-  Serial.begin(230400); //ACM0 = 115200, ACM1 = 230400
+  Serial.begin(115200); //ACM0 = 115200, ACM1 = 230400
   Serial.setTimeout(50);
  
   // Set pin states of the encoder

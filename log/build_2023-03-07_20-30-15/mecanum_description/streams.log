@@ -1,0 +1,22 @@
+[0.163s] Invoking command in '/home/jetson/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/mecanum_description -- -j4 -l4
+[2.822s] Invoked command in '/home/jetson/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/mecanum_description -- -j4 -l4
+[2.942s] Invoking command in '/home/jetson/mecanum-ros2/build/mecanum_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/mecanum_description
+[2.971s] -- Install configuration: ""
+[2.972s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description//launch
+[2.973s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description//launch/mecanum.launch.py
+[2.973s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/ament_index/resource_index/package_run_dependencies/mecanum_description
+[2.974s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/ament_index/resource_index/parent_prefix_path/mecanum_description
+[2.975s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/ament_prefix_path.sh
+[2.975s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/ament_prefix_path.dsv
+[2.976s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/path.sh
+[2.977s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/environment/path.dsv
+[2.978s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.bash
+[2.978s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.sh
+[2.979s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.zsh
+[2.979s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/local_setup.dsv
+[2.979s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/package.dsv
+[2.981s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/ament_index/resource_index/packages/mecanum_description
+[2.982s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/cmake/mecanum_descriptionConfig.cmake
+[2.982s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/cmake/mecanum_descriptionConfig-version.cmake
+[2.984s] -- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_description/share/mecanum_description/package.xml
+[2.987s] Invoked command in '/home/jetson/mecanum-ros2/build/mecanum_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/mecanum_description
