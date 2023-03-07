@@ -80,11 +80,11 @@ class CmdVelSubscriber(Node):
        
     def cmd_vel2rad(self):
         if self.arduino_num == 0:
-            w1 = (-self.Vx/self.radius) + (self.Vy/self.radius) + self.Rz*(self.length + self.width)
-            w2 = (self.Vx/self.radius) + (self.Vy/self.radius) - self.Rz*(self.length + self.width)
+            w1 = (self.Vx/self.radius) + (self.Vy/self.radius) - self.Rz*(self.length + self.width)
+            w2 = (self.Vx/self.radius) - (self.Vy/self.radius) + self.Rz*(self.length + self.width)
             self.rpm_value = np.array([[w1*9.5492968],[w2*9.5492968]]) # rad/s -> rpm
         else:          
-            w3 = -(self.Vx/self.radius) + (self.Vy/self.radius) - self.Rz*(self.length + self.width)
+            w3 = (self.Vx/self.radius) - (self.Vy/self.radius) - self.Rz*(self.length + self.width)
             w4 = (self.Vx/self.radius) + (self.Vy/self.radius) + self.Rz*(self.length + self.width)
             self.rpm_value = np.array([[w3*9.5492968],[w4*9.5492968]]) # rad/s -> rpm
             
