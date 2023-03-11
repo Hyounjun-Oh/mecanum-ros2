@@ -50,9 +50,9 @@ else:
 
 MAX_LIN = 0.30
 #MAX_DIA = 0.6
-MAX_ROT = 1.7
-LIN_VEL_STEP_SIZE = 0.01
-ANG_VEL_STEP_SIZE = 0.1
+MAX_ROT = 50
+LIN_VEL_STEP_SIZE = 0.02
+ANG_VEL_STEP_SIZE = 1.0
 
 msg = """
 혼자서도 잘해요
@@ -65,7 +65,7 @@ msg = """
 
 w/x : 증가/감소 Vx [최고속도 : 0.3 m/s]
 a/d : 증가/감소 Vy [최고속도 : 0.3 m/s]
-q/e : 증가/감소 Rz [최고속도 : 1.0rad/s]
+q/e : 증가/감소 Rz [최고속도 : 50.0rad/s]
 s   : 강제 정지
 CTRL-C : 컨트롤러 종료
 """
