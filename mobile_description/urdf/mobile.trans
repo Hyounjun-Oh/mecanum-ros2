@@ -1,45 +1,45 @@
 <?xml version="1.0" ?>
 <robot name="mobile" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="회전 1_tran">
+<transmission name="Revolute 1_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 1">
+  <joint name="Revolute 1">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 1_actr">
+  <actuator name="Revolute 1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="회전 2_tran">
+<transmission name="Revolute 2_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 2">
+  <joint name="Revolute 2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 2_actr">
+  <actuator name="Revolute 2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="회전 3_tran">
+<transmission name="Revolute 3_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 3">
+  <joint name="Revolute 3">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 3_actr">
+  <actuator name="Revolute 3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="회전 4_tran">
+<transmission name="Revolute 4_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 4">
+  <joint name="Revolute 4">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 4_actr">
+  <actuator name="Revolute 4_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

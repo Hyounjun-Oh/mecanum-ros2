@@ -5,19 +5,19 @@ mobile_controller:
     publish_rate: 50
 
   # Position Controllers --------------------------------------
-  회전 1_position_controller:
+  Revolute 1_position_controller:
     type: effort_controllers/JointPositionController
-    joint: 회전 1
+    joint: Revolute 1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  회전 2_position_controller:
+  Revolute 2_position_controller:
     type: effort_controllers/JointPositionController
-    joint: 회전 2
+    joint: Revolute 2
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  회전 3_position_controller:
+  Revolute 3_position_controller:
     type: effort_controllers/JointPositionController
-    joint: 회전 3
+    joint: Revolute 3
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  회전 4_position_controller:
+  Revolute 4_position_controller:
     type: effort_controllers/JointPositionController
-    joint: 회전 4
+    joint: Revolute 4
     pid: {p: 100.0, i: 0.01, d: 10.0}
