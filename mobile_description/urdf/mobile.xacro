@@ -90,9 +90,9 @@
 
 <link name="rear_left_wheel_1">
   <inertial>
-    <origin xyz="-2.7755575615628914e-17 0.01999999999999999 1.3877787807814457e-17" rpy="0 0 0"/>
+    <origin xyz="-5.551115123125783e-17 0.019999999999999962 0.0" rpy="0 0 0"/>
     <mass value="3.8533597391687295"/>
-    <inertia ixx="0.004277" iyy="0.007526" izz="0.004277" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+    <inertia ixx="0.004277" iyy="0.007526" izz="0.004277" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.145 -0.17 -0.0625" rpy="0 0 0"/>
@@ -151,41 +151,41 @@
   </collision>
 </link>
 
-<joint name="rotation_1" type="continuous">
+<joint name="Revolute 1" type="continuous">
   <origin xyz="-0.145 -0.17 0.0625" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="rear_right_wheel_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="rotation_2" type="continuous">
+<joint name="Revolute 2" type="continuous">
   <origin xyz="0.145 -0.17 0.0625" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="front_right_wheel_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="rotation_3" type="continuous">
+<joint name="Revolute 3" type="continuous"
   <origin xyz="0.145 0.17 0.0625" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="front_left_wheel_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="rotation_4" type="continuous">
+<joint name="Revolute 4" type="continuous">
   <origin xyz="-0.145 0.17 0.0625" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="rear_left_wheel_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="rigid_5" type="fixed">
+<joint name="Rigid 5" type="fixed">
   <origin xyz="0.205 0.0 0.3275" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="lidar_1"/>
 </joint>
 
-<joint name="rigid_6" type="fixed">
+<joint name="Rigid 6" type="fixed">
   <origin xyz="0.0 0.0 0.3275" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="imu_1"/>
