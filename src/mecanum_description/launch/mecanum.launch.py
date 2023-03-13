@@ -20,7 +20,7 @@ def generate_launch_description():
   package_name = 'mecanum_description'
   robot_name_in_model = 'mecanum'
   rviz_config_file_path = 'rviz/urdf_gazebo_config.rviz'
-  urdf_file_path = 'urdf/mecanum.urdf'
+  urdf_file_path = 'urdf/mecanum.xacro'
   world_file_path = 'worlds/neighborhood.world'
      
   # Pose where we want to spawn the robot
@@ -28,8 +28,6 @@ def generate_launch_description():
   spawn_y_val = '0.0'
   spawn_z_val = '0.0'
   spawn_yaw_val = '0.00'
- 
-  ############ You do not need to change anything below this line #############
    
   # Set the path to different files and folders.  
   pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')   
