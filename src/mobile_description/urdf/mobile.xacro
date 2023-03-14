@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.145 0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/rear_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/rear_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.145 0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/rear_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/rear_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.145 0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/front_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/front_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.145 0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/front_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/front_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.145 -0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/front_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/front_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.145 -0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/front_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/front_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="0.145 -0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/rear_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/rear_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.145 -0.17 -0.0625" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/rear_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/rear_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.205 -0.0 -0.3275" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.205 -0.0 -0.3275" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-0.0 -0.0 -0.3275" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.0 -0.3275" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mobile_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mobile_description)/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
