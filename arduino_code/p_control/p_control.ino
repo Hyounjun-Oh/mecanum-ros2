@@ -21,6 +21,20 @@ float rpm_motor_2 = 0;
 float ang_velocity_1 = 0;
 float ang_velocity_1_deg = 0;
 float ang_velocity_2 = 0;
+const float rpm_to_radians = 0.10471975512;
+const float rad_to_deg = 57.29578;
+
+float Kp = 0.5; // 0.4 ~ 0.5
+float Ki = 0.5; // start : 0.5
+float Kd = 0.0;
+float PID_1 = 0.0;
+float PID_2 = 0.0;
+float P_control_1 = 0.0;
+float P_control_2 = 0.0;
+float I_control_1 = 0.0;
+float I_control_2 = 0.0;
+float D_control_1 = 0.0;
+float D_control_2 = 0.0;
 float ang_velocity_2_deg = 0;
 float control_1 = 0;
 float control_2 = 0;
@@ -28,24 +42,12 @@ float error_1 = 0;
 float error_2 = 0;
 float error_pre_1 = 0.0;
 float error_pre_2 = 0.0;
-const float rpm_to_radians = 0.10471975512;
-const float rad_to_deg = 57.29578;
-
-float Kp = 0.5; // 0.4 ~ 0.5
-float Ki = 0.5; // start : 0.5
-float Kd = 0.2;
-float PID_1 = 0.0;
-float PID_2 = 0.0;
-float I_control_sum_1 = 0.0;
-float I_control_sum_2 = 0.0;
-float D_control_1 = 0.0;
-float D_control_2 = 0.0;
 long currentTime = 0;
 long previousTime = 0;
-long elapsedTime = 0;
+long elapsedTime = 0.204;//currentTime - previousTime;
 
 float targetRPM[2] = {0,0};
-float maxRPM = 122.0; //172 not loaded, 122 loaded
+float maxRPM = 172.0; //172 not loaded, 122 loaded
 String slaveData;
 
 void setup() {
@@ -70,24 +72,15 @@ void setup() {
 }
  
 void loop() {
-  currentTime = millis();
-  elapsedTime = 0.204;//currentTime - previousTime;
   if(Serial.available() > 0)
   {
     String inputStr = Serial.readStringUntil('\n');
     Split(inputStr,',');
   }
-  error_1 = (targetRPM[0] - rpm_motor_1)*Kp;
-  error_2 = (targetRPM[1] - rpm_motor_2)*Kp;
-  I_control_sum_1 += error_1*Ki*elapsedTime;
-  I_control_sum_2 += error_2*Ki*elapsedTime;
-  D_control_1 = ((error_1 - error_pre_1== 0 || Kd == 0)?0:(error_1 - error_pre_1)/elapsedTime)*Kd;
-  D_control_2 = ((error_2 - error_pre_2== 0 || Kd == 0)?0:(error_2 - error_pre_2)/elapsedTime)*Kd;
-  PID_1 = float(error_1/maxRPM*255) + float((I_control_sum_1 == 0 || Ki == 0.0)?0:I_control_sum_1/maxRPM*255) + float((D_control_1 == 0 || Kd == 0)?0:D_control_1/maxRPM*255);
-  PID_2 = float(error_2/maxRPM*255) + float((I_control_sum_2 == 0 || Ki == 0.0)?0:I_control_sum_2/maxRPM*255) + float((D_control_2 == 0 || Kd == 0)?0:D_control_2/maxRPM*255);
+  PID_calculate();
+  control_1 = float(((targetRPM[0] + PID_1)/maxRPM)*255);
+  control_2 = float(((targetRPM[1] + PID_2)/maxRPM)*255);
   Serial.println("---------------------");
-  control_1 = float(targetRPM[0]/maxRPM)*255 + PID_1;
-  control_2 = float(targetRPM[1]/maxRPM)*255 + PID_2;
   Serial.println(targetRPM[0]);
   Serial.println(targetRPM[1]);
   Serial.println(rpm_motor_1);
@@ -97,8 +90,6 @@ void loop() {
   doMotor(MOT_IN_3, MOT_IN_4, MOT_PWM_PIN_B,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
   delay(100);
   Serial.flush();
-  error_pre_1 = error_1;
-  error_pre_2 = error_2;
 }
  
 void motor_1_pulse() {
@@ -158,6 +149,21 @@ void getRPM(){
 //    
 //    }
 //}
+
+void PID_calculate(){
+  error_1 = (targetRPM[0] - rpm_motor_1);
+  error_2 = (targetRPM[1] - rpm_motor_2);
+  P_control_1 = error_1*Kp;
+  P_control_2 = error_2*Kp;
+  I_control_1 += error_1*Ki*elapsedTime;
+  I_control_2 += error_2*Ki*elapsedTime;
+  D_control_1 = ((error_1 - error_pre_1== 0 || Kd == 0)?0:(error_1 - error_pre_1)/elapsedTime)*Kd;
+  D_control_2 = ((error_2 - error_pre_2== 0 || Kd == 0)?0:(error_2 - error_pre_2)/elapsedTime)*Kd;
+  PID_1 = float(P_control_1 + (I_control_1 == 0 || Ki == 0.0)?0:I_control_1 + D_control_1);
+  PID_2 = float(P_control_2 + (I_control_2 == 0 || Ki == 0.0)?0:I_control_2 + D_control_2);
+  error_pre_1 = error_1;
+  error_pre_2 = error_2;
+}
 
 void Split(String sData, char cSeparator){	
 	int nCount = 0;
