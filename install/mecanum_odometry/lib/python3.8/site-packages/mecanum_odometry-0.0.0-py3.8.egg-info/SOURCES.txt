@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/mecanum_odometry/mecanum_odometry.egg-info/PKG-INFO
+../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt
+../../build/mecanum_odometry/mecanum_odometry.egg-info/dependency_links.txt
+../../build/mecanum_odometry/mecanum_odometry.egg-info/entry_points.txt
+../../build/mecanum_odometry/mecanum_odometry.egg-info/requires.txt
+../../build/mecanum_odometry/mecanum_odometry.egg-info/top_level.txt
+../../build/mecanum_odometry/mecanum_odometry.egg-info/zip-safe
+mecanum_odometry/__init__.py
+mecanum_odometry/odom_publisher.py
+resource/mecanum_odometry
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
