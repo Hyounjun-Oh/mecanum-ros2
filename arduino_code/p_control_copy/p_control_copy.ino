@@ -34,10 +34,10 @@ const float rad_to_deg = 57.29578;
 // |0.3 |0.1  |1.0  | : D_control wave too much.
 // |0.3 |0.1  |0.5  | : D_control wave go away.발산
 //
-volatile float Kp = 0.3;
+volatile float Kp = 0.4;
 //1.0 : qkftks 0.4 ~ 0.7
-volatile float Ki = 0.1; // start : 0.5
-volatile float Kd = 0.01; // 0.1
+volatile float Ki = 0.05; // start : 0.5
+volatile float Kd = 0.0; // 0.1
 float PID_1 = 0.0;
 float PID_2 = 0.0;
 float P_control_1 = 0.0;
@@ -77,7 +77,7 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(ENC_IN_1_A), motor_1_pulse, RISING);
   attachInterrupt(digitalPinToInterrupt(ENC_IN_2_A), motor_2_pulse, RISING);
 
-  MsTimer2::set(1000, getRPM);
+  MsTimer2::set(100, getRPM);
   MsTimer2::start();
 }
  
@@ -147,21 +147,21 @@ void doMotor(int motor_in_A, int motor_in_B, int motor_rpm_pin ,bool dir, int ve
 }
 
 void getRPM(){
-  rpm_motor_1 = (float)(motor_1_pulse_count * 60 / ENC_COUNT_REV);
-  rpm_motor_2 = (float)(motor_2_pulse_count * 60 / ENC_COUNT_REV);
+  rpm_motor_1 = (float)(motor_1_pulse_count * 600 / ENC_COUNT_REV);
+  rpm_motor_2 = (float)(motor_2_pulse_count * 600 / ENC_COUNT_REV);
   error_1 = (targetRPM[0] - rpm_motor_1);
   error_2 = (targetRPM[1] - rpm_motor_2);
-  I_control_1 += error_1*((millis() - previousTime)/1000);
-  I_control_2 += error_2*((millis() - previousTime)/1000);  
+  I_control_1 += error_1*1;
+  I_control_2 += error_2*1;  
   if (error_1 - error_pre_1 == 0){
     D_control_1 = 0;
   }else{
-    D_control_1 = (error_1 - error_pre_1)/((millis()- previousTime)/1000);
+    D_control_1 = (error_1 - error_pre_1);
   }
   if (error_1 - error_pre_1 == 0){
     D_control_2 = 0;
   }else{
-    D_control_2 = (error_2 - error_pre_2)/((millis()- previousTime)/1000);;
+    D_control_2 = (error_2 - error_pre_2);;
   }
   PID_1 = error_1*Kp+ I_control_1*Ki + D_control_1*Kd;
   PID_2 = error_2*Kp+ I_control_2*Ki + D_control_2*Kd;
