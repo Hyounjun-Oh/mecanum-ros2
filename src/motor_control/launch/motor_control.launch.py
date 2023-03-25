@@ -24,14 +24,14 @@ def generate_launch_description():
 
         Node(
             package='motor_control',
-            executable='motor_control',
+            executable='motor_control_float',
             name='front_motor_control',
             parameters=[param_dir],
             output='screen'),
 
         Node(
             package='motor_control',
-            executable='motor_control',
+            executable='motor_control_float',
             name='rear_motor_control',
             parameters=[param_dir],
             output='screen'),

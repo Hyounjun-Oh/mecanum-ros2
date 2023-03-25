@@ -24,7 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'motor_control=motor_control.motor_control:main'
+            'motor_control_int=motor_control.motor_control_int:main',
+            'motor_control_float=motor_control.motor_control_float:main',
         ],
     },
 )

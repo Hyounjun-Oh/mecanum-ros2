@@ -15,7 +15,6 @@ boolean Direction_motor_1 = true;
 boolean Direction_motor_2 = true;
 volatile long motor_1_pulse_count = 0;
 volatile long motor_2_pulse_count = 0;
-int interval = 100;
 float rpm_motor_1 = 0;
 float rpm_motor_2 = 0;
 float ang_velocity_1 = 0;
@@ -24,9 +23,19 @@ float ang_velocity_2 = 0;
 const float rpm_to_radians = 0.10471975512;
 const float rad_to_deg = 57.29578;
 
-float Kp = 0.5; // 0.4 ~ 0.5
-float Ki = 0.5; // start : 0.5
-float Kd = 0.0;
+// Test
+// | Kp | Ki  | Kd  |
+// |0.45|0.5  |0.0  | : overshoot, wave
+// |0.45|0.2  |0.0  | : more better
+// |0.45|0.1  |0.0  | : I_control value is shooting when velocity is changed.
+// |0.1 |0.1  |0.0  | : P_control value is too small so entire PID value down too slow.
+// -- D_control enable
+// |0.3 |0.1  |1.0  | : D_control wave too much.
+// |0.3 |0.1  |0.5  | : D_control wave go away.발산
+//
+volatile float Kp = 0.4; // Essential! 0.8: wave
+volatile float Ki = 0.2; // Essential! 0.05:smooth 0.2: fast correction
+volatile float Kd = 0.001; // 0.5 || more than 0.7 -> motor fire!
 float PID_1 = 0.0;
 float PID_2 = 0.0;
 float P_control_1 = 0.0;
@@ -42,17 +51,16 @@ float error_1 = 0;
 float error_2 = 0;
 float error_pre_1 = 0.0;
 float error_pre_2 = 0.0;
-long currentTime = 0;
-long previousTime = 0;
-long elapsedTime = 0.204;//currentTime - previousTime;
-
-float targetRPM[2] = {0,0};
-float maxRPM = 172.0; //172 not loaded, 122 loaded
-String slaveData;
+volatile int targetRPM_1 = 0.0;
+volatile int targetRPM_2 = 0.0;
+volatile int targetRPM_1_old = 0.0;
+volatile int targetRPM_2_old = 0.0;
+float maxRPM = 122.0; //172 not loaded, 122 loaded
+volatile String slaveData;
 
 void setup() {
-  Serial.begin(115200); //ACM* = 115200
-  Serial.setTimeout(50);
+  Serial.begin(2000000); //ACM* = 115200
+  Serial.setTimeout(0);
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
   pinMode(ENC_IN_1_B , INPUT);
   pinMode(ENC_IN_2_A , INPUT_PULLUP);
@@ -63,33 +71,21 @@ void setup() {
   pinMode(MOT_IN_4, OUTPUT);
   pinMode(MOT_PWM_PIN_A, OUTPUT);
   pinMode(MOT_PWM_PIN_B, OUTPUT);
- 
   attachInterrupt(digitalPinToInterrupt(ENC_IN_1_A), motor_1_pulse, RISING);
   attachInterrupt(digitalPinToInterrupt(ENC_IN_2_A), motor_2_pulse, RISING);
 
-  MsTimer2::set(1000, getRPM);
+  MsTimer2::set(10, getRPM);
   MsTimer2::start();
 }
  
 void loop() {
-  if(Serial.available() > 0)
-  {
-    String inputStr = Serial.readStringUntil('\n');
-    Split(inputStr,',');
-  }
-  PID_calculate();
-  control_1 = float(((targetRPM[0] + PID_1)/maxRPM)*255);
-  control_2 = float(((targetRPM[1] + PID_2)/maxRPM)*255);
-  Serial.println("---------------------");
-  Serial.println(targetRPM[0]);
-  Serial.println(targetRPM[1]);
-  Serial.println(rpm_motor_1);
-  Serial.println(rpm_motor_2);
-  Serial.println("---------------------");
-  doMotor(MOT_IN_1, MOT_IN_2, MOT_PWM_PIN_A,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
-  doMotor(MOT_IN_3, MOT_IN_4, MOT_PWM_PIN_B,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
-  delay(100);
-  Serial.flush();
+//  Serial.println("target_rpm_1,now_rpm_1,D");
+  Serial.println(targetRPM_1);
+//  Serial.print(",");
+//  Serial.print(rpm_motor_1);
+//  Serial.print(",");
+//  Serial.println(D_control_1);
+  delay(50);
 }
  
 void motor_1_pulse() {
@@ -138,31 +134,42 @@ void doMotor(int motor_in_A, int motor_in_B, int motor_rpm_pin ,bool dir, int ve
 }
 
 void getRPM(){
-  rpm_motor_1 = (float)(motor_1_pulse_count * 60 / ENC_COUNT_REV);
-  rpm_motor_2 = (float)(motor_2_pulse_count * 60 / ENC_COUNT_REV);
-  motor_1_pulse_count = 0;
-  motor_2_pulse_count = 0;
-}
-
-//void check_motor_status(float control1, float control2){
-//  if (control1 || control2 == "nan"){
-//    
-//    }
-//}
-
-void PID_calculate(){
-  error_1 = (targetRPM[0] - rpm_motor_1);
-  error_2 = (targetRPM[1] - rpm_motor_2);
-  P_control_1 = error_1*Kp;
-  P_control_2 = error_2*Kp;
-  I_control_1 += error_1*Ki*elapsedTime;
-  I_control_2 += error_2*Ki*elapsedTime;
-  D_control_1 = ((error_1 - error_pre_1== 0 || Kd == 0)?0:(error_1 - error_pre_1)/elapsedTime)*Kd;
-  D_control_2 = ((error_2 - error_pre_2== 0 || Kd == 0)?0:(error_2 - error_pre_2)/elapsedTime)*Kd;
-  PID_1 = float(P_control_1 + (I_control_1 == 0 || Ki == 0.0)?0:I_control_1 + D_control_1);
-  PID_2 = float(P_control_2 + (I_control_2 == 0 || Ki == 0.0)?0:I_control_2 + D_control_2);
+  rpm_motor_1 = (float)(motor_1_pulse_count * 6000 / ENC_COUNT_REV);
+  rpm_motor_2 = (float)(motor_2_pulse_count * 6000 / ENC_COUNT_REV);
+  error_1 = (targetRPM_1 - rpm_motor_1);
+  error_2 = (targetRPM_2 - rpm_motor_2);
+  I_control_1 += error_1*1;
+  I_control_2 += error_2*1;  
+  if (error_1 - error_pre_1 == 0){
+    D_control_1 = 0;
+  }else{
+    D_control_1 = (error_1 - error_pre_1);
+  }
+  if (error_1 - error_pre_1 == 0){
+    D_control_2 = 0;
+  }else{
+    D_control_2 = (error_2 - error_pre_2);;
+  }
+  PID_1 = error_1*Kp+ I_control_1*Ki + D_control_1*Kd;
+  PID_2 = error_2*Kp+ I_control_2*Ki + D_control_2*Kd;
   error_pre_1 = error_1;
   error_pre_2 = error_2;
+  control_1 = float(((targetRPM_1 + PID_1)/maxRPM)*255);
+  control_2 = float(((targetRPM_2 + PID_2)/maxRPM)*255);
+  if (targetRPM_1 == 0){
+    control_1 = 0;
+    I_control_1 = 0;
+    D_control_1 = 0;
+  }
+  if(targetRPM_2 == 0){
+    control_2 = 0;
+    I_control_2 = 0;
+    D_control_2 = 0;
+  }
+  doMotor(MOT_IN_1, MOT_IN_2, MOT_PWM_PIN_A,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
+  doMotor(MOT_IN_3, MOT_IN_4, MOT_PWM_PIN_B,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
+  motor_1_pulse_count = 0;
+  motor_2_pulse_count = 0;
 }
 
 void Split(String sData, char cSeparator){	
@@ -173,8 +180,21 @@ void Split(String sData, char cSeparator){
 
 	nGetIndex = sCopy.indexOf(cSeparator);
 	sTemp = sCopy.substring(0, nGetIndex);
-  targetRPM[0] = sTemp.toFloat();
+  targetRPM_1 = sTemp.toInt();
 	sCopy = sCopy.substring(nGetIndex + 1);
   sTemp = sCopy;
-  targetRPM[1] = sTemp.toFloat();
+  targetRPM_2 = sTemp.toInt();
+}
+
+void serialEvent() {
+  String inputStr = Serial.readStringUntil('\n');
+  Split(inputStr,',');
+  if (abs(targetRPM_1 - targetRPM_1_old) > 100){
+    targetRPM_1 = targetRPM_1_old;
+  }
+  if (abs(targetRPM_2 - targetRPM_2_old) > 100){
+    targetRPM_2 = targetRPM_2_old;
+  }
+  targetRPM_1_old = targetRPM_1;
+  targetRPM_2_old = targetRPM_2;
 }

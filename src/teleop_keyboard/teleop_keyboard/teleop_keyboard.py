@@ -38,6 +38,7 @@ import os
 import select
 import sys
 import rclpy
+import time
 
 from geometry_msgs.msg import Twist
 from rclpy.qos import QoSProfile
@@ -50,8 +51,8 @@ else:
 
 MAX_LIN = 0.30
 #MAX_DIA = 0.6
-MAX_ROT = 50
-LIN_VEL_STEP_SIZE = 0.02
+MAX_ROT = 50.0
+LIN_VEL_STEP_SIZE = 0.01
 ANG_VEL_STEP_SIZE = 1.0
 
 msg = """
@@ -131,7 +132,6 @@ def main():
         settings = termios.tcgetattr(sys.stdin)
 
     rclpy.init()
-
     qos = QoSProfile(depth=10)
     node = rclpy.create_node('teleop_keyboard')
     pub = node.create_publisher(Twist, 'cmd_vel', qos)
@@ -143,7 +143,7 @@ def main():
     control_linear_X_velocity = 0.0
     control_linear_Y_velocity = 0.0
     control_angular_velocity = 0.0
-
+    
     try:
         print(msg)
         while(1):
@@ -151,32 +151,32 @@ def main():
             if key == 'w':
                 target_linear_X_velocity =\
                     check_linear_limit_velocity(target_linear_X_velocity + LIN_VEL_STEP_SIZE)
-                status = status + 1
+                
                 print_vels(target_linear_X_velocity, target_linear_Y_velocity, target_angular_velocity)
             elif key == 'x':
                 target_linear_X_velocity =\
                     check_linear_limit_velocity(target_linear_X_velocity - LIN_VEL_STEP_SIZE)
-                status = status + 1
+                
                 print_vels(target_linear_X_velocity, target_linear_Y_velocity, target_angular_velocity)
             elif key == 'a':
                 target_linear_Y_velocity =\
                     check_linear_limit_velocity(target_linear_Y_velocity + LIN_VEL_STEP_SIZE)
-                status = status + 1
+                
                 print_vels(target_linear_X_velocity, target_linear_Y_velocity, target_angular_velocity)
             elif key == 'd':
                 target_linear_Y_velocity =\
                     check_linear_limit_velocity(target_linear_Y_velocity - LIN_VEL_STEP_SIZE)
-                status = status + 1
+                
                 print_vels(target_linear_X_velocity, target_linear_Y_velocity, target_angular_velocity)                              
             elif key == 'q':
                 target_angular_velocity =\
                     check_angular_limit_velocity(target_angular_velocity + ANG_VEL_STEP_SIZE)
-                status = status + 1
+               
                 print_vels(target_linear_X_velocity, target_linear_Y_velocity, target_angular_velocity)
             elif key == 'e':
                 target_angular_velocity =\
                     check_angular_limit_velocity(target_angular_velocity - ANG_VEL_STEP_SIZE)
-                status = status + 1
+                
                 print_vels(target_linear_X_velocity, target_linear_Y_velocity, target_angular_velocity)
             elif key == ' ' or key == 's':
                 target_linear_X_velocity = 0.0
