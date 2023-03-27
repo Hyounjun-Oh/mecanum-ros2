@@ -1,0 +1,19 @@
+front_motor_control:
+  ros__parameters:
+    qos_depth: 10
+    arduino_num: 0
+    arduino_port: "/dev/ttyACM0"
+    mobile_robot_length: 0.15
+    mobile_robot_width: 0.17
+    mobile_robot_wheel_radius: 0.05
+    baudrate: 2000000
+
+rear_motor_control:
+  ros__parameters:
+    qos_depth: 10
+    arduino_num: 1
+    arduino_port: "/dev/ttyACM1"
+    mobile_robot_length: 0.15
+    mobile_robot_width: 0.17
+    mobile_robot_wheel_radius: 0.05
+    baudrate: 2000000
