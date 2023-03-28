@@ -1,4 +1,5 @@
 # mecanum-ros2
 mobile robot repository
 
-2023. 2. 3. : teleop_keyboard 
+Editor : Hyounjun Oh
+E-mail : ohj_980918@naver.com
