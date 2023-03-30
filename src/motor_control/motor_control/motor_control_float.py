@@ -52,6 +52,7 @@ class CmdVelSubscriber(Node):
         self.port= self.get_parameter('arduino_port').get_parameter_value().string_value #시리얼 포트
         self.declare_parameter('arduino_num', 0)
         self.arduino_num= Parameter('arduino_num', Parameter.Type.INTEGER,1).value #시리얼 포트
+        self.timeout = 10
         self.subscription = self.create_subscription(
             Twist,
             'cmd_vel',
@@ -59,7 +60,7 @@ class CmdVelSubscriber(Node):
             qos_depth)
         self.subscription  # prevent unused variable warning
         self.ser = serial.Serial(self.port, self.baudrate) #OpenCR Port COM3, MEGE Port COM4
-        self.get_logger().info("포트 : {0}, 보드레이트 : {1}".format(self.port, self.baudrate))
+        self.get_logger().info("포트 : {0}, 보드레이트 : {1}".format(self.port, self.baudrate, timeout = self.timeout))
         self.ser.flush()
 
     def get_cmd_vel(self, msg):
@@ -108,13 +109,17 @@ class CmdVelSubscriber(Node):
             self.w3 = round(((self.Vx/self.radius) - (self.Vy/self.radius) - self.Rz*(self.length + self.width))*9.5492968,2)
             self.w4 = round(((self.Vx/self.radius) + (self.Vy/self.radius) + self.Rz*(self.length + self.width))*9.5492968,2)
             
+    def clear_serial(self):
+        self.ser.flush()
+        
+            
 def main(args=None):
     rclpy.init(args=args)
 
     cmd_vel_sub = CmdVelSubscriber()
 
     rclpy.spin(cmd_vel_sub)
-
+    cmd_vel_sub.clear_serial()
     cmd_vel_sub.destroy_node()
     rclpy.shutdown()
 

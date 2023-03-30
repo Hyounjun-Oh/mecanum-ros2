@@ -1,0 +1,20 @@
+[7.496s] Invoking command in '/home/jetson/mecanum-ros2/src/mecanum_odometry': PYTHONPATH=/home/jetson/mecanum-ros2/build/mecanum_odometry/prefix_override:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_odometry build --build-base /home/jetson/mecanum-ros2/build/mecanum_odometry/build install --record /home/jetson/mecanum-ros2/build/mecanum_odometry/install.log --single-version-externally-managed
+[8.920s] running egg_info
+[8.923s] writing ../../build/mecanum_odometry/mecanum_odometry.egg-info/PKG-INFO
+[8.928s] writing dependency_links to ../../build/mecanum_odometry/mecanum_odometry.egg-info/dependency_links.txt
+[8.930s] writing entry points to ../../build/mecanum_odometry/mecanum_odometry.egg-info/entry_points.txt
+[8.932s] writing requirements to ../../build/mecanum_odometry/mecanum_odometry.egg-info/requires.txt
+[8.933s] writing top-level names to ../../build/mecanum_odometry/mecanum_odometry.egg-info/top_level.txt
+[8.956s] reading manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'
+[8.963s] writing manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'
+[8.964s] running build
+[8.965s] running build_py
+[8.970s] running install
+[8.982s] running install_lib
+[8.993s] running install_data
+[8.996s] running install_egg_info
+[9.004s] removing '/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry-0.0.0-py3.8.egg-info' (and everything under it)
+[9.006s] Copying ../../build/mecanum_odometry/mecanum_odometry.egg-info to /home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry-0.0.0-py3.8.egg-info
+[9.013s] running install_scripts
+[9.109s] writing list of installed files to '/home/jetson/mecanum-ros2/build/mecanum_odometry/install.log'
+[9.238s] Invoked command in '/home/jetson/mecanum-ros2/src/mecanum_odometry' returned '0': PYTHONPATH=/home/jetson/mecanum-ros2/build/mecanum_odometry/prefix_override:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_odometry build --build-base /home/jetson/mecanum-ros2/build/mecanum_odometry/build install --record /home/jetson/mecanum-ros2/build/mecanum_odometry/install.log --single-version-externally-managed
