@@ -36,6 +36,13 @@ def generate_launch_description():
         arguments=['-d', rviz_config_file],
         output='screen')
 
+    tf2_node = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_pub_imu',
+        arguments=['0', '0', '0.3275','0', '0', '0', '1','base_link','imu_1'],
+        )
+
     driver_node = LifecycleNode(package='stella_ahrs',
                                 executable='stella_ahrs_node',
                                 name='stella_ahrs_node',
@@ -46,6 +53,7 @@ def generate_launch_description():
 
     return LaunchDescription([
       driver_node,
+      tf2_node,
     ])
 
 
