@@ -1,15 +1,18 @@
+// Editor : HyounjunOh
+// E-mail : ohj_980918@naver.com
 #include <MsTimer2.h>
 #define ENC_COUNT_REV 1326
-#define ENC_IN_1_A 18 //5
-#define ENC_IN_2_A 20 //3 original : 20
-#define ENC_IN_1_B 19 //4 
-#define ENC_IN_2_B 21 //2 original : 21
-#define MOT_IN_3 28 //motor driver in1
-#define MOT_IN_4 29 //motor driver in2
-#define MOT_IN_1 30 //motor driver in3
-#define MOT_IN_2 31 //motor driver in4
-#define MOT_PWM_PIN_A 7 //motor driver enA
-#define MOT_PWM_PIN_B 6 //motor driver enB
+// rear wheel need to change encoder pin
+#define ENC_IN_1_A 20 //5
+#define ENC_IN_2_A 18 //3 original : 20
+#define ENC_IN_1_B 21 //4 
+#define ENC_IN_2_B 19 //2 original : 21
+#define MOT_IN_1 28 //motor driver in1
+#define MOT_IN_2 29 //motor driver in2
+#define MOT_IN_3 30 //motor driver in3
+#define MOT_IN_4 31 //motor driver in4
+#define MOT_PWM_PIN_A 6 //motor driver enA
+#define MOT_PWM_PIN_B 7 //motor driver enB
 // motor value is OK
 // PID control is wrong
 boolean Direction_motor_1 = true;
@@ -84,13 +87,13 @@ void setup() {
 }
 
 void loop() {
-//  Serial.println("target_rpm_1,now_rpm_1,D");
-//  Serial.print(targetRPM_1);
-//  Serial.print(",");
-//  Serial.print(rpm_motor_1);
-//  Serial.print(",");
-//  Serial.println(error_1*Kp_1);
-//  delay(50);
+  Serial.println("target_rpm_1,now_rpm_1,D");
+  Serial.print(targetRPM_2);
+  Serial.print(",");
+  Serial.print(rpm_motor_2);
+  Serial.print(",");
+  Serial.println(error_2*Kp_2);
+  delay(50);
 }
  
 void motor_1_pulse() {
