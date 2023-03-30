@@ -1,0 +1,22 @@
+[6.683s] Invoking command in '/home/jetson/mecanum-ros2/src/mobile_description': PYTHONPATH=/home/jetson/mecanum-ros2/build/mobile_description/prefix_override:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/jetson/mecanum-ros2/build/mobile_description/build install --record /home/jetson/mecanum-ros2/build/mobile_description/install.log --install-scripts $base/lib/mobile_description --single-version-externally-managed
+[7.898s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[7.899s]   warnings.warn(
+[8.053s] running egg_info
+[8.057s] writing ../../build/mobile_description/mobile_description.egg-info/PKG-INFO
+[8.058s] writing dependency_links to ../../build/mobile_description/mobile_description.egg-info/dependency_links.txt
+[8.059s] writing entry points to ../../build/mobile_description/mobile_description.egg-info/entry_points.txt
+[8.059s] writing requirements to ../../build/mobile_description/mobile_description.egg-info/requires.txt
+[8.060s] writing top-level names to ../../build/mobile_description/mobile_description.egg-info/top_level.txt
+[8.073s] reading manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[8.078s] writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[8.079s] running build
+[8.080s] running build_py
+[8.081s] running install
+[8.083s] running install_lib
+[8.089s] running install_data
+[8.094s] running install_egg_info
+[8.100s] removing '/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info' (and everything under it)
+[8.102s] Copying ../../build/mobile_description/mobile_description.egg-info to /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info
+[8.106s] running install_scripts
+[8.199s] writing list of installed files to '/home/jetson/mecanum-ros2/build/mobile_description/install.log'
+[8.375s] Invoked command in '/home/jetson/mecanum-ros2/src/mobile_description' returned '0': PYTHONPATH=/home/jetson/mecanum-ros2/build/mobile_description/prefix_override:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/jetson/mecanum-ros2/build/mobile_description/build install --record /home/jetson/mecanum-ros2/build/mobile_description/install.log --install-scripts $base/lib/mobile_description --single-version-externally-managed

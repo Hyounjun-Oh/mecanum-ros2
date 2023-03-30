@@ -59,7 +59,7 @@ float maxRPM = 122.0; //172 not loaded, 122 loaded
 volatile String slaveData;
 
 void setup() {
-  Serial.begin(2000000); //ACM* = 115200
+  Serial.begin(115200); //ACM* = 115200
   Serial.setTimeout(0);
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
   pinMode(ENC_IN_1_B , INPUT);

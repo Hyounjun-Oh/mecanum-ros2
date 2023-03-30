@@ -1,0 +1,27 @@
+[2.989s] Invoking command in '/home/jetson/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/stella_ahrs -- -j4 -l4
+[4.375s] [100%] Built target stella_ahrs_node
+[4.379s] Invoked command in '/home/jetson/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/stella_ahrs -- -j4 -l4
+[4.578s] Invoking command in '/home/jetson/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/stella_ahrs
+[4.621s] -- Install configuration: ""
+[4.622s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs//launch
+[4.622s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs//launch/stella_ahrs_launch.py
+[4.623s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/rviz
+[4.623s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/rviz/imu_test.rviz
+[4.624s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/lib/stella_ahrs/stella_ahrs_node
+[4.624s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/package_run_dependencies/stella_ahrs
+[4.625s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/parent_prefix_path/stella_ahrs
+[4.626s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.sh
+[4.627s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.dsv
+[4.628s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.sh
+[4.628s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.dsv
+[4.633s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.bash
+[4.633s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.sh
+[4.634s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.zsh
+[4.634s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.dsv
+[4.657s] -- Installing: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.dsv
+[4.657s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/packages/stella_ahrs
+[4.658s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.658s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig.cmake
+[4.659s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig-version.cmake
+[4.659s] -- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.xml
+[4.660s] Invoked command in '/home/jetson/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/stella_ahrs

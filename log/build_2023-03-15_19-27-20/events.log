@@ -1,0 +1,671 @@
+[0.000000] (-) TimerEvent: {}
+[0.003763] (mobile_description) JobQueued: {'identifier': 'mobile_description', 'dependencies': OrderedDict()}
+[0.003899] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.004003] (stella_ahrs) JobQueued: {'identifier': 'stella_ahrs', 'dependencies': OrderedDict()}
+[0.004094] (teleop_keyboard) JobQueued: {'identifier': 'teleop_keyboard', 'dependencies': OrderedDict()}
+[0.004175] (mobile_description) JobStarted: {'identifier': 'mobile_description'}
+[0.085733] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.099281] (-) TimerEvent: {}
+[0.143530] (stella_ahrs) JobStarted: {'identifier': 'stella_ahrs'}
+[0.184968] (teleop_keyboard) JobStarted: {'identifier': 'teleop_keyboard'}
+[0.199641] (-) TimerEvent: {}
+[0.300624] (-) TimerEvent: {}
+[0.401619] (-) TimerEvent: {}
+[0.502328] (-) TimerEvent: {}
+[0.603050] (-) TimerEvent: {}
+[0.703762] (-) TimerEvent: {}
+[0.804471] (-) TimerEvent: {}
+[0.905198] (-) TimerEvent: {}
+[1.005845] (-) TimerEvent: {}
+[1.106580] (-) TimerEvent: {}
+[1.207309] (-) TimerEvent: {}
+[1.308029] (-) TimerEvent: {}
+[1.408747] (-) TimerEvent: {}
+[1.509459] (-) TimerEvent: {}
+[1.610370] (-) TimerEvent: {}
+[1.711377] (-) TimerEvent: {}
+[1.812083] (-) TimerEvent: {}
+[1.912836] (-) TimerEvent: {}
+[2.013560] (-) TimerEvent: {}
+[2.114222] (-) TimerEvent: {}
+[2.214874] (-) TimerEvent: {}
+[2.315539] (-) TimerEvent: {}
+[2.416199] (-) TimerEvent: {}
+[2.518252] (-) TimerEvent: {}
+[2.618886] (-) TimerEvent: {}
+[2.719593] (-) TimerEvent: {}
+[2.820258] (-) TimerEvent: {}
+[2.922586] (-) TimerEvent: {}
+[2.942969] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'cmake'}
+[2.943897] (stella_ahrs) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/mecanum-ros2/src/stella_ahrs', '-DCMAKE_INSTALL_PREFIX=/home/jetson/mecanum-ros2/install/stella_ahrs'], 'cwd': '/home/jetson/mecanum-ros2/build/stella_ahrs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7715'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7303'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:40314'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7751,unix/nano:/tmp/.ICE-unix/7751'), ('INVOCATION_ID', '51e1d4efbb1c40d2bd71256151849deb'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f097453b_a37d_442f_80df_7e750d737038'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mecanum_description:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/stella_ahrs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/mecanum_description:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic')]), 'shell': False}
+[3.022899] (-) TimerEvent: {}
+[3.123861] (-) TimerEvent: {}
+[3.224587] (-) TimerEvent: {}
+[3.325295] (-) TimerEvent: {}
+[3.425999] (-) TimerEvent: {}
+[3.526647] (-) TimerEvent: {}
+[3.627354] (-) TimerEvent: {}
+[3.728122] (-) TimerEvent: {}
+[3.828828] (-) TimerEvent: {}
+[3.929805] (-) TimerEvent: {}
+[4.030482] (-) TimerEvent: {}
+[4.131187] (-) TimerEvent: {}
+[4.231962] (-) TimerEvent: {}
+[4.332778] (-) TimerEvent: {}
+[4.401776] (stella_ahrs) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[4.403287] (stella_ahrs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[4.405048] (stella_ahrs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[4.411595] (stella_ahrs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[4.413214] (stella_ahrs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.436186] (-) TimerEvent: {}
+[4.538919] (-) TimerEvent: {}
+[4.639964] (-) TimerEvent: {}
+[4.693498] (stella_ahrs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.740146] (-) TimerEvent: {}
+[4.750272] (stella_ahrs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.754630] (stella_ahrs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.771482] (stella_ahrs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[4.840329] (-) TimerEvent: {}
+[4.941070] (-) TimerEvent: {}
+[5.041818] (-) TimerEvent: {}
+[5.103103] (stella_ahrs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[5.108181] (stella_ahrs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.141984] (-) TimerEvent: {}
+[5.243002] (-) TimerEvent: {}
+[5.344000] (-) TimerEvent: {}
+[5.427263] (stella_ahrs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.444159] (-) TimerEvent: {}
+[5.490146] (stella_ahrs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.493656] (stella_ahrs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.528485] (stella_ahrs) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[5.544329] (-) TimerEvent: {}
+[5.645352] (-) TimerEvent: {}
+[5.692107] (stella_ahrs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[5.693531] (stella_ahrs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.745502] (-) TimerEvent: {}
+[5.846479] (-) TimerEvent: {}
+[5.947460] (-) TimerEvent: {}
+[6.048400] (-) TimerEvent: {}
+[6.149543] (-) TimerEvent: {}
+[6.250603] (-) TimerEvent: {}
+[6.252509] (stella_ahrs) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[6.350834] (-) TimerEvent: {}
+[6.451606] (-) TimerEvent: {}
+[6.552430] (-) TimerEvent: {}
+[6.632348] (stella_ahrs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.652658] (-) TimerEvent: {}
+[6.702017] (stella_ahrs) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[6.752869] (-) TimerEvent: {}
+[6.777688] (motor_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_control', 'build', '--build-base', '/home/jetson/mecanum-ros2/build/motor_control/build', 'install', '--record', '/home/jetson/mecanum-ros2/build/motor_control/install.log', '--single-version-externally-managed'], 'cwd': '/home/jetson/mecanum-ros2/src/motor_control', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7715', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7303', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/mecanum-ros2/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1424622013938', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:40314', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7751,unix/nano:/tmp/.ICE-unix/7751', 'INVOCATION_ID': '51e1d4efbb1c40d2bd71256151849deb', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f097453b_a37d_442f_80df_7e750d737038', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mecanum_description:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/mecanum-ros2/build/motor_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/mecanum-ros2/build/motor_control/prefix_override:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/mecanum_description'}, 'shell': False}
+[6.795138] (teleop_keyboard) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/teleop_keyboard', 'build', '--build-base', '/home/jetson/mecanum-ros2/build/teleop_keyboard/build', 'install', '--record', '/home/jetson/mecanum-ros2/build/teleop_keyboard/install.log', '--single-version-externally-managed'], 'cwd': '/home/jetson/mecanum-ros2/src/teleop_keyboard', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7715', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7303', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/mecanum-ros2/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1424622013938', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:40314', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7751,unix/nano:/tmp/.ICE-unix/7751', 'INVOCATION_ID': '51e1d4efbb1c40d2bd71256151849deb', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f097453b_a37d_442f_80df_7e750d737038', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mecanum_description:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/mecanum-ros2/build/teleop_keyboard', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/mecanum_description'}, 'shell': False}
+[6.816929] (mobile_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mobile_description', 'build', '--build-base', '/home/jetson/mecanum-ros2/build/mobile_description/build', 'install', '--record', '/home/jetson/mecanum-ros2/build/mobile_description/install.log', '--install-scripts', '$base/lib/mobile_description', '--single-version-externally-managed'], 'cwd': '/home/jetson/mecanum-ros2/src/mobile_description', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7715', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7303', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/mecanum-ros2/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1424622013938', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:40314', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7751,unix/nano:/tmp/.ICE-unix/7751', 'INVOCATION_ID': '51e1d4efbb1c40d2bd71256151849deb', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f097453b_a37d_442f_80df_7e750d737038', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mecanum_description:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/mecanum-ros2/build/mobile_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/mecanum-ros2/build/mobile_description/prefix_override:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/mecanum_description'}, 'shell': False}
+[6.853137] (-) TimerEvent: {}
+[6.954638] (-) TimerEvent: {}
+[7.055440] (-) TimerEvent: {}
+[7.157421] (-) TimerEvent: {}
+[7.207506] (stella_ahrs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[7.257574] (-) TimerEvent: {}
+[7.348915] (stella_ahrs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[7.357736] (-) TimerEvent: {}
+[7.458712] (-) TimerEvent: {}
+[7.559883] (-) TimerEvent: {}
+[7.660845] (-) TimerEvent: {}
+[7.761819] (-) TimerEvent: {}
+[7.862568] (-) TimerEvent: {}
+[7.955949] (stella_ahrs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.962712] (-) TimerEvent: {}
+[8.063717] (-) TimerEvent: {}
+[8.092603] (mobile_description) StderrLine: {'line': b"/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[8.093396] (mobile_description) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.163898] (-) TimerEvent: {}
+[8.189435] (motor_control) StdoutLine: {'line': b'running egg_info\n'}
+[8.191248] (teleop_keyboard) StdoutLine: {'line': b'running egg_info\n'}
+[8.192166] (motor_control) StdoutLine: {'line': b'creating ../../build/motor_control/motor_control.egg-info\n'}
+[8.192950] (motor_control) StdoutLine: {'line': b'writing ../../build/motor_control/motor_control.egg-info/PKG-INFO\n'}
+[8.194203] (teleop_keyboard) StdoutLine: {'line': b'creating ../../build/teleop_keyboard/teleop_keyboard.egg-info\n'}
+[8.195205] (motor_control) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_control/motor_control.egg-info/dependency_links.txt\n'}
+[8.195982] (teleop_keyboard) StdoutLine: {'line': b'writing ../../build/teleop_keyboard/teleop_keyboard.egg-info/PKG-INFO\n'}
+[8.196905] (motor_control) StdoutLine: {'line': b'writing entry points to ../../build/motor_control/motor_control.egg-info/entry_points.txt\n'}
+[8.197981] (teleop_keyboard) StdoutLine: {'line': b'writing dependency_links to ../../build/teleop_keyboard/teleop_keyboard.egg-info/dependency_links.txt\n'}
+[8.198773] (motor_control) StdoutLine: {'line': b'writing requirements to ../../build/motor_control/motor_control.egg-info/requires.txt\n'}
+[8.199360] (teleop_keyboard) StdoutLine: {'line': b'writing entry points to ../../build/teleop_keyboard/teleop_keyboard.egg-info/entry_points.txt\n'}
+[8.199975] (teleop_keyboard) StdoutLine: {'line': b'writing requirements to ../../build/teleop_keyboard/teleop_keyboard.egg-info/requires.txt\n'}
+[8.200560] (motor_control) StdoutLine: {'line': b'writing top-level names to ../../build/motor_control/motor_control.egg-info/top_level.txt\n'}
+[8.201306] (teleop_keyboard) StdoutLine: {'line': b'writing top-level names to ../../build/teleop_keyboard/teleop_keyboard.egg-info/top_level.txt\n'}
+[8.214848] (motor_control) StdoutLine: {'line': b"writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'\n"}
+[8.215870] (teleop_keyboard) StdoutLine: {'line': b"writing manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'\n"}
+[8.222592] (motor_control) StdoutLine: {'line': b"reading manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'\n"}
+[8.224219] (teleop_keyboard) StdoutLine: {'line': b"reading manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'\n"}
+[8.226332] (motor_control) StdoutLine: {'line': b"writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'\n"}
+[8.227756] (motor_control) StdoutLine: {'line': b'running build\n'}
+[8.228307] (motor_control) StdoutLine: {'line': b'running build_py\n'}
+[8.228761] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/motor_control/build\n'}
+[8.229236] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/motor_control/build/lib\n'}
+[8.229700] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/motor_control/build/lib/motor_control\n'}
+[8.230403] (motor_control) StdoutLine: {'line': b'copying motor_control/__init__.py -> /home/jetson/mecanum-ros2/build/motor_control/build/lib/motor_control\n'}
+[8.230899] (motor_control) StdoutLine: {'line': b'copying motor_control/motor_control.py -> /home/jetson/mecanum-ros2/build/motor_control/build/lib/motor_control\n'}
+[8.231353] (motor_control) StdoutLine: {'line': b'running install\n'}
+[8.232725] (motor_control) StdoutLine: {'line': b'running install_lib\n'}
+[8.233692] (teleop_keyboard) StdoutLine: {'line': b"writing manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'\n"}
+[8.234219] (teleop_keyboard) StdoutLine: {'line': b'running build\n'}
+[8.235625] (teleop_keyboard) StdoutLine: {'line': b'running build_py\n'}
+[8.236503] (teleop_keyboard) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/teleop_keyboard/build\n'}
+[8.236958] (teleop_keyboard) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib\n'}
+[8.237826] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control\n'}
+[8.241638] (motor_control) StdoutLine: {'line': b'copying /home/jetson/mecanum-ros2/build/motor_control/build/lib/motor_control/__init__.py -> /home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control\n'}
+[8.242186] (teleop_keyboard) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard\n'}
+[8.242645] (motor_control) StdoutLine: {'line': b'copying /home/jetson/mecanum-ros2/build/motor_control/build/lib/motor_control/motor_control.py -> /home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control\n'}
+[8.243115] (teleop_keyboard) StdoutLine: {'line': b'copying teleop_keyboard/__init__.py -> /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard\n'}
+[8.243589] (teleop_keyboard) StdoutLine: {'line': b'copying teleop_keyboard/teleop_keyboard.py -> /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard\n'}
+[8.244041] (teleop_keyboard) StdoutLine: {'line': b'running install\n'}
+[8.244483] (motor_control) StdoutLine: {'line': b'byte-compiling /home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control/__init__.py to __init__.cpython-38.pyc\n'}
+[8.252343] (motor_control) StdoutLine: {'line': b'byte-compiling /home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control/motor_control.py to motor_control.cpython-38.pyc\n'}
+[8.252878] (motor_control) StdoutLine: {'line': b'running install_data\n'}
+[8.253432] (teleop_keyboard) StdoutLine: {'line': b'running install_lib\n'}
+[8.253903] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/motor_control/share/ament_index\n'}
+[8.254312] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/motor_control/share/ament_index/resource_index\n'}
+[8.254699] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/motor_control/share/ament_index/resource_index/packages\n'}
+[8.255126] (motor_control) StdoutLine: {'line': b'copying resource/motor_control -> /home/jetson/mecanum-ros2/install/motor_control/share/ament_index/resource_index/packages\n'}
+[8.255546] (motor_control) StdoutLine: {'line': b'copying package.xml -> /home/jetson/mecanum-ros2/install/motor_control/share/motor_control\n'}
+[8.256138] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/motor_control/share/motor_control/launch\n'}
+[8.256643] (motor_control) StdoutLine: {'line': b'copying launch/motor_control.launch.py -> /home/jetson/mecanum-ros2/install/motor_control/share/motor_control/launch\n'}
+[8.257115] (motor_control) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/motor_control/share/motor_control/param\n'}
+[8.257638] (motor_control) StdoutLine: {'line': b'copying param/motor_config.yaml -> /home/jetson/mecanum-ros2/install/motor_control/share/motor_control/param\n'}
+[8.258135] (teleop_keyboard) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard\n'}
+[8.258761] (teleop_keyboard) StdoutLine: {'line': b'copying /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard/__init__.py -> /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard\n'}
+[8.259521] (motor_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.260355] (teleop_keyboard) StdoutLine: {'line': b'copying /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard/teleop_keyboard.py -> /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard\n'}
+[8.261072] (mobile_description) StdoutLine: {'line': b'running egg_info\n'}
+[8.261876] (teleop_keyboard) StdoutLine: {'line': b'byte-compiling /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard/__init__.py to __init__.cpython-38.pyc\n'}
+[8.262405] (mobile_description) StdoutLine: {'line': b'creating ../../build/mobile_description/mobile_description.egg-info\n'}
+[8.262869] (mobile_description) StdoutLine: {'line': b'writing ../../build/mobile_description/mobile_description.egg-info/PKG-INFO\n'}
+[8.263337] (teleop_keyboard) StdoutLine: {'line': b'byte-compiling /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc\n'}
+[8.263839] (motor_control) StdoutLine: {'line': b'Copying ../../build/motor_control/motor_control.egg-info to /home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info\n'}
+[8.264458] (-) TimerEvent: {}
+[8.265342] (mobile_description) StdoutLine: {'line': b'writing dependency_links to ../../build/mobile_description/mobile_description.egg-info/dependency_links.txt\n'}
+[8.265892] (mobile_description) StdoutLine: {'line': b'writing entry points to ../../build/mobile_description/mobile_description.egg-info/entry_points.txt\n'}
+[8.266381] (mobile_description) StdoutLine: {'line': b'writing requirements to ../../build/mobile_description/mobile_description.egg-info/requires.txt\n'}
+[8.267290] (mobile_description) StdoutLine: {'line': b'writing top-level names to ../../build/mobile_description/mobile_description.egg-info/top_level.txt\n'}
+[8.268037] (teleop_keyboard) StdoutLine: {'line': b'running install_data\n'}
+[8.268653] (teleop_keyboard) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index\n'}
+[8.269085] (teleop_keyboard) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index/resource_index\n'}
+[8.269566] (teleop_keyboard) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index/resource_index/packages\n'}
+[8.269983] (teleop_keyboard) StdoutLine: {'line': b'copying resource/teleop_keyboard -> /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index/resource_index/packages\n'}
+[8.270385] (teleop_keyboard) StdoutLine: {'line': b'copying package.xml -> /home/jetson/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard\n'}
+[8.270779] (teleop_keyboard) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.271203] (mobile_description) StdoutLine: {'line': b"writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'\n"}
+[8.285298] (teleop_keyboard) StdoutLine: {'line': b'Copying ../../build/teleop_keyboard/teleop_keyboard.egg-info to /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard-0.0.1-py3.8.egg-info\n'}
+[8.285956] (mobile_description) StdoutLine: {'line': b"reading manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'\n"}
+[8.286433] (motor_control) StdoutLine: {'line': b'running install_scripts\n'}
+[8.286854] (teleop_keyboard) StdoutLine: {'line': b'running install_scripts\n'}
+[8.287502] (mobile_description) StdoutLine: {'line': b"writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'\n"}
+[8.287990] (mobile_description) StdoutLine: {'line': b'running build\n'}
+[8.288418] (mobile_description) StdoutLine: {'line': b'running build_py\n'}
+[8.288828] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/mobile_description/build\n'}
+[8.289286] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/mobile_description/build/lib\n'}
+[8.289709] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/build/mobile_description/build/lib/mobile_description\n'}
+[8.290132] (mobile_description) StdoutLine: {'line': b'copying mobile_description/__init__.py -> /home/jetson/mecanum-ros2/build/mobile_description/build/lib/mobile_description\n'}
+[8.290532] (mobile_description) StdoutLine: {'line': b'running install\n'}
+[8.290940] (mobile_description) StdoutLine: {'line': b'running install_lib\n'}
+[8.292403] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description\n'}
+[8.293017] (mobile_description) StdoutLine: {'line': b'copying /home/jetson/mecanum-ros2/build/mobile_description/build/lib/mobile_description/__init__.py -> /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description\n'}
+[8.295961] (mobile_description) StdoutLine: {'line': b'byte-compiling /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description/__init__.py to __init__.cpython-38.pyc\n'}
+[8.296637] (mobile_description) StdoutLine: {'line': b'running install_data\n'}
+[8.297753] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index\n'}
+[8.298615] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index/resource_index\n'}
+[8.299316] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index/resource_index/packages\n'}
+[8.300125] (mobile_description) StdoutLine: {'line': b'copying resource/mobile_description -> /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index/resource_index/packages\n'}
+[8.300899] (mobile_description) StdoutLine: {'line': b'copying package.xml -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description\n'}
+[8.301684] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/launch\n'}
+[8.302482] (mobile_description) StdoutLine: {'line': b'copying launch/display.launch.py -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/launch\n'}
+[8.303120] (mobile_description) StdoutLine: {'line': b'copying launch/gazebo.launch.py -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/launch\n'}
+[8.303801] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf\n'}
+[8.304432] (mobile_description) StdoutLine: {'line': b'copying urdf/mobile.xacro -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf\n'}
+[8.304901] (mobile_description) StdoutLine: {'line': b'copying urdf/materials.xacro -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf\n'}
+[8.305559] (mobile_description) StdoutLine: {'line': b'copying urdf/mobile.gazebo -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf\n'}
+[8.306261] (mobile_description) StdoutLine: {'line': b'copying urdf/mobile.trans -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf\n'}
+[8.306935] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.307844] (mobile_description) StdoutLine: {'line': b'copying meshes/front_left_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.308782] (mobile_description) StdoutLine: {'line': b'copying meshes/rear_left_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.309323] (mobile_description) StdoutLine: {'line': b'copying meshes/lidar_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.309774] (mobile_description) StdoutLine: {'line': b'copying meshes/imu_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.310190] (mobile_description) StdoutLine: {'line': b'copying meshes/front_right_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.310595] (mobile_description) StdoutLine: {'line': b'copying meshes/rear_right_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.311060] (mobile_description) StdoutLine: {'line': b'copying meshes/base_link.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes\n'}
+[8.311495] (mobile_description) StdoutLine: {'line': b'creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/config\n'}
+[8.311979] (mobile_description) StdoutLine: {'line': b'copying config/display.rviz -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/config\n'}
+[8.312487] (mobile_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.315970] (mobile_description) StdoutLine: {'line': b'Copying ../../build/mobile_description/mobile_description.egg-info to /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info\n'}
+[8.320163] (mobile_description) StdoutLine: {'line': b'running install_scripts\n'}
+[8.364633] (-) TimerEvent: {}
+[8.368194] (teleop_keyboard) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/teleop_keyboard\n'}
+[8.369606] (teleop_keyboard) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/mecanum-ros2/build/teleop_keyboard/install.log'\n"}
+[8.385959] (motor_control) StdoutLine: {'line': b'Installing motor_control script to /home/jetson/mecanum-ros2/install/motor_control/lib/motor_control\n'}
+[8.387543] (motor_control) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/mecanum-ros2/build/motor_control/install.log'\n"}
+[8.408458] (mobile_description) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/mecanum-ros2/build/mobile_description/install.log'\n"}
+[8.425073] (stella_ahrs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[8.453427] (stella_ahrs) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[8.464850] (-) TimerEvent: {}
+[8.485537] (teleop_keyboard) CommandEnded: {'returncode': 0}
+[8.568754] (-) TimerEvent: {}
+[8.578120] (stella_ahrs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[8.583201] (stella_ahrs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.594531] (teleop_keyboard) JobEnded: {'identifier': 'teleop_keyboard', 'rc': 0}
+[8.609024] (motor_control) CommandEnded: {'returncode': 0}
+[8.663374] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 0}
+[8.675024] (-) TimerEvent: {}
+[8.675493] (mobile_description) CommandEnded: {'returncode': 0}
+[8.721996] (mobile_description) JobEnded: {'identifier': 'mobile_description', 'rc': 0}
+[8.775206] (-) TimerEvent: {}
+[8.867347] (stella_ahrs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.869301] (stella_ahrs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.875382] (-) TimerEvent: {}
+[8.976027] (-) TimerEvent: {}
+[9.076775] (-) TimerEvent: {}
+[9.120304] (stella_ahrs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[9.121053] (stella_ahrs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[9.177013] (-) TimerEvent: {}
+[9.277735] (-) TimerEvent: {}
+[9.325560] (stella_ahrs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[9.326341] (stella_ahrs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[9.377956] (-) TimerEvent: {}
+[9.478597] (-) TimerEvent: {}
+[9.566704] (stella_ahrs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[9.570422] (stella_ahrs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.578727] (-) TimerEvent: {}
+[9.679294] (-) TimerEvent: {}
+[9.780061] (-) TimerEvent: {}
+[9.880737] (-) TimerEvent: {}
+[9.981431] (-) TimerEvent: {}
+[10.082101] (-) TimerEvent: {}
+[10.182776] (-) TimerEvent: {}
+[10.283449] (-) TimerEvent: {}
+[10.384121] (-) TimerEvent: {}
+[10.387956] (stella_ahrs) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[10.484337] (-) TimerEvent: {}
+[10.585640] (-) TimerEvent: {}
+[10.686249] (-) TimerEvent: {}
+[10.786926] (-) TimerEvent: {}
+[10.887557] (-) TimerEvent: {}
+[10.988625] (-) TimerEvent: {}
+[10.993304] (stella_ahrs) StdoutLine: {'line': b'-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)\n'}
+[11.062539] (stella_ahrs) StdoutLine: {'line': b'-- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)\n'}
+[11.088743] (-) TimerEvent: {}
+[11.189393] (-) TimerEvent: {}
+[11.290182] (-) TimerEvent: {}
+[11.391166] (-) TimerEvent: {}
+[11.491832] (-) TimerEvent: {}
+[11.592453] (-) TimerEvent: {}
+[11.693117] (-) TimerEvent: {}
+[11.793832] (-) TimerEvent: {}
+[11.894504] (-) TimerEvent: {}
+[11.995176] (-) TimerEvent: {}
+[12.095918] (-) TimerEvent: {}
+[12.196645] (-) TimerEvent: {}
+[12.297312] (-) TimerEvent: {}
+[12.398020] (-) TimerEvent: {}
+[12.498641] (-) TimerEvent: {}
+[12.599323] (-) TimerEvent: {}
+[12.699978] (-) TimerEvent: {}
+[12.800639] (-) TimerEvent: {}
+[12.901267] (-) TimerEvent: {}
+[13.001889] (-) TimerEvent: {}
+[13.102536] (-) TimerEvent: {}
+[13.129625] (stella_ahrs) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.180126] (stella_ahrs) StdoutLine: {'line': b'-- Generating done\n'}
+[13.186238] (stella_ahrs) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/mecanum-ros2/build/stella_ahrs\n'}
+[13.202725] (-) TimerEvent: {}
+[13.225770] (stella_ahrs) CommandEnded: {'returncode': 0}
+[13.228667] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'build'}
+[13.228851] (stella_ahrs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/mecanum-ros2/build/stella_ahrs', '--', '-j4', '-l4'], 'cwd': '/home/jetson/mecanum-ros2/build/stella_ahrs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7715'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7303'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:40314'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7751,unix/nano:/tmp/.ICE-unix/7751'), ('INVOCATION_ID', '51e1d4efbb1c40d2bd71256151849deb'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f097453b_a37d_442f_80df_7e750d737038'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mecanum_description:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/stella_ahrs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/mecanum_description:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/opt/ros/galactic')]), 'shell': False}
+[13.302971] (-) TimerEvent: {}
+[13.371729] (stella_ahrs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target stella_ahrs_node\x1b[0m\n'}
+[13.403148] (-) TimerEvent: {}
+[13.504121] (-) TimerEvent: {}
+[13.605735] (-) TimerEvent: {}
+[13.707913] (-) TimerEvent: {}
+[13.809058] (-) TimerEvent: {}
+[13.910276] (-) TimerEvent: {}
+[13.966022] (stella_ahrs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/src/listener.cpp.o\x1b[0m\n'}
+[13.969551] (stella_ahrs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/serial.cc.o\x1b[0m\n'}
+[13.972322] (stella_ahrs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/list_ports_linux.cc.o\x1b[0m\n'}
+[13.973496] (stella_ahrs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/unix.cc.o\x1b[0m\n'}
+[14.010448] (-) TimerEvent: {}
+[14.111499] (-) TimerEvent: {}
+[14.212428] (-) TimerEvent: {}
+[14.313303] (-) TimerEvent: {}
+[14.414320] (-) TimerEvent: {}
+[14.515381] (-) TimerEvent: {}
+[14.616518] (-) TimerEvent: {}
+[14.717674] (-) TimerEvent: {}
+[14.818706] (-) TimerEvent: {}
+[14.919736] (-) TimerEvent: {}
+[15.020784] (-) TimerEvent: {}
+[15.121576] (-) TimerEvent: {}
+[15.202292] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> > glob(const std::vector<std::__cxx11::basic_string<char> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.203437] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:66:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[15.204376] (stella_ahrs) StderrLine: {'line': b'     for(int path_index = 0; \x1b[01;35m\x1b[Kpath_index < glob_results.gl_pathc\x1b[m\x1b[K; path_index++)\n'}
+[15.205226] (stella_ahrs) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.206746] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:57:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kglob_retval\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[15.207626] (stella_ahrs) StderrLine: {'line': b'     int \x1b[01;35m\x1b[Kglob_retval\x1b[m\x1b[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);\n'}
+[15.208401] (stella_ahrs) StderrLine: {'line': b'         \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.221765] (-) TimerEvent: {}
+[15.237634] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::string format(const char*, ...)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.238631] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:246:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[15.239546] (stella_ahrs) StderrLine: {'line': b'         else if( \x1b[01;35m\x1b[Kreturn_value >= buffer_size_bytes\x1b[m\x1b[K )\n'}
+[15.240359] (stella_ahrs) StderrLine: {'line': b'                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.321950] (-) TimerEvent: {}
+[15.422981] (-) TimerEvent: {}
+[15.524022] (-) TimerEvent: {}
+[15.625051] (-) TimerEvent: {}
+[15.726316] (-) TimerEvent: {}
+[15.827436] (-) TimerEvent: {}
+[15.928456] (-) TimerEvent: {}
+[16.029526] (-) TimerEvent: {}
+[16.123931] (stella_ahrs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/mw/mw_ahrs.cpp.o\x1b[0m\n'}
+[16.129699] (-) TimerEvent: {}
+[16.230396] (-) TimerEvent: {}
+[16.346329] (-) TimerEvent: {}
+[16.446989] (-) TimerEvent: {}
+[16.547753] (-) TimerEvent: {}
+[16.648475] (-) TimerEvent: {}
+[16.749489] (-) TimerEvent: {}
+[16.850152] (-) TimerEvent: {}
+[16.950886] (-) TimerEvent: {}
+[17.051563] (-) TimerEvent: {}
+[17.152369] (-) TimerEvent: {}
+[17.253112] (-) TimerEvent: {}
+[17.353898] (-) TimerEvent: {}
+[17.454623] (-) TimerEvent: {}
+[17.555416] (-) TimerEvent: {}
+[17.656205] (-) TimerEvent: {}
+[17.757003] (-) TimerEvent: {}
+[17.857757] (-) TimerEvent: {}
+[17.958471] (-) TimerEvent: {}
+[18.059270] (-) TimerEvent: {}
+[18.160030] (-) TimerEvent: {}
+[18.260695] (-) TimerEvent: {}
+[18.361402] (-) TimerEvent: {}
+[18.462070] (-) TimerEvent: {}
+[18.562839] (-) TimerEvent: {}
+[18.663637] (-) TimerEvent: {}
+[18.764417] (-) TimerEvent: {}
+[18.865143] (-) TimerEvent: {}
+[18.965999] (-) TimerEvent: {}
+[19.066768] (-) TimerEvent: {}
+[19.167428] (-) TimerEvent: {}
+[19.268180] (-) TimerEvent: {}
+[19.368934] (-) TimerEvent: {}
+[19.469722] (-) TimerEvent: {}
+[19.570481] (-) TimerEvent: {}
+[19.671221] (-) TimerEvent: {}
+[19.771887] (-) TimerEvent: {}
+[19.872637] (-) TimerEvent: {}
+[19.973502] (-) TimerEvent: {}
+[20.074218] (-) TimerEvent: {}
+[20.174956] (-) TimerEvent: {}
+[20.275709] (-) TimerEvent: {}
+[20.376457] (-) TimerEvent: {}
+[20.477219] (-) TimerEvent: {}
+[20.577947] (-) TimerEvent: {}
+[20.678701] (-) TimerEvent: {}
+[20.779404] (-) TimerEvent: {}
+[20.880132] (-) TimerEvent: {}
+[20.980884] (-) TimerEvent: {}
+[21.081730] (-) TimerEvent: {}
+[21.182409] (-) TimerEvent: {}
+[21.283147] (-) TimerEvent: {}
+[21.383909] (-) TimerEvent: {}
+[21.484665] (-) TimerEvent: {}
+[21.585455] (-) TimerEvent: {}
+[21.655567] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/src/listener.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.656243] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/src/listener.cpp:7:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wwrite-strings\x1b[m\x1b[K]\n'}
+[21.656702] (stella_ahrs) StderrLine: {'line': b'     char *port = \x1b[01;35m\x1b[K"/dev/ttyUSB0"\x1b[m\x1b[K;\n'}
+[21.657107] (stella_ahrs) StderrLine: {'line': b'                  \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.685635] (-) TimerEvent: {}
+[21.786390] (-) TimerEvent: {}
+[21.887096] (-) TimerEvent: {}
+[21.987789] (-) TimerEvent: {}
+[22.088552] (-) TimerEvent: {}
+[22.189307] (-) TimerEvent: {}
+[22.289989] (-) TimerEvent: {}
+[22.390674] (-) TimerEvent: {}
+[22.491349] (-) TimerEvent: {}
+[22.592102] (-) TimerEvent: {}
+[22.692842] (-) TimerEvent: {}
+[22.793702] (-) TimerEvent: {}
+[22.894482] (-) TimerEvent: {}
+[22.995272] (-) TimerEvent: {}
+[23.096144] (-) TimerEvent: {}
+[23.196893] (-) TimerEvent: {}
+[23.234856] (stella_ahrs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/src/listener.cpp:1\x1b[m\x1b[K:\n'}
+[23.235504] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:\x1b[m\x1b[K At global scope:\n'}
+[23.235976] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:41:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krun_bool\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[23.236476] (stella_ahrs) StderrLine: {'line': b' static bool \x1b[01;35m\x1b[Krun_bool\x1b[m\x1b[K = false;\n'}
+[23.236940] (stella_ahrs) StderrLine: {'line': b'             \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[23.237475] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:38:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmag_value\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[23.237959] (stella_ahrs) StderrLine: {'line': b'              \x1b[01;35m\x1b[Kmag_value\x1b[m\x1b[K[3] = {\n'}
+[23.238427] (stella_ahrs) StderrLine: {'line': b'              \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.238886] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:35:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdeg_value\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[23.239356] (stella_ahrs) StderrLine: {'line': b'              \x1b[01;35m\x1b[Kdeg_value\x1b[m\x1b[K[3] = {\n'}
+[23.239805] (stella_ahrs) StderrLine: {'line': b'              \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.240242] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:32:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgyr_value\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[23.240697] (stella_ahrs) StderrLine: {'line': b'              \x1b[01;35m\x1b[Kgyr_value\x1b[m\x1b[K[3] = {\n'}
+[23.241140] (stella_ahrs) StderrLine: {'line': b'              \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.241780] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:29:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kacc_value\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[23.242309] (stella_ahrs) StderrLine: {'line': b' static float \x1b[01;35m\x1b[Kacc_value\x1b[m\x1b[K[3] = {\n'}
+[23.242798] (stella_ahrs) StderrLine: {'line': b'              \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.297072] (-) TimerEvent: {}
+[23.369269] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic void* ntrex::MwAhrsRosDriver::MwAhrsRead(void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.369931] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:48:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[23.370474] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[23.370968] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.371431] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:12:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Karg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.371892] (stella_ahrs) StderrLine: {'line': b'   void *MwAhrsRosDriver::MwAhrsRead(\x1b[01;35m\x1b[Kvoid *arg\x1b[m\x1b[K)\n'}
+[23.372331] (stella_ahrs) StderrLine: {'line': b'                                     \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[23.376122] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kntrex::MwAhrsRosDriver::MwAhrsRosDriver(char*, int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.376783] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:53:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.377354] (stella_ahrs) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.377843] (stella_ahrs) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.378295] (stella_ahrs) StderrLine: {'line': b'\n'}
+[23.378747] (stella_ahrs) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.379233] (stella_ahrs) StderrLine: {'line': b'```\n'}
+[23.379720] (stella_ahrs) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.380197] (stella_ahrs) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.380662] (stella_ahrs) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.381118] (stella_ahrs) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.381653] (stella_ahrs) StderrLine: {'line': b'     this->declare_parameter("linear_acceleration_stddev"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.382118] (stella_ahrs) StderrLine: {'line': b'                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.382606] (stella_ahrs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.383065] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.383514] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.383967] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[23.384404] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5\x1b[m\x1b[K,\n'}
+[23.384842] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1\x1b[m\x1b[K:\n'}
+[23.385348] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.385819] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.386257] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.386704] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:54:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.387175] (stella_ahrs) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.387600] (stella_ahrs) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.388009] (stella_ahrs) StderrLine: {'line': b'\n'}
+[23.388384] (stella_ahrs) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.388802] (stella_ahrs) StderrLine: {'line': b'```\n'}
+[23.389248] (stella_ahrs) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.389709] (stella_ahrs) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.390125] (stella_ahrs) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.390532] (stella_ahrs) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.390938] (stella_ahrs) StderrLine: {'line': b'     this->declare_parameter("angular_velocity_stddev"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.391330] (stella_ahrs) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.391709] (stella_ahrs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.392082] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.392498] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.392922] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[23.393452] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5\x1b[m\x1b[K,\n'}
+[23.393889] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1\x1b[m\x1b[K:\n'}
+[23.394305] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.394719] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.395154] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.395608] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:55:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.396106] (stella_ahrs) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.396545] (stella_ahrs) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.396979] (stella_ahrs) StderrLine: {'line': b'\n'}
+[23.397472] (-) TimerEvent: {}
+[23.397921] (stella_ahrs) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.398466] (stella_ahrs) StderrLine: {'line': b'```\n'}
+[23.398943] (stella_ahrs) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.399404] (stella_ahrs) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.399838] (stella_ahrs) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.400262] (stella_ahrs) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.400687] (stella_ahrs) StderrLine: {'line': b'     this->declare_parameter("magnetic_field_stddev"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.401127] (stella_ahrs) StderrLine: {'line': b'                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.401654] (stella_ahrs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.402104] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.402551] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.403027] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[23.403459] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5\x1b[m\x1b[K,\n'}
+[23.403896] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1\x1b[m\x1b[K:\n'}
+[23.404326] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.404828] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.405335] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.405789] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:56:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.406252] (stella_ahrs) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.406697] (stella_ahrs) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.407123] (stella_ahrs) StderrLine: {'line': b'\n'}
+[23.407527] (stella_ahrs) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.407940] (stella_ahrs) StderrLine: {'line': b'```\n'}
+[23.408372] (stella_ahrs) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.408848] (stella_ahrs) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.409369] (stella_ahrs) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.409884] (stella_ahrs) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.410330] (stella_ahrs) StderrLine: {'line': b'     this->declare_parameter("orientation_stddev"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.410781] (stella_ahrs) StderrLine: {'line': b'                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.411263] (stella_ahrs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.411719] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.412173] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.412604] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[23.413049] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5\x1b[m\x1b[K,\n'}
+[23.413578] (stella_ahrs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1\x1b[m\x1b[K:\n'}
+[23.414012] (stella_ahrs) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.414447] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.414892] (stella_ahrs) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.497738] (-) TimerEvent: {}
+[23.598465] (-) TimerEvent: {}
+[23.699173] (-) TimerEvent: {}
+[23.799896] (-) TimerEvent: {}
+[23.900613] (-) TimerEvent: {}
+[24.001317] (-) TimerEvent: {}
+[24.102058] (-) TimerEvent: {}
+[24.202775] (-) TimerEvent: {}
+[24.303500] (-) TimerEvent: {}
+[24.404150] (-) TimerEvent: {}
+[24.504889] (-) TimerEvent: {}
+[24.605688] (-) TimerEvent: {}
+[24.706759] (-) TimerEvent: {}
+[24.807457] (-) TimerEvent: {}
+[24.908180] (-) TimerEvent: {}
+[25.008905] (-) TimerEvent: {}
+[25.109718] (-) TimerEvent: {}
+[25.210427] (-) TimerEvent: {}
+[25.311145] (-) TimerEvent: {}
+[25.411859] (-) TimerEvent: {}
+[25.512495] (-) TimerEvent: {}
+[25.613135] (-) TimerEvent: {}
+[25.713833] (-) TimerEvent: {}
+[25.814525] (-) TimerEvent: {}
+[25.915240] (-) TimerEvent: {}
+[26.015947] (-) TimerEvent: {}
+[26.116655] (-) TimerEvent: {}
+[26.217355] (-) TimerEvent: {}
+[26.318068] (-) TimerEvent: {}
+[26.418783] (-) TimerEvent: {}
+[26.519501] (-) TimerEvent: {}
+[26.620224] (-) TimerEvent: {}
+[26.720930] (-) TimerEvent: {}
+[26.821655] (-) TimerEvent: {}
+[26.922394] (-) TimerEvent: {}
+[27.023093] (-) TimerEvent: {}
+[27.123808] (-) TimerEvent: {}
+[27.224539] (-) TimerEvent: {}
+[27.325331] (-) TimerEvent: {}
+[27.425973] (-) TimerEvent: {}
+[27.526684] (-) TimerEvent: {}
+[27.627342] (-) TimerEvent: {}
+[27.728054] (-) TimerEvent: {}
+[27.828752] (-) TimerEvent: {}
+[27.929555] (-) TimerEvent: {}
+[28.030247] (-) TimerEvent: {}
+[28.130978] (-) TimerEvent: {}
+[28.231675] (-) TimerEvent: {}
+[28.332402] (-) TimerEvent: {}
+[28.433108] (-) TimerEvent: {}
+[28.533865] (-) TimerEvent: {}
+[28.634669] (-) TimerEvent: {}
+[28.735364] (-) TimerEvent: {}
+[28.835994] (-) TimerEvent: {}
+[28.936693] (-) TimerEvent: {}
+[29.037462] (-) TimerEvent: {}
+[29.138156] (-) TimerEvent: {}
+[29.238845] (-) TimerEvent: {}
+[29.339547] (-) TimerEvent: {}
+[29.440263] (-) TimerEvent: {}
+[29.540958] (-) TimerEvent: {}
+[29.641774] (-) TimerEvent: {}
+[29.742464] (-) TimerEvent: {}
+[29.843197] (-) TimerEvent: {}
+[29.943876] (-) TimerEvent: {}
+[30.044572] (-) TimerEvent: {}
+[30.145317] (-) TimerEvent: {}
+[30.245950] (-) TimerEvent: {}
+[30.346579] (-) TimerEvent: {}
+[30.447212] (-) TimerEvent: {}
+[30.547851] (-) TimerEvent: {}
+[30.648490] (-) TimerEvent: {}
+[30.749125] (-) TimerEvent: {}
+[30.849897] (-) TimerEvent: {}
+[30.950592] (-) TimerEvent: {}
+[31.051278] (-) TimerEvent: {}
+[31.151924] (-) TimerEvent: {}
+[31.252628] (-) TimerEvent: {}
+[31.353323] (-) TimerEvent: {}
+[31.454019] (-) TimerEvent: {}
+[31.554713] (-) TimerEvent: {}
+[31.655412] (-) TimerEvent: {}
+[31.756119] (-) TimerEvent: {}
+[31.856842] (-) TimerEvent: {}
+[31.959787] (-) TimerEvent: {}
+[32.062265] (-) TimerEvent: {}
+[32.164372] (-) TimerEvent: {}
+[32.265063] (-) TimerEvent: {}
+[32.365810] (-) TimerEvent: {}
+[32.466531] (-) TimerEvent: {}
+[32.567223] (-) TimerEvent: {}
+[32.667918] (-) TimerEvent: {}
+[32.768605] (-) TimerEvent: {}
+[32.869323] (-) TimerEvent: {}
+[32.970055] (-) TimerEvent: {}
+[33.070822] (-) TimerEvent: {}
+[33.171554] (-) TimerEvent: {}
+[33.272264] (-) TimerEvent: {}
+[33.373008] (-) TimerEvent: {}
+[33.392214] (stella_ahrs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stella_ahrs_node\x1b[0m\n'}
+[33.473302] (-) TimerEvent: {}
+[33.552242] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.553416] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.553995] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.554320] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.554628] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.554933] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.555283] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.555586] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.555901] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)\n'}
+[33.556200] (stella_ahrs) StderrLine: {'line': b'/usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a: error adding symbols: file in wrong format\n'}
+[33.565431] (stella_ahrs) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[33.570732] (stella_ahrs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/stella_ahrs_node.dir/build.make:232: stella_ahrs_node] Error 1\n'}
+[33.571659] (stella_ahrs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/stella_ahrs_node.dir/all] Error 2\n'}
+[33.572225] (stella_ahrs) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[33.573395] (-) TimerEvent: {}
+[33.578733] (stella_ahrs) CommandEnded: {'returncode': 2}
+[33.673666] (-) TimerEvent: {}
+[33.732436] (stella_ahrs) JobEnded: {'identifier': 'stella_ahrs', 'rc': 2}
+[33.743701] (-) EventReactorShutdown: {}

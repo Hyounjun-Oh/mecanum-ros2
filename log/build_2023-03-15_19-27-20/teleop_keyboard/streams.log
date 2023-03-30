@@ -1,0 +1,37 @@
+[6.611s] Invoking command in '/home/jetson/mecanum-ros2/src/teleop_keyboard': PYTHONPATH=/home/jetson/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_keyboard build --build-base /home/jetson/mecanum-ros2/build/teleop_keyboard/build install --record /home/jetson/mecanum-ros2/build/teleop_keyboard/install.log --single-version-externally-managed
+[8.001s] running egg_info
+[8.004s] creating ../../build/teleop_keyboard/teleop_keyboard.egg-info
+[8.005s] writing ../../build/teleop_keyboard/teleop_keyboard.egg-info/PKG-INFO
+[8.007s] writing dependency_links to ../../build/teleop_keyboard/teleop_keyboard.egg-info/dependency_links.txt
+[8.009s] writing entry points to ../../build/teleop_keyboard/teleop_keyboard.egg-info/entry_points.txt
+[8.009s] writing requirements to ../../build/teleop_keyboard/teleop_keyboard.egg-info/requires.txt
+[8.011s] writing top-level names to ../../build/teleop_keyboard/teleop_keyboard.egg-info/top_level.txt
+[8.025s] writing manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'
+[8.034s] reading manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'
+[8.043s] writing manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'
+[8.043s] running build
+[8.045s] running build_py
+[8.046s] creating /home/jetson/mecanum-ros2/build/teleop_keyboard/build
+[8.047s] creating /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib
+[8.051s] creating /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard
+[8.052s] copying teleop_keyboard/__init__.py -> /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard
+[8.053s] copying teleop_keyboard/teleop_keyboard.py -> /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard
+[8.053s] running install
+[8.063s] running install_lib
+[8.067s] creating /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard
+[8.068s] copying /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard/__init__.py -> /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard
+[8.070s] copying /home/jetson/mecanum-ros2/build/teleop_keyboard/build/lib/teleop_keyboard/teleop_keyboard.py -> /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard
+[8.071s] byte-compiling /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard/__init__.py to __init__.cpython-38.pyc
+[8.073s] byte-compiling /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc
+[8.077s] running install_data
+[8.078s] creating /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index
+[8.078s] creating /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index/resource_index
+[8.079s] creating /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index/resource_index/packages
+[8.079s] copying resource/teleop_keyboard -> /home/jetson/mecanum-ros2/install/teleop_keyboard/share/ament_index/resource_index/packages
+[8.080s] copying package.xml -> /home/jetson/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard
+[8.080s] running install_egg_info
+[8.095s] Copying ../../build/teleop_keyboard/teleop_keyboard.egg-info to /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard-0.0.1-py3.8.egg-info
+[8.096s] running install_scripts
+[8.178s] Installing teleop_keyboard script to /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/teleop_keyboard
+[8.179s] writing list of installed files to '/home/jetson/mecanum-ros2/build/teleop_keyboard/install.log'
+[8.296s] Invoked command in '/home/jetson/mecanum-ros2/src/teleop_keyboard' returned '0': PYTHONPATH=/home/jetson/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_keyboard build --build-base /home/jetson/mecanum-ros2/build/teleop_keyboard/build install --record /home/jetson/mecanum-ros2/build/teleop_keyboard/install.log --single-version-externally-managed
