@@ -1,0 +1,1115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000427] (mecanum_bringup) JobQueued: {'identifier': 'mecanum_bringup', 'dependencies': OrderedDict()}
+[0.000573] (mecanum_odometry) JobQueued: {'identifier': 'mecanum_odometry', 'dependencies': OrderedDict()}
+[0.000690] (mobile_description) JobQueued: {'identifier': 'mobile_description', 'dependencies': OrderedDict()}
+[0.004124] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.004330] (stella_ahrs) JobQueued: {'identifier': 'stella_ahrs', 'dependencies': OrderedDict()}
+[0.004488] (teleop_keyboard) JobQueued: {'identifier': 'teleop_keyboard', 'dependencies': OrderedDict()}
+[0.004610] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.008513] (mecanum_bringup) JobStarted: {'identifier': 'mecanum_bringup'}
+[0.060201] (mecanum_odometry) JobStarted: {'identifier': 'mecanum_odometry'}
+[0.099063] (-) TimerEvent: {}
+[0.123222] (mobile_description) JobStarted: {'identifier': 'mobile_description'}
+[0.181721] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.204377] (-) TimerEvent: {}
+[0.264846] (mecanum_bringup) JobProgress: {'identifier': 'mecanum_bringup', 'progress': 'cmake'}
+[0.267495] (mecanum_bringup) JobProgress: {'identifier': 'mecanum_bringup', 'progress': 'build'}
+[0.270261] (mecanum_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/mecanum-ros2/build/mecanum_bringup', '--', '-j4', '-l4'], 'cwd': '/home/jetson/mecanum-ros2/build/mecanum_bringup', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7606'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '6881'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:36820'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642'), ('INVOCATION_ID', '73cc935622994427907d0440a6583f91'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/mecanum_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic')]), 'shell': False}
+[0.304752] (-) TimerEvent: {}
+[0.405853] (-) TimerEvent: {}
+[0.506609] (-) TimerEvent: {}
+[0.607333] (-) TimerEvent: {}
+[0.708070] (-) TimerEvent: {}
+[0.808828] (-) TimerEvent: {}
+[0.909702] (-) TimerEvent: {}
+[1.010445] (-) TimerEvent: {}
+[1.111118] (-) TimerEvent: {}
+[1.211770] (-) TimerEvent: {}
+[1.312490] (-) TimerEvent: {}
+[1.413303] (-) TimerEvent: {}
+[1.514018] (-) TimerEvent: {}
+[1.619849] (-) TimerEvent: {}
+[1.725993] (-) TimerEvent: {}
+[1.826914] (-) TimerEvent: {}
+[1.927575] (-) TimerEvent: {}
+[2.028247] (-) TimerEvent: {}
+[2.128954] (-) TimerEvent: {}
+[2.229617] (-) TimerEvent: {}
+[2.330341] (-) TimerEvent: {}
+[2.430991] (-) TimerEvent: {}
+[2.531707] (-) TimerEvent: {}
+[2.632428] (-) TimerEvent: {}
+[2.733170] (-) TimerEvent: {}
+[2.833826] (-) TimerEvent: {}
+[2.934526] (-) TimerEvent: {}
+[3.035439] (-) TimerEvent: {}
+[3.136362] (-) TimerEvent: {}
+[3.237022] (-) TimerEvent: {}
+[3.337682] (-) TimerEvent: {}
+[3.438405] (-) TimerEvent: {}
+[3.539122] (-) TimerEvent: {}
+[3.639774] (-) TimerEvent: {}
+[3.740484] (-) TimerEvent: {}
+[3.841198] (-) TimerEvent: {}
+[3.941903] (-) TimerEvent: {}
+[4.042556] (-) TimerEvent: {}
+[4.143198] (-) TimerEvent: {}
+[4.243894] (-) TimerEvent: {}
+[4.344651] (-) TimerEvent: {}
+[4.366697] (mecanum_bringup) CommandEnded: {'returncode': 0}
+[4.444995] (-) TimerEvent: {}
+[4.465287] (mecanum_bringup) JobProgress: {'identifier': 'mecanum_bringup', 'progress': 'install'}
+[4.515485] (mecanum_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/mecanum-ros2/build/mecanum_bringup'], 'cwd': '/home/jetson/mecanum-ros2/build/mecanum_bringup', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7606'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '6881'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:36820'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642'), ('INVOCATION_ID', '73cc935622994427907d0440a6583f91'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/mecanum_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic')]), 'shell': False}
+[4.545147] (-) TimerEvent: {}
+[4.560370] (mecanum_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.561531] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch\n'}
+[4.562133] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch/mecanum_rviz_view.launch.py\n'}
+[4.562667] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch/mecanum.launch.py\n'}
+[4.563183] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch/mecanum_state_publisher.launch.py\n'}
+[4.563749] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/config\n'}
+[4.564620] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/config/config.rviz\n'}
+[4.565244] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/config/mecanum_rviz_view.rviz\n'}
+[4.566216] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/ament_index/resource_index/package_run_dependencies/mecanum_bringup\n'}
+[4.566786] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/ament_index/resource_index/parent_prefix_path/mecanum_bringup\n'}
+[4.567284] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/ament_prefix_path.sh\n'}
+[4.567778] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/ament_prefix_path.dsv\n'}
+[4.568298] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/path.sh\n'}
+[4.568777] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/path.dsv\n'}
+[4.569333] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.bash\n'}
+[4.587008] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.sh\n'}
+[4.587536] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.zsh\n'}
+[4.587986] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.dsv\n'}
+[4.588443] (mecanum_bringup) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.dsv\n'}
+[4.588967] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/ament_index/resource_index/packages/mecanum_bringup\n'}
+[4.589452] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/cmake/mecanum_bringupConfig.cmake\n'}
+[4.589899] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/cmake/mecanum_bringupConfig-version.cmake\n'}
+[4.590335] (mecanum_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.xml\n'}
+[4.590781] (mecanum_bringup) CommandEnded: {'returncode': 0}
+[4.649363] (-) TimerEvent: {}
+[4.750176] (-) TimerEvent: {}
+[4.839614] (mecanum_bringup) JobEnded: {'identifier': 'mecanum_bringup', 'rc': 0}
+[4.842708] (stella_ahrs) JobStarted: {'identifier': 'stella_ahrs'}
+[4.866347] (-) TimerEvent: {}
+[4.967863] (-) TimerEvent: {}
+[4.969822] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'cmake'}
+[4.972754] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'build'}
+[4.974106] (stella_ahrs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/mecanum-ros2/build/stella_ahrs', '--', '-j4', '-l4'], 'cwd': '/home/jetson/mecanum-ros2/build/stella_ahrs', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7606'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '6881'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:36820'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642'), ('INVOCATION_ID', '73cc935622994427907d0440a6583f91'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/stella_ahrs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic')]), 'shell': False}
+[5.068411] (-) TimerEvent: {}
+[5.170398] (-) TimerEvent: {}
+[5.271423] (-) TimerEvent: {}
+[5.282900] (stella_ahrs) StdoutLine: {'line': b'[100%] Built target stella_ahrs_node\n'}
+[5.345360] (stella_ahrs) CommandEnded: {'returncode': 0}
+[5.371637] (-) TimerEvent: {}
+[5.473318] (-) TimerEvent: {}
+[5.492655] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'install'}
+[5.493380] (stella_ahrs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/mecanum-ros2/build/stella_ahrs'], 'cwd': '/home/jetson/mecanum-ros2/build/stella_ahrs', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7606'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '6881'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:36820'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642'), ('INVOCATION_ID', '73cc935622994427907d0440a6583f91'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/stella_ahrs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic')]), 'shell': False}
+[5.541733] (stella_ahrs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.543065] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs//launch\n'}
+[5.544103] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs//launch/stella_ahrs_launch.py\n'}
+[5.545242] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/rviz\n'}
+[5.546199] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/rviz/imu_test.rviz\n'}
+[5.547998] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/lib/stella_ahrs/stella_ahrs_node\n'}
+[5.550134] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/package_run_dependencies/stella_ahrs\n'}
+[5.551373] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/parent_prefix_path/stella_ahrs\n'}
+[5.552503] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.sh\n'}
+[5.553733] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.dsv\n'}
+[5.554954] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.sh\n'}
+[5.556098] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.dsv\n'}
+[5.557278] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.bash\n'}
+[5.558478] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.sh\n'}
+[5.559634] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.zsh\n'}
+[5.561096] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.dsv\n'}
+[5.562229] (stella_ahrs) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.dsv\n'}
+[5.563913] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/packages/stella_ahrs\n'}
+[5.565197] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.566545] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig.cmake\n'}
+[5.567511] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig-version.cmake\n'}
+[5.568539] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.xml\n'}
+[5.574486] (-) TimerEvent: {}
+[5.587514] (stella_ahrs) CommandEnded: {'returncode': 0}
+[5.674751] (-) TimerEvent: {}
+[5.776010] (-) TimerEvent: {}
+[5.867005] (stella_ahrs) JobEnded: {'identifier': 'stella_ahrs', 'rc': 0}
+[5.869956] (teleop_keyboard) JobStarted: {'identifier': 'teleop_keyboard'}
+[5.886568] (-) TimerEvent: {}
+[5.987893] (-) TimerEvent: {}
+[6.089958] (-) TimerEvent: {}
+[6.191024] (-) TimerEvent: {}
+[6.292194] (-) TimerEvent: {}
+[6.393386] (-) TimerEvent: {}
+[6.494426] (-) TimerEvent: {}
+[6.595614] (-) TimerEvent: {}
+[6.696730] (-) TimerEvent: {}
+[6.797523] (-) TimerEvent: {}
+[6.898232] (-) TimerEvent: {}
+[6.998939] (-) TimerEvent: {}
+[7.099607] (-) TimerEvent: {}
+[7.200409] (-) TimerEvent: {}
+[7.301208] (-) TimerEvent: {}
+[7.401966] (-) TimerEvent: {}
+[7.501657] (mecanum_odometry) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mecanum_odometry', 'build', '--build-base', '/home/jetson/mecanum-ros2/build/mecanum_odometry/build', 'install', '--record', '/home/jetson/mecanum-ros2/build/mecanum_odometry/install.log', '--single-version-externally-managed'], 'cwd': '/home/jetson/mecanum-ros2/src/mecanum_odometry', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7606', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '6881', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/mecanum-ros2/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1424622013938', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:36820', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642', 'INVOCATION_ID': '73cc935622994427907d0440a6583f91', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/mecanum-ros2/build/mecanum_odometry', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/mecanum-ros2/build/mecanum_odometry/prefix_override:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup'}, 'shell': False}
+[7.506991] (-) TimerEvent: {}
+[7.517591] (motor_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_control', 'build', '--build-base', '/home/jetson/mecanum-ros2/build/motor_control/build', 'install', '--record', '/home/jetson/mecanum-ros2/build/motor_control/install.log', '--single-version-externally-managed'], 'cwd': '/home/jetson/mecanum-ros2/src/motor_control', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7606', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '6881', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/mecanum-ros2/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1424622013938', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:36820', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642', 'INVOCATION_ID': '73cc935622994427907d0440a6583f91', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/mecanum-ros2/build/motor_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/mecanum-ros2/build/motor_control/prefix_override:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup'}, 'shell': False}
+[7.534286] (mobile_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mobile_description', 'build', '--build-base', '/home/jetson/mecanum-ros2/build/mobile_description/build', 'install', '--record', '/home/jetson/mecanum-ros2/build/mobile_description/install.log', '--single-version-externally-managed'], 'cwd': '/home/jetson/mecanum-ros2/src/mobile_description', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7606', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '6881', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/mecanum-ros2/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1424622013938', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:36820', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642', 'INVOCATION_ID': '73cc935622994427907d0440a6583f91', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/mecanum-ros2/build/mobile_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/mecanum-ros2/build/mobile_description/prefix_override:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup'}, 'shell': False}
+[7.607284] (-) TimerEvent: {}
+[7.708451] (-) TimerEvent: {}
+[7.809625] (-) TimerEvent: {}
+[7.910754] (-) TimerEvent: {}
+[8.011746] (-) TimerEvent: {}
+[8.112747] (-) TimerEvent: {}
+[8.213772] (-) TimerEvent: {}
+[8.314766] (-) TimerEvent: {}
+[8.415756] (-) TimerEvent: {}
+[8.516754] (-) TimerEvent: {}
+[8.617807] (-) TimerEvent: {}
+[8.718920] (-) TimerEvent: {}
+[8.819648] (-) TimerEvent: {}
+[8.920387] (-) TimerEvent: {}
+[8.937780] (motor_control) StdoutLine: {'line': b'running egg_info\n'}
+[8.941898] (motor_control) StdoutLine: {'line': b'writing ../../build/motor_control/motor_control.egg-info/PKG-INFO\n'}
+[8.942811] (motor_control) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_control/motor_control.egg-info/dependency_links.txt\n'}
+[8.944086] (motor_control) StdoutLine: {'line': b'writing entry points to ../../build/motor_control/motor_control.egg-info/entry_points.txt\n'}
+[8.944730] (motor_control) StdoutLine: {'line': b'writing requirements to ../../build/motor_control/motor_control.egg-info/requires.txt\n'}
+[8.945387] (motor_control) StdoutLine: {'line': b'writing top-level names to ../../build/motor_control/motor_control.egg-info/top_level.txt\n'}
+[8.961650] (motor_control) StdoutLine: {'line': b"reading manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'\n"}
+[8.965593] (mobile_description) StdoutLine: {'line': b'running egg_info\n'}
+[8.966416] (motor_control) StdoutLine: {'line': b"writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'\n"}
+[8.967524] (motor_control) StdoutLine: {'line': b'running build\n'}
+[8.968415] (motor_control) StdoutLine: {'line': b'running build_py\n'}
+[8.969711] (mobile_description) StdoutLine: {'line': b'writing ../../build/mobile_description/mobile_description.egg-info/PKG-INFO\n'}
+[8.971097] (motor_control) StdoutLine: {'line': b'running install\n'}
+[8.971818] (mobile_description) StdoutLine: {'line': b'writing dependency_links to ../../build/mobile_description/mobile_description.egg-info/dependency_links.txt\n'}
+[8.973568] (mobile_description) StdoutLine: {'line': b'writing entry points to ../../build/mobile_description/mobile_description.egg-info/entry_points.txt\n'}
+[8.975298] (motor_control) StdoutLine: {'line': b'running install_lib\n'}
+[8.976003] (mobile_description) StdoutLine: {'line': b'writing requirements to ../../build/mobile_description/mobile_description.egg-info/requires.txt\n'}
+[8.976624] (mobile_description) StdoutLine: {'line': b'writing top-level names to ../../build/mobile_description/mobile_description.egg-info/top_level.txt\n'}
+[8.982475] (mecanum_odometry) StdoutLine: {'line': b'running egg_info\n'}
+[8.983279] (motor_control) StdoutLine: {'line': b'running install_data\n'}
+[8.985499] (mecanum_odometry) StdoutLine: {'line': b'writing ../../build/mecanum_odometry/mecanum_odometry.egg-info/PKG-INFO\n'}
+[8.986310] (mecanum_odometry) StdoutLine: {'line': b'writing dependency_links to ../../build/mecanum_odometry/mecanum_odometry.egg-info/dependency_links.txt\n'}
+[8.986982] (mecanum_odometry) StdoutLine: {'line': b'writing entry points to ../../build/mecanum_odometry/mecanum_odometry.egg-info/entry_points.txt\n'}
+[8.987620] (mecanum_odometry) StdoutLine: {'line': b'writing requirements to ../../build/mecanum_odometry/mecanum_odometry.egg-info/requires.txt\n'}
+[8.988226] (mecanum_odometry) StdoutLine: {'line': b'writing top-level names to ../../build/mecanum_odometry/mecanum_odometry.egg-info/top_level.txt\n'}
+[8.990348] (motor_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.995381] (mobile_description) StdoutLine: {'line': b"reading manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'\n"}
+[8.997521] (motor_control) StdoutLine: {'line': b"removing '/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[8.999730] (motor_control) StdoutLine: {'line': b'Copying ../../build/motor_control/motor_control.egg-info to /home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info\n'}
+[9.001547] (mobile_description) StdoutLine: {'line': b"writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'\n"}
+[9.002782] (mobile_description) StdoutLine: {'line': b'running build\n'}
+[9.003679] (mecanum_odometry) StdoutLine: {'line': b"reading manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'\n"}
+[9.004196] (mobile_description) StdoutLine: {'line': b'running build_py\n'}
+[9.004826] (mobile_description) StdoutLine: {'line': b'running install\n'}
+[9.005548] (motor_control) StdoutLine: {'line': b'running install_scripts\n'}
+[9.008347] (mobile_description) StdoutLine: {'line': b'running install_lib\n'}
+[9.009856] (mecanum_odometry) StdoutLine: {'line': b"writing manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'\n"}
+[9.010641] (mecanum_odometry) StdoutLine: {'line': b'running build\n'}
+[9.011221] (mecanum_odometry) StdoutLine: {'line': b'running build_py\n'}
+[9.011852] (mecanum_odometry) StdoutLine: {'line': b'running install\n'}
+[9.015449] (mecanum_odometry) StdoutLine: {'line': b'running install_lib\n'}
+[9.017052] (mobile_description) StdoutLine: {'line': b'running install_data\n'}
+[9.020564] (-) TimerEvent: {}
+[9.021899] (mecanum_odometry) StdoutLine: {'line': b'running install_data\n'}
+[9.024644] (mecanum_odometry) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.025279] (mobile_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.031893] (mobile_description) StdoutLine: {'line': b"removing '/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.032720] (mecanum_odometry) StdoutLine: {'line': b"removing '/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.034239] (mecanum_odometry) StdoutLine: {'line': b'Copying ../../build/mecanum_odometry/mecanum_odometry.egg-info to /home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry-0.0.0-py3.8.egg-info\n'}
+[9.034832] (mobile_description) StdoutLine: {'line': b'Copying ../../build/mobile_description/mobile_description.egg-info to /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info\n'}
+[9.038357] (mecanum_odometry) StdoutLine: {'line': b'running install_scripts\n'}
+[9.038973] (mobile_description) StdoutLine: {'line': b'running install_scripts\n'}
+[9.098816] (motor_control) StdoutLine: {'line': b'Installing motor_control_float script to /home/jetson/mecanum-ros2/install/motor_control/lib/motor_control\n'}
+[9.099904] (motor_control) StdoutLine: {'line': b'Installing motor_control_int script to /home/jetson/mecanum-ros2/install/motor_control/lib/motor_control\n'}
+[9.102144] (motor_control) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/mecanum-ros2/build/motor_control/install.log'\n"}
+[9.120751] (-) TimerEvent: {}
+[9.125952] (mecanum_odometry) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/mecanum-ros2/build/mecanum_odometry/install.log'\n"}
+[9.129754] (mobile_description) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/mecanum-ros2/build/mobile_description/install.log'\n"}
+[9.220959] (-) TimerEvent: {}
+[9.231286] (motor_control) CommandEnded: {'returncode': 0}
+[9.290351] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 0}
+[9.307448] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[9.321992] (-) TimerEvent: {}
+[9.351473] (mecanum_odometry) CommandEnded: {'returncode': 0}
+[9.417537] (mecanum_odometry) JobEnded: {'identifier': 'mecanum_odometry', 'rc': 0}
+[9.428852] (-) TimerEvent: {}
+[9.429483] (mobile_description) CommandEnded: {'returncode': 0}
+[9.477229] (mobile_description) JobEnded: {'identifier': 'mobile_description', 'rc': 0}
+[9.484681] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[9.485301] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver', '-DCMAKE_INSTALL_PREFIX=/home/jetson/mecanum-ros2/install/ydlidar_ros2_driver'], 'cwd': '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7606'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '6881'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:36820'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642'), ('INVOCATION_ID', '73cc935622994427907d0440a6583f91'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic')]), 'shell': False}
+[9.529073] (-) TimerEvent: {}
+[9.629838] (-) TimerEvent: {}
+[9.730615] (-) TimerEvent: {}
+[9.756194] (teleop_keyboard) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/teleop_keyboard', 'build', '--build-base', '/home/jetson/mecanum-ros2/build/teleop_keyboard/build', 'install', '--record', '/home/jetson/mecanum-ros2/build/teleop_keyboard/install.log', '--single-version-externally-managed'], 'cwd': '/home/jetson/mecanum-ros2/src/teleop_keyboard', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7606', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '6881', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/mecanum-ros2/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1424622013938', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:36820', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642', 'INVOCATION_ID': '73cc935622994427907d0440a6583f91', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/mecanum-ros2/build/teleop_keyboard', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup'}, 'shell': False}
+[9.830895] (-) TimerEvent: {}
+[9.931875] (-) TimerEvent: {}
+[9.955380] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[10.032116] (-) TimerEvent: {}
+[10.132847] (-) TimerEvent: {}
+[10.171608] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[10.201646] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[10.233073] (-) TimerEvent: {}
+[10.333752] (-) TimerEvent: {}
+[10.434411] (-) TimerEvent: {}
+[10.454196] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[10.463184] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[10.534581] (-) TimerEvent: {}
+[10.635313] (-) TimerEvent: {}
+[10.709484] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.735515] (-) TimerEvent: {}
+[10.760749] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.762752] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.774846] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[10.835760] (-) TimerEvent: {}
+[10.936538] (-) TimerEvent: {}
+[11.037263] (-) TimerEvent: {}
+[11.051845] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[11.055644] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[11.137153] (teleop_keyboard) StdoutLine: {'line': b'running egg_info\n'}
+[11.137813] (-) TimerEvent: {}
+[11.140151] (teleop_keyboard) StdoutLine: {'line': b'writing ../../build/teleop_keyboard/teleop_keyboard.egg-info/PKG-INFO\n'}
+[11.140974] (teleop_keyboard) StdoutLine: {'line': b'writing dependency_links to ../../build/teleop_keyboard/teleop_keyboard.egg-info/dependency_links.txt\n'}
+[11.141645] (teleop_keyboard) StdoutLine: {'line': b'writing entry points to ../../build/teleop_keyboard/teleop_keyboard.egg-info/entry_points.txt\n'}
+[11.142332] (teleop_keyboard) StdoutLine: {'line': b'writing requirements to ../../build/teleop_keyboard/teleop_keyboard.egg-info/requires.txt\n'}
+[11.143126] (teleop_keyboard) StdoutLine: {'line': b'writing top-level names to ../../build/teleop_keyboard/teleop_keyboard.egg-info/top_level.txt\n'}
+[11.156551] (teleop_keyboard) StdoutLine: {'line': b"reading manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'\n"}
+[11.160457] (teleop_keyboard) StdoutLine: {'line': b"writing manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'\n"}
+[11.161185] (teleop_keyboard) StdoutLine: {'line': b'running build\n'}
+[11.161583] (teleop_keyboard) StdoutLine: {'line': b'running build_py\n'}
+[11.162173] (teleop_keyboard) StdoutLine: {'line': b'running install\n'}
+[11.165874] (teleop_keyboard) StdoutLine: {'line': b'running install_lib\n'}
+[11.172135] (teleop_keyboard) StdoutLine: {'line': b'running install_data\n'}
+[11.174746] (teleop_keyboard) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.182315] (teleop_keyboard) StdoutLine: {'line': b"removing '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard-0.0.1-py3.8.egg-info' (and everything under it)\n"}
+[11.183357] (teleop_keyboard) StdoutLine: {'line': b'Copying ../../build/teleop_keyboard/teleop_keyboard.egg-info to /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard-0.0.1-py3.8.egg-info\n'}
+[11.187336] (teleop_keyboard) StdoutLine: {'line': b'running install_scripts\n'}
+[11.238004] (-) TimerEvent: {}
+[11.266956] (teleop_keyboard) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/jetson/mecanum-ros2/install/teleop_keyboard/lib/teleop_keyboard\n'}
+[11.269131] (teleop_keyboard) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/mecanum-ros2/build/teleop_keyboard/install.log'\n"}
+[11.338199] (-) TimerEvent: {}
+[11.349613] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.377082] (teleop_keyboard) CommandEnded: {'returncode': 0}
+[11.404209] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.405896] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.424266] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[11.430985] (teleop_keyboard) JobEnded: {'identifier': 'teleop_keyboard', 'rc': 0}
+[11.438353] (-) TimerEvent: {}
+[11.539198] (-) TimerEvent: {}
+[11.557327] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[11.558002] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[11.639401] (-) TimerEvent: {}
+[11.740062] (-) TimerEvent: {}
+[11.840678] (-) TimerEvent: {}
+[11.941372] (-) TimerEvent: {}
+[12.036423] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[12.041551] (-) TimerEvent: {}
+[12.142166] (-) TimerEvent: {}
+[12.242907] (-) TimerEvent: {}
+[12.303466] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.343068] (-) TimerEvent: {}
+[12.347441] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[12.443297] (-) TimerEvent: {}
+[12.543937] (-) TimerEvent: {}
+[12.644593] (-) TimerEvent: {}
+[12.732778] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[12.744737] (-) TimerEvent: {}
+[12.845394] (-) TimerEvent: {}
+[12.848431] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[12.945561] (-) TimerEvent: {}
+[13.046250] (-) TimerEvent: {}
+[13.146942] (-) TimerEvent: {}
+[13.232780] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.247130] (-) TimerEvent: {}
+[13.347753] (-) TimerEvent: {}
+[13.448436] (-) TimerEvent: {}
+[13.528194] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[13.545403] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[13.548611] (-) TimerEvent: {}
+[13.635303] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[13.638430] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[13.648844] (-) TimerEvent: {}
+[13.749544] (-) TimerEvent: {}
+[13.850252] (-) TimerEvent: {}
+[13.909068] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[13.910260] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[13.950425] (-) TimerEvent: {}
+[14.051138] (-) TimerEvent: {}
+[14.151791] (-) TimerEvent: {}
+[14.161507] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[14.162297] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[14.252058] (-) TimerEvent: {}
+[14.352809] (-) TimerEvent: {}
+[14.368209] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[14.369281] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[14.453118] (-) TimerEvent: {}
+[14.553797] (-) TimerEvent: {}
+[14.614919] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[14.618842] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[14.653997] (-) TimerEvent: {}
+[14.754664] (-) TimerEvent: {}
+[14.855353] (-) TimerEvent: {}
+[14.956034] (-) TimerEvent: {}
+[15.056715] (-) TimerEvent: {}
+[15.157448] (-) TimerEvent: {}
+[15.258130] (-) TimerEvent: {}
+[15.342968] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[15.358238] (-) TimerEvent: {}
+[15.458844] (-) TimerEvent: {}
+[15.559497] (-) TimerEvent: {}
+[15.660152] (-) TimerEvent: {}
+[15.760829] (-) TimerEvent: {}
+[15.861564] (-) TimerEvent: {}
+[15.875921] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)\n'}
+[15.961727] (-) TimerEvent: {}
+[16.062402] (-) TimerEvent: {}
+[16.163075] (-) TimerEvent: {}
+[16.201926] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)\n'}
+[16.263286] (-) TimerEvent: {}
+[16.277047] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[16.363498] (-) TimerEvent: {}
+[16.464201] (-) TimerEvent: {}
+[16.564932] (-) TimerEvent: {}
+[16.652766] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[16.660987] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[16.663005] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src\n'}
+[16.663413] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[16.664992] (-) TimerEvent: {}
+[16.670446] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[16.670952] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[16.673214] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[16.676556] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[16.679257] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[16.686240] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[16.686689] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[16.688874] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[16.705815] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.764099] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[16.765105] (-) TimerEvent: {}
+[16.770484] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver\n'}
+[16.802911] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[16.805472] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[16.806493] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7606'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '6881'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:36820'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642'), ('INVOCATION_ID', '73cc935622994427907d0440a6583f91'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic')]), 'shell': False}
+[16.865351] (-) TimerEvent: {}
+[16.959161] (ydlidar_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ydlidar_ros2_driver_client\x1b[0m\n'}
+[16.959810] (ydlidar_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ydlidar_ros2_driver_node\x1b[0m\n'}
+[16.965502] (-) TimerEvent: {}
+[17.066111] (-) TimerEvent: {}
+[17.125255] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o\x1b[0m\n'}
+[17.126080] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o\x1b[0m\n'}
+[17.166277] (-) TimerEvent: {}
+[17.267018] (-) TimerEvent: {}
+[17.367747] (-) TimerEvent: {}
+[17.468489] (-) TimerEvent: {}
+[17.569252] (-) TimerEvent: {}
+[17.669958] (-) TimerEvent: {}
+[17.770722] (-) TimerEvent: {}
+[17.871507] (-) TimerEvent: {}
+[17.972288] (-) TimerEvent: {}
+[18.073061] (-) TimerEvent: {}
+[18.173784] (-) TimerEvent: {}
+[18.274510] (-) TimerEvent: {}
+[18.375185] (-) TimerEvent: {}
+[18.476004] (-) TimerEvent: {}
+[18.576714] (-) TimerEvent: {}
+[18.677491] (-) TimerEvent: {}
+[18.778201] (-) TimerEvent: {}
+[18.878916] (-) TimerEvent: {}
+[18.979633] (-) TimerEvent: {}
+[19.080443] (-) TimerEvent: {}
+[19.181188] (-) TimerEvent: {}
+[19.281914] (-) TimerEvent: {}
+[19.382622] (-) TimerEvent: {}
+[19.483431] (-) TimerEvent: {}
+[19.584217] (-) TimerEvent: {}
+[19.685068] (-) TimerEvent: {}
+[19.785794] (-) TimerEvent: {}
+[19.886561] (-) TimerEvent: {}
+[19.987288] (-) TimerEvent: {}
+[20.087982] (-) TimerEvent: {}
+[20.188733] (-) TimerEvent: {}
+[20.289465] (-) TimerEvent: {}
+[20.390142] (-) TimerEvent: {}
+[20.492315] (-) TimerEvent: {}
+[20.593133] (-) TimerEvent: {}
+[20.693826] (-) TimerEvent: {}
+[20.794498] (-) TimerEvent: {}
+[20.895183] (-) TimerEvent: {}
+[20.995926] (-) TimerEvent: {}
+[21.096700] (-) TimerEvent: {}
+[21.197558] (-) TimerEvent: {}
+[21.298438] (-) TimerEvent: {}
+[21.399190] (-) TimerEvent: {}
+[21.499930] (-) TimerEvent: {}
+[21.600675] (-) TimerEvent: {}
+[21.701462] (-) TimerEvent: {}
+[21.802224] (-) TimerEvent: {}
+[21.902977] (-) TimerEvent: {}
+[22.003712] (-) TimerEvent: {}
+[22.104475] (-) TimerEvent: {}
+[22.205323] (-) TimerEvent: {}
+[22.306059] (-) TimerEvent: {}
+[22.406809] (-) TimerEvent: {}
+[22.507584] (-) TimerEvent: {}
+[22.608334] (-) TimerEvent: {}
+[22.709075] (-) TimerEvent: {}
+[22.809848] (-) TimerEvent: {}
+[22.910616] (-) TimerEvent: {}
+[23.011285] (-) TimerEvent: {}
+[23.111973] (-) TimerEvent: {}
+[23.212778] (-) TimerEvent: {}
+[23.313589] (-) TimerEvent: {}
+[23.401005] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.401725] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.402752] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.403232] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.404593] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.405196] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.406264] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.407603] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.408871] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.409908] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.411341] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.412433] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("port"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.418635] (-) TimerEvent: {}
+[23.419849] (ydlidar_ros2_driver) StderrLine: {'line': b'                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.420429] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.420969] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.421491] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.421952] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.422397] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.422822] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.423231] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.423645] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.424067] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.424544] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.425031] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.425472] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.425908] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.426380] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.426823] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.427263] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.427677] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.428096] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("ignore_array"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.428566] (ydlidar_ros2_driver) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.429049] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.429503] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.429932] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.430422] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.430890] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.431351] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.431796] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.432269] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.432722] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.433229] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.433673] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.434128] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.434543] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.434949] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.435366] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.435787] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.436222] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.436674] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("frame_id"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.437184] (ydlidar_ros2_driver) StderrLine: {'line': b'                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.437609] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.438079] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.438511] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.438932] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.439376] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.439801] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.440204] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.440604] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.441138] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.441606] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.442024] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.442420] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.442839] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.443274] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.443733] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.444135] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.444558] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.444986] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("baudrate"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.445423] (ydlidar_ros2_driver) StderrLine: {'line': b'                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.445854] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.446373] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.446915] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.447473] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.448086] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.448655] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.449317] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.449877] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.450488] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.451057] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.451591] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.452101] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.452536] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.453041] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.453492] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.453890] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.454299] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.454725] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("lidar_type"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.455583] (ydlidar_ros2_driver) StderrLine: {'line': b'                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.456012] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.456418] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.456836] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.457386] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.457810] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.458273] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.458687] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.459083] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.459559] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.460059] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.460515] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.460993] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.461480] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.461932] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.462339] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.462725] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.463116] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.463507] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("device_type"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.463903] (ydlidar_ros2_driver) StderrLine: {'line': b'                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.464305] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.464719] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.465211] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.465687] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.466121] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.466527] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.466924] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.467329] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.467764] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.468172] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.468552] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.468962] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.469473] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.469893] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.470307] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.470700] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.471094] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.471486] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("sample_rate"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.471879] (ydlidar_ros2_driver) StderrLine: {'line': b'                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.472303] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.473183] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.473648] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.474079] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.474518] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.474954] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.475373] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.475771] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.476252] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.476719] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.477236] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.477658] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.478054] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.478479] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.478900] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.479315] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.479708] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.480106] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("abnormal_check_count"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.480525] (ydlidar_ros2_driver) StderrLine: {'line': b'                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.481001] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.481466] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.481909] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.482376] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.482781] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.483185] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.483603] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.484040] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:90:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.484487] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.484918] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.485399] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.485824] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.486231] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.486636] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.487064] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.487474] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.487923] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.488330] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("fixed_resolution"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.488732] (ydlidar_ros2_driver) StderrLine: {'line': b'                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.489210] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.489637] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.490044] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.490452] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.490877] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.491277] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.491660] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.492037] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.492466] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.493006] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.493495] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.493917] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.494340] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.494809] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.495259] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.495738] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.496161] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.496575] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("reversion"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.497036] (ydlidar_ros2_driver) StderrLine: {'line': b'                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.497488] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.497906] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.498326] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.498731] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.499154] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.499568] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.499995] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.500419] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.500871] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.501425] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.501880] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.502320] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.502732] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.503129] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.503532] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.503918] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.504317] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.504733] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("inverted"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.505270] (ydlidar_ros2_driver) StderrLine: {'line': b'                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.505714] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.506171] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.506567] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.506967] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.507403] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.507795] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.508179] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.508575] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:104:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.509123] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.509649] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.510102] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.510534] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.510945] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.511339] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.511720] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.512102] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.512499] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.512972] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("auto_reconnect"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.513437] (ydlidar_ros2_driver) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.513834] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.514233] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.514637] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.515058] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.515461] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.515892] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.516319] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.516721] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.517258] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.517721] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.518151] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.518593] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.518975] (-) TimerEvent: {}
+[23.519412] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.519959] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.520414] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.520843] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.521369] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.521786] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("isSingleChannel"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.522185] (ydlidar_ros2_driver) StderrLine: {'line': b'                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.522596] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.523035] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.523471] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.523898] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.524327] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.524753] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.525280] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.525716] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.526167] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.526612] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.527069] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.527482] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.527899] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.528330] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.528758] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.529256] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.529723] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.530245] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("intensity"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.530728] (ydlidar_ros2_driver) StderrLine: {'line': b'                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.531147] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.531592] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.532004] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.532405] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.532797] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.533308] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.533779] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.534215] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.534670] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.535113] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.535560] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.535997] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.536426] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.536830] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.537345] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.537795] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.538215] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.538636] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("support_motor_dtr"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.539053] (ydlidar_ros2_driver) StderrLine: {'line': b'                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.539479] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.539899] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.540331] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.540785] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.541306] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.541756] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.542231] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.542670] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:126:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.543197] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.543713] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.544169] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.544621] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.545116] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.545593] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.546142] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.546693] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.547308] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.547930] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("angle_max"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.548529] (ydlidar_ros2_driver) StderrLine: {'line': b'                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.549110] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.549671] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.550252] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.550819] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.551477] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.551994] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.552458] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.552921] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:130:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.553432] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.553932] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.554487] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.554974] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.555438] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.555873] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.556329] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.556744] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.557254] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.557693] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("angle_min"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.558107] (ydlidar_ros2_driver) StderrLine: {'line': b'                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.558539] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.559000] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.559424] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.559899] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.560358] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.560813] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.561295] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.561719] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:135:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.562153] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.562558] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.562965] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.563350] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.563751] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.564150] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.564541] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.564966] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.565420] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.565912] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("range_max"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.566346] (ydlidar_ros2_driver) StderrLine: {'line': b'                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.566759] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.567155] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.567554] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.567941] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.568369] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.568758] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.569239] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.569660] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:139:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.570078] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.570482] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.570890] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.571295] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.571694] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.572089] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.572479] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.572867] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.573415] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.573837] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("range_min"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.574240] (ydlidar_ros2_driver) StderrLine: {'line': b'                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.574646] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.575049] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.575440] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.575827] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.576269] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.576748] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.577278] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.577706] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:144:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.578131] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.578532] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.578958] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.579350] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.579762] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.580155] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.580542] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.580972] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.581436] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.581866] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("frequency"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.582280] (ydlidar_ros2_driver) StderrLine: {'line': b'                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.582684] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.583095] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.583537] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.584001] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.584432] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.584847] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.585350] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.585769] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\n'}
+[23.586222] (ydlidar_ros2_driver) StderrLine: {'line': b"If you want to declare a parameter that won't change type without a default value use:\n"}
+[23.586670] (ydlidar_ros2_driver) StderrLine: {'line': b'`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n'}
+[23.587078] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[23.587487] (ydlidar_ros2_driver) StderrLine: {'line': b'If you want to declare a parameter that can dynamically change type use:\n'}
+[23.587901] (ydlidar_ros2_driver) StderrLine: {'line': b'```\n'}
+[23.588307] (ydlidar_ros2_driver) StderrLine: {'line': b'rcl_interfaces::msg::ParameterDescriptor descriptor;\n'}
+[23.588714] (ydlidar_ros2_driver) StderrLine: {'line': b'descriptor.dynamic_typing = true;\n'}
+[23.589221] (ydlidar_ros2_driver) StderrLine: {'line': b'node->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n'}
+[23.589669] (ydlidar_ros2_driver) StderrLine: {'line': b'``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[23.590067] (ydlidar_ros2_driver) StderrLine: {'line': b'   node->declare_parameter("invalid_range_is_inf"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.590466] (ydlidar_ros2_driver) StderrLine: {'line': b'                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.590843] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[23.591220] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[23.591632] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[23.592019] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23\x1b[m\x1b[K:\n'}
+[23.592398] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.592845] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[23.593344] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.593813] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[23.594251] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:163:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest_header\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.594714] (ydlidar_ros2_driver) StderrLine: {'line': b'     [&laser](\x1b[01;35m\x1b[Kconst std::shared_ptr<rmw_request_id_t> request_header\x1b[m\x1b[K,\n'}
+[23.595170] (ydlidar_ros2_driver) StderrLine: {'line': b'              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.595598] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:164:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.596026] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[23.596470] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[23.596921] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:165:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.597424] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response\x1b[m\x1b[K) -> bool\n'}
+[23.597845] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[23.598284] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[23.598694] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:173:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest_header\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.599106] (ydlidar_ros2_driver) StderrLine: {'line': b'     [&laser](\x1b[01;35m\x1b[Kconst std::shared_ptr<rmw_request_id_t> request_header\x1b[m\x1b[K,\n'}
+[23.599562] (ydlidar_ros2_driver) StderrLine: {'line': b'              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.599966] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:174:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.600398] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[23.600808] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[23.601277] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:175:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.601704] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response\x1b[m\x1b[K) -> bool\n'}
+[23.602112] (ydlidar_ros2_driver) StderrLine: {'line': b'   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[23.619180] (-) TimerEvent: {}
+[23.719924] (-) TimerEvent: {}
+[23.820685] (-) TimerEvent: {}
+[23.921436] (-) TimerEvent: {}
+[24.022192] (-) TimerEvent: {}
+[24.122930] (-) TimerEvent: {}
+[24.223674] (-) TimerEvent: {}
+[24.324424] (-) TimerEvent: {}
+[24.425184] (-) TimerEvent: {}
+[24.525920] (-) TimerEvent: {}
+[24.626597] (-) TimerEvent: {}
+[24.727313] (-) TimerEvent: {}
+[24.827992] (-) TimerEvent: {}
+[24.928667] (-) TimerEvent: {}
+[25.029399] (-) TimerEvent: {}
+[25.130094] (-) TimerEvent: {}
+[25.230792] (-) TimerEvent: {}
+[25.331571] (-) TimerEvent: {}
+[25.432334] (-) TimerEvent: {}
+[25.533126] (-) TimerEvent: {}
+[25.635174] (-) TimerEvent: {}
+[25.735936] (-) TimerEvent: {}
+[25.836697] (-) TimerEvent: {}
+[25.937460] (-) TimerEvent: {}
+[26.038148] (-) TimerEvent: {}
+[26.138834] (-) TimerEvent: {}
+[26.239591] (-) TimerEvent: {}
+[26.340346] (-) TimerEvent: {}
+[26.441048] (-) TimerEvent: {}
+[26.541744] (-) TimerEvent: {}
+[26.642491] (-) TimerEvent: {}
+[26.743180] (-) TimerEvent: {}
+[26.843882] (-) TimerEvent: {}
+[26.944557] (-) TimerEvent: {}
+[27.045286] (-) TimerEvent: {}
+[27.145960] (-) TimerEvent: {}
+[27.246646] (-) TimerEvent: {}
+[27.347334] (-) TimerEvent: {}
+[27.448029] (-) TimerEvent: {}
+[27.548797] (-) TimerEvent: {}
+[27.649528] (-) TimerEvent: {}
+[27.750214] (-) TimerEvent: {}
+[27.850913] (-) TimerEvent: {}
+[27.951690] (-) TimerEvent: {}
+[28.052462] (-) TimerEvent: {}
+[28.153203] (-) TimerEvent: {}
+[28.253923] (-) TimerEvent: {}
+[28.354714] (-) TimerEvent: {}
+[28.455409] (-) TimerEvent: {}
+[28.556234] (-) TimerEvent: {}
+[28.657043] (-) TimerEvent: {}
+[28.757832] (-) TimerEvent: {}
+[28.858642] (-) TimerEvent: {}
+[28.959403] (-) TimerEvent: {}
+[29.060128] (-) TimerEvent: {}
+[29.160800] (-) TimerEvent: {}
+[29.261506] (-) TimerEvent: {}
+[29.362182] (-) TimerEvent: {}
+[29.462865] (-) TimerEvent: {}
+[29.563550] (-) TimerEvent: {}
+[29.664296] (-) TimerEvent: {}
+[29.765043] (-) TimerEvent: {}
+[29.865704] (-) TimerEvent: {}
+[29.966447] (-) TimerEvent: {}
+[30.067217] (-) TimerEvent: {}
+[30.168252] (-) TimerEvent: {}
+[30.269267] (-) TimerEvent: {}
+[30.369947] (-) TimerEvent: {}
+[30.470634] (-) TimerEvent: {}
+[30.571375] (-) TimerEvent: {}
+[30.672113] (-) TimerEvent: {}
+[30.772929] (-) TimerEvent: {}
+[30.873656] (-) TimerEvent: {}
+[30.974317] (-) TimerEvent: {}
+[31.074988] (-) TimerEvent: {}
+[31.175740] (-) TimerEvent: {}
+[31.276421] (-) TimerEvent: {}
+[31.377470] (-) TimerEvent: {}
+[31.478435] (-) TimerEvent: {}
+[31.579152] (-) TimerEvent: {}
+[31.679909] (-) TimerEvent: {}
+[31.780657] (-) TimerEvent: {}
+[31.881506] (-) TimerEvent: {}
+[31.982253] (-) TimerEvent: {}
+[32.083948] (-) TimerEvent: {}
+[32.184756] (-) TimerEvent: {}
+[32.285778] (-) TimerEvent: {}
+[32.386543] (-) TimerEvent: {}
+[32.487278] (-) TimerEvent: {}
+[32.588021] (-) TimerEvent: {}
+[32.688766] (-) TimerEvent: {}
+[32.789475] (-) TimerEvent: {}
+[32.890158] (-) TimerEvent: {}
+[32.990908] (-) TimerEvent: {}
+[33.091636] (-) TimerEvent: {}
+[33.192422] (-) TimerEvent: {}
+[33.235301] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ydlidar_ros2_driver_node\x1b[0m\n'}
+[33.292651] (-) TimerEvent: {}
+[33.393415] (-) TimerEvent: {}
+[33.494272] (-) TimerEvent: {}
+[33.595127] (-) TimerEvent: {}
+[33.695957] (-) TimerEvent: {}
+[33.796796] (-) TimerEvent: {}
+[33.897523] (-) TimerEvent: {}
+[33.998295] (-) TimerEvent: {}
+[34.098940] (-) TimerEvent: {}
+[34.199693] (-) TimerEvent: {}
+[34.300524] (-) TimerEvent: {}
+[34.401368] (-) TimerEvent: {}
+[34.471663] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] Built target ydlidar_ros2_driver_node\n'}
+[34.501534] (-) TimerEvent: {}
+[34.602237] (-) TimerEvent: {}
+[34.702986] (-) TimerEvent: {}
+[34.803737] (-) TimerEvent: {}
+[34.904501] (-) TimerEvent: {}
+[35.005312] (-) TimerEvent: {}
+[35.106056] (-) TimerEvent: {}
+[35.207040] (-) TimerEvent: {}
+[35.307800] (-) TimerEvent: {}
+[35.408516] (-) TimerEvent: {}
+[35.509302] (-) TimerEvent: {}
+[35.610013] (-) TimerEvent: {}
+[35.710712] (-) TimerEvent: {}
+[35.811420] (-) TimerEvent: {}
+[35.912142] (-) TimerEvent: {}
+[36.012848] (-) TimerEvent: {}
+[36.113614] (-) TimerEvent: {}
+[36.214598] (-) TimerEvent: {}
+[36.315308] (-) TimerEvent: {}
+[36.416012] (-) TimerEvent: {}
+[36.516718] (-) TimerEvent: {}
+[36.617628] (-) TimerEvent: {}
+[36.718264] (-) TimerEvent: {}
+[36.818971] (-) TimerEvent: {}
+[36.919673] (-) TimerEvent: {}
+[37.020379] (-) TimerEvent: {}
+[37.121100] (-) TimerEvent: {}
+[37.221800] (-) TimerEvent: {}
+[37.322503] (-) TimerEvent: {}
+[37.423144] (-) TimerEvent: {}
+[37.523858] (-) TimerEvent: {}
+[37.624562] (-) TimerEvent: {}
+[37.725337] (-) TimerEvent: {}
+[37.826037] (-) TimerEvent: {}
+[37.926748] (-) TimerEvent: {}
+[38.027426] (-) TimerEvent: {}
+[38.128102] (-) TimerEvent: {}
+[38.228783] (-) TimerEvent: {}
+[38.329548] (-) TimerEvent: {}
+[38.430232] (-) TimerEvent: {}
+[38.530908] (-) TimerEvent: {}
+[38.631585] (-) TimerEvent: {}
+[38.732266] (-) TimerEvent: {}
+[38.833021] (-) TimerEvent: {}
+[38.933709] (-) TimerEvent: {}
+[39.034401] (-) TimerEvent: {}
+[39.135092] (-) TimerEvent: {}
+[39.235807] (-) TimerEvent: {}
+[39.336505] (-) TimerEvent: {}
+[39.437220] (-) TimerEvent: {}
+[39.537838] (-) TimerEvent: {}
+[39.638457] (-) TimerEvent: {}
+[39.739140] (-) TimerEvent: {}
+[39.839815] (-) TimerEvent: {}
+[39.940500] (-) TimerEvent: {}
+[40.041325] (-) TimerEvent: {}
+[40.142005] (-) TimerEvent: {}
+[40.242686] (-) TimerEvent: {}
+[40.343352] (-) TimerEvent: {}
+[40.444040] (-) TimerEvent: {}
+[40.544711] (-) TimerEvent: {}
+[40.645420] (-) TimerEvent: {}
+[40.746134] (-) TimerEvent: {}
+[40.846868] (-) TimerEvent: {}
+[40.947607] (-) TimerEvent: {}
+[41.048313] (-) TimerEvent: {}
+[41.149034] (-) TimerEvent: {}
+[41.249799] (-) TimerEvent: {}
+[41.350534] (-) TimerEvent: {}
+[41.410409] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ydlidar_ros2_driver_client\x1b[0m\n'}
+[41.450741] (-) TimerEvent: {}
+[41.551497] (-) TimerEvent: {}
+[41.652218] (-) TimerEvent: {}
+[41.753038] (-) TimerEvent: {}
+[41.853816] (-) TimerEvent: {}
+[41.954551] (-) TimerEvent: {}
+[42.055239] (-) TimerEvent: {}
+[42.155967] (-) TimerEvent: {}
+[42.256649] (-) TimerEvent: {}
+[42.357401] (-) TimerEvent: {}
+[42.458039] (-) TimerEvent: {}
+[42.558762] (-) TimerEvent: {}
+[42.659427] (-) TimerEvent: {}
+[42.760140] (-) TimerEvent: {}
+[42.813091] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_client\n'}
+[42.850752] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[42.860411] (-) TimerEvent: {}
+[42.942722] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[42.943853] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver'], 'cwd': '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7606'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '6881'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/mecanum-ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424622013938'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:36820'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7642,unix/nano:/tmp/.ICE-unix/7642'), ('INVOCATION_ID', '73cc935622994427907d0440a6583f91'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e30e4ca_7d24_48f6_b853_0b6ce6259607'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_bringup:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/mecanum-ros2/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/mecanum-ros2/install/stella_ahrs:/home/jetson/mecanum-ros2/install/mecanum_bringup:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic')]), 'shell': False}
+[42.960659] (-) TimerEvent: {}
+[42.981793] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[42.982815] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[42.990452] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""\n'}
+[42.991116] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[43.001930] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client" to ""\n'}
+[43.002631] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch\n'}
+[43.003097] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[43.003512] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[43.004101] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[43.004507] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params\n'}
+[43.005107] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[43.005512] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup\n'}
+[43.005862] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[43.006252] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config\n'}
+[43.006608] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[43.006998] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[43.007338] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[43.007718] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[43.008143] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[43.008699] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[43.009284] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[43.009898] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[43.010507] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[43.011136] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[43.011688] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[43.012202] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[43.012983] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[43.013594] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[43.014040] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[43.014561] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/jetson/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[43.020743] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[43.062689] (-) TimerEvent: {}
+[43.173667] (-) TimerEvent: {}
+[43.219896] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[43.228293] (-) EventReactorShutdown: {}
