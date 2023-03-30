@@ -1,16 +1,17 @@
 #include <MsTimer2.h>
 #define ENC_COUNT_REV 1326
 #define ENC_IN_1_A 18 //5
-#define ENC_IN_2_A 20 //3
-#define ENC_IN_1_B 19 //4
-#define ENC_IN_2_B 21 //2
+#define ENC_IN_2_A 20 //3 original : 20
+#define ENC_IN_1_B 19 //4 
+#define ENC_IN_2_B 21 //2 original : 21
 #define MOT_IN_1 28 //motor driver in1
 #define MOT_IN_2 29 //motor driver in2
 #define MOT_IN_3 30 //motor driver in3
 #define MOT_IN_4 31 //motor driver in4
 #define MOT_PWM_PIN_A 6 //motor driver enA
 #define MOT_PWM_PIN_B 7 //motor driver enB
-
+// motor value is OK
+// PID control is wrong
 boolean Direction_motor_1 = true;
 boolean Direction_motor_2 = true;
 volatile long motor_1_pulse_count = 0;
@@ -33,9 +34,14 @@ const float rad_to_deg = 57.29578;
 // |0.3 |0.1  |1.0  | : D_control wave too much.
 // |0.3 |0.1  |0.5  | : D_control wave go away.
 //
-volatile float Kp = 1.15; // wave : 2.3 z_Kp : 0.5*2.3 = 1.15
-volatile float Ki = 0.2; // Time : 0.05
-volatile float Kd = 0.1; //0.01
+volatile float Kp_1 = 1.15; // wave : 2.3 z_Kp : 0.5*2.3 = 1.15
+volatile float Ki_1 = 0.2; // 0.2
+volatile float Kd_1 = 0.1; //0.1
+volatile float Ks_1 = 0.001; // slowdown motor
+volatile float Kp_2 = 1.15; // wave : 2.3 z_Kp : 0.5*2.3 = 1.15
+volatile float Ki_2 = 0.2; // 0.2
+volatile float Kd_2 = 0.1; //0.1
+volatile float Ks_2 = 0.001; // slowdown motor
 float PID_1 = 0.0;
 float PID_2 = 0.0;
 float P_control_1 = 0.0;
@@ -59,7 +65,7 @@ float maxRPM = 122.0; //172 not loaded, 122 loaded
 volatile String slaveData;
 
 void setup() {
-  Serial.begin(2000000); //ACM* = 115200
+  Serial.begin(1000000); //ACM* = 115200
   Serial.setTimeout(0);
   pinMode(ENC_IN_1_A , INPUT_PULLUP);
   pinMode(ENC_IN_1_B , INPUT);
@@ -79,11 +85,11 @@ void setup() {
 
 void loop() {
   Serial.println("target_rpm_1,now_rpm_1,D");
-  Serial.print(targetRPM_1);
+  Serial.print(targetRPM_2);
   Serial.print(",");
   Serial.print(rpm_motor_1);
   Serial.print(",");
-  Serial.println(error_1*Kp);
+  Serial.println(error_2*Kp_1);
   delay(50);
 }
  
@@ -150,12 +156,12 @@ void getRPM(){
   }else{
     D_control_2 = (error_2 - error_pre_2);;
   }
-  PID_1 = error_1*Kp+ I_control_1*Ki + D_control_1*Kd;
-  PID_2 = error_2*Kp+ I_control_2*Ki + D_control_2*Kd;
+  PID_1 = error_1*Kp_1 + I_control_1*Ki_1 + D_control_1*Kd_1;
+  PID_2 = error_2*Kp_2 + I_control_2*Ki_2 + D_control_2*Kd_2;
   error_pre_1 = error_1;
   error_pre_2 = error_2;
-  control_1 = float(((targetRPM_1*0.001 + PID_1)/maxRPM)*255);//*0.01
-  control_2 = float(((targetRPM_2*0.001 + PID_2)/maxRPM)*255);
+  control_1 = float(((targetRPM_1*Ks_1 + PID_1)/maxRPM)*255);
+  control_2 = float(((targetRPM_2*Ks_2 + PID_2)/maxRPM)*255);
   if (targetRPM_1 == 0){
     control_1 = 0;
     I_control_1 = 0;
