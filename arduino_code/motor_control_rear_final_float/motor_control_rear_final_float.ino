@@ -84,13 +84,13 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("target_rpm_1,now_rpm_1,D");
-  Serial.print(targetRPM_1);
-  Serial.print(",");
-  Serial.print(rpm_motor_1);
-  Serial.print(",");
-  Serial.println(error_1*Kp_1);
-  delay(50);
+//  Serial.println("target_rpm_1,now_rpm_1,D");
+//  Serial.print(targetRPM_1);
+//  Serial.print(",");
+//  Serial.print(rpm_motor_1);
+//  Serial.print(",");
+//  Serial.println(error_1*Kp_1);
+//  delay(50);
 }
  
 void motor_1_pulse() {
