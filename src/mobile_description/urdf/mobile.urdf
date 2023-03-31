@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<robot name="mobile">
+
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link" />
+    <origin xyz="0 0 0.010" rpy="0 0 0"/>
+  </joint>
+  
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.004366302399893529 0 0.1724423094093739"/>
+      <mass value="50.124334037291106"/>
+      <inertia ixx="0.739222" ixy="0.0" ixz="-0.031779" iyy="1.189387" iyz="-0.0" izz="1.325001"/>
+    </inertial>
+    
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://mobile_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+  
+  <joint name="rear_right_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rear_right_link"/>
+    <origin rpy="1.57 0 0" xyz="0.145 0.17 -0.0625"/>
+    <axis xyz="0.0 0.0 1.0"/>
+  </joint>
+  
+  <link name="rear_right_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 -0.02 0.0"/>
+      <mass value="3.8533597391687295"/>
+      <inertia ixx="0.004277" ixy="-0.0" ixz="0.0" iyy="0.007526" iyz="0.0" izz="0.004277"/>
+    </inertial>
+    
+    <visual>
+      <origin rpy="0 0 0" xyz="0.145 0.17 -0.0625"/>
+      <geometry>
+        <mesh filename="package://mobile_description/meshes/rear_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+  
+  <joint name="front_right_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="0.145 -0.17 0.0625"/>
+    <parent link="base_link"/>
+    <child link="front_right_link"/>
+    <axis xyz="0.0 -1.0 0.0"/>
+  </joint>
+  
+  <link name="front_right_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 -0.02 0"/>
+      <mass value="3.8533597391687295"/>
+      <inertia ixx="0.004277" ixy="-0.0" ixz="0.0" iyy="0.007526" iyz="-0.0" izz="0.004277"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.145 0.17 -0.0625"/>
+      <geometry>
+        <mesh filename="package://mobile_description/meshes/front_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+  
+  <joint name="front_left_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="0.145 0.17 0.0625"/>
+    <parent link="base_link"/>
+    <child link="front_left_link"/>
+    <axis xyz="0.0 1.0 0.0"/>
+  </joint>
+  
+  <link name="front_left_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.145 -0.17 -0.0625"/>
+      <mass value="3.8533597391687295"/>
+      <inertia ixx="0.004277" ixy="-0.0" ixz="0.0" iyy="0.007526" iyz="-0.0" izz="0.004277"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.145 -0.17 -0.0625"/>
+      <geometry>
+        <mesh filename="package://mobile_description/meshes/front_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+  
+  <joint name="rear_left_joint" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.145 0.17 0.0625"/>
+    <parent link="base_link"/>
+    <child link="rear_left_link"/>
+    <axis xyz="0.0 1.0 0.0"/>
+  </joint>
+  
+  <link name="rear_left_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0.02 0.0"/>
+      <mass value="3.8533597391687295"/>
+      <inertia ixx="0.004277" ixy="-0.0" ixz="-0.0" iyy="0.007526" iyz="-0.0" izz="0.004277"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.145 -0.17 -0.0625"/>
+      <geometry>
+        <mesh filename="package://mobile_description/meshes/rear_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+  
+  <joint name="lidar_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.205 0.0 0.3275"/>
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+  </joint>
+  
+  <link name="lidar_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.019779238971984525"/>
+      <mass value="1.1942370825491377"/>
+      <inertia ixx="0.000518" ixy="-0.0" ixz="-0.0" iyy="0.000518" iyz="-0.0" izz="0.000724"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.205 -0.0 -0.3275"/>
+      <geometry>
+        <mesh filename="package://mobile_description/meshes/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+  
+  <joint name="imu_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.3275"/>
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+  </joint>
+  
+  <link name="imu_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.005"/>
+      <mass value="0.07065"/>
+      <inertia ixx="6e-06" ixy="0.0" ixz="0.0" iyy="6e-06" iyz="0.0" izz="1.1e-05"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.3275"/>
+      <geometry>
+        <mesh filename="package://mobile_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+</robot>

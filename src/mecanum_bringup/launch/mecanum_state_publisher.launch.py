@@ -14,9 +14,14 @@ def generate_launch_description():
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     share_dir = get_package_share_directory('mobile_description')
-    xacro_file = os.path.join(share_dir, 'urdf', 'mobile.xacro')
-    robot_description_config = xacro.process_file(xacro_file)
-    robot_urdf = robot_description_config.toxml()
+    urdf = os.path.join(share_dir, 'urdf', 'mobile.urdf')
+    #robot_description_config = xacro.process_file(xacro_file)
+    #robot_urdf = robot_description_config.toxml()
+
+    with open(urdf, 'r') as infp:
+        robot_desc = infp.read()
+
+    rsp_params = {'robot_description': robot_desc}
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -27,5 +32,5 @@ def generate_launch_description():
             package='robot_state_publisher',
             executable='robot_state_publisher',
             output='screen',
-            parameters=[{'robot_description':robot_urdf}, {'use_sim_time': use_sim_time}])
+            parameters=[rsp_params, {'use_sim_time': use_sim_time}])
     ])
