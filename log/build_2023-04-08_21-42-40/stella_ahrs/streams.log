@@ -1,0 +1,45 @@
+[0.499s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/stella_ahrs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/stella_ahrs
+[0.653s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.654s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.654s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.654s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.654s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.654s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.701s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.764s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.767s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.794s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.940s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[1.023s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[1.030s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[1.334s] -- Configuring done
+[1.343s] -- Generating done
+[1.344s] -- Build files have been written to: /home/ohj/mecanum-ros2/build/stella_ahrs
+[1.351s] Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/stella_ahrs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/stella_ahrs
+[1.354s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/stella_ahrs -- -j16 -l16
+[1.419s] [ 16%] [32m[1mLinking CXX executable stella_ahrs_node[0m
+[1.586s] [100%] Built target stella_ahrs_node
+[1.593s] Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/stella_ahrs -- -j16 -l16
+[1.615s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/stella_ahrs
+[1.622s] -- Install configuration: ""
+[1.623s] -- Execute custom install script
+[1.624s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs//launch/stella_ahrs_launch.py
+[1.631s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/rviz/imu_test.rviz
+[1.637s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/lib/stella_ahrs/stella_ahrs_node
+[1.643s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/package_run_dependencies/stella_ahrs
+[1.648s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/parent_prefix_path/stella_ahrs
+[1.653s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.sh
+[1.658s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.dsv
+[1.663s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.sh
+[1.673s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.dsv
+[1.682s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.bash
+[1.687s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.sh
+[1.692s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.zsh
+[1.697s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.dsv
+[1.702s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.dsv
+[1.707s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/packages/stella_ahrs
+[1.713s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.720s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig.cmake
+[1.727s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig-version.cmake
+[1.737s] -- Symlinking: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.xml
+[1.760s] Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/stella_ahrs

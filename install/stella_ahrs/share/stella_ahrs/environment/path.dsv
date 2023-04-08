@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/ohj/mecanum-ros2/build/stella_ahrs/ament_cmake_environment_hooks/path.dsv

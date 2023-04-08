@@ -93,6 +93,15 @@
     <mu2>0.2</mu2>
     <self_collide>true</self_collide>
   </gazebo>
+
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link" />
+    <origin xyz="0 0 0.005" rpy="0 0 0"/>
+  </joint>
+
   <link name="base_link">
     <inertial>
       <origin rpy="0 0 0" xyz="0.004366302399893529 -4.78586553112421e-16 0.1724423094093739"/>

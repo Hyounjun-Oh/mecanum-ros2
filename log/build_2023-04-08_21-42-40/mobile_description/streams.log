@@ -1,0 +1,17 @@
+[0.974s] Invoking command in '/home/ohj/mecanum-ros2/build/mobile_description': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ohj/mecanum-ros2/build/mobile_description/build --no-deps install_data
+[1.129s] running develop
+[1.221s] running egg_info
+[1.221s] writing mobile_description.egg-info/PKG-INFO
+[1.221s] writing dependency_links to mobile_description.egg-info/dependency_links.txt
+[1.221s] writing entry points to mobile_description.egg-info/entry_points.txt
+[1.221s] writing requirements to mobile_description.egg-info/requires.txt
+[1.222s] writing top-level names to mobile_description.egg-info/top_level.txt
+[1.244s] reading manifest file 'mobile_description.egg-info/SOURCES.txt'
+[1.244s] writing manifest file 'mobile_description.egg-info/SOURCES.txt'
+[1.277s] running build_ext
+[1.277s] Creating /home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/site.py
+[1.278s] Creating /home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile-description.egg-link (link to .)
+[1.279s] 
+[1.279s] Installed /home/ohj/mecanum-ros2/build/mobile_description
+[1.279s] running install_data
+[1.317s] Invoked command in '/home/ohj/mecanum-ros2/build/mobile_description' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ohj/mecanum-ros2/build/mobile_description/build --no-deps install_data

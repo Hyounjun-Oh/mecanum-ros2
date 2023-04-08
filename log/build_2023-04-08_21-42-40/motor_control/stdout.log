@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing motor_control.egg-info/PKG-INFO
+writing dependency_links to motor_control.egg-info/dependency_links.txt
+writing entry points to motor_control.egg-info/entry_points.txt
+writing requirements to motor_control.egg-info/requires.txt
+writing top-level names to motor_control.egg-info/top_level.txt
+reading manifest file 'motor_control.egg-info/SOURCES.txt'
+writing manifest file 'motor_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/site.py
+Creating /home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor-control.egg-link (link to .)
+Installing motor_control_float script to /home/ohj/mecanum-ros2/install/motor_control/lib/motor_control
+Installing motor_control_int script to /home/ohj/mecanum-ros2/install/motor_control/lib/motor_control
+
+Installed /home/ohj/mecanum-ros2/build/motor_control
+running install_data
