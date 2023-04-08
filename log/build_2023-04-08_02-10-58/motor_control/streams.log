@@ -1,0 +1,22 @@
+[0.966s] Invoking command in '/home/ohj/mecanum-ros2/src/motor_control': PYTHONPATH=/home/ohj/mecanum-ros2/build/motor_control/prefix_override:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/ohj/mecanum-ros2/build/motor_control/build install --record /home/ohj/mecanum-ros2/build/motor_control/install.log --single-version-externally-managed
+[1.107s] running egg_info
+[1.108s] writing ../../build/motor_control/motor_control.egg-info/PKG-INFO
+[1.108s] writing dependency_links to ../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[1.108s] writing entry points to ../../build/motor_control/motor_control.egg-info/entry_points.txt
+[1.108s] writing requirements to ../../build/motor_control/motor_control.egg-info/requires.txt
+[1.108s] writing top-level names to ../../build/motor_control/motor_control.egg-info/top_level.txt
+[1.131s] reading manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[1.132s] writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[1.132s] running build
+[1.132s] running build_py
+[1.132s] running install
+[1.133s] running install_lib
+[1.133s] running install_data
+[1.134s] running install_egg_info
+[1.135s] removing '/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info' (and everything under it)
+[1.135s] Copying ../../build/motor_control/motor_control.egg-info to /home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages/motor_control-0.0.0-py3.8.egg-info
+[1.136s] running install_scripts
+[1.147s] Installing motor_control_float script to /home/ohj/mecanum-ros2/install/motor_control/lib/motor_control
+[1.147s] Installing motor_control_int script to /home/ohj/mecanum-ros2/install/motor_control/lib/motor_control
+[1.147s] writing list of installed files to '/home/ohj/mecanum-ros2/build/motor_control/install.log'
+[1.172s] Invoked command in '/home/ohj/mecanum-ros2/src/motor_control' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/motor_control/prefix_override:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/ohj/mecanum-ros2/build/motor_control/build install --record /home/ohj/mecanum-ros2/build/motor_control/install.log --single-version-externally-managed

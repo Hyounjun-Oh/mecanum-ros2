@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+        'odom_publisher=mecanum_odometry.odom_publisher:main',
+        'time_test=mecanum_odometry.time_test:main',
         ],
     },
 )

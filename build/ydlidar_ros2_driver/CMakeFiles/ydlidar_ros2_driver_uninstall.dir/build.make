@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson/mecanum-ros2/src/ydlidar_ros2_driver
+CMAKE_SOURCE_DIR = /home/ohj/mecanum-ros2/src/ydlidar_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver
+CMAKE_BINARY_DIR = /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver
 
 # Utility rule file for ydlidar_ros2_driver_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver
 include CMakeFiles/ydlidar_ros2_driver_uninstall.dir/progress.make
 
 CMakeFiles/ydlidar_ros2_driver_uninstall:
-	/usr/bin/cmake -P /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ydlidar_ros2_driver_uninstall: CMakeFiles/ydlidar_ros2_driver_uninstall
 ydlidar_ros2_driver_uninstall: CMakeFiles/ydlidar_ros2_driver_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/ydlidar_ros2_driver_uninstall.dir/clean:
 .PHONY : CMakeFiles/ydlidar_ros2_driver_uninstall.dir/clean
 
 CMakeFiles/ydlidar_ros2_driver_uninstall.dir/depend:
-	cd /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson/mecanum-ros2/src/ydlidar_ros2_driver /home/jetson/mecanum-ros2/src/ydlidar_ros2_driver /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver /home/jetson/mecanum-ros2/build/ydlidar_ros2_driver/CMakeFiles/ydlidar_ros2_driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ohj/mecanum-ros2/src/ydlidar_ros2_driver /home/ohj/mecanum-ros2/src/ydlidar_ros2_driver /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver/CMakeFiles/ydlidar_ros2_driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ydlidar_ros2_driver_uninstall.dir/depend
 
