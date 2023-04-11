@@ -8,6 +8,9 @@ setup.py
 ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/requires.txt
 ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/top_level.txt
 ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/zip-safe
+config/mecanum_2d.lua
+launch/cartographer.launch.py
+launch/occupancy_grid.launch.py
 mecanum_cartographer/__init__.py
 resource/mecanum_cartographer
 test/test_copyright.py
