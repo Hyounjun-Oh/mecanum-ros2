@@ -1,1 +1,0 @@
-/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/launch/ydlidar_launch.py

@@ -1,1 +1,0 @@
-/home/ohj/mecanum-ros2/src/motor_control/launch/motor_control.launch.py

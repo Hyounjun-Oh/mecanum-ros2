@@ -1,1 +1,0 @@
-/home/ohj/mecanum-ros2/build/stella_ahrs/ament_cmake_core/stella_ahrsConfig-version.cmake

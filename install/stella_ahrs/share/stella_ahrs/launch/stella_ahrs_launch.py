@@ -1,1 +1,0 @@
-/home/ohj/mecanum-ros2/src/stella_ahrs/launch/stella_ahrs_launch.py
