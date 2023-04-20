@@ -1,4 +1,0 @@
-[console_scripts]
-motor_control_float = motor_control.motor_control_float:main
-motor_control_int = motor_control.motor_control_int:main
-
