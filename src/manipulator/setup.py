@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'manipulator_move=manipulator.manipulator_move:main',
+            'manipulator_move=manipulator.manipulater_move:main',
         ],
     },
 )
