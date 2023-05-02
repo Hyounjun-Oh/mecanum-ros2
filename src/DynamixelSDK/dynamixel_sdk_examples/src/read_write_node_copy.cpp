@@ -25,6 +25,7 @@
 // $ ros2 service call /get_position dynamixel_sdk_custom_interfaces/srv/GetPosition "id: 1"
 //
 // Author: Will Son
+// Editio: Hyounjun
 *******************************************************************************/
 
 #include <cstdio>
@@ -43,6 +44,9 @@
 #define ADDR_OPERATING_MODE 11
 #define ADDR_TORQUE_ENABLE 64
 #define ADDR_GOAL_POSITION 116
+#define ADDR_PROFILE_ACC 108
+#define ADDR_PROFILE_VEL 112
+#define ADDR_DRIVE_MODE 10
 #define ADDR_PRESENT_POSITION 132
 
 // Protocol version
@@ -56,8 +60,11 @@ dynamixel::PortHandler * portHandler;
 dynamixel::PacketHandler * packetHandler;
 
 uint8_t dxl_error = 0;
-uint32_t goal_position = 0;
+uint32_t goal_position[2] = {2048};
 int dxl_comm_result = COMM_TX_FAIL;
+int dxl_profile_vel_result = COMM_TX_FAIL;
+int dxl_profile_acc_result = COMM_TX_FAIL;
+int dxl_drive_mode_result = COMM_TX_FAIL;
 
 ReadWriteNode::ReadWriteNode()
 : Node("read_write_node")
@@ -81,8 +88,35 @@ ReadWriteNode::ReadWriteNode()
 
       // Position Value of X series is 4 byte data.
       // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-      uint32_t goal_position = (unsigned int)msg->position;  // Convert int32 -> uint32
-
+      goal_position[0] = msg->multi_position[0];  // Convert int32 -> uint32
+      goal_position[1] = msg->multi_position[1]; 
+      // Drive Mode Setting
+      dxl_drive_mode_result =
+      packetHandler->write4ByteTxRx(
+        portHandler,
+        (uint8_t) msg->id,
+        ADDR_OPERATING_MODE,
+        4,
+        &dxl_error
+      );
+      // Profile Velocity
+      dxl_profile_vel_result =
+      packetHandler->write4ByteTxRx(
+        portHandler,
+        (uint8_t) msg->id,
+        ADDR_PROFILE_VEL,
+        3506,
+        &dxl_error
+      );
+      // Profile Acc
+      dxl_profile_acc_result =
+      packetHandler->write4ByteTxRx(
+        portHandler,
+        (uint8_t) msg->id,
+        ADDR_PROFILE_ACC,
+        4989,
+        &dxl_error
+      );
       // Write Goal Position (length : 4 bytes)
       // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
       dxl_comm_result =
