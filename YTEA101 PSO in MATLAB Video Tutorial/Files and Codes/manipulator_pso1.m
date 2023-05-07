@@ -21,7 +21,7 @@ params.dh_parameter.d = [300 194 449.5 -190 360 183 228];
 params.dh_parameter.a = [0 0 0 0 0 0 0];
 params.dh_parameter.al = [pi/2 -pi/2 pi/2 -pi/2 pi/2 -pi/2 pi/2];
 
-params.desired_position = [0 -187 1375];
+params.desired_position = [0 500 0];
 %% Problem Definiton
 
 problem.nVar = 6;       % Number of Unknown (Decision) Variables
@@ -31,8 +31,8 @@ problem.VarMax = [1.570796326794897 1.570796326794897 1.570796326794897 1.570796
 
 %% Parameters of PSO
  
-params.MaxIt = 1000;        % Maximum Number of Iterations
-params.nPop = 100;           % Population Size (Swarm Size)
+params.MaxIt = 100;        % Maximum Number of Iterations
+params.nPop = 10000;           % Population Size (Swarm Size)
 params.w = 1;               % Intertia Coefficient
 params.wdamp = 0.99;        % Damping Ratio of Inertia Coefficient
 params.c1 = 2;              % Personal Acceleration Coefficient

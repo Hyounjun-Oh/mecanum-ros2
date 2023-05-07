@@ -21,13 +21,13 @@ function object_function_result = object_function(dh_parameter, desired_position
             joint_position = [x.Position.J1(iter), x.Position.J2(iter), x.Position.J3(iter), x.Position.J4(iter), x.Position.J5(iter), x.Position.J6(iter), x.Position.J7(iter)];
             joint_error = abs(desired_position' - T_position(dh_parameter, joint_position));
             if sum(joint_error) < object_function_result.best_cost
-                object_function_result.best_cost = sum(joint_error);
+                object_function_result.best_cost = sum(joint_error.^2);
                 object_function_result.best_position = joint_position;
             end
         end
      else
         joint_position = x.Position;
         joint_error = abs(desired_position' - T_position(dh_parameter, joint_position));
-        object_function_result.best_cost = sum(joint_error);
+        object_function_result.best_cost = sum(joint_error.^2);
      end
 end
