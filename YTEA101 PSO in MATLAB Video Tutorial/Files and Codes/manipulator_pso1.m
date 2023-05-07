@@ -17,21 +17,22 @@ close all;
 
 %% DH parameter
 
-dh_parameter.d = [300 194 449.5 -190 360 183 228];
-dh_parameter.a = [0 0 0 0 0 0 0];
-dh_parameter.al = [pi/2 -pi/2 pi/2 -pi/2 pi/2 -pi/2 pi/2];
+params.dh_parameter.d = [300 194 449.5 -190 360 183 228];
+params.dh_parameter.a = [0 0 0 0 0 0 0];
+params.dh_parameter.al = [pi/2 -pi/2 pi/2 -pi/2 pi/2 -pi/2 pi/2];
 
+params.desired_position = [0 -187 1375];
 %% Problem Definiton
 
-problem.CostFunction = @(x) object_function(x);  % Cost Function
-problem.nVar = 5;       % Number of Unknown (Decision) Variables
+problem.nVar = 6;       % Number of Unknown (Decision) Variables
+% 조인트 리밋 
 problem.VarMin = [-1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897];  % Lower Bound of Decision Variables
 problem.VarMax = [1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897];   % Upper Bound of Decision Variables
 
 %% Parameters of PSO
-
+ 
 params.MaxIt = 1000;        % Maximum Number of Iterations
-params.nPop = 50;           % Population Size (Swarm Size)
+params.nPop = 100;           % Population Size (Swarm Size)
 params.w = 1;               % Intertia Coefficient
 params.wdamp = 0.99;        % Damping Ratio of Inertia Coefficient
 params.c1 = 2;              % Personal Acceleration Coefficient
@@ -40,7 +41,7 @@ params.ShowIterInfo = true; % Flag for Showing Iteration Informatin
 
 %% Calling PSO
 
-out = PSO(problem, params);
+out = PSO_MANIPULATOR(problem, params);
 
 BestSol = out.BestSol;
 BestCosts = out.BestCosts;

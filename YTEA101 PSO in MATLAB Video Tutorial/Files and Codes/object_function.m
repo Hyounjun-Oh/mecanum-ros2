@@ -14,8 +14,20 @@
 %%%%%% FOR 7 DOF MODEL %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function object_function_result = object_function(dh_parameter, initial_joints, x, iter)
-    joint_position = [x(iter).joint_1, x(iter).joint_2, x(iter).joint_3, x(iter).joint_4, x(iter).joint_5, x(iter).joint_6, x(iter).joint_7];
-    object_function_result = abs(T_position(dh_parameter, initial_joints) - T_position(dh_parameter, joint_position));
-
+function object_function_result = object_function(dh_parameter, desired_position, x, mode)
+     if mode == 1
+        object_function_result.best_cost = inf;
+        for iter = 1:length(x.Position.J1)
+            joint_position = [x.Position.J1(iter), x.Position.J2(iter), x.Position.J3(iter), x.Position.J4(iter), x.Position.J5(iter), x.Position.J6(iter), x.Position.J7(iter)];
+            joint_error = abs(desired_position' - T_position(dh_parameter, joint_position));
+            if sum(joint_error) < object_function_result.best_cost
+                object_function_result.best_cost = sum(joint_error);
+                object_function_result.best_position = joint_position;
+            end
+        end
+     else
+        joint_position = x.Position;
+        joint_error = abs(desired_position' - T_position(dh_parameter, joint_position));
+        object_function_result.best_cost = sum(joint_error);
+     end
 end

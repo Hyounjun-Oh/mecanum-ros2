@@ -12,10 +12,7 @@
 %
 
 function out = PSO_MANIPULATOR(problem, params)
-
     %% Problem Definiton
-
-    CostFunction = problem.CostFunction;  % Cost Function
 
     nVar = problem.nVar;        % Number of Unknown (Decision) Variables
 
@@ -26,52 +23,102 @@ function out = PSO_MANIPULATOR(problem, params)
 
 
     %% Parameters of PSO
-
     MaxIt = params.MaxIt;   % Maximum Number of Iterations
-
+    
     nPop = params.nPop;     % Population Size (Swarm Size)
-
+    
     w = params.w;           % Intertia Coefficient
     wdamp = params.wdamp;   % Damping Ratio of Inertia Coefficient
     c1 = params.c1;         % Personal Acceleration Coefficient
     c2 = params.c2;         % Social Acceleration Coefficient
-
     % The Flag for Showing Iteration Information
     ShowIterInfo = params.ShowIterInfo;    
 
     MaxVelocity = 0.2*(VarMax-VarMin);
     MinVelocity = -MaxVelocity;
-    
+    desired_position = params.desired_position;
     %% Initialization
 
     % The Particle Template
-    empty_particle.Position = [];
+    empty_particle.Position.J1 = [];
     empty_particle.Velocity = [];
     empty_particle.Cost = [];
     empty_particle.Best.Position = [];
     empty_particle.Best.Cost = [];
 
+    empty_particle.Position.J2 = [];
+    % empty_particle.Velocity.J2 = [];
+    % empty_particle.Cost.J2 = [];
+    % empty_particle.Best.Position.J2 = [];
+    % empty_particle.Best.Cost.J2 = [];
+
+    empty_particle.Position.J3 = [];
+    % empty_particle.Velocity.J3 = [];
+    % empty_particle.Cost.J3 = [];
+    % empty_particle.Best.Position.J3 = [];
+    % empty_particle.Best.Cost.J3 = [];
+
+    empty_particle.Position.J4 = [];
+    % empty_particle.Velocity.J4 = [];
+    % empty_particle.Cost.J4 = [];
+    % empty_particle.Best.Position.J4 = [];
+    % empty_particle.Best.Cost.J4 = [];
+
+    empty_particle.Position.J5 = [];
+    % empty_particle.Velocity.J5 = [];
+    % empty_particle.Cost.J5 = [];
+    % empty_particle.Best.Position.J5 = [];
+    % empty_particle.Best.Cost.J5 = [];
+
+    empty_particle.Position.J6 = [];
+    % empty_particle.Velocity.J6 = [];
+    % empty_particle.Cost.J6 = [];
+    % empty_particle.Best.Position.J6 = [];
+    % empty_particle.Best.Cost.J6 = [];
+
+    empty_particle.Position.J7 = [];
+    % empty_particle.Velocity.J7 = [];
+    % empty_particle.Cost.J7 = [];
+    % empty_particle.Best.Position.J7 = [];
+    % empty_particle.Best.Cost.J7 = [];
+
     % Create Population Array
     particle = repmat(empty_particle, nPop, 1);
 
     % Initialize Global Best
-    GlobalBest.Cost = inf;
+    GlobalBest.Cost= inf;
 
     % Initialize Population Members
     for i=1:nPop
 
         % Generate Random Solution
-        particle(i).Position = unifrnd(VarMin, VarMax, VarSize);
+        particle(i).Position.J1 = unifrnd(VarMin(1), VarMax(1), VarSize);
+        particle(i).Position.J2 = unifrnd(VarMin(2), VarMax(2), VarSize);
+        particle(i).Position.J3 = unifrnd(VarMin(3), VarMax(3), VarSize);
+        particle(i).Position.J4 = unifrnd(VarMin(4), VarMax(4), VarSize);
+        particle(i).Position.J5 = unifrnd(VarMin(5), VarMax(5), VarSize);
+        particle(i).Position.J6 = unifrnd(VarMin(6), VarMax(6), VarSize);
+        particle(i).Position.J7 = unifrnd(VarMin(7), VarMax(7), VarSize);
 
         % Initialize Velocity
-        particle(i).Velocity = zeros(VarSize);
+        particle(i).Velocity = zeros(1,7);
+        % particle(i).Velocity.J2 = zeros(VarSize);
+        % particle(i).Velocity.J3 = zeros(VarSize);
+        % particle(i).Velocity.J4 = zeros(VarSize);
+        % particle(i).Velocity.J5 = zeros(VarSize);
+        % particle(i).Velocity.J6 = zeros(VarSize);
+        % particle(i).Velocity.J7 = zeros(VarSize);
 
         % Evaluation
-        particle(i).Cost = CostFunction(particle(i).Position);
+        object_function_result = object_function(params.dh_parameter, desired_position, particle(i),1);
+        particle(i).Cost = object_function_result.best_cost;
+        particle(i).Best.Cost = object_function_result.best_cost;
+        particle(i).Position = object_function_result.best_position;
+        particle(i).Best.Position = object_function_result.best_position;
 
         % Update the Personal Best
-        particle(i).Best.Position = particle(i).Position;
-        particle(i).Best.Cost = particle(i).Cost;
+        % particle(i).Best.Position = particle(i).Position;
+        % particle(i).Best.Cost = particle(i).Cost;
 
         % Update Global Best
         if particle(i).Best.Cost < GlobalBest.Cost
@@ -92,8 +139,9 @@ function out = PSO_MANIPULATOR(problem, params)
 
             % Update Velocity
             particle(i).Velocity = w*particle(i).Velocity ...
-                + c1*rand(VarSize).*(particle(i).Best.Position - particle(i).Position) ...
-                + c2*rand(VarSize).*(GlobalBest.Position - particle(i).Position);
+                + c1*rand(size(particle(i).Position)).*(particle(i).Best.Position - particle(i).Position) ...
+                + c2*rand(size(particle(i).Position)).*(GlobalBest.Position - particle(i).Position);
+            
 
             % Apply Velocity Limits
             particle(i).Velocity = max(particle(i).Velocity, MinVelocity);
@@ -107,7 +155,9 @@ function out = PSO_MANIPULATOR(problem, params)
             particle(i).Position = min(particle(i).Position, VarMax);
 
             % Evaluation
-            particle(i).Cost = CostFunction(particle(i).Position);
+            object_function_result = object_function(params.dh_parameter, desired_position, particle(i),2);
+
+            particle(i).Cost = object_function_result.best_cost;
 
             % Update Personal Best
             if particle(i).Cost < particle(i).Best.Cost

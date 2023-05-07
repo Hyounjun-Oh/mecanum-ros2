@@ -2,10 +2,10 @@
 % Jeonbuk National University
 % Hyounjun Oh
 
-function tool_position = T_position(dh_parameter, theta_array)
-    dh_parameter.theta = theta_array;
-    for iter = 1:length(theta_array)
-        T(iter).transform_matrix = DHmatrix(dh_parameter.theta(iter),dh_parameter.d(iter),dh_parameter.a(iter),dh_parameter.al(iter));
+function tool_position = T_position(x, theta_array)
+    theta = theta_array;
+    for iter = 1:length(theta)
+        T(iter).transform_matrix = DHmatrix(theta(iter),x.d(iter),x.a(iter),x.al(iter));
         if iter == 1
             T(iter).multiple_transform = T(iter).transform_matrix;
         else
