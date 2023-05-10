@@ -88,7 +88,6 @@ class CmdVelSubscriber(Node):
                 self.ser.write(data.encode())
                 self.get_logger().info("Front motor data transfer is successful!")
                 self.get_logger().info(str(self.w1) + "," + str(self.w2))
-                self.motor_vel_publisher.publish(self.motor_vel)
             else:
                 #self.send_floats_data(self.w3,self.w4)
                 #self.send_data(self.w3,self.w4)
@@ -96,7 +95,6 @@ class CmdVelSubscriber(Node):
                 self.ser.write(data.encode())
                 self.get_logger().info("Rear motor data transfer is successful!")
                 self.get_logger().info(str(self.w3) + "," + str(self.w4))
-                self.motor_vel_publisher.publish(self.motor_vel)
         #self.ser.flush() # 시리얼 버퍼 초기화
         time.sleep(0.01)
     
