@@ -1,4 +1,12 @@
 
+//Jeonbuk National University
+//Hyounjun Oh 
+///////////////////////////////////////
+//////////////////////////////////////
+//////////////    주의      ///////////
+/////////////Front Rear 확인//////////
+//////////////////////////////////////
+/////////////////////////////////////
 #include <MsTimer2.h>
 #define ENC_COUNT_REV 1326
 #define ENC_IN_1_A 18 //5
@@ -58,10 +66,15 @@ float error_1 = 0;
 float error_2 = 0;
 float error_pre_1 = 0.0;
 float error_pre_2 = 0.0;
+float control_1_pre = 0.0;
+float control_2_pre = 0.0;
+int count = 0;
 volatile float targetRPM_1 = 0.0;
 volatile float targetRPM_2 = 0.0;
 volatile float targetRPM_1_old = 0.0;
 volatile float targetRPM_2_old = 0.0;
+volatile float limit_max_RPM = 122;
+volatile float limit_min_RPM = -122;
 float maxRPM = 122.0; //172 not loaded, 122 loaded
 volatile String slaveData;
 
@@ -82,6 +95,7 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(ENC_IN_2_A), motor_2_pulse, RISING);
   MsTimer2::set(50, getRPM);
   MsTimer2::start();
+  Serial.flush();
 }
 
 void loop() {
@@ -141,12 +155,29 @@ void doMotor(int motor_in_A, int motor_in_B, int motor_rpm_pin ,bool dir, int ve
 }
 
 void getRPM(){
+  float damp_1 = 0.0; // 급가속을 방지하기위한 댐핑 도
+  float damp_2 = 0.0;
+  if (control_1_pre >= 7.64){
+    damp_1 = 0.5;
+  }else if (control_1_pre >= 5.73){
+    damp_1 = 3.0;
+  }else{
+    damp_1 = 4.0;
+  }
+  if (control_2_pre >= 7.64){
+    damp_2 = 0.5;
+  }else if (control_2_pre >= 5.73){
+    damp_2 = 3.0;
+  }else{
+    damp_2 = 4.0;
+  }
   rpm_motor_1 = (float)(motor_1_pulse_count * 1200 / ENC_COUNT_REV);
   rpm_motor_2 = (float)(motor_2_pulse_count * 1200 / ENC_COUNT_REV);
   error_1 = (targetRPM_1 - rpm_motor_1);
   error_2 = (targetRPM_2 - rpm_motor_2);
   I_control_1 += error_1*1;
-  I_control_2 += error_2*1;  
+  I_control_2 += error_2*1;
+  //튀는 오류 잡기
   if (error_1 - error_pre_1 == 0){
     D_control_1 = 0;
   }else{
@@ -163,6 +194,7 @@ void getRPM(){
   error_pre_2 = error_2;
   control_1 = float(((targetRPM_1*Ks_1 + PID_1)/maxRPM)*255);
   control_2 = float(((targetRPM_2*Ks_2 + PID_2)/maxRPM)*255);
+  //타겟 RPM이 0임에도 잔류 토크가 남아있는경우를 방지하기 위해서 입력 토크가 0이면 모든 PID계수가 0이됨.
   if (targetRPM_1 == 0){
     control_1 = 0;
     I_control_1 = 0;
@@ -173,10 +205,27 @@ void getRPM(){
     I_control_2 = 0;
     D_control_2 = 0;
   }
+  //값이 갑자기 치솟는 현상 방지.
+  //1.91 -> 3.82 -> 5.73 -> 7.64 ...
+  // x3   ->   x3    -> x2 -> x0.5
+  if ((control_1 != 0) and (abs(control_1) > abs(control_1) + abs(control_1_pre)*damp_1)){
+    control_1 = control_1_pre;
+  }
+  if ((control_2 != 0 ) and (abs(control_2) > abs(control_2) + abs(control_2_pre)*damp_2)){
+    control_2 = control_2_pre;
+  }
   doMotor(MOT_IN_1, MOT_IN_2, MOT_PWM_PIN_A,(control_1>=0)?HIGH:LOW, min(abs(control_1), 255));
   doMotor(MOT_IN_3, MOT_IN_4, MOT_PWM_PIN_B,(control_2>=0)?HIGH:LOW, min(abs(control_2), 255));
+  control_1_pre = control_1;
+  control_2_pre = control_2;
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
+  // 양단 4 테스트 완료
+  if (count == 2){
+    Serial.println(String(1)+','+String(rpm_motor_1)+','+String(rpm_motor_2));
+    count = 0;
+  }
+  count = count + 1;
 }
 
 void Split(String sData, char cSeparator){	
@@ -205,4 +254,5 @@ void serialEvent() {
   }
   targetRPM_1_old = targetRPM_1;
   targetRPM_2_old = targetRPM_2;
+  //sireal publish
 }

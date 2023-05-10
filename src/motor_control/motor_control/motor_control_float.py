@@ -59,12 +59,20 @@ class CmdVelSubscriber(Node):
             'cmd_vel',
             self.get_cmd_vel,
             qos_depth)
+        self.motor_vel_publisher = self.create_publisher(
+            Float32MultiArray,
+            'motor_vel',
+            qos_depth
+        )
         self.subscription  # prevent unused variable warning
         self.ser = serial.Serial(self.port, self.baudrate) #OpenCR Port COM3, MEGE Port COM4
         self.get_logger().info("포트 : {0}, 보드레이트 : {1}".format(self.port, self.baudrate, timeout = self.timeout))
         self.ser.flush()
 
     def get_cmd_vel(self, msg):
+        motor_vel_arr = [0,0,0]
+        msg_motor_vel = Float32MultiArray()
+        msg_motor_vel.data = [0.0, 0.0, 0.0]
         self.arduino_num= self.get_parameter('arduino_num').get_parameter_value().integer_value
         self.Vx = msg.linear.x #m/s
         self.Vy = msg.linear.y #m/s
@@ -76,17 +84,39 @@ class CmdVelSubscriber(Node):
                 #self.send_data(self.w1,self.w2)
                 data = str(self.w1) + "," + str(self.w2)
                 self.ser.write(data.encode())
-                self.get_logger().info("Front motor data transfer is successful!")
-                self.get_logger().info(str(self.w1) + "," + str(self.w2))
+                #self.get_logger().info(str(self.w1) + "," + str(self.w2))
+                motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
+                if motor_vel_arr[0] == 1:
+                    if (len(motor_vel_arr) == 3):
+                        msg_motor_vel.layout.data_offset = 1 #모터 드라이버 구분용으로 사용함.
+                        msg_motor_vel.data[0] = motor_vel_arr[1]
+                        msg_motor_vel.data[1] = motor_vel_arr[2]
+                        self.motor_vel_publisher.publish(msg_motor_vel)
+                    else:
+                        pass
+                else:
+                    pass     
             else:
                 #self.send_floats_data(self.w3,self.w4)
                 #self.send_data(self.w3,self.w4)
                 data = str(self.w3) + "," + str(self.w4)
                 self.ser.write(data.encode())
-                self.get_logger().info("Rear motor data transfer is successful!")
-                self.get_logger().info(str(self.w3) + "," + str(self.w4))
+                #self.get_logger().info(str(self.w3) + "," + str(self.w4))
+                motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
+                if motor_vel_arr[0] == 2:
+                    if (len(motor_vel_arr) == 3):
+                        msg_motor_vel.layout.data_offset = 2 #모터 드라이버 구분용으로 사용함.
+                        msg_motor_vel.data[0] = motor_vel_arr[1]
+                        msg_motor_vel.data[1] = motor_vel_arr[2]
+                        self.motor_vel_publisher.publish(msg_motor_vel)
+                    else:
+                        pass
+                else:
+                    pass   
         #self.ser.flush() # 시리얼 버퍼 초기화
-        time.sleep(0.01)
+        #time.sleep(0.01)
+        #num_driver, m_1, m_2 = map(float,self.ser.readline().decode().rstrip().split(','))
+        #self.get_logger().info()
     
     def send_data(self, data1, data2):
         packet = self.header + data1.to_bytes(2, 'little', signed=True) + data2.to_bytes(2, 'little', signed=True)  # 패킷을 생성합니다.
