@@ -1,0 +1,17 @@
+[0.251s] Invoking command in '/home/jetson/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/stella_ahrs -- -j4 -l4
+[1.191s] [ 16%] [32m[1mLinking CXX executable stella_ahrs_node[0m
+[1.768s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.770s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.772s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.774s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.778s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.779s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.781s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.794s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.795s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a(MW_serial.o): Relocations in generic ELF (EM: 62)
+[1.797s] /usr/bin/ld: /home/jetson/mecanum-ros2/src/stella_ahrs/lib/MW_AHRS_amd64.a: error adding symbols: file in wrong format
+[1.798s] collect2: error: ld returned 1 exit status
+[1.811s] make[2]: *** [CMakeFiles/stella_ahrs_node.dir/build.make:232: stella_ahrs_node] Error 1
+[1.812s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/stella_ahrs_node.dir/all] Error 2
+[1.814s] make: *** [Makefile:141: all] Error 2
+[1.847s] Invoked command in '/home/jetson/mecanum-ros2/build/stella_ahrs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/stella_ahrs -- -j4 -l4

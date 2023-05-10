@@ -1,0 +1,19 @@
+[100%] Built target read_write_node
+-- Install configuration: ""
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_node
+-- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_node" to ""
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.sh
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.dsv
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.sh
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.dsv
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.bash
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.sh
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.zsh
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.dsv
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/ament_index/resource_index/packages/dynamixel_sdk_examples
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig.cmake
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig-version.cmake
+-- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.xml

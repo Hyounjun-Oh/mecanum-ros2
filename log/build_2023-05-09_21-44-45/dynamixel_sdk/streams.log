@@ -1,0 +1,41 @@
+[0.682s] Invoking command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/dynamixel_sdk -- -j4 -l4
+[6.273s] [100%] Built target dynamixel_sdk
+[6.285s] Invoked command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/dynamixel_sdk -- -j4 -l4
+[7.239s] Invoking command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/dynamixel_sdk
+[7.394s] -- Install configuration: ""
+[7.397s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include/
+[7.399s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk
+[7.401s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[7.404s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[7.406s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[7.416s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[7.423s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[7.435s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[7.439s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[7.441s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[7.444s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[7.446s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[7.449s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[7.456s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[7.459s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[7.462s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[7.465s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[7.472s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[7.486s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[7.504s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[7.506s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[7.508s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[7.509s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[7.515s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[7.530s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[7.559s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[7.576s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[7.582s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[7.586s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[7.588s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[7.590s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.593s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[7.595s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[7.598s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[7.600s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[7.823s] Invoked command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/dynamixel_sdk

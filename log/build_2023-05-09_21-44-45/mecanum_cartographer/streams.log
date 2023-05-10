@@ -1,0 +1,20 @@
+[14.777s] Invoking command in '/home/jetson/mecanum-ros2/src/mecanum_cartographer': PYTHONPATH=/home/jetson/mecanum-ros2/build/mecanum_cartographer/prefix_override:/home/jetson/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_cartographer build --build-base /home/jetson/mecanum-ros2/build/mecanum_cartographer/build install --record /home/jetson/mecanum-ros2/build/mecanum_cartographer/install.log --single-version-externally-managed
+[20.240s] running egg_info
+[20.249s] writing ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/PKG-INFO
+[20.253s] writing dependency_links to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/dependency_links.txt
+[20.258s] writing entry points to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/entry_points.txt
+[20.262s] writing requirements to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/requires.txt
+[20.274s] writing top-level names to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/top_level.txt
+[20.283s] reading manifest file '../../build/mecanum_cartographer/mecanum_cartographer.egg-info/SOURCES.txt'
+[20.285s] writing manifest file '../../build/mecanum_cartographer/mecanum_cartographer.egg-info/SOURCES.txt'
+[20.287s] running build
+[20.290s] running build_py
+[20.301s] running install
+[20.304s] running install_lib
+[20.308s] running install_data
+[20.314s] running install_egg_info
+[20.319s] removing '/home/jetson/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages/mecanum_cartographer-0.0.0-py3.8.egg-info' (and everything under it)
+[20.330s] Copying ../../build/mecanum_cartographer/mecanum_cartographer.egg-info to /home/jetson/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages/mecanum_cartographer-0.0.0-py3.8.egg-info
+[20.342s] running install_scripts
+[20.349s] writing list of installed files to '/home/jetson/mecanum-ros2/build/mecanum_cartographer/install.log'
+[25.708s] Invoked command in '/home/jetson/mecanum-ros2/src/mecanum_cartographer' returned '0': PYTHONPATH=/home/jetson/mecanum-ros2/build/mecanum_cartographer/prefix_override:/home/jetson/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_cartographer build --build-base /home/jetson/mecanum-ros2/build/mecanum_cartographer/build install --record /home/jetson/mecanum-ros2/build/mecanum_cartographer/install.log --single-version-externally-managed

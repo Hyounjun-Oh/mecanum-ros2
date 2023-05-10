@@ -1,0 +1,39 @@
+[14.944s] Invoking command in '/home/jetson/mecanum-ros2/src/manipulator': AMENT_PREFIX_PATH=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetson/mecanum-ros2/build/manipulator/prefix_override:/home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/jetson/mecanum-ros2/build/manipulator/build install --record /home/jetson/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed
+[20.872s] running egg_info
+[20.882s] creating ../../build/manipulator/manipulator.egg-info
+[20.883s] writing ../../build/manipulator/manipulator.egg-info/PKG-INFO
+[20.889s] writing dependency_links to ../../build/manipulator/manipulator.egg-info/dependency_links.txt
+[20.893s] writing entry points to ../../build/manipulator/manipulator.egg-info/entry_points.txt
+[20.897s] writing requirements to ../../build/manipulator/manipulator.egg-info/requires.txt
+[20.901s] writing top-level names to ../../build/manipulator/manipulator.egg-info/top_level.txt
+[20.932s] writing manifest file '../../build/manipulator/manipulator.egg-info/SOURCES.txt'
+[20.959s] reading manifest file '../../build/manipulator/manipulator.egg-info/SOURCES.txt'
+[20.974s] writing manifest file '../../build/manipulator/manipulator.egg-info/SOURCES.txt'
+[20.979s] running build
+[20.982s] running build_py
+[20.989s] creating /home/jetson/mecanum-ros2/build/manipulator/build
+[20.990s] creating /home/jetson/mecanum-ros2/build/manipulator/build/lib
+[20.992s] creating /home/jetson/mecanum-ros2/build/manipulator/build/lib/manipulator
+[20.994s] copying manipulator/manipulater_move.py -> /home/jetson/mecanum-ros2/build/manipulator/build/lib/manipulator
+[20.998s] copying manipulator/__init__.py -> /home/jetson/mecanum-ros2/build/manipulator/build/lib/manipulator
+[21.005s] running install
+[21.022s] running install_lib
+[21.039s] creating /home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator
+[21.043s] copying /home/jetson/mecanum-ros2/build/manipulator/build/lib/manipulator/manipulater_move.py -> /home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator
+[21.053s] copying /home/jetson/mecanum-ros2/build/manipulator/build/lib/manipulator/__init__.py -> /home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator
+[21.065s] byte-compiling /home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator/manipulater_move.py to manipulater_move.cpython-38.pyc
+[21.076s] byte-compiling /home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator/__init__.py to __init__.cpython-38.pyc
+[21.083s] running install_data
+[21.094s] creating /home/jetson/mecanum-ros2/install/manipulator/share/ament_index
+[21.098s] creating /home/jetson/mecanum-ros2/install/manipulator/share/ament_index/resource_index
+[21.101s] creating /home/jetson/mecanum-ros2/install/manipulator/share/ament_index/resource_index/packages
+[21.105s] copying resource/manipulator -> /home/jetson/mecanum-ros2/install/manipulator/share/ament_index/resource_index/packages
+[21.109s] copying package.xml -> /home/jetson/mecanum-ros2/install/manipulator/share/manipulator
+[21.114s] creating /home/jetson/mecanum-ros2/install/manipulator/share/manipulator/launch
+[21.118s] creating /home/jetson/mecanum-ros2/install/manipulator/share/manipulator/param
+[21.122s] running install_egg_info
+[21.153s] Copying ../../build/manipulator/manipulator.egg-info to /home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator-0.0.0-py3.8.egg-info
+[21.172s] running install_scripts
+[21.467s] Installing manipulator_move script to /home/jetson/mecanum-ros2/install/manipulator/lib/manipulator
+[21.472s] writing list of installed files to '/home/jetson/mecanum-ros2/build/manipulator/install.log'
+[21.731s] Invoked command in '/home/jetson/mecanum-ros2/src/manipulator' returned '0': AMENT_PREFIX_PATH=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetson/mecanum-ros2/build/manipulator/prefix_override:/home/jetson/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/jetson/mecanum-ros2/build/manipulator/build install --record /home/jetson/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed
