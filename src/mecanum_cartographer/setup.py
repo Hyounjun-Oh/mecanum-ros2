@@ -13,6 +13,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', glob.glob(os.path.join('launch', '*.launch.py'))),
         ('share/' + package_name + '/config', glob.glob(os.path.join('config', '*.lua'))),
+        ('share/' + package_name + '/rviz', glob.glob(os.path.join('rviz','*.rviz'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

@@ -21,7 +21,7 @@ def launch(launch_descriptor, argv):
             '0', '0', '0.02',
             '0', '0', '0', '1',
             'base_link',
-            'laser_frame'
+            'imu_link'
         ],
         name='static_tf_pub_laser',
         exit_handler=restart_exit_handler,

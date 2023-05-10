@@ -35,7 +35,7 @@ def generate_launch_description():
         default = os.path.join(get_package_share_directory('ydlidar_ros2_driver'),'launch')
     )
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
-
+    
     return LaunchDescription([
         DeclareLaunchArgument(
             'use_sim_time',
