@@ -59,11 +59,6 @@ class CmdVelSubscriber(Node):
             'cmd_vel',
             self.get_cmd_vel,
             qos_depth)
-        self.motor_vel_publisher = self.create_publisher(
-            Float32MultiArray,
-            'motor_vel',
-            qos_depth
-        )
         self.subscription  # prevent unused variable warning
         self.ser = serial.Serial(self.port, self.baudrate) #OpenCR Port COM3, MEGE Port COM4
         self.get_logger().info("포트 : {0}, 보드레이트 : {1}".format(self.port, self.baudrate, timeout = self.timeout))
@@ -75,11 +70,6 @@ class CmdVelSubscriber(Node):
         self.Vy = msg.linear.y #m/s
         self.Rz = msg.angular.z #rad/s
         self.cmd_vel2rad()
-        self.motor_vel = Float32MultiArray()
-        self.motor_vel.data[0] = self.w1
-        self.motor_vel.data[1] = self.w2
-        self.motor_vel.data[2] = self.w3
-        self.motor_vel.data[3] = self.w4
         if self.ser.readable():
             if self.arduino_num == 0:
                 #self.send_floats_data(self.w1,self.w2)
