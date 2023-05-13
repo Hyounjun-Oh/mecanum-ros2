@@ -1,18 +1,23 @@
-// Editor : HyounjunOh
-// E-mail : ohj_980918@naver.com
+//Jeonbuk National University
+//Hyounjun Oh 
+///////////////////////////////////////
+//////////////////////////////////////
+//////////////    주의      ///////////
+/////////////Front Rear 확인//////////
+//////////////////////////////////////
+/////////////////////////////////////
 #include <MsTimer2.h>
 #define ENC_COUNT_REV 1326
-// rear wheel need to change encoder pin
 #define ENC_IN_1_A 20 //5
 #define ENC_IN_2_A 18 //3 original : 20
 #define ENC_IN_1_B 21 //4 
 #define ENC_IN_2_B 19 //2 original : 21
-#define MOT_IN_1 28 //motor driver in1
-#define MOT_IN_2 29 //motor driver in2
-#define MOT_IN_3 30 //motor driver in3
-#define MOT_IN_4 31 //motor driver in4
-#define MOT_PWM_PIN_A 6 //motor driver enA
-#define MOT_PWM_PIN_B 7 //motor driver enB
+#define MOT_IN_3 28 //motor driver in1
+#define MOT_IN_4 29 //motor driver in2
+#define MOT_IN_1 30 //motor driver in3
+#define MOT_IN_2 31 //motor driver in4
+#define MOT_PWM_PIN_B 6 //motor driver enA
+#define MOT_PWM_PIN_A 7 //motor driver enB
 // motor value is OK
 // PID control is wrong
 boolean Direction_motor_1 = true;
@@ -62,13 +67,13 @@ float error_pre_1 = 0.0;
 float error_pre_2 = 0.0;
 float control_1_pre = 0.0;
 float control_2_pre = 0.0;
-volatile float targetRPM_1 = 0.0;
-volatile float targetRPM_2 = 0.0;
+int count = 0;
+volatile float targetRPM_1 = -5.0;
+volatile float targetRPM_2 = 5.0;
 volatile float targetRPM_1_old = 0.0;
 volatile float targetRPM_2_old = 0.0;
 volatile float limit_max_RPM = 122;
 volatile float limit_min_RPM = -122;
-int count = 0;
 float maxRPM = 122.0; //172 not loaded, 122 loaded
 volatile String slaveData;
 
@@ -89,6 +94,7 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(ENC_IN_2_A), motor_2_pulse, RISING);
   MsTimer2::set(50, getRPM);
   MsTimer2::start();
+  Serial.flush();
 }
 
 void loop() {
@@ -169,7 +175,8 @@ void getRPM(){
   error_1 = (targetRPM_1 - rpm_motor_1);
   error_2 = (targetRPM_2 - rpm_motor_2);
   I_control_1 += error_1*1;
-  I_control_2 += error_2*1;  
+  I_control_2 += error_2*1;
+  //튀는 오류 잡기
   if (error_1 - error_pre_1 == 0){
     D_control_1 = 0;
   }else{
@@ -186,6 +193,7 @@ void getRPM(){
   error_pre_2 = error_2;
   control_1 = float(((targetRPM_1*Ks_1 + PID_1)/maxRPM)*255);
   control_2 = float(((targetRPM_2*Ks_2 + PID_2)/maxRPM)*255);
+  //타겟 RPM이 0임에도 잔류 토크가 남아있는경우를 방지하기 위해서 입력 토크가 0이면 모든 PID계수가 0이됨.
   if (targetRPM_1 == 0){
     control_1 = 0;
     I_control_1 = 0;
@@ -211,23 +219,24 @@ void getRPM(){
   control_2_pre = control_2;
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
+  // 양단 4 테스트 완료
   if (count == 2){
-    Serial.println(String(2)+','+String(rpm_motor_1)+','+String(rpm_motor_2));
+    Serial.println(String(1)+','+String(rpm_motor_1)+','+String(rpm_motor_2));
     count = 0;
   }
   count = count + 1;
 }
 
-void Split(String sData, char cSeparator){	
-	int nCount = 0;
-	int nGetIndex = 0 ;
-	String sTemp = "";
-	String sCopy = sData;
+void Split(String sData, char cSeparator){  
+  int nCount = 0;
+  int nGetIndex = 0 ;
+  String sTemp = "";
+  String sCopy = sData;
 
-	nGetIndex = sCopy.indexOf(cSeparator);
-	sTemp = sCopy.substring(0, nGetIndex);
+  nGetIndex = sCopy.indexOf(cSeparator);
+  sTemp = sCopy.substring(0, nGetIndex);
   targetRPM_1 = sTemp.toFloat();
-	sCopy = sCopy.substring(nGetIndex + 1);
+  sCopy = sCopy.substring(nGetIndex + 1);
   sTemp = sCopy;
   targetRPM_2 = sTemp.toFloat();
 }
@@ -244,4 +253,5 @@ void serialEvent() {
   }
   targetRPM_1_old = targetRPM_1;
   targetRPM_2_old = targetRPM_2;
+  //sireal publish
 }

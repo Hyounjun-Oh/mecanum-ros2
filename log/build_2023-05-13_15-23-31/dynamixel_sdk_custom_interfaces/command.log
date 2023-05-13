@@ -1,4 +1,0 @@
-Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces -- -j20 -l20
-Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces -- -j20 -l20
-Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
-Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces

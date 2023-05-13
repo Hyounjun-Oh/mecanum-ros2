@@ -1,4 +1,3 @@
-
 //Jeonbuk National University
 //Hyounjun Oh 
 ///////////////////////////////////////
@@ -9,16 +8,16 @@
 /////////////////////////////////////
 #include <MsTimer2.h>
 #define ENC_COUNT_REV 1326
-#define ENC_IN_1_A 18 //5
-#define ENC_IN_2_A 20 //3 original : 20
-#define ENC_IN_1_B 19 //4 
-#define ENC_IN_2_B 21 //2 original : 21
-#define MOT_IN_1 28 //motor driver in1
-#define MOT_IN_2 29 //motor driver in2
-#define MOT_IN_3 30 //motor driver in3
-#define MOT_IN_4 31 //motor driver in4
-#define MOT_PWM_PIN_A 6 //motor driver enA
-#define MOT_PWM_PIN_B 7 //motor driver enB
+#define ENC_IN_1_A 20 //5
+#define ENC_IN_2_A 18 //3 original : 20
+#define ENC_IN_1_B 21 //4 
+#define ENC_IN_2_B 19 //2 original : 21
+#define MOT_IN_3 28 //motor driver in1
+#define MOT_IN_4 29 //motor driver in2
+#define MOT_IN_1 30 //motor driver in3
+#define MOT_IN_2 31 //motor driver in4
+#define MOT_PWM_PIN_B 6 //motor driver enA
+#define MOT_PWM_PIN_A 7 //motor driver enB
 // motor value is OK
 // PID control is wrong
 boolean Direction_motor_1 = true;
@@ -69,8 +68,8 @@ float error_pre_2 = 0.0;
 float control_1_pre = 0.0;
 float control_2_pre = 0.0;
 int count = 0;
-volatile float targetRPM_1 = 0.0;
-volatile float targetRPM_2 = 0.0;
+volatile float targetRPM_1 = 5.0;
+volatile float targetRPM_2 = -5.0;
 volatile float targetRPM_1_old = 0.0;
 volatile float targetRPM_2_old = 0.0;
 volatile float limit_max_RPM = 122;
