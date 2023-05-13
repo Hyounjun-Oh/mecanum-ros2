@@ -1,0 +1,21 @@
+[0.522s] Invoking command in '/home/ohj/mecanum-ros2/src/manipulator': AMENT_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces LD_LIBRARY_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ohj/mecanum-ros2/build/manipulator/prefix_override:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/ohj/mecanum-ros2/build/manipulator/build install --record /home/ohj/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed
+[0.650s] running egg_info
+[0.650s] writing ../../build/manipulator/manipulator.egg-info/PKG-INFO
+[0.651s] writing dependency_links to ../../build/manipulator/manipulator.egg-info/dependency_links.txt
+[0.651s] writing entry points to ../../build/manipulator/manipulator.egg-info/entry_points.txt
+[0.651s] writing requirements to ../../build/manipulator/manipulator.egg-info/requires.txt
+[0.651s] writing top-level names to ../../build/manipulator/manipulator.egg-info/top_level.txt
+[0.670s] reading manifest file '../../build/manipulator/manipulator.egg-info/SOURCES.txt'
+[0.671s] writing manifest file '../../build/manipulator/manipulator.egg-info/SOURCES.txt'
+[0.671s] running build
+[0.671s] running build_py
+[0.671s] running install
+[0.671s] running install_lib
+[0.672s] running install_data
+[0.672s] running install_egg_info
+[0.674s] removing '/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator-0.0.0-py3.8.egg-info' (and everything under it)
+[0.674s] Copying ../../build/manipulator/manipulator.egg-info to /home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator-0.0.0-py3.8.egg-info
+[0.674s] running install_scripts
+[0.684s] Installing manipulator_move script to /home/ohj/mecanum-ros2/install/manipulator/lib/manipulator
+[0.684s] writing list of installed files to '/home/ohj/mecanum-ros2/build/manipulator/install.log'
+[0.697s] Invoked command in '/home/ohj/mecanum-ros2/src/manipulator' returned '0': AMENT_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces LD_LIBRARY_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ohj/mecanum-ros2/build/manipulator/prefix_override:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/ohj/mecanum-ros2/build/manipulator/build install --record /home/ohj/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed

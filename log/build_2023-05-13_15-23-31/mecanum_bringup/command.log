@@ -1,0 +1,4 @@
+Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_bringup': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_bringup -- -j20 -l20
+Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_bringup -- -j20 -l20
+Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_bringup': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_bringup
+Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_bringup

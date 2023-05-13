@@ -1,0 +1,26 @@
+[1.186s] Invoking command in '/home/ohj/mecanum-ros2/src/mecanum_odometry': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_odometry/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_odometry build --build-base /home/ohj/mecanum-ros2/build/mecanum_odometry/build install --record /home/ohj/mecanum-ros2/build/mecanum_odometry/install.log --single-version-externally-managed
+[1.337s] running egg_info
+[1.337s] writing ../../build/mecanum_odometry/mecanum_odometry.egg-info/PKG-INFO
+[1.337s] writing dependency_links to ../../build/mecanum_odometry/mecanum_odometry.egg-info/dependency_links.txt
+[1.337s] writing entry points to ../../build/mecanum_odometry/mecanum_odometry.egg-info/entry_points.txt
+[1.337s] writing requirements to ../../build/mecanum_odometry/mecanum_odometry.egg-info/requires.txt
+[1.337s] writing top-level names to ../../build/mecanum_odometry/mecanum_odometry.egg-info/top_level.txt
+[1.357s] reading manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'
+[1.357s] writing manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'
+[1.358s] running build
+[1.358s] running build_py
+[1.358s] copying mecanum_odometry/odom_publisher.py -> /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry
+[1.358s] running install
+[1.358s] running install_lib
+[1.359s] copying /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry/odom_publisher.py -> /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry
+[1.359s] byte-compiling /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry/odom_publisher.py to odom_publisher.cpython-38.pyc
+[1.361s] running install_data
+[1.361s] copying launch/mecanum_localization.launch.py -> /home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/launch
+[1.361s] running install_egg_info
+[1.363s] removing '/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry-0.0.0-py3.8.egg-info' (and everything under it)
+[1.363s] Copying ../../build/mecanum_odometry/mecanum_odometry.egg-info to /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry-0.0.0-py3.8.egg-info
+[1.363s] running install_scripts
+[1.376s] Installing odom_publisher script to /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/mecanum_odometry
+[1.376s] Installing time_test script to /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/mecanum_odometry
+[1.376s] writing list of installed files to '/home/ohj/mecanum-ros2/build/mecanum_odometry/install.log'
+[1.399s] Invoked command in '/home/ohj/mecanum-ros2/src/mecanum_odometry' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_odometry/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_odometry build --build-base /home/ohj/mecanum-ros2/build/mecanum_odometry/build install --record /home/ohj/mecanum-ros2/build/mecanum_odometry/install.log --single-version-externally-managed

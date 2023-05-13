@@ -1,0 +1,43 @@
+running egg_info
+creating ../../build/mecanum_odometry/mecanum_odometry.egg-info
+writing ../../build/mecanum_odometry/mecanum_odometry.egg-info/PKG-INFO
+writing dependency_links to ../../build/mecanum_odometry/mecanum_odometry.egg-info/dependency_links.txt
+writing entry points to ../../build/mecanum_odometry/mecanum_odometry.egg-info/entry_points.txt
+writing requirements to ../../build/mecanum_odometry/mecanum_odometry.egg-info/requires.txt
+writing top-level names to ../../build/mecanum_odometry/mecanum_odometry.egg-info/top_level.txt
+writing manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'
+reading manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'
+writing manifest file '../../build/mecanum_odometry/mecanum_odometry.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ohj/mecanum-ros2/build/mecanum_odometry/build
+creating /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib
+creating /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry
+copying mecanum_odometry/odom_publisher.py -> /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry
+copying mecanum_odometry/time_test.py -> /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry
+copying mecanum_odometry/__init__.py -> /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry
+running install
+running install_lib
+creating /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry
+copying /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry/odom_publisher.py -> /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry
+copying /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry/time_test.py -> /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry
+copying /home/ohj/mecanum-ros2/build/mecanum_odometry/build/lib/mecanum_odometry/__init__.py -> /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry
+byte-compiling /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry/odom_publisher.py to odom_publisher.cpython-38.pyc
+byte-compiling /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry/time_test.py to time_test.cpython-38.pyc
+byte-compiling /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/ohj/mecanum-ros2/install/mecanum_odometry/share/ament_index
+creating /home/ohj/mecanum-ros2/install/mecanum_odometry/share/ament_index/resource_index
+creating /home/ohj/mecanum-ros2/install/mecanum_odometry/share/ament_index/resource_index/packages
+copying resource/mecanum_odometry -> /home/ohj/mecanum-ros2/install/mecanum_odometry/share/ament_index/resource_index/packages
+copying package.xml -> /home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry
+creating /home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/launch
+copying launch/mecanum_localization.launch.py -> /home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/launch
+creating /home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/param
+copying config/ekf.yaml -> /home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/param
+running install_egg_info
+Copying ../../build/mecanum_odometry/mecanum_odometry.egg-info to /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages/mecanum_odometry-0.0.0-py3.8.egg-info
+running install_scripts
+Installing odom_publisher script to /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/mecanum_odometry
+Installing time_test script to /home/ohj/mecanum-ros2/install/mecanum_odometry/lib/mecanum_odometry
+writing list of installed files to '/home/ohj/mecanum-ros2/build/mecanum_odometry/install.log'

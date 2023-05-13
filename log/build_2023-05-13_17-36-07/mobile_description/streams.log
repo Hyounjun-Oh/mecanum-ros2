@@ -1,0 +1,20 @@
+[1.121s] Invoking command in '/home/ohj/mecanum-ros2/src/mobile_description': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/ohj/mecanum-ros2/build/mobile_description/build install --record /home/ohj/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed
+[1.271s] running egg_info
+[1.272s] writing ../../build/mobile_description/mobile_description.egg-info/PKG-INFO
+[1.272s] writing dependency_links to ../../build/mobile_description/mobile_description.egg-info/dependency_links.txt
+[1.272s] writing entry points to ../../build/mobile_description/mobile_description.egg-info/entry_points.txt
+[1.272s] writing requirements to ../../build/mobile_description/mobile_description.egg-info/requires.txt
+[1.272s] writing top-level names to ../../build/mobile_description/mobile_description.egg-info/top_level.txt
+[1.297s] reading manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[1.297s] writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[1.298s] running build
+[1.298s] running build_py
+[1.298s] running install
+[1.298s] running install_lib
+[1.299s] running install_data
+[1.300s] running install_egg_info
+[1.301s] removing '/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info' (and everything under it)
+[1.301s] Copying ../../build/mobile_description/mobile_description.egg-info to /home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info
+[1.302s] running install_scripts
+[1.316s] writing list of installed files to '/home/ohj/mecanum-ros2/build/mobile_description/install.log'
+[1.349s] Invoked command in '/home/ohj/mecanum-ros2/src/mobile_description' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/ohj/mecanum-ros2/build/mobile_description/build install --record /home/ohj/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed
