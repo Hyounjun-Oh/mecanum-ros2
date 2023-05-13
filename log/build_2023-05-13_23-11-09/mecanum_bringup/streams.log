@@ -1,0 +1,55 @@
+[0.166s] Invoking command in '/home/jetson/mecanum-ros2/build/mecanum_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake /home/jetson/mecanum-ros2/src/mecanum_bringup -DCMAKE_INSTALL_PREFIX=/home/jetson/mecanum-ros2/install/mecanum_bringup
+[2.204s] -- The C compiler identification is GNU 8.4.0
+[2.204s] -- The CXX compiler identification is GNU 8.4.0
+[2.205s] -- Check for working C compiler: /usr/bin/cc
+[2.206s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.206s] -- Detecting C compiler ABI info
+[2.280s] -- Detecting C compiler ABI info - done
+[2.374s] -- Detecting C compile features
+[2.378s] -- Detecting C compile features - done
+[2.401s] -- Check for working CXX compiler: /usr/bin/c++
+[2.916s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.925s] -- Detecting CXX compiler ABI info
+[3.391s] -- Detecting CXX compiler ABI info - done
+[3.488s] -- Detecting CXX compile features
+[3.492s] -- Detecting CXX compile features - done
+[3.510s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[3.694s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.695s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.325s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[4.887s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.903s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.908s] -- Added test 'lint_cmake' to check CMake code style
+[4.913s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.924s] -- Added test 'xmllint' to check XML markup files
+[4.943s] -- Configuring done
+[4.956s] -- Generating done
+[4.963s] -- Build files have been written to: /home/jetson/mecanum-ros2/build/mecanum_bringup
+[4.990s] Invoked command in '/home/jetson/mecanum-ros2/build/mecanum_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake /home/jetson/mecanum-ros2/src/mecanum_bringup -DCMAKE_INSTALL_PREFIX=/home/jetson/mecanum-ros2/install/mecanum_bringup
+[5.005s] Invoking command in '/home/jetson/mecanum-ros2/build/mecanum_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/mecanum_bringup -- -j4 -l4
+[5.361s] Invoked command in '/home/jetson/mecanum-ros2/build/mecanum_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/mecanum_bringup -- -j4 -l4
+[5.880s] Invoking command in '/home/jetson/mecanum-ros2/build/mecanum_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/mecanum_bringup
+[6.015s] -- Install configuration: ""
+[6.016s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch
+[6.017s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch/mecanum_rviz_view.launch.py
+[6.025s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch/mecanum.launch.py
+[6.026s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/launch/mecanum_state_publisher.launch.py
+[6.027s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/config
+[6.028s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/config/config.rviz
+[6.030s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/config/mecanum_rviz_view.rviz
+[6.031s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/ament_index/resource_index/package_run_dependencies/mecanum_bringup
+[6.032s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/ament_index/resource_index/parent_prefix_path/mecanum_bringup
+[6.035s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/ament_prefix_path.sh
+[6.037s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/ament_prefix_path.dsv
+[6.040s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/path.sh
+[6.042s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/environment/path.dsv
+[6.044s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.bash
+[6.046s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.sh
+[6.052s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.zsh
+[6.054s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/local_setup.dsv
+[6.058s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.dsv
+[6.060s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/ament_index/resource_index/packages/mecanum_bringup
+[6.063s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/cmake/mecanum_bringupConfig.cmake
+[6.064s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/cmake/mecanum_bringupConfig-version.cmake
+[6.066s] -- Installing: /home/jetson/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.xml
+[6.086s] Invoked command in '/home/jetson/mecanum-ros2/build/mecanum_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/mecanum_bringup

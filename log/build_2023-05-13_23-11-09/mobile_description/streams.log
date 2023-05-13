@@ -1,0 +1,52 @@
+[6.316s] Invoking command in '/home/jetson/mecanum-ros2/src/mobile_description': PYTHONPATH=/home/jetson/mecanum-ros2/build/mobile_description/prefix_override:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/jetson/mecanum-ros2/build/mobile_description/build install --record /home/jetson/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed
+[9.769s] running egg_info
+[9.772s] creating ../../build/mobile_description/mobile_description.egg-info
+[9.775s] writing ../../build/mobile_description/mobile_description.egg-info/PKG-INFO
+[9.778s] writing dependency_links to ../../build/mobile_description/mobile_description.egg-info/dependency_links.txt
+[9.779s] writing entry points to ../../build/mobile_description/mobile_description.egg-info/entry_points.txt
+[9.780s] writing requirements to ../../build/mobile_description/mobile_description.egg-info/requires.txt
+[9.782s] writing top-level names to ../../build/mobile_description/mobile_description.egg-info/top_level.txt
+[9.793s] writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[9.804s] reading manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[9.810s] writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[9.813s] running build
+[9.815s] running build_py
+[9.817s] creating /home/jetson/mecanum-ros2/build/mobile_description/build
+[9.818s] creating /home/jetson/mecanum-ros2/build/mobile_description/build/lib
+[9.819s] creating /home/jetson/mecanum-ros2/build/mobile_description/build/lib/mobile_description
+[9.821s] copying mobile_description/__init__.py -> /home/jetson/mecanum-ros2/build/mobile_description/build/lib/mobile_description
+[9.823s] running install
+[9.829s] running install_lib
+[9.836s] creating /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description
+[9.837s] copying /home/jetson/mecanum-ros2/build/mobile_description/build/lib/mobile_description/__init__.py -> /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description
+[9.839s] byte-compiling /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description/__init__.py to __init__.cpython-38.pyc
+[9.840s] running install_data
+[9.855s] creating /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index
+[9.856s] creating /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index/resource_index
+[9.857s] creating /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index/resource_index/packages
+[9.857s] copying resource/mobile_description -> /home/jetson/mecanum-ros2/install/mobile_description/share/ament_index/resource_index/packages
+[9.858s] copying package.xml -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description
+[9.859s] creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/launch
+[9.861s] copying launch/display.launch.py -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/launch
+[9.866s] copying launch/gazebo.launch.py -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/launch
+[9.867s] creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[9.868s] copying urdf/mobile.xacro -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[9.869s] copying urdf/materials.xacro -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[9.870s] copying urdf/mobile.gazebo -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[9.871s] copying urdf/mobile.trans -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[9.873s] copying urdf/mobile.urdf -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[9.874s] creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.875s] copying meshes/front_left_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.876s] copying meshes/rear_left_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.878s] copying meshes/lidar_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.887s] copying meshes/imu_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.890s] copying meshes/front_right_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.893s] copying meshes/rear_right_wheel_1.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.894s] copying meshes/base_link.stl -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[9.896s] creating /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/config
+[9.896s] copying config/display.rviz -> /home/jetson/mecanum-ros2/install/mobile_description/share/mobile_description/config
+[9.897s] running install_egg_info
+[9.914s] Copying ../../build/mobile_description/mobile_description.egg-info to /home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info
+[9.928s] running install_scripts
+[10.199s] writing list of installed files to '/home/jetson/mecanum-ros2/build/mobile_description/install.log'
+[10.476s] Invoked command in '/home/jetson/mecanum-ros2/src/mobile_description' returned '0': PYTHONPATH=/home/jetson/mecanum-ros2/build/mobile_description/prefix_override:/home/jetson/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/jetson/mecanum-ros2/build/mobile_description/build install --record /home/jetson/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed
