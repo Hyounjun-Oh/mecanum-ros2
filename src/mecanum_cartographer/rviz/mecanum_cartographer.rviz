@@ -157,7 +157,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /odom
+        Value: /odometry/filtered
       Value: false
     - Alpha: 0.699999988079071
       Class: rviz_default_plugins/Map

@@ -82,6 +82,6 @@ def generate_launch_description():
             executable='rviz2',
             name='rviz2',
             arguments=['-d', rviz_config_dir],
-            parameters=[{'use_sim_time': use_sim_time}],
+            parameters=[{'use_sim_time': use_sim_time, 'message_queue_size': 100}],
             output='screen'),
     ])

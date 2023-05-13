@@ -34,6 +34,14 @@ def generate_launch_description():
         'ydlidar_pkg_dir',
         default = os.path.join(get_package_share_directory('ydlidar_ros2_driver'),'launch')
     )
+    imu_pkg_dir = LaunchConfiguration(
+        'imu_pkg_dir',
+        default = os.path.join(get_package_share_directory('stella_ahrs'),'launch')
+    )
+    motor_driver_pkg = LaunchConfiguration(
+        'motor_driver_pkg_dir',
+        default = os.path.join(get_package_share_directory('motor_control'),'launch')
+    )
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     
     return LaunchDescription([
@@ -51,5 +59,15 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 [ydlidar_pkg_dir, '/ydlidar_launch.py']),
+        ),
+        
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                [imu_pkg_dir, '/stella_ahrs_launch.py']),
+        ),
+        
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                [motor_driver_pkg, 'motor_control.launch.py']),
         ),
     ])
