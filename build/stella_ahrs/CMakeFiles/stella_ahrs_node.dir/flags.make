@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++17
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION
 
-CXX_INCLUDES = -I/home/jetson/mecanum-ros2/src/stella_ahrs/include/mw -I/home/jetson/mecanum-ros2/src/stella_ahrs/include/serial -isystem /opt/ros/galactic/include 
+CXX_INCLUDES = -I/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw -I/home/ohj/mecanum-ros2/src/stella_ahrs/include/serial -isystem /opt/ros/galactic/include 
 

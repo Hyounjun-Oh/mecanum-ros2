@@ -68,6 +68,7 @@ class CmdVelSubscriber(Node):
         self.ser = serial.Serial(self.port, self.baudrate) #OpenCR Port COM3, MEGE Port COM4
         self.get_logger().info("포트 : {0}, 보드레이트 : {1}".format(self.port, self.baudrate, timeout = self.timeout))
         self.ser.flush()
+        time.sleep(5)
 
     def get_cmd_vel(self, msg):
         motor_vel_arr = [0,0,0]
@@ -80,39 +81,41 @@ class CmdVelSubscriber(Node):
         self.cmd_vel2rad()
         if self.ser.readable():
             if self.arduino_num == 0:
-                #self.send_floats_data(self.w1,self.w2)
-                #self.send_data(self.w1,self.w2)
                 data = str(self.w1) + "," + str(self.w2)
                 self.ser.write(data.encode())
-                #self.get_logger().info(str(self.w1) + "," + str(self.w2))
-                motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
-                if motor_vel_arr[0] == 1:
-                    if (len(motor_vel_arr) == 3): #데이터가 정상적이지 않으면 거름.
-                        msg_motor_vel.layout.data_offset = 1 #모터 드라이버 구분용으로 사용함.
-                        msg_motor_vel.data[0] = motor_vel_arr[1]
-                        msg_motor_vel.data[1] = motor_vel_arr[2]
-                        self.motor_vel_publisher.publish(msg_motor_vel)
-                    else:
-                        pass
+                try:
+                    motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
+                except ValueError:
+                    motor_vel_arr = [0.0, 0.0, 0,0]
                 else:
-                    pass     
+                    if motor_vel_arr[0] == 1:
+                        if (len(motor_vel_arr) == 3): #데이터가 정상적이지 않으면 거름.
+                            msg_motor_vel.layout.data_offset = 1 #모터 드라이버 구분용으로 사용함.
+                            msg_motor_vel.data[0] = motor_vel_arr[1]
+                            msg_motor_vel.data[1] = motor_vel_arr[2]
+                            self.motor_vel_publisher.publish(msg_motor_vel)
+                        else:
+                            pass
+                    else:
+                        pass     
             else:
-                #self.send_floats_data(self.w3,self.w4)
-                #self.send_data(self.w3,self.w4)
                 data = str(self.w3) + "," + str(self.w4)
                 self.ser.write(data.encode())
-                #self.get_logger().info(str(self.w3) + "," + str(self.w4))
-                motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
-                if motor_vel_arr[0] == 2:
-                    if (len(motor_vel_arr) == 3):
-                        msg_motor_vel.layout.data_offset = 2 #모터 드라이버 구분용으로 사용함.
-                        msg_motor_vel.data[0] = motor_vel_arr[1]
-                        msg_motor_vel.data[1] = motor_vel_arr[2]
-                        self.motor_vel_publisher.publish(msg_motor_vel)
-                    else:
-                        pass
+                try:
+                    motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
+                except ValueError:
+                    motor_vel_arr = [0.0, 0.0, 0,0]
                 else:
-                    pass   
+                    if motor_vel_arr[0] == 2:
+                        if (len(motor_vel_arr) == 3):
+                            msg_motor_vel.layout.data_offset = 2 #모터 드라이버 구분용으로 사용함.
+                            msg_motor_vel.data[0] = motor_vel_arr[1]
+                            msg_motor_vel.data[1] = motor_vel_arr[2]
+                            self.motor_vel_publisher.publish(msg_motor_vel)
+                        else:
+                            pass
+                    else:
+                        pass   
         #self.ser.flush() # 시리얼 버퍼 초기화
         #time.sleep(0.01)
         #num_driver, m_1, m_2 = map(float,self.ser.readline().decode().rstrip().split(','))

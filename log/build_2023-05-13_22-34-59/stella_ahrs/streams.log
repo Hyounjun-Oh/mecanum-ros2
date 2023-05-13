@@ -1,0 +1,166 @@
+[0.556s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/stella_ahrs -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/stella_ahrs
+[0.710s] -- The C compiler identification is GNU 9.4.0
+[0.710s] -- The CXX compiler identification is GNU 9.4.0
+[0.710s] -- Check for working C compiler: /usr/bin/cc
+[0.710s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.711s] -- Detecting C compiler ABI info
+[0.716s] -- Detecting C compiler ABI info - done
+[0.716s] -- Detecting C compile features
+[0.716s] -- Detecting C compile features - done
+[0.716s] -- Check for working CXX compiler: /usr/bin/c++
+[0.793s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.794s] -- Detecting CXX compiler ABI info
+[0.864s] -- Detecting CXX compiler ABI info - done
+[0.880s] -- Detecting CXX compile features
+[0.881s] -- Detecting CXX compile features - done
+[0.883s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.906s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.906s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.979s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.035s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.045s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.115s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.146s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.208s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.262s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.264s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.278s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.278s] -- Looking for pthread.h
+[1.330s] -- Looking for pthread.h - found
+[1.330s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.386s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.386s] -- Looking for pthread_create in pthreads
+[1.429s] -- Looking for pthread_create in pthreads - not found
+[1.429s] -- Looking for pthread_create in pthread
+[1.481s] -- Looking for pthread_create in pthread - found
+[1.481s] -- Found Threads: TRUE  
+[1.588s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[1.672s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[1.680s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[1.944s] -- Configuring done
+[1.951s] -- Generating done
+[1.952s] -- Build files have been written to: /home/ohj/mecanum-ros2/build/stella_ahrs
+[1.957s] Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake /home/ohj/mecanum-ros2/src/stella_ahrs -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/stella_ahrs
+[1.960s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/stella_ahrs -- -j20 -l20
+[1.985s] [35m[1mScanning dependencies of target stella_ahrs_node[0m
+[2.014s] [ 50%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/serial.cc.o[0m
+[2.014s] [ 50%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/list_ports_linux.cc.o[0m
+[2.014s] [ 50%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/src/listener.cpp.o[0m
+[2.016s] [ 83%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/unix.cc.o[0m
+[2.017s] [ 83%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/mw/mw_ahrs.cpp.o[0m
+[2.191s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> > glob(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[2.191s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:66:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[2.191s]    66 |     for(int path_index = 0; [01;35m[Kpath_index < glob_results.gl_pathc[m[K; path_index++)
+[2.192s]       |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.192s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:57:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kglob_retval[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[2.192s]    57 |     int [01;35m[Kglob_retval[m[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);
+[2.192s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[2.195s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::string format(const char*, ...)[m[K’:
+[2.195s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:246:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[2.195s]   246 |         else if( [01;35m[Kreturn_value >= buffer_size_bytes[m[K )
+[2.195s]       |                  [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[3.235s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.235s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/src/listener.cpp:7:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+[3.235s]     7 |     char *port = [01;35m[K"/dev/ttyUSB0"[m[K;
+[3.235s]       |                  [01;35m[K^~~~~~~~~~~~~~[m[K
+[3.380s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:[m[K In static member function ‘[01m[Kstatic void* ntrex::MwAhrsRosDriver::MwAhrsRead(void*)[m[K’:
+[3.380s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:48:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[3.380s]    48 |   [01;35m[K}[m[K
+[3.380s]       |   [01;35m[K^[m[K
+[3.380s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:12:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.380s]    12 |   void *MwAhrsRosDriver::MwAhrsRead([01;35m[Kvoid *arg[m[K)
+[3.380s]       |                                     [01;35m[K~~~~~~^~~[m[K
+[3.381s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:[m[K In constructor ‘[01m[Kntrex::MwAhrsRosDriver::MwAhrsRosDriver(char*, int, int)[m[K’:
+[3.381s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:53:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.381s]    53 |     this->declare_parameter("linear_acceleration_stddev"[01;35m[K)[m[K;
+[3.381s]       |                                                         [01;35m[K^[m[K
+[3.382s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.382s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.382s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.383s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38[m[K,
+[3.383s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5[m[K,
+[3.383s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1[m[K:
+[3.383s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.383s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.383s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.384s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:54:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.384s]    54 |     this->declare_parameter("angular_velocity_stddev"[01;35m[K)[m[K;
+[3.384s]       |                                                      [01;35m[K^[m[K
+[3.384s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.384s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.384s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.384s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38[m[K,
+[3.384s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5[m[K,
+[3.384s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1[m[K:
+[3.384s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.384s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.384s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.385s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:55:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.385s]    55 |     this->declare_parameter("magnetic_field_stddev"[01;35m[K)[m[K;
+[3.385s]       |                                                    [01;35m[K^[m[K
+[3.385s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.385s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.385s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.385s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38[m[K,
+[3.385s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5[m[K,
+[3.385s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1[m[K:
+[3.385s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.385s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.385s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.386s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:56:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.386s]    56 |     this->declare_parameter("orientation_stddev"[01;35m[K)[m[K;
+[3.386s]       |                                                 [01;35m[K^[m[K
+[3.386s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.386s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.386s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.386s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38[m[K,
+[3.386s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:5[m[K,
+[3.386s]                  from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/mw/mw_ahrs.cpp:1[m[K:
+[3.386s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.387s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.387s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.511s] In file included from [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/src/listener.cpp:1[m[K:
+[3.511s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:[m[K At global scope:
+[3.511s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:41:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Krun_bool[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[3.511s]    41 | static bool [01;35m[Krun_bool[m[K = false;
+[3.511s]       |             [01;35m[K^~~~~~~~[m[K
+[3.511s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:38:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmag_value[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[3.511s]    38 |              [01;35m[Kmag_value[m[K[3] = {
+[3.511s]       |              [01;35m[K^~~~~~~~~[m[K
+[3.512s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:35:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdeg_value[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[3.512s]    35 |              [01;35m[Kdeg_value[m[K[3] = {
+[3.512s]       |              [01;35m[K^~~~~~~~~[m[K
+[3.512s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:32:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgyr_value[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[3.512s]    32 |              [01;35m[Kgyr_value[m[K[3] = {
+[3.512s]       |              [01;35m[K^~~~~~~~~[m[K
+[3.512s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/include/mw/mw_ahrs.hpp:29:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kacc_value[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[3.512s]    29 | static float [01;35m[Kacc_value[m[K[3] = {
+[3.512s]       |              [01;35m[K^~~~~~~~~[m[K
+[5.093s] [100%] [32m[1mLinking CXX executable stella_ahrs_node[0m
+[5.233s] [100%] Built target stella_ahrs_node
+[5.241s] Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/stella_ahrs -- -j20 -l20
+[5.259s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/stella_ahrs
+[5.263s] -- Install configuration: ""
+[5.263s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs//launch
+[5.264s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs//launch/stella_ahrs_launch.py
+[5.264s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/rviz
+[5.264s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/rviz/imu_test.rviz
+[5.264s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/lib/stella_ahrs/stella_ahrs_node
+[5.265s] -- Set runtime path of "/home/ohj/mecanum-ros2/install/stella_ahrs/lib/stella_ahrs/stella_ahrs_node" to ""
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/package_run_dependencies/stella_ahrs
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/parent_prefix_path/stella_ahrs
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.sh
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/ament_prefix_path.dsv
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.sh
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/environment/path.dsv
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.bash
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.sh
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.zsh
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/local_setup.dsv
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.dsv
+[5.265s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/ament_index/resource_index/packages/stella_ahrs
+[5.266s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.266s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig.cmake
+[5.266s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/cmake/stella_ahrsConfig-version.cmake
+[5.266s] -- Installing: /home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.xml
+[5.268s] Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/stella_ahrs

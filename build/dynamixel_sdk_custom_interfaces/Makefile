@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_custom_interfaces
+CMAKE_SOURCE_DIR = /home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
+CMAKE_BINARY_DIR = /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces/CMakeFiles /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces/CMakeFiles /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -86,7 +86,7 @@ class OdometryNode(Node):
 
         self.vel_x = (self.radius/4)*(self.w1 + self.w2 + self.w3 + self.w4)
         self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
-        self.rot_z = (self.radius/(4*(self.length + self.width)))*(-self.w1 + self.w2 + self.w3 + self.w4)
+        self.rot_z = ((2 * self.radius)/(4*(self.length + self.width)))*(-self.w1 + self.w2 + self.w3 + self.w4)
 
     # def imu_callback(self, msg): #IMU값 받아오기
     #     self.imu_msg = msg

@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 1.2
 Name: mobile-description
 Version: 0.0.0
 Summary: The mobile_description package
@@ -6,7 +6,5 @@ Home-page: UNKNOWN
 Maintainer: author
 Maintainer-email: todo@todo.com
 License: TODO: License declaration
+Description: UNKNOWN
 Platform: UNKNOWN
-
-UNKNOWN
-

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson/mecanum-ros2/src/stella_ahrs
+CMAKE_SOURCE_DIR = /home/ohj/mecanum-ros2/src/stella_ahrs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson/mecanum-ros2/build/stella_ahrs
+CMAKE_BINARY_DIR = /home/ohj/mecanum-ros2/build/stella_ahrs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/mecanum-ros2/build/stella_ahrs/CMakeFiles /home/jetson/mecanum-ros2/build/stella_ahrs/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ohj/mecanum-ros2/build/stella_ahrs/CMakeFiles /home/ohj/mecanum-ros2/build/stella_ahrs/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/mecanum-ros2/build/stella_ahrs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ohj/mecanum-ros2/build/stella_ahrs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

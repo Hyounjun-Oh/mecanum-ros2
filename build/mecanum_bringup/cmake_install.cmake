@@ -1,8 +1,8 @@
-# Install script for directory: /home/jetson/mecanum-ros2/src/mecanum_bringup
+# Install script for directory: /home/ohj/mecanum-ros2/src/mecanum_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jetson/mecanum-ros2/install/mecanum_bringup")
+  set(CMAKE_INSTALL_PREFIX "/home/ohj/mecanum-ros2/install/mecanum_bringup")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,17 +39,17 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE DIRECTORY FILES
-    "/home/jetson/mecanum-ros2/src/mecanum_bringup/launch"
-    "/home/jetson/mecanum-ros2/src/mecanum_bringup/config"
+    "/home/ohj/mecanum-ros2/src/mecanum_bringup/launch"
+    "/home/ohj/mecanum-ros2/src/mecanum_bringup/config"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mecanum_bringup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mecanum_bringup")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mecanum_bringup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mecanum_bringup")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -57,7 +57,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup/environment" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup/environment" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -65,42 +65,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup/environment" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup/environment" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_index/share/ament_index/resource_index/packages/mecanum_bringup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_index/share/ament_index/resource_index/packages/mecanum_bringup")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup/cmake" TYPE FILE FILES
-    "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_core/mecanum_bringupConfig.cmake"
-    "/home/jetson/mecanum-ros2/build/mecanum_bringup/ament_cmake_core/mecanum_bringupConfig-version.cmake"
+    "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_core/mecanum_bringupConfig.cmake"
+    "/home/ohj/mecanum-ros2/build/mecanum_bringup/ament_cmake_core/mecanum_bringupConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/jetson/mecanum-ros2/src/mecanum_bringup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mecanum_bringup" TYPE FILE FILES "/home/ohj/mecanum-ros2/src/mecanum_bringup/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -111,5 +111,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jetson/mecanum-ros2/build/mecanum_bringup/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ohj/mecanum-ros2/build/mecanum_bringup/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

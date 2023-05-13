@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson/mecanum-ros2/src/stella_ahrs
+CMAKE_SOURCE_DIR = /home/ohj/mecanum-ros2/src/stella_ahrs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson/mecanum-ros2/build/stella_ahrs
+CMAKE_BINARY_DIR = /home/ohj/mecanum-ros2/build/stella_ahrs
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/jetson/mecanum-ros2/build/stella_ahrs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson/mecanum-ros2/src/stella_ahrs /home/jetson/mecanum-ros2/src/stella_ahrs /home/jetson/mecanum-ros2/build/stella_ahrs /home/jetson/mecanum-ros2/build/stella_ahrs /home/jetson/mecanum-ros2/build/stella_ahrs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ohj/mecanum-ros2/build/stella_ahrs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ohj/mecanum-ros2/src/stella_ahrs /home/ohj/mecanum-ros2/src/stella_ahrs /home/ohj/mecanum-ros2/build/stella_ahrs /home/ohj/mecanum-ros2/build/stella_ahrs /home/ohj/mecanum-ros2/build/stella_ahrs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 
