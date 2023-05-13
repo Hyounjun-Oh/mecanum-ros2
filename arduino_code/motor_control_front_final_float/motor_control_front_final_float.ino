@@ -49,7 +49,7 @@ volatile float Ks_1 = 0.001; // slowdown motor
 volatile float Kp_2 = 1.15; // wave : 2.3 z_Kp : 0.5*2.3 = 1.15
 volatile float Ki_2 = 0.2; // 0.2
 volatile float Kd_2 = 0.1; //0.1
-volatile float Ks_2 = 0.001; // slowdown motor
+volatile float Ks_2 = 0.009; // slowdown motor
 float PID_1 = 0.0;
 float PID_2 = 0.0;
 float P_control_1 = 0.0;

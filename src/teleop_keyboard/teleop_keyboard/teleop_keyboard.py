@@ -51,9 +51,9 @@ else:
 
 MAX_LIN = 0.30
 #MAX_DIA = 0.6
-MAX_ROT = 2.0
+MAX_ROT = 1.0
 LIN_VEL_STEP_SIZE = 0.01
-ANG_VEL_STEP_SIZE = 0.2
+ANG_VEL_STEP_SIZE = 0.1
 
 msg = """
 혼자서도 잘해요
@@ -66,7 +66,7 @@ msg = """
 
 w/x : 증가/감소 Vx [최고속도 : 0.3 m/s]
 a/d : 증가/감소 Vy [최고속도 : 0.3 m/s]
-q/e : 증가/감소 Rz [최고속도 : 2.0rad/s]
+q/e : 반시계 회전/시계 회전 Rz [최고속도 : 1.0rad/s]
 s   : 강제 정지
 CTRL-C : 컨트롤러 종료
 """
@@ -171,7 +171,7 @@ def main():
             elif key == 'q':
                 target_angular_velocity =\
                     check_angular_limit_velocity(target_angular_velocity + ANG_VEL_STEP_SIZE)
-               
+            
                 print_vels(target_linear_X_velocity, target_linear_Y_velocity, target_angular_velocity)
             elif key == 'e':
                 target_angular_velocity =\

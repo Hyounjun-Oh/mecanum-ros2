@@ -85,7 +85,7 @@ class CmdVelSubscriber(Node):
                 self.ser.write(data.encode())
                 try:
                     motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
-                except ValueError:
+                except ValueError: # 시리얼 통신이 처음 초기화 될 때 결측치 발생.
                     motor_vel_arr = [0.0, 0.0, 0,0]
                 else:
                     if motor_vel_arr[0] == 1:
@@ -97,7 +97,7 @@ class CmdVelSubscriber(Node):
                         else:
                             pass
                     else:
-                        pass     
+                        pass
             else:
                 data = str(self.w3) + "," + str(self.w4)
                 self.ser.write(data.encode())
@@ -115,7 +115,7 @@ class CmdVelSubscriber(Node):
                         else:
                             pass
                     else:
-                        pass   
+                        pass
         #self.ser.flush() # 시리얼 버퍼 초기화
         #time.sleep(0.01)
         #num_driver, m_1, m_2 = map(float,self.ser.readline().decode().rstrip().split(','))

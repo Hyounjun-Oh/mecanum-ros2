@@ -27,14 +27,15 @@ class OdometryNode(Node):
         self.width = self.get_parameter('mobile_robot_width').value # 중심점으로부터 모터의 가로 위치
         self.declare_parameter('mobile_robot_radius', 0.05)
         self.radius = self.get_parameter('mobile_robot_radius').value # 메카넘휠 반지름
-        self.vel_x = 0
-        self.vel_y = 0
-        self.rot_z = 0
-        self.ori_z = 0
+        self.vel_x = 0.0
+        self.vel_y = 0.0
+        self.rot_z = 0.0
+        self.ori_z = 0.0
         self.w1, self.w2, self.w3, self.w4 = 0,0,0,0
         self.odom_pos_y, self.odom_pos_x, self.odom_ori_z = 0,0,0
         self.old_time = self.get_clock().now().nanoseconds
         self.odom_publisher = self.create_publisher(Odometry, 'wheel/odometry', self.QoS_)
+        #wheel/odometry
         # 모터의 실제 각속도를 받아온다.
         self.vel_subscription = self.create_subscription(
             Float32MultiArray,
@@ -86,7 +87,7 @@ class OdometryNode(Node):
 
         self.vel_x = (self.radius/4)*(self.w1 + self.w2 + self.w3 + self.w4)
         self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
-        self.rot_z = ((2 * self.radius)/(4*(self.length + self.width)))*(-self.w1 + self.w2 + self.w3 + self.w4)
+        self.rot_z = (self.radius/(2*(self.length + self.width)))*(-self.w1 + self.w2 - self.w3 + self.w4)
 
     # def imu_callback(self, msg): #IMU값 받아오기
     #     self.imu_msg = msg
@@ -96,12 +97,13 @@ class OdometryNode(Node):
         self.time = self.get_clock().now().nanoseconds
         duration = (int(self.time) - int(self.old_time))/1000000000
         
-        pos_x = (self.vel_x * np.cos(self.odom_ori_z) - self.vel_y * np.sin(self.odom_ori_z))
-        pos_y = (self.vel_x * np.sin(self.odom_ori_z) + self.vel_y * np.cos(self.odom_ori_z))
+        del_rot = self.rot_z * duration
+        del_x = self.vel_x * np.cos(del_rot) - self.vel_y * np.sin(del_rot) * duration
+        del_y = self.vel_x * np.sin(del_rot) + self.vel_y * np.cos(del_rot) * duration
 
-        self.odom_pos_x += pos_x * duration
-        self.odom_pos_y += pos_y * duration
-        self.odom_ori_z += self.rot_z * duration
+        self.odom_pos_x += del_x
+        self.odom_pos_y += del_y 
+        self.odom_ori_z += del_rot
 
         self.old_time = self.time
 
@@ -120,6 +122,9 @@ class OdometryNode(Node):
         msg_odom.pose.pose.orientation.y = orientation_quaternion[1]
         msg_odom.pose.pose.orientation.z = orientation_quaternion[2]
         msg_odom.pose.pose.orientation.w = orientation_quaternion[3]
+        msg_odom.twist.twist.linear.x = self.vel_x
+        msg_odom.twist.twist.linear.y = self.vel_y
+        msg_odom.twist.twist.linear.z = self.rot_z
 
         msg_tf = TransformStamped()
         msg_tf.header.frame_id = self.frame_id
@@ -135,7 +140,7 @@ class OdometryNode(Node):
         msg_tf.transform.rotation.w = msg_odom.pose.pose.orientation.w
 
         self.odom_publisher.publish(msg_odom)
-        self.tf_broadcaster.sendTransform(msg_tf)
+        #self.tf_broadcaster.sendTransform(msg_tf)
         self.get_logger().info("현재 x좌표 : {0}, Y좌표 : {1}, 헤딩 : {2}".format(self.odom_pos_x,self.odom_pos_y,self.odom_ori_z))
         
 
