@@ -76,7 +76,7 @@ class CmdVelSubscriber(Node):
     def get_cmd_vel(self, msg):
         self.time = self.get_clock().now()
         msg_motor_vel = Float32MultiArray()
-        msg_motor_vel.data = [0.0, 0.0, 0.0]
+        msg_motor_vel.data = [0.0,0.0,0.0]
         self.arduino_num= self.get_parameter('arduino_num').get_parameter_value().integer_value
         self.Vx = msg.linear.x #m/s
         self.Vy = msg.linear.y #m/s
@@ -86,12 +86,10 @@ class CmdVelSubscriber(Node):
             if self.arduino_num == 0:
                 data = str(self.w1) + "," + str(self.w2)
                 self.ser.write(data.encode())
-                time_send = self.get_clock().now() - self.time
-                self.time = self.get_clock().now()
                 try:
                     motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
                 except ValueError: # 시리얼 통신이 처음 초기화 될 때 결측치 발생.
-                    motor_vel_arr = [0.0, 0.0, 0,0]
+                    motor_vel_arr = [0.0,0.0,0.0]
                 else:
                     if motor_vel_arr[0] == 1:
                         if (len(motor_vel_arr) == 3): #데이터가 정상적이지 않으면 거름.
@@ -99,11 +97,13 @@ class CmdVelSubscriber(Node):
                             msg_motor_vel.data[0] = motor_vel_arr[1]
                             msg_motor_vel.data[1] = motor_vel_arr[2]
                             self.motor_vel_publisher_1.publish(msg_motor_vel)
+                            self.get_logger().info(str(msg_motor_vel.data[1]) + ', ' + str(msg_motor_vel.data[2]))
                         else:
                             pass
                     else:
                         pass
             else:
+               
                 data = str(self.w3) + "," + str(self.w4)
                 self.ser.write(data.encode())
                 try:
@@ -121,16 +121,14 @@ class CmdVelSubscriber(Node):
                             pass
                     else:
                         pass
-        last_time = self.get_clock().now() - self.time
-        self.get_logger().info(str(time_send) + "    "+ str(last_time))
 
     def cmd_vel2rad(self):
         if self.arduino_num == 0:
-            self.w1 = round(((self.Vx - self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968,2)
-            self.w2 = round(((self.Vx + self.Vy + self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968,2)
+            self.w1 = round((((self.Vx - self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
+            self.w2 = round((((self.Vx + self.Vy + self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
         else:          
-            self.w3 = round(((self.Vx + self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968,2)
-            self.w4 = round(((self.Vx - self.Vy + self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968,2)
+            self.w3 = round((((self.Vx + self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
+            self.w4 = round((((self.Vx - self.Vy + self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
 
 def main(args=None):
     rclpy.init(args=args)
