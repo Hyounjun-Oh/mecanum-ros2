@@ -97,13 +97,12 @@ class CmdVelSubscriber(Node):
                             msg_motor_vel.data[0] = motor_vel_arr[1]
                             msg_motor_vel.data[1] = motor_vel_arr[2]
                             self.motor_vel_publisher_1.publish(msg_motor_vel)
-                            self.get_logger().info(str(msg_motor_vel.data[1]) + ', ' + str(msg_motor_vel.data[2]))
                         else:
                             pass
                     else:
                         pass
             else:
-               
+            
                 data = str(self.w3) + "," + str(self.w4)
                 self.ser.write(data.encode())
                 try:
