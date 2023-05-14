@@ -37,10 +37,15 @@ class OdometryNode(Node):
         self.odom_publisher = self.create_publisher(Odometry, 'wheel/odometry', self.QoS_)
         #wheel/odometry
         # 모터의 실제 각속도를 받아온다.
-        self.vel_subscription = self.create_subscription(
+        self.vel_subscription_1 = self.create_subscription(
             Float32MultiArray,
-            'motor_vel',
-            self.cmd_vel_callback,
+            'motor_vel/front',
+            self.cmd_vel_callback_1,
+            self.QoS_)
+        self.vel_subscription_2 = self.create_subscription(
+            Float32MultiArray,
+            'motor_vel/rear',
+            self.cmd_vel_callback_2,
             self.QoS_)
         # self.imu_subscription = self.create_subscription(
         #     Float64,
@@ -76,14 +81,15 @@ class OdometryNode(Node):
         self.last_joint_positions_[2] = self.joint_msg.position[2]
         self.last_joint_positions_[3] = self.joint_msg.position[3]
 
-    def cmd_vel_callback(self, msg): #속도값 받아오기
+    def cmd_vel_callback_1(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        if self.vel_msg.layout.data_offset == 1:
-            self.w1 = msg.data[0]
-            self.w2 = msg.data[1]
-        else:
-            self.w3 = msg.data[0]
-            self.w4 = msg.data[1]
+        self.w1 = msg.data[0]
+        self.w2 = msg.data[1]
+            
+    def cmd_vel_callback_2(self, msg): #속도값 받아오기
+        self.vel_msg = msg
+        self.w3 = msg.data[0]
+        self.w4 = msg.data[1]
 
         self.vel_x = (self.radius/4)*(self.w1 + self.w2 + self.w3 + self.w4)
         self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
