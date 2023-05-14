@@ -1,0 +1,254 @@
+[0.179s] Invoking command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake /home/jetson/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces
+[1.891s] -- The C compiler identification is GNU 8.4.0
+[1.891s] -- The CXX compiler identification is GNU 8.4.0
+[1.892s] -- Check for working C compiler: /usr/bin/cc
+[1.893s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.893s] -- Detecting C compiler ABI info
+[1.894s] -- Detecting C compiler ABI info - done
+[1.894s] -- Detecting C compile features
+[1.895s] -- Detecting C compile features - done
+[1.895s] -- Check for working CXX compiler: /usr/bin/c++
+[1.896s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.896s] -- Detecting CXX compiler ABI info
+[2.140s] -- Detecting CXX compiler ABI info - done
+[2.200s] -- Detecting CXX compile features
+[2.202s] -- Detecting CXX compile features - done
+[2.215s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.334s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.335s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.751s] -- Found builtin_interfaces: 1.0.3 (/opt/ros/galactic/share/builtin_interfaces/cmake)
+[2.910s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.950s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.396s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.608s] -- Found FastRTPS: /opt/ros/galactic/include  
+[4.315s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.539s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[4.835s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[6.216s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[7.114s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.189s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.335s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[7.345s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[7.481s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[7.482s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.482s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[7.483s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[7.588s] -- Found PythonExtra: .so  
+[7.874s] -- Configuring done
+[8.046s] -- Generating done
+[8.059s] -- Build files have been written to: /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
+[9.018s] Invoked command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake /home/jetson/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces
+[9.026s] Invoking command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces -- -j4 -l4
+[9.202s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__cpp[0m
+[9.215s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.250s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.291s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_generator_c[0m
+[11.358s] [  7%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c.o[0m
+[11.456s] [ 10%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c.o[0m
+[11.458s] [ 10%] Built target dynamixel_sdk_custom_interfaces__cpp
+[11.552s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.586s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.618s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.795s] [ 20%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so[0m
+[12.107s] [ 20%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+[12.220s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.130s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp[0m
+[13.232s] [ 25%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+[13.269s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp[0m
+[13.443s] [ 28%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp.o[0m
+[14.310s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[14.517s] [ 30%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/set_position__type_support.cpp.o[0m
+[14.697s] [ 33%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[14.753s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c[0m
+[14.902s] [ 35%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o[0m
+[15.267s] [ 38%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp.o[0m
+[15.295s] [ 41%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o[0m
+[15.691s] [ 43%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so[0m
+[15.960s] [ 43%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[16.062s] [ 46%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o[0m
+[16.450s] [ 48%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so[0m
+[16.802s] [ 48%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[16.888s] [ 51%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[16.970s] [ 53%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[17.328s] [ 53%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[18.025s] [ 56%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[18.420s] [ 56%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[18.506s] [ 58%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[18.555s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c[0m
+[18.680s] [ 61%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+[18.710s] [ 64%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[18.996s] [ 66%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so[0m
+[19.271s] [ 66%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[20.132s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c[0m
+[20.200s] [ 69%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support_c.cpp.o[0m
+[20.224s] [ 71%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support_c.cpp.o[0m
+[23.056s] [ 74%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[23.387s] [ 74%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[23.421s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces[0m
+[23.459s] [ 74%] Built target dynamixel_sdk_custom_interfaces
+[23.494s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__py[0m
+[23.531s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[26.114s] [ 76%] Built target dynamixel_sdk_custom_interfaces__py
+[26.149s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__python[0m
+[26.223s] [ 82%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__python.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c.o[0m
+[26.223s] [ 82%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__python.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c.o[0m
+[27.661s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/libdynamixel_sdk_custom_interfaces__python.so[0m
+[27.826s] [ 84%] Built target dynamixel_sdk_custom_interfaces__python
+[27.863s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext[0m
+[27.864s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[27.866s] [35m[1mScanning dependencies of target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[27.930s] [ 87%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[27.972s] [ 89%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[27.986s] [ 92%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[28.689s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[28.813s] [ 97%] [32m[1mLinking CXX shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[28.836s] [ 97%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext
+[28.978s] [100%] [32m[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[29.079s] [100%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[29.128s] [100%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[29.811s] Invoked command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces -- -j4 -l4
+[30.063s] Invoking command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
+[30.097s] -- Install configuration: ""
+[30.098s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_custom_interfaces
+[30.099s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[30.099s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[30.100s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail
+[30.100s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h
+[30.101s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c
+[30.101s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h
+[30.102s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.h
+[30.103s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position.h
+[30.104s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[30.104s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail
+[30.105s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h
+[30.105s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.h
+[30.106s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h
+[30.106s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c
+[30.107s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[30.107s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position.h
+[30.108s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.sh
+[30.108s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.dsv
+[30.108s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
+[30.109s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so" to ""
+[30.110s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[30.111s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[30.112s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail
+[30.112s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h
+[30.113s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[30.113s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail
+[30.113s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_c.h
+[30.114s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[30.115s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so
+[30.115s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[30.116s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[30.117s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[30.117s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail
+[30.118s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp
+[30.118s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps
+[30.119s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[30.119s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail
+[30.119s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps
+[30.120s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_cpp.hpp
+[30.121s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[30.121s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[30.122s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[30.122s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[30.123s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[30.123s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail
+[30.124s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_c.h
+[30.124s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c
+[30.125s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[30.125s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail
+[30.126s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c
+[30.126s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_c.h
+[30.127s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[30.127s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so
+[30.128s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[30.129s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
+[30.129s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so" to ""
+[30.130s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[30.130s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[30.131s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail
+[30.132s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__traits.hpp
+[30.132s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.hpp
+[30.133s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__builder.hpp
+[30.133s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position.hpp
+[30.134s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[30.134s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail
+[30.135s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp
+[30.135s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp
+[30.136s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp
+[30.136s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+[30.137s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[30.137s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[30.138s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail
+[30.138s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp
+[30.139s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp
+[30.139s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[30.140s] -- Up-to-date: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail
+[30.140s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp
+[30.141s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_cpp.hpp
+[30.141s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
+[30.142s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[30.142s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
+[30.143s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so" to ""
+[30.143s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.sh
+[30.144s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.dsv
+[30.144s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/__init__.py
+[30.285s] Compiling '/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/__init__.py'...
+[30.307s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/msg
+[30.308s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c
+[30.308s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py
+[30.309s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py
+[30.310s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/srv
+[30.310s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py
+[30.311s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c
+[30.311s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py
+[30.312s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[30.315s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[30.315s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[30.318s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[30.319s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[30.321s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[30.321s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__python.so
+[30.323s] -- Set runtime path of "/home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__python.so" to ""
+[30.323s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl
+[30.324s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl
+[30.325s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+[30.325s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv
+[30.326s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition_Request.msg
+[30.327s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition_Response.msg
+[30.327s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces
+[30.328s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_custom_interfaces
+[30.329s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.sh
+[30.330s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.dsv
+[30.330s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.sh
+[30.331s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.dsv
+[30.332s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.bash
+[30.332s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.sh
+[30.333s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.zsh
+[30.333s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.dsv
+[30.334s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv
+[30.335s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/packages/dynamixel_sdk_custom_interfaces
+[30.336s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_generator_cExport.cmake
+[30.337s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_generator_cExport-noconfig.cmake
+[30.338s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[30.338s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[30.339s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport.cmake
+[30.340s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[30.341s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_generator_cppExport.cmake
+[30.342s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[30.343s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[30.344s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport.cmake
+[30.345s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[30.345s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[30.346s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.347s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[30.347s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[30.348s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[30.349s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[30.349s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[30.350s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig.cmake
+[30.350s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig-version.cmake
+[30.351s] -- Installing: /home/jetson/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.xml
+[30.358s] Invoked command in '/home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/mecanum-ros2/install/teleop_keyboard:/home/jetson/mecanum-ros2/install/motor_control:/home/jetson/mecanum-ros2/install/mobile_description:/home/jetson/mecanum-ros2/install/mecanum_odometry:/home/jetson/mecanum-ros2/install/mecanum_cartographer:/home/jetson/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/jetson/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
