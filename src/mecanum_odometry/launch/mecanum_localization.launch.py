@@ -34,15 +34,15 @@ def generate_launch_description():
   # Declare the launch arguments  
   use_sim_time = False
 
-  declare_model_path_cmd = DeclareLaunchArgument(
-    name='model', 
-    default_value=default_model_path, 
-    description='Absolute path to robot urdf file')
+  # declare_model_path_cmd = DeclareLaunchArgument(
+  #   name='model', 
+  #   default_value=default_model_path, 
+  #   description='Absolute path to robot urdf file')
 
-  declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
-    name='use_robot_state_pub',
-    default_value='True',
-    description='Whether to start the robot state publisher')
+  # declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
+  #   name='use_robot_state_pub',
+  #   default_value='True',
+  #   description='Whether to start the robot state publisher')
 
   declare_use_sim_time_cmd = DeclareLaunchArgument(
     name='use_sim_time',
@@ -55,6 +55,7 @@ def generate_launch_description():
     executable='ekf_node',
     name='ekf_filter_node',
     output='screen',
+    remappings=[('/odometry/filtered','/odom')],
     parameters=[robot_localization_file_path, 
     {'use_sim_time': use_sim_time}])
 
@@ -63,8 +64,8 @@ def generate_launch_description():
 
   # Declare the launch options
 
-  ld.add_action(declare_model_path_cmd)
-  ld.add_action(declare_use_robot_state_pub_cmd)  
+  # ld.add_action(declare_model_path_cmd)
+  # ld.add_action(declare_use_robot_state_pub_cmd)  
   ld.add_action(declare_use_sim_time_cmd)
   # Add any actions
   ld.add_action(start_robot_localization_cmd)

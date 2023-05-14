@@ -20,7 +20,7 @@ include "trajectory_builder.lua"
 options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
-  map_frame = "base_link",
+  map_frame = "map",
   tracking_frame = "imu_link",
   published_frame = "odom",
   odom_frame = "odom",
@@ -34,13 +34,13 @@ options = {
   num_subdivisions_per_laser_scan = 1,
   num_point_clouds = 0,
   lookup_transform_timeout_sec = 0.2,
-  submap_publish_period_sec = 0.1,
+  submap_publish_period_sec = 0.3,
   pose_publish_period_sec = 5e-3,
   trajectory_publish_period_sec = 30e-3,
   rangefinder_sampling_ratio = 1.,
-  odometry_sampling_ratio = 0.1,
-  fixed_frame_pose_sampling_ratio = 0.1,
-  imu_sampling_ratio = 0.1,
+  odometry_sampling_ratio = 1.,
+  fixed_frame_pose_sampling_ratio = 1.,
+  imu_sampling_ratio = 1.,
   landmarks_sampling_ratio = 1.,
 }
 

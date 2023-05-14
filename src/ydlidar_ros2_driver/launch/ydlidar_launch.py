@@ -40,7 +40,7 @@ def generate_launch_description():
                                 name='ydlidar_ros2_driver_node',
                                 output='screen',
                                 emulate_tty=True,
-                                parameters=[parameter_file],
+                                parameters=[parameter_file, {'ros__parameters': {'ros__qos': 'keep_all'}}],
                                 namespace='/',
                                 )
     tf2_node = Node(package='tf2_ros',
