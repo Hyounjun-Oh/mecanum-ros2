@@ -1,0 +1,21 @@
+[0.443s] Invoking command in '/home/ohj/mecanum-ros2/src/manipulator': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/dynamixel_sdk PYTHONPATH=/home/ohj/mecanum-ros2/build/manipulator/prefix_override:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/ohj/mecanum-ros2/build/manipulator/build install --record /home/ohj/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed
+[0.554s] running egg_info
+[0.554s] writing ../../build/manipulator/manipulator.egg-info/PKG-INFO
+[0.554s] writing dependency_links to ../../build/manipulator/manipulator.egg-info/dependency_links.txt
+[0.554s] writing entry points to ../../build/manipulator/manipulator.egg-info/entry_points.txt
+[0.555s] writing requirements to ../../build/manipulator/manipulator.egg-info/requires.txt
+[0.555s] writing top-level names to ../../build/manipulator/manipulator.egg-info/top_level.txt
+[0.571s] reading manifest file '../../build/manipulator/manipulator.egg-info/SOURCES.txt'
+[0.572s] writing manifest file '../../build/manipulator/manipulator.egg-info/SOURCES.txt'
+[0.572s] running build
+[0.572s] running build_py
+[0.572s] running install
+[0.572s] running install_lib
+[0.573s] running install_data
+[0.573s] running install_egg_info
+[0.574s] removing '/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator-0.0.0-py3.8.egg-info' (and everything under it)
+[0.574s] Copying ../../build/manipulator/manipulator.egg-info to /home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages/manipulator-0.0.0-py3.8.egg-info
+[0.574s] running install_scripts
+[0.583s] Installing manipulator_move script to /home/ohj/mecanum-ros2/install/manipulator/lib/manipulator
+[0.583s] writing list of installed files to '/home/ohj/mecanum-ros2/build/manipulator/install.log'
+[0.595s] Invoked command in '/home/ohj/mecanum-ros2/src/manipulator' returned '0': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/dynamixel_sdk PYTHONPATH=/home/ohj/mecanum-ros2/build/manipulator/prefix_override:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/ohj/mecanum-ros2/build/manipulator/build install --record /home/ohj/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed

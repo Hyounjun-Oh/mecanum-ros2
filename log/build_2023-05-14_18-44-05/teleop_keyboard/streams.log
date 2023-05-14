@@ -1,0 +1,21 @@
+[1.083s] Invoking command in '/home/ohj/mecanum-ros2/src/teleop_keyboard': PYTHONPATH=/home/ohj/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_keyboard build --build-base /home/ohj/mecanum-ros2/build/teleop_keyboard/build install --record /home/ohj/mecanum-ros2/build/teleop_keyboard/install.log --single-version-externally-managed
+[1.221s] running egg_info
+[1.221s] writing ../../build/teleop_keyboard/teleop_keyboard.egg-info/PKG-INFO
+[1.221s] writing dependency_links to ../../build/teleop_keyboard/teleop_keyboard.egg-info/dependency_links.txt
+[1.221s] writing entry points to ../../build/teleop_keyboard/teleop_keyboard.egg-info/entry_points.txt
+[1.221s] writing requirements to ../../build/teleop_keyboard/teleop_keyboard.egg-info/requires.txt
+[1.221s] writing top-level names to ../../build/teleop_keyboard/teleop_keyboard.egg-info/top_level.txt
+[1.244s] reading manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'
+[1.244s] writing manifest file '../../build/teleop_keyboard/teleop_keyboard.egg-info/SOURCES.txt'
+[1.244s] running build
+[1.244s] running build_py
+[1.244s] running install
+[1.245s] running install_lib
+[1.246s] running install_data
+[1.246s] running install_egg_info
+[1.247s] removing '/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard-0.0.1-py3.8.egg-info' (and everything under it)
+[1.247s] Copying ../../build/teleop_keyboard/teleop_keyboard.egg-info to /home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages/teleop_keyboard-0.0.1-py3.8.egg-info
+[1.248s] running install_scripts
+[1.261s] Installing teleop_keyboard script to /home/ohj/mecanum-ros2/install/teleop_keyboard/lib/teleop_keyboard
+[1.261s] writing list of installed files to '/home/ohj/mecanum-ros2/build/teleop_keyboard/install.log'
+[1.296s] Invoked command in '/home/ohj/mecanum-ros2/src/teleop_keyboard' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_keyboard build --build-base /home/ohj/mecanum-ros2/build/teleop_keyboard/build install --record /home/ohj/mecanum-ros2/build/teleop_keyboard/install.log --single-version-externally-managed

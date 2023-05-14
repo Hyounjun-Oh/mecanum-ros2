@@ -51,9 +51,9 @@ else:
 
 MAX_LIN = 0.30
 #MAX_DIA = 0.6
-MAX_ROT = 1.0
+MAX_ROT = 0.5
 LIN_VEL_STEP_SIZE = 0.01
-ANG_VEL_STEP_SIZE = 0.1
+ANG_VEL_STEP_SIZE = 0.05
 
 msg = """
 혼자서도 잘해요

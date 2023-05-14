@@ -1,0 +1,58 @@
+[0.026s] Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/dynamixel_sdk:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic PYTHONPATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_examples -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples
+[0.064s] -- The C compiler identification is GNU 9.4.0
+[0.107s] -- The CXX compiler identification is GNU 9.4.0
+[0.110s] -- Check for working C compiler: /usr/bin/cc
+[0.158s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.159s] -- Detecting C compiler ABI info
+[0.211s] -- Detecting C compiler ABI info - done
+[0.222s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.225s] -- Check for working CXX compiler: /usr/bin/c++
+[0.283s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.284s] -- Detecting CXX compiler ABI info
+[0.343s] -- Detecting CXX compiler ABI info - done
+[0.354s] -- Detecting CXX compile features
+[0.355s] -- Detecting CXX compile features - done
+[0.357s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.377s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.377s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.436s] -- Found dynamixel_sdk: 3.7.40 (/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.437s] -- Found dynamixel_sdk_custom_interfaces: 3.7.40 (/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake)
+[0.458s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.463s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.520s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.548s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.613s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.646s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.683s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.685s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.698s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.699s] -- Looking for pthread.h
+[0.746s] -- Looking for pthread.h - found
+[0.747s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.797s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.797s] -- Looking for pthread_create in pthreads
+[0.837s] -- Looking for pthread_create in pthreads - not found
+[0.837s] -- Looking for pthread_create in pthread
+[0.887s] -- Looking for pthread_create in pthread - found
+[0.887s] -- Found Threads: TRUE  
+[0.993s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.045s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.046s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.046s] -- Configured cppcheck include dirs: /home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_examples/include
+[1.046s] -- Configured cppcheck exclude dirs and/or files: 
+[1.047s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.047s] -- Configured cpplint exclude dirs and/or files: 
+[1.047s] -- Added test 'lint_cmake' to check CMake code style
+[1.048s] -- Added test 'uncrustify' to check C / C++ code style
+[1.048s] -- Configured uncrustify additional arguments: 
+[1.048s] -- Added test 'xmllint' to check XML markup files
+[1.050s] -- Configuring done
+[1.055s] -- Generating done
+[1.056s] -- Build files have been written to: /home/ohj/mecanum-ros2/build/dynamixel_sdk_examples
+[1.064s] Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/dynamixel_sdk:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic PYTHONPATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake /home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_examples -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples
+[1.066s] Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/dynamixel_sdk:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic PYTHONPATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk_examples -- -j20 -l20
+[1.095s] [35m[1mScanning dependencies of target read_write_node[0m
+[1.120s] [ 50%] [32mBuilding CXX object CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o[0m
+[5.335s] [100%] [32m[1mLinking CXX executable read_write_node[0m
+[5.499s] [100%] Built target read_write_node

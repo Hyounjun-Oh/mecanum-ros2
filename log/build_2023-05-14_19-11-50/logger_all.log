@@ -1,0 +1,1007 @@
+[0.159s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.159s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f610655f250>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=20, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f610655f250>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f610655f790>)
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.177s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ohj/mecanum-ros2'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Files and Codes) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extensions ['cmake', 'python']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'cmake'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Notes) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extensions ['cmake', 'python']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'cmake'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extensions ['cmake', 'python']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'cmake'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/Download URLs) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(YTEA101 PSO in MATLAB Video Tutorial/Videos/YouTube URLs) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/4-dof_manipulator_control) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_final_int) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_front_final_float) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/motor_control_rear_final_float) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/packet_arduino) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_code/spi_test_folder) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lib_aarch64) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ros'
+[0.189s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk' with type 'ros.ament_cmake' and name 'dynamixel_sdk'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with type 'ros.ament_cmake' and name 'dynamixel_sdk_custom_interfaces'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_examples' with type 'ros.ament_cmake' and name 'dynamixel_sdk_examples'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'ros'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extensions ['cmake', 'python']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'cmake'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'python'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extensions ['python_setup_py']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/launch) by extension 'python_setup_py'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator' with type 'ros.ament_python' and name 'manipulator'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_bringup) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_bringup' with type 'ros.ament_cmake' and name 'mecanum_bringup'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_cartographer) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_cartographer' with type 'ros.ament_python' and name 'mecanum_cartographer'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_odometry) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_odometry' with type 'ros.ament_python' and name 'mecanum_odometry'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_description) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mobile_description' with type 'ros.ament_python' and name 'mobile_description'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_control) by extension 'ros'
+[0.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_control' with type 'ros.ament_python' and name 'motor_control'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/stella_ahrs) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stella_ahrs' with type 'ros.ament_cmake' and name 'stella_ahrs'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_keyboard) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_keyboard' with type 'ros.ament_python' and name 'teleop_keyboard'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[0.196s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.208s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/ohj/mecanum-ros2/install
+[0.209s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/galactic
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/dynamixel_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/dynamixel_sdk', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'mecanum_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/mecanum_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/mecanum_bringup', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/mecanum_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/mecanum_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/mecanum_cartographer', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/mecanum_cartographer', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mecanum_odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/mecanum_odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/mecanum_odometry', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/mecanum_odometry', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'mobile_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'mobile_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/mobile_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/mobile_description', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/mobile_description', 'symlink_install': False, 'test_result_base': None}
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'motor_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/motor_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/motor_control', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/motor_control', 'symlink_install': False, 'test_result_base': None}
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'stella_ahrs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/stella_ahrs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/stella_ahrs', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/stella_ahrs', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'teleop_keyboard' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_keyboard' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/teleop_keyboard', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/teleop_keyboard', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/teleop_keyboard', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver', 'symlink_install': False, 'test_result_base': None}
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.250s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_examples', 'symlink_install': False, 'test_result_base': None}
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'cmake_target' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'manipulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.250s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ohj/mecanum-ros2/build/manipulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ohj/mecanum-ros2/install/manipulator', 'merge_install': False, 'path': '/home/ohj/mecanum-ros2/src/manipulator', 'symlink_install': False, 'test_result_base': None}
+[0.251s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.252s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with build type 'ament_cmake'
+[0.253s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_custom_interfaces'
+[0.256s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk' with build type 'ament_cmake'
+[0.262s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk'
+[0.264s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.264s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.269s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ohj/mecanum-ros2/src/mecanum_bringup' with build type 'ament_cmake'
+[0.269s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ohj/mecanum-ros2/src/mecanum_bringup'
+[0.270s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.270s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.273s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ohj/mecanum-ros2/src/mecanum_cartographer' with build type 'ament_python'
+[0.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_cartographer', 'ament_prefix_path')
+[0.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/hook/ament_prefix_path.ps1'
+[0.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/hook/ament_prefix_path.dsv'
+[0.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/hook/ament_prefix_path.sh'
+[0.277s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.277s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.280s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ohj/mecanum-ros2/src/mecanum_odometry' with build type 'ament_python'
+[0.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_odometry', 'ament_prefix_path')
+[0.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/hook/ament_prefix_path.ps1'
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/hook/ament_prefix_path.dsv'
+[0.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/hook/ament_prefix_path.sh'
+[0.298s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.298s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.302s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ohj/mecanum-ros2/src/mobile_description' with build type 'ament_python'
+[0.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_description', 'ament_prefix_path')
+[0.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/hook/ament_prefix_path.ps1'
+[0.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/hook/ament_prefix_path.dsv'
+[0.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/hook/ament_prefix_path.sh'
+[0.305s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.305s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ohj/mecanum-ros2/src/motor_control' with build type 'ament_python'
+[0.309s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'ament_prefix_path')
+[0.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/hook/ament_prefix_path.ps1'
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/hook/ament_prefix_path.dsv'
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/hook/ament_prefix_path.sh'
+[0.312s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.312s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.333s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ohj/mecanum-ros2/src/stella_ahrs' with build type 'ament_cmake'
+[0.333s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ohj/mecanum-ros2/src/stella_ahrs'
+[0.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.339s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ohj/mecanum-ros2/src/teleop_keyboard' with build type 'ament_python'
+[0.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_keyboard', 'ament_prefix_path')
+[0.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/hook/ament_prefix_path.ps1'
+[0.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/hook/ament_prefix_path.dsv'
+[0.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/hook/ament_prefix_path.sh'
+[0.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.345s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[0.346s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver'
+[0.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces -- -j20 -l20
+[0.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk -- -j20 -l20
+[0.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_bringup -- -j20 -l20
+[0.487s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ohj/mecanum-ros2/src/mecanum_cartographer'
+[0.488s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.489s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.610s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ohj/mecanum-ros2/src/mecanum_odometry'
+[0.611s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.611s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.734s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ohj/mecanum-ros2/src/mobile_description'
+[0.735s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.735s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.856s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ohj/mecanum-ros2/src/motor_control'
+[0.858s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.858s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/stella_ahrs -- -j20 -l20
+[0.988s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ohj/mecanum-ros2/src/teleop_keyboard'
+[0.989s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.989s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver -- -j20 -l20
+[1.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces -- -j20 -l20
+[1.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk -- -j20 -l20
+[1.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/mecanum_bringup -- -j20 -l20
+[1.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/stella_ahrs -- -j20 -l20
+[1.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk
+[1.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/mecanum_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_bringup
+[1.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/stella_ahrs
+[1.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[1.051s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver -- -j20 -l20
+[1.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
+[1.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk
+[1.057s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk' for CMake module files
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk' for CMake config files
+[1.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/lib'
+[1.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/bin'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/lib/python3.8/site-packages'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/bin'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[1.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[1.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_bringup)
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup' for CMake module files
+[1.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/mecanum_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/mecanum_bringup
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup' for CMake config files
+[1.086s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_bringup', 'cmake_prefix_path')
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/hook/cmake_prefix_path.ps1'
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/hook/cmake_prefix_path.dsv'
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/hook/cmake_prefix_path.sh'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/bin'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/lib/pkgconfig/mecanum_bringup.pc'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/lib/python3.8/site-packages'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/bin'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.ps1'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.dsv'
+[1.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.sh'
+[1.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.bash'
+[1.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.zsh'
+[1.093s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/mecanum_bringup/share/colcon-core/packages/mecanum_bringup)
+[1.096s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stella_ahrs)
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs' for CMake module files
+[1.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/stella_ahrs
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs' for CMake config files
+[1.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'cmake_prefix_path')
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/hook/cmake_prefix_path.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/hook/cmake_prefix_path.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/hook/cmake_prefix_path.sh'
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/lib'
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/bin'
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/lib/pkgconfig/stella_ahrs.pc'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/lib/python3.8/site-packages'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/bin'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.ps1'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.dsv'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.sh'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.bash'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.zsh'
+[1.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/stella_ahrs/share/colcon-core/packages/stella_ahrs)
+[1.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver
+[1.108s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[1.111s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[1.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk_custom_interfaces
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[1.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib'
+[1.116s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/bin'
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages'
+[1.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'pythonpath')
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.dsv'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.sh'
+[1.121s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/bin'
+[1.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[1.124s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[1.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk' for CMake module files
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk' for CMake config files
+[1.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[1.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[1.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[1.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/lib'
+[1.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/bin'
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/lib/python3.8/site-packages'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk/bin'
+[1.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[1.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[1.136s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_bringup)
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup' for CMake module files
+[1.141s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup' for CMake config files
+[1.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_bringup', 'cmake_prefix_path')
+[1.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/hook/cmake_prefix_path.ps1'
+[1.143s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/hook/cmake_prefix_path.dsv'
+[1.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/hook/cmake_prefix_path.sh'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/bin'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/lib/pkgconfig/mecanum_bringup.pc'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/lib/python3.8/site-packages'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_bringup/bin'
+[1.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.ps1'
+[1.144s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.dsv'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.sh'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.bash'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_bringup/share/mecanum_bringup/package.zsh'
+[1.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/mecanum_bringup/share/colcon-core/packages/mecanum_bringup)
+[1.146s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stella_ahrs)
+[1.147s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs' for CMake module files
+[1.148s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs' for CMake config files
+[1.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'cmake_prefix_path')
+[1.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/hook/cmake_prefix_path.ps1'
+[1.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/hook/cmake_prefix_path.dsv'
+[1.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/hook/cmake_prefix_path.sh'
+[1.149s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/lib'
+[1.149s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/bin'
+[1.149s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/lib/pkgconfig/stella_ahrs.pc'
+[1.150s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/lib/python3.8/site-packages'
+[1.150s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/stella_ahrs/bin'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.ps1'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.dsv'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.sh'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.bash'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/stella_ahrs/share/stella_ahrs/package.zsh'
+[1.152s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/stella_ahrs/share/colcon-core/packages/stella_ahrs)
+[1.152s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[1.153s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver' for CMake module files
+[1.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver' for CMake config files
+[1.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/bin'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/python3.8/site-packages'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/bin'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[1.157s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[1.161s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[1.162s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[1.162s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[1.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[1.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib'
+[1.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/bin'
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages'
+[1.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'pythonpath')
+[1.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.ps1'
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.dsv'
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.sh'
+[1.167s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/bin'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[1.169s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[1.169s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_examples' with build type 'ament_cmake'
+[1.169s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk_examples'
+[1.170s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.170s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.175s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ohj/mecanum-ros2/src/manipulator' with build type 'ament_python'
+[1.175s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator', 'ament_prefix_path')
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/hook/ament_prefix_path.ps1'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/hook/ament_prefix_path.dsv'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/hook/ament_prefix_path.sh'
+[1.178s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.178s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.184s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver' for CMake module files
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver' for CMake config files
+[1.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[1.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[1.186s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/bin'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/python3.8/site-packages'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/bin'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[1.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[1.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/dynamixel_sdk:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic PYTHONPATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk_examples -- -j20 -l20
+[1.330s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ohj/mecanum-ros2/src/manipulator'
+[1.331s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.331s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/src/mobile_description': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/ohj/mecanum-ros2/build/mobile_description/build install --record /home/ohj/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed
+[1.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/src/teleop_keyboard': PYTHONPATH=/home/ohj/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_keyboard build --build-base /home/ohj/mecanum-ros2/build/teleop_keyboard/build install --record /home/ohj/mecanum-ros2/build/teleop_keyboard/install.log --single-version-externally-managed
+[1.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/src/mecanum_odometry': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_odometry/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_odometry build --build-base /home/ohj/mecanum-ros2/build/mecanum_odometry/build install --record /home/ohj/mecanum-ros2/build/mecanum_odometry/install.log --single-version-externally-managed
+[1.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/src/motor_control': PYTHONPATH=/home/ohj/mecanum-ros2/build/motor_control/prefix_override:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/ohj/mecanum-ros2/build/motor_control/build install --record /home/ohj/mecanum-ros2/build/motor_control/install.log --single-version-externally-managed
+[1.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/src/mecanum_cartographer': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_cartographer/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_cartographer build --build-base /home/ohj/mecanum-ros2/build/mecanum_cartographer/build install --record /home/ohj/mecanum-ros2/build/mecanum_cartographer/install.log --single-version-externally-managed
+[1.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/dynamixel_sdk:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic PYTHONPATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk_examples -- -j20 -l20
+[1.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/dynamixel_sdk:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic PYTHONPATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk_examples
+[1.372s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[1.374s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples' for CMake module files
+[1.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/dynamixel_sdk:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic PYTHONPATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk_examples
+[1.375s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples' for CMake config files
+[1.376s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[1.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[1.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[1.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[1.378s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/lib'
+[1.378s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/bin'
+[1.378s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[1.378s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/lib/python3.8/site-packages'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/bin'
+[1.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[1.380s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[1.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[1.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[1.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[1.382s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[1.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples' for CMake module files
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples' for CMake config files
+[1.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[1.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[1.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[1.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/lib'
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/bin'
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/lib/python3.8/site-packages'
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/bin'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[1.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[1.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[1.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[1.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[1.526s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mobile_description' for CMake module files
+[1.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/src/mobile_description' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/ohj/mecanum-ros2/build/mobile_description/build install --record /home/ohj/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed
+[1.527s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mobile_description' for CMake config files
+[1.528s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mobile_description/lib'
+[1.528s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mobile_description/bin'
+[1.528s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mobile_description/lib/pkgconfig/mobile_description.pc'
+[1.528s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages'
+[1.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_description', 'pythonpath')
+[1.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/hook/pythonpath.ps1'
+[1.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/hook/pythonpath.dsv'
+[1.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/hook/pythonpath.sh'
+[1.530s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mobile_description/bin'
+[1.530s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobile_description)
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/package.ps1'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/package.dsv'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/package.sh'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/package.bash'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/package.zsh'
+[1.532s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/mobile_description/share/colcon-core/packages/mobile_description)
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/teleop_keyboard' for CMake module files
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/teleop_keyboard' for CMake config files
+[1.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/src/teleop_keyboard' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/teleop_keyboard/prefix_override:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_keyboard build --build-base /home/ohj/mecanum-ros2/build/teleop_keyboard/build install --record /home/ohj/mecanum-ros2/build/teleop_keyboard/install.log --single-version-externally-managed
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/teleop_keyboard/lib'
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/teleop_keyboard/bin'
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/pkgconfig/teleop_keyboard.pc'
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages'
+[1.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_keyboard', 'pythonpath')
+[1.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/hook/pythonpath.ps1'
+[1.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/hook/pythonpath.dsv'
+[1.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/hook/pythonpath.sh'
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/teleop_keyboard/bin'
+[1.536s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_keyboard)
+[1.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/package.ps1'
+[1.538s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/package.dsv'
+[1.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/package.sh'
+[1.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/package.bash'
+[1.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/teleop_keyboard/share/teleop_keyboard/package.zsh'
+[1.538s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/teleop_keyboard/share/colcon-core/packages/teleop_keyboard)
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_odometry' for CMake module files
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_odometry' for CMake config files
+[1.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/src/mecanum_odometry' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_odometry/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_odometry build --build-base /home/ohj/mecanum-ros2/build/mecanum_odometry/build install --record /home/ohj/mecanum-ros2/build/mecanum_odometry/install.log --single-version-externally-managed
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_odometry/lib'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_odometry/bin'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/pkgconfig/mecanum_odometry.pc'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages'
+[1.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_odometry', 'pythonpath')
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/hook/pythonpath.ps1'
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/hook/pythonpath.dsv'
+[1.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/hook/pythonpath.sh'
+[1.543s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_odometry/bin'
+[1.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_odometry)
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/package.ps1'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/package.dsv'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/package.sh'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/package.bash'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_odometry/share/mecanum_odometry/package.zsh'
+[1.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/mecanum_odometry/share/colcon-core/packages/mecanum_odometry)
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/motor_control' for CMake module files
+[1.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/src/motor_control' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/motor_control/prefix_override:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/ohj/mecanum-ros2/build/motor_control/build install --record /home/ohj/mecanum-ros2/build/motor_control/install.log --single-version-externally-managed
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/motor_control' for CMake config files
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/motor_control/lib'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/motor_control/bin'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/motor_control/lib/pkgconfig/motor_control.pc'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages'
+[1.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'pythonpath')
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/hook/pythonpath.ps1'
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/hook/pythonpath.dsv'
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/hook/pythonpath.sh'
+[1.548s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/motor_control/bin'
+[1.548s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_control)
+[1.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/package.ps1'
+[1.549s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/package.dsv'
+[1.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/package.sh'
+[1.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/package.bash'
+[1.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/motor_control/share/motor_control/package.zsh'
+[1.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/motor_control/share/colcon-core/packages/motor_control)
+[1.551s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_cartographer' for CMake module files
+[1.551s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_cartographer' for CMake config files
+[1.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/src/mecanum_cartographer' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_cartographer/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_cartographer build --build-base /home/ohj/mecanum-ros2/build/mecanum_cartographer/build install --record /home/ohj/mecanum-ros2/build/mecanum_cartographer/install.log --single-version-externally-managed
+[1.552s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib'
+[1.552s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_cartographer/bin'
+[1.552s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/pkgconfig/mecanum_cartographer.pc'
+[1.552s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages'
+[1.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_cartographer', 'pythonpath')
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/hook/pythonpath.ps1'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/hook/pythonpath.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/hook/pythonpath.sh'
+[1.553s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/mecanum_cartographer/bin'
+[1.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_cartographer)
+[1.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/package.ps1'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/package.dsv'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/package.sh'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/package.bash'
+[1.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/package.zsh'
+[1.555s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/mecanum_cartographer/share/colcon-core/packages/mecanum_cartographer)
+[1.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ohj/mecanum-ros2/src/manipulator': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/dynamixel_sdk PYTHONPATH=/home/ohj/mecanum-ros2/build/manipulator/prefix_override:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/ohj/mecanum-ros2/build/manipulator/build install --record /home/ohj/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed
+[1.758s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/manipulator' for CMake module files
+[1.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ohj/mecanum-ros2/src/manipulator' returned '0': CMAKE_PREFIX_PATH=/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces:/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver:/home/ohj/mecanum-ros2/install/stella_ahrs:/home/ohj/mecanum-ros2/install/mecanum_bringup:/home/ohj/mecanum-ros2/install/dynamixel_sdk_examples:/home/ohj/mecanum-ros2/install/dynamixel_sdk PYTHONPATH=/home/ohj/mecanum-ros2/build/manipulator/prefix_override:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/teleop_keyboard/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/motor_control/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_odometry/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/manipulator build --build-base /home/ohj/mecanum-ros2/build/manipulator/build install --record /home/ohj/mecanum-ros2/build/manipulator/install.log --single-version-externally-managed
+[1.759s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/manipulator' for CMake config files
+[1.759s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/manipulator/lib'
+[1.759s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/manipulator/bin'
+[1.759s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/manipulator/lib/pkgconfig/manipulator.pc'
+[1.759s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/manipulator/lib/python3.8/site-packages'
+[1.759s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator', 'pythonpath')
+[1.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/hook/pythonpath.ps1'
+[1.760s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/hook/pythonpath.dsv'
+[1.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/hook/pythonpath.sh'
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/ohj/mecanum-ros2/install/manipulator/bin'
+[1.761s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator)
+[1.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/package.ps1'
+[1.762s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/package.dsv'
+[1.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/package.sh'
+[1.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/package.bash'
+[1.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/ohj/mecanum-ros2/install/manipulator/share/manipulator/package.zsh'
+[1.762s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ohj/mecanum-ros2/install/manipulator/share/colcon-core/packages/manipulator)
+[1.762s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.763s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.763s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.763s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.766s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.766s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.766s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.776s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.777s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ohj/mecanum-ros2/install/local_setup.ps1'
+[1.777s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ohj/mecanum-ros2/install/_local_setup_util_ps1.py'
+[1.778s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ohj/mecanum-ros2/install/setup.ps1'
+[1.779s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ohj/mecanum-ros2/install/local_setup.sh'
+[1.779s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ohj/mecanum-ros2/install/_local_setup_util_sh.py'
+[1.779s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ohj/mecanum-ros2/install/setup.sh'
+[1.780s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ohj/mecanum-ros2/install/local_setup.bash'
+[1.781s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ohj/mecanum-ros2/install/setup.bash'
+[1.781s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ohj/mecanum-ros2/install/local_setup.zsh'
+[1.781s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ohj/mecanum-ros2/install/setup.zsh'

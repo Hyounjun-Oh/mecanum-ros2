@@ -43,9 +43,9 @@ class CmdVelSubscriber(Node):
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
         self.declare_parameter('qos_depth', 10)
         qos_depth = self.get_parameter('qos_depth').value #qos파라미터 셋팅
-        self.declare_parameter('mobile_robot_width', 0.17)
+        self.declare_parameter('mobile_robot_width', 0.20)
         self.width = self.get_parameter('mobile_robot_width').value # 중심점으로부터 모터의 가로 위치
-        self.declare_parameter('mobile_robot_radius', 0.05)
+        self.declare_parameter('mobile_robot_radius', 0.0625)
         self.radius = self.get_parameter('mobile_robot_radius').value # 메카넘휠 반지름
         self.declare_parameter('baudrate', 1000000)
         self.baudrate = self.get_parameter('baudrate').get_parameter_value().integer_value #시리얼 보드레이트

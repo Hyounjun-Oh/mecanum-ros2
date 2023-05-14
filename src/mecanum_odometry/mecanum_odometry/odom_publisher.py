@@ -23,9 +23,9 @@ class OdometryNode(Node):
         self.diff_joint_positions_ = [0,0,0,0]
         self.declare_parameter('mobile_robot_length', 0.15)
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
-        self.declare_parameter('mobile_robot_width', 0.17)
+        self.declare_parameter('mobile_robot_width', 0.20)
         self.width = self.get_parameter('mobile_robot_width').value # 중심점으로부터 모터의 가로 위치
-        self.declare_parameter('mobile_robot_radius', 0.05)
+        self.declare_parameter('mobile_robot_radius', 0.0625)
         self.radius = self.get_parameter('mobile_robot_radius').value # 메카넘휠 반지름
         self.vel_x = 0.0
         self.vel_y = 0.0
@@ -34,7 +34,7 @@ class OdometryNode(Node):
         self.w1, self.w2, self.w3, self.w4 = 0,0,0,0
         self.odom_pos_y, self.odom_pos_x, self.odom_ori_z = 0,0,0
         self.old_time = self.get_clock().now().nanoseconds
-        self.odom_publisher = self.create_publisher(Odometry, 'wheel/odometry', self.QoS_)
+        self.odom_publisher = self.create_publisher(Odometry, 'odom', self.QoS_)
         #wheel/odometry
         # 모터의 실제 각속도를 받아온다.
         self.vel_subscription = self.create_subscription(
@@ -140,7 +140,7 @@ class OdometryNode(Node):
         msg_tf.transform.rotation.w = msg_odom.pose.pose.orientation.w
 
         self.odom_publisher.publish(msg_odom)
-        #self.tf_broadcaster.sendTransform(msg_tf)
+        self.tf_broadcaster.sendTransform(msg_tf)
         self.get_logger().info("현재 x좌표 : {0}, Y좌표 : {1}, 헤딩 : {2}".format(self.odom_pos_x,self.odom_pos_y,self.odom_ori_z))
         
 
