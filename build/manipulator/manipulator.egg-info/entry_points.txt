@@ -1,3 +1,0 @@
-[console_scripts]
-manipulator_move = manipulator.manipulater_move:main
-

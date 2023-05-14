@@ -220,6 +220,7 @@ def main():
             twist.angular.z = control_angular_velocity
 
             pub.publish(twist)
+            time.sleep(0.001)
 
     except Exception as e:
         print(e)
