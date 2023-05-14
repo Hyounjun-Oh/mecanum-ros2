@@ -59,9 +59,14 @@ class CmdVelSubscriber(Node):
             'cmd_vel',
             self.get_cmd_vel,
             qos_depth)
-        self.motor_vel_publisher = self.create_publisher(
+        self.motor_vel_publisher_1 = self.create_publisher(
             Float32MultiArray,
-            'motor_vel',
+            'motor_vel/front',
+            qos_depth
+        )
+        self.motor_vel_publisher_2 = self.create_publisher(
+            Float32MultiArray,
+            'motor_vel/rear',
             qos_depth
         )
         self.subscription  # prevent unused variable warning
@@ -71,7 +76,6 @@ class CmdVelSubscriber(Node):
         time.sleep(5)
 
     def get_cmd_vel(self, msg):
-        motor_vel_arr = [0,0,0]
         msg_motor_vel = Float32MultiArray()
         msg_motor_vel.data = [0.0, 0.0, 0.0]
         self.arduino_num= self.get_parameter('arduino_num').get_parameter_value().integer_value
@@ -93,7 +97,7 @@ class CmdVelSubscriber(Node):
                             msg_motor_vel.layout.data_offset = 1 #모터 드라이버 구분용으로 사용함.
                             msg_motor_vel.data[0] = motor_vel_arr[1]
                             msg_motor_vel.data[1] = motor_vel_arr[2]
-                            self.motor_vel_publisher.publish(msg_motor_vel)
+                            self.motor_vel_publisher_1.publish(msg_motor_vel)
                         else:
                             pass
                     else:
@@ -111,7 +115,7 @@ class CmdVelSubscriber(Node):
                             msg_motor_vel.layout.data_offset = 2 #모터 드라이버 구분용으로 사용함.
                             msg_motor_vel.data[0] = motor_vel_arr[1]
                             msg_motor_vel.data[1] = motor_vel_arr[2]
-                            self.motor_vel_publisher.publish(msg_motor_vel)
+                            self.motor_vel_publisher_2.publish(msg_motor_vel)
                         else:
                             pass
                     else:

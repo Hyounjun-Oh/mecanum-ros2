@@ -34,7 +34,7 @@ class OdometryNode(Node):
         self.w1, self.w2, self.w3, self.w4 = 0,0,0,0
         self.odom_pos_y, self.odom_pos_x, self.odom_ori_z = 0,0,0
         self.old_time = self.get_clock().now().nanoseconds
-        self.odom_publisher = self.create_publisher(Odometry, 'odom', self.QoS_)
+        self.odom_publisher = self.create_publisher(Odometry, 'wheel/odometry', self.QoS_)
         #wheel/odometry
         # 모터의 실제 각속도를 받아온다.
         self.vel_subscription = self.create_subscription(
@@ -62,7 +62,7 @@ class OdometryNode(Node):
         self.update_joint_state()
         self.odom_calaulator()
         self.publish()
-        self.get_logger().info("조인트 콜백 완료")
+        #self.get_logger().info("조인트 콜백 완료")
 
         
     def update_joint_state(self):
@@ -88,6 +88,7 @@ class OdometryNode(Node):
         self.vel_x = (self.radius/4)*(self.w1 + self.w2 + self.w3 + self.w4)
         self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
         self.rot_z = (self.radius/(2*(self.length + self.width)))*(-self.w1 + self.w2 - self.w3 + self.w4)
+        self.get_logger().info(str(self.w1) + ", " +str(self.w2) + ", " +str(self.w3) + ", " +str(self.w4))
 
     # def imu_callback(self, msg): #IMU값 받아오기
     #     self.imu_msg = msg
@@ -141,7 +142,7 @@ class OdometryNode(Node):
 
         self.odom_publisher.publish(msg_odom)
         self.tf_broadcaster.sendTransform(msg_tf)
-        self.get_logger().info("현재 x좌표 : {0}, Y좌표 : {1}, 헤딩 : {2}".format(self.odom_pos_x,self.odom_pos_y,self.odom_ori_z))
+        #self.get_logger().info("현재 x좌표 : {0}, Y좌표 : {1}, 헤딩 : {2}".format(self.odom_pos_x,self.odom_pos_y,self.odom_ori_z))
         
 
     def quaternion_from_euler(self, ai, aj, ak):
