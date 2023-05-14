@@ -37,8 +37,6 @@ class CmdVelSubscriber(Node):
         self.w2 = 0.0
         self.w3 = 0.0
         self.w4 = 0.0
-        self.header = b'@' 
-        #self.my_param = Parameter('my_param', Parameter.Type.STRING, 'hello')
         self.declare_parameter('mobile_robot_length', 0.15)
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
         self.declare_parameter('qos_depth', 10)
@@ -76,6 +74,7 @@ class CmdVelSubscriber(Node):
         time.sleep(5)
 
     def get_cmd_vel(self, msg):
+        self.time = self.get_clock().now()
         msg_motor_vel = Float32MultiArray()
         msg_motor_vel.data = [0.0, 0.0, 0.0]
         self.arduino_num= self.get_parameter('arduino_num').get_parameter_value().integer_value
@@ -87,6 +86,8 @@ class CmdVelSubscriber(Node):
             if self.arduino_num == 0:
                 data = str(self.w1) + "," + str(self.w2)
                 self.ser.write(data.encode())
+                time_send = self.get_clock().now() - self.time
+                self.time = self.get_clock().now()
                 try:
                     motor_vel_arr = list(map(float,(self.ser.readline().decode().rstrip()).split(',')))
                 except ValueError: # 시리얼 통신이 처음 초기화 될 때 결측치 발생.
@@ -120,25 +121,9 @@ class CmdVelSubscriber(Node):
                             pass
                     else:
                         pass
-        #self.ser.flush() # 시리얼 버퍼 초기화
-        #time.sleep(0.01)
-        #num_driver, m_1, m_2 = map(float,self.ser.readline().decode().rstrip().split(','))
-        #self.get_logger().info()
-    
-    def send_data(self, data1, data2):
-        packet = self.header + data1.to_bytes(2, 'little', signed=True) + data2.to_bytes(2, 'little', signed=True)  # 패킷을 생성합니다.
-        self.ser.write(packet)  
-        
-    def send_floats_data(self, data1, data2):
-        data_header = b'@'
-        data_vel_1 = struct.pack('f', data1)
-        data_vel_2 = struct.pack('f', data2)
-        self.ser.write(data_header + data_vel_1 + data_vel_2)
-        # self.ser.write(data_vel_1)
-        # self.ser.write(data_header_2)
-        # self.ser.write(data_vel_2)
-        #time.sleep(0.5)
-       
+        last_time = self.get_clock().now() - self.time
+        self.get_logger().info(str(time_send) + "    "+ str(last_time))
+
     def cmd_vel2rad(self):
         if self.arduino_num == 0:
             self.w1 = round(((self.Vx - self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968,2)
@@ -146,11 +131,7 @@ class CmdVelSubscriber(Node):
         else:          
             self.w3 = round(((self.Vx + self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968,2)
             self.w4 = round(((self.Vx - self.Vy + self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968,2)
-            
-    def clear_serial(self):
-        self.ser.flush()
-        
-            
+
 def main(args=None):
     rclpy.init(args=args)
 
