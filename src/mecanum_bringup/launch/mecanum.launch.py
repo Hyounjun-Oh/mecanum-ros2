@@ -68,6 +68,6 @@ def generate_launch_description():
         
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                [motor_driver_pkg, 'motor_control.launch.py']),
+                [motor_driver_pkg, '/motor_control.launch.py']),
         ),
     ])
