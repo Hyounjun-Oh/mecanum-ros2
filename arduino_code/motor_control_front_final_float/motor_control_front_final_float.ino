@@ -222,7 +222,7 @@ void serialEvent() {
   }else if(abs(targetRPM_2 - targetRPM_2_pre) > 10){
     targetRPM_2 = targetRPM_2_pre;
   }
-  Serial.println(String(1)+','+String(targetRPM_1)+','+String(targetRPM_2)); //이건 무조건 고정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  Serial.println(String(1)+','+String(rpm_motor_1)+','+String(rpm_motor_2)); //이건 무조건 고정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   targetRPM_1_pre = targetRPM_1;
   targetRPM_2_pre = targetRPM_2;
