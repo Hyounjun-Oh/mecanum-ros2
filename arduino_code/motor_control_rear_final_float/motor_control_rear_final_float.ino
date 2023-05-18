@@ -158,8 +158,8 @@ void doMotor(int motor_in_A, int motor_in_B, int motor_rpm_pin ,bool dir, int ve
 }
 
 void getRPM(){
-  rpm_motor_1 = (float)(motor_1_pulse_count * 1200 / ENC_COUNT_REV);
-  rpm_motor_2 = (float)(motor_2_pulse_count * 1200 / ENC_COUNT_REV);
+  rpm_motor_1 = (float)(motor_1_pulse_count * 120 / ENC_COUNT_REV);
+  rpm_motor_2 = (float)(motor_2_pulse_count * 120 / ENC_COUNT_REV);
   motor_1_pulse_count = 0;
   motor_2_pulse_count = 0;
   error_1 = (targetRPM_1 - rpm_motor_1);
