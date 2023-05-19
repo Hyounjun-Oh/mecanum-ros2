@@ -85,13 +85,13 @@ class OdometryNode(Node):
 
     def cmd_vel_callback_1(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        self.w1 = msg.data[0]*0.1047198 # rpm to rad/s
-        self.w2 = msg.data[1]*0.1047198
+        self.w1 = (msg.data[0]*0.1047198 /1.2)*2 # rpm to rad/s
+        self.w2 = (msg.data[1]*0.1047198 /1.2)*2
             
     def cmd_vel_callback_2(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        self.w3 = msg.data[0]*0.1047198
-        self.w4 = msg.data[1]*0.1047198
+        self.w3 = (msg.data[0]*0.1047198 /1.2)*2
+        self.w4 = (msg.data[1]*0.1047198 /1.2)*2
         #self.get_logger().info(str(self.odom_ori_z))
 
     # def imu_callback(self, msg): #IMU값 받아오기
