@@ -44,13 +44,13 @@ const float rad_to_deg = 57.29578;
 // |0.3 |0.1  |1.0  | : D_control wave too much.
 // |0.3 |0.1  |0.5  | : D_control wave go away.
 //
-volatile float Kp_1 = 0.8; // wave : 2.3 z_Kp : 0.5*2.3 = 1.15
+volatile float Kp_1 = 1.15; // wave : 2.3 z_Kp : 0.5*2.3 = 1.15
 volatile float Ki_1 = 0.2; // 0.2
-volatile float Kd_1 = 0.0001; //0.1
+volatile float Kd_1 = 0.01; //0.1
 volatile float Ks_1 = 1; // slowdown motor
 volatile float Kp_2 = 0.8; // wave : 2.3 z_Kp : 0.5*2.3 = 1.15
 volatile float Ki_2 = 0.2; // 0.2
-volatile float Kd_2 = 0.0001; //0.1
+volatile float Kd_2 = 0.01; //0.1
 volatile float Ks_2 = 1; // slowdown motor
 float PID_1 = 0.0;
 float PID_2 = 0.0;
@@ -166,6 +166,16 @@ void getRPM(){
   error_2 = (targetRPM_2 - rpm_motor_2);
   I_control_1 += error_1*1;
   I_control_2 += error_2*1;
+  if (error_1 - error_pre_1 == 0){
+    D_control_1 = 0;
+  }else{
+    D_control_1 = (error_1 - error_pre_1);
+  }
+  if (error_1 - error_pre_1 == 0){
+    D_control_2 = 0;
+  }else{
+    D_control_2 = (error_2 - error_pre_2);;
+  }
   PID_1 = error_1*Kp_1 + I_control_1*Ki_1 + D_control_1*Kd_1;
   PID_2 = error_2*Kp_2 + I_control_2*Ki_2 + D_control_2*Kd_2;
   error_pre_1 = error_1;

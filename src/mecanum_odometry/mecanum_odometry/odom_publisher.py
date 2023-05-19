@@ -105,12 +105,12 @@ class OdometryNode(Node):
         self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
         self.rot_z = (self.radius/4)*(4/(self.length + self.width))*(-self.w1 + self.w2 - self.w3 + self.w4) #2
         del_rot = self.rot_z * duration
-        del_x = (self.vel_x * np.cos(del_rot) - self.vel_y * np.sin(del_rot) ) * duration
-        del_y = (self.vel_x * np.sin(del_rot) + self.vel_y * np.cos(del_rot) ) * duration
+        del_x = (self.vel_x * np.cos(self.odom_ori_z) - self.vel_y * np.sin(self.odom_ori_z) ) * duration
+        del_y = (self.vel_x * np.sin(self.odom_ori_z) + self.vel_y * np.cos(self.odom_ori_z) ) * duration
         self.odom_pos_x += del_x
         self.odom_pos_y += del_y 
         self.odom_ori_z += del_rot
-        self.get_logger().info(str(self.odom_ori_z))
+        self.get_logger().info(str(self.odom_pos_x)+ " , "+str(self.odom_pos_y)+ " , "+str(self.odom_ori_z))
         self.rot_old = self.rot_z
         self.old_time = self.time
 
