@@ -123,11 +123,11 @@ class CmdVelSubscriber(Node):
 
     def cmd_vel2rad(self):
         if self.arduino_num == 0:
-            self.w1 = round((((self.Vx - self.Vy - self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
-            self.w2 = round((((self.Vx + self.Vy + self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
+            self.w1 = round((((self.Vx - self.Vy - self.Rz*((self.length + self.width)/2))/self.radius)/2*9.5492968),2)
+            self.w2 = round((((self.Vx + self.Vy + self.Rz*((self.length + self.width)/2))/self.radius)/2*9.5492968),2)
         else:          
-            self.w3 = round((((self.Vx + self.Vy - self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
-            self.w4 = round((((self.Vx - self.Vy + self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
+            self.w3 = round((((self.Vx + self.Vy - self.Rz*((self.length + self.width)/2))/self.radius)/2*9.5492968),2)
+            self.w4 = round((((self.Vx - self.Vy + self.Rz*((self.length + self.width)/2))/self.radius)/2*9.5492968),2)
 
 def main(args=None):
     rclpy.init(args=args)
