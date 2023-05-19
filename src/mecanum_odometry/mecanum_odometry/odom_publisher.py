@@ -21,9 +21,9 @@ class OdometryNode(Node):
         self.child_frame_id = 'base_footprint'
         self.last_joint_positions_ = [0,0,0,0]
         self.diff_joint_positions_ = [0,0,0,0]
-        self.declare_parameter('mobile_robot_length', 0.15)
+        self.declare_parameter('mobile_robot_length', 0.30)
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
-        self.declare_parameter('mobile_robot_width', 0.20)
+        self.declare_parameter('mobile_robot_width', 0.40)
         self.width = self.get_parameter('mobile_robot_width').value # 중심점으로부터 모터의 가로 위치
         self.declare_parameter('mobile_robot_radius', 0.0625)
         self.radius = self.get_parameter('mobile_robot_radius').value # 메카넘휠 반지름
@@ -31,14 +31,11 @@ class OdometryNode(Node):
         self.vel_y = 0.0
         self.rot_z = 0.0
         self.ori_z = 0.0
-        self.yaw_last = 0.0
-        self.yaw_cmd = 0.0
-        self.yaw_last_cmd = 0.0
-        self.yaw_update = 0.0
+        self.rot_old = 0.0
+        self.odom_ori_z = 0.0
         self.w1, self.w2, self.w3, self.w4 = 0,0,0,0
         self.odom_pos_y, self.odom_pos_x, self.odom_ori_z = 0,0,0
         self.old_time = self.get_clock().now().nanoseconds
-        self.old_time_cmd = self.get_clock().now().nanoseconds
         self.odom_publisher = self.create_publisher(Odometry, 'wheel/odometry', self.QoS_)
         #wheel/odometry
         # 모터의 실제 각속도를 받아온다.
@@ -52,12 +49,12 @@ class OdometryNode(Node):
             'motor_vel/rear',
             self.cmd_vel_callback_2,
             self.QoS_)
-        self.imu_subscription = self.create_subscription(
-            Float64,
-            'imu/yaw',
-            self.imu_callback,
-            self.QoS_
-            )
+        # self.imu_subscription = self.create_subscription(
+        #     Float64,
+        #     'imu/yaw',
+        #     self.imu_callback,
+        #     self.QoS_
+        #     )
         self.joint_state_subscription = self.create_subscription(
             JointState,
             'joint_states',
@@ -65,12 +62,7 @@ class OdometryNode(Node):
             self.QoS_
         )
         self.tf_broadcaster = TransformBroadcaster(self)
-    
-    def imu_callback(self, msg): #IMU값 받아오기
-        self.imu_msg = msg.data
-        self.yaw = self.imu_msg
-        self.yaw_cmd = self.imu_msg
-        
+
     def joint_statue_callback(self,msg):
         self.time_now = self.get_clock().now().to_msg()
         self.joint_msg = msg
@@ -93,51 +85,33 @@ class OdometryNode(Node):
 
     def cmd_vel_callback_1(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        self.w1 = msg.data[0]
-        self.w2 = msg.data[1]
+        self.w1 = msg.data[0]*0.1047198 # rpm to rad/s
+        self.w2 = msg.data[1]*0.1047198
             
     def cmd_vel_callback_2(self, msg): #속도값 받아오기
-        yaw = 0.0
-        self.time = self.get_clock().now().nanoseconds
-        duration = (int(self.time) - int(self.old_time_cmd))/1000000000
-        yaw = self.yaw_cmd
         self.vel_msg = msg
-        self.w3 = msg.data[0]
-        self.w4 = msg.data[1]
-        if yaw - self.yaw_last_cmd > 180:
-            self.yaw_cmd_update = (yaw- self.yaw_last_cmd) - 360
-        elif yaw - self.yaw_last_cmd < -180:
-            self.yaw_cmd_update = (yaw - self.yaw_last_cmd) + 360
-        else:
-            self.yaw_cmd_update = (yaw - self.yaw_last_cmd)
-        self.yaw_last_cmd = yaw
-        self.vel_x = (self.radius/4)*(self.w1 + self.w2 + self.w3 + self.w4)
-        self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
-        #self.rot_z = (self.radius/(2*(self.length + self.width)))*(-self.w1 + self.w2 - self.w3 + self.w4)
-        self.rot_z = math.radians(self.yaw_cmd_update) / duration
-        self.old_time_cmd = self.time
-        self.get_logger().info(str(self.vel_x) + ", " +str(self.vel_y) + ", " +str(self.rot_z))
+        self.w3 = msg.data[0]*0.1047198
+        self.w4 = msg.data[1]*0.1047198
+        #self.get_logger().info(str(self.odom_ori_z))
+
+    # def imu_callback(self, msg): #IMU값 받아오기
+    #     self.imu_msg = msg
+    #     self.yaw = self.imu_msg
 
     def odom_calaulator(self): #Odometry값 계산하기
-        yaw = 0.0
         self.time = self.get_clock().now().nanoseconds
         duration = (int(self.time) - int(self.old_time))/1000000000
-        yaw = self.yaw
-        if yaw - self.yaw_last > 180:
-            self.yaw_update = (yaw- self.yaw_last) - 360
-        elif yaw - self.yaw_last < -180:
-            self.yaw_update = (yaw - self.yaw_last) + 360
-        else:
-            self.yaw_update = (yaw - self.yaw_last)
-        self.yaw_update += self.yaw_update
-        del_rot = math.radians(self.yaw_update%np.pi)
-        del_x = self.vel_x * np.cos(del_rot) - self.vel_y * np.sin(del_rot) * duration
-        del_y = self.vel_x * np.sin(del_rot) + self.vel_y * np.cos(del_rot) * duration
-
+        self.vel_x = (self.radius/4)*(self.w1 + self.w2 + self.w3 + self.w4)
+        self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
+        self.rot_z = (self.radius/4)*(4/(self.length + self.width))*(-self.w1 + self.w2 - self.w3 + self.w4) #2
+        del_rot = self.rot_z * duration
+        del_x = (self.vel_x * np.cos(del_rot) - self.vel_y * np.sin(del_rot) ) * duration
+        del_y = (self.vel_x * np.sin(del_rot) + self.vel_y * np.cos(del_rot) ) * duration
         self.odom_pos_x += del_x
         self.odom_pos_y += del_y 
         self.odom_ori_z += del_rot
-        self.yaw_last = yaw
+        self.get_logger().info(str(self.odom_ori_z))
+        self.rot_old = self.rot_z
         self.old_time = self.time
 
     def publish(self): # Odometry와 tf발행
@@ -157,7 +131,7 @@ class OdometryNode(Node):
         msg_odom.pose.pose.orientation.w = orientation_quaternion[3]
         msg_odom.twist.twist.linear.x = self.vel_x
         msg_odom.twist.twist.linear.y = self.vel_y
-        msg_odom.twist.twist.linear.z = self.rot_z
+        msg_odom.twist.twist.angular.z = self.rot_z
 
         msg_tf = TransformStamped()
         msg_tf.header.frame_id = self.frame_id

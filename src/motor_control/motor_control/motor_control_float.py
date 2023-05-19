@@ -37,11 +37,11 @@ class CmdVelSubscriber(Node):
         self.w2 = 0.0
         self.w3 = 0.0
         self.w4 = 0.0
-        self.declare_parameter('mobile_robot_length', 0.15)
+        self.declare_parameter('mobile_robot_length', 0.30)
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
         self.declare_parameter('qos_depth', 10)
         qos_depth = self.get_parameter('qos_depth').value #qos파라미터 셋팅
-        self.declare_parameter('mobile_robot_width', 0.20)
+        self.declare_parameter('mobile_robot_width', 0.40)
         self.width = self.get_parameter('mobile_robot_width').value # 중심점으로부터 모터의 가로 위치
         self.declare_parameter('mobile_robot_radius', 0.0625)
         self.radius = self.get_parameter('mobile_robot_radius').value # 메카넘휠 반지름
@@ -123,11 +123,11 @@ class CmdVelSubscriber(Node):
 
     def cmd_vel2rad(self):
         if self.arduino_num == 0:
-            self.w1 = round((((self.Vx - self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
-            self.w2 = round((((self.Vx + self.Vy + self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
+            self.w1 = round((((self.Vx - self.Vy - self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
+            self.w2 = round((((self.Vx + self.Vy + self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
         else:          
-            self.w3 = round((((self.Vx + self.Vy - self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
-            self.w4 = round((((self.Vx - self.Vy + self.Rz*(self.length + self.width)/2)/self.radius)*9.5492968),2)
+            self.w3 = round((((self.Vx + self.Vy - self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
+            self.w4 = round((((self.Vx - self.Vy + self.Rz*((self.length + self.width)/2))/self.radius)*9.5492968),2)
 
 def main(args=None):
     rclpy.init(args=args)
