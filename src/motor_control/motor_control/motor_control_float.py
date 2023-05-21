@@ -92,6 +92,7 @@ class CmdVelSubscriber(Node):
         self.Vx = msg.linear.x #m/s
         self.Vy = msg.linear.y #m/s
         self.Rz = msg.angular.z #rad/s
+        self.get_logger().info(str(self.Vx) + " " + str(self.Vy) + " " + str(self.Rz))
         self.cmd_vel2rad()
         if self.ser.readable():
             if self.arduino_num == 0:
@@ -144,7 +145,6 @@ class CmdVelSubscriber(Node):
             self.cmd_vel_loop_publisher.publish(self.msg_vel)
         else:
             pass
-            self.get_logger().info("cmd_vel이 변경되었습니다.")
         self.Vx_old = Vx
         self.Vy_old = Vy
         self.Rz_old = Rz
