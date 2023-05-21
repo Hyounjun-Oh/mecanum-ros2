@@ -58,7 +58,7 @@ class CmdVelSubscriber(Node):
         self.declare_parameter('arduino_num', 0)
         self.arduino_num= Parameter('arduino_num', Parameter.Type.INTEGER,1).value #시리얼 포트
         self.timeout = 10
-        self.timer = self.create_timer(0.01, self.cmd_vel_loop)
+        self.timer = self.create_timer(0.1, self.cmd_vel_loop)
         self.cmd_vel_loop_publisher = self.create_publisher(
             Twist,
             'cmd_vel',
