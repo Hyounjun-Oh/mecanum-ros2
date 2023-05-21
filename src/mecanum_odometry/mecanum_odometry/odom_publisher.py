@@ -47,7 +47,7 @@ class OdometryNode(Node):
         self.w1, self.w2, self.w3, self.w4 = 0,0,0,0
         self.odom_pos_y, self.odom_pos_x, self.odom_ori_z = 0,0,0
         self.old_time = self.get_clock().now().nanoseconds
-        self.odom_publisher = self.create_publisher(Odometry, 'wheel/odometry', self.QoS_)
+        self.odom_publisher = self.create_publisher(Odometry, 'odom', self.QoS_)
         #wheel/odometry
         # 모터의 실제 각속도를 받아온다.
         self.vel_subscription_1 = self.create_subscription(
@@ -60,12 +60,7 @@ class OdometryNode(Node):
             'motor_vel/rear',
             self.cmd_vel_callback_2,
             self.QoS_)
-        self.cmd_subscription = self.create_subscription(
-            Twist,
-            'cmd_vel',
-            self.cmd_vel_callback_3,
-            self.QoS_
-        )
+
         self.rotation_subscription = self.create_subscription(
             Float64,
             'imu/yaw',
@@ -102,22 +97,19 @@ class OdometryNode(Node):
 
     def cmd_vel_callback_1(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        # self.w1 = (msg.data[0]*0.1047198 /1.2)*2 # rpm to rad/s
-        # self.w2 = (msg.data[1]*0.1047198 /1.2)*2
-        self.w1 = (msg.data[0]*0.1047198) # rpm to rad/s
-        self.w2 = (msg.data[1]*0.1047198 )
+        self.w1 = (msg.data[0]*0.1047198 /1.2)*2 # rpm to rad/s
+        self.w2 = (msg.data[1]*0.1047198 /1.2)*2
+        # self.w1 = (msg.data[0]*0.1047198) # rpm to rad/s
+        # self.w2 = (msg.data[1]*0.1047198 )
             
     def cmd_vel_callback_2(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        # self.w3 = (msg.data[0]*0.1047198 /1.2)*2
-        # self.w4 = (msg.data[1]*0.1047198 /1.2)*2
-        self.w3 = (msg.data[0]*0.1047198 )
-        self.w4 = (msg.data[1]*0.1047198 )
+        self.w3 = (msg.data[0]*0.1047198 /1.2)*2
+        self.w4 = (msg.data[1]*0.1047198 /1.2)*2
+        # self.w3 = (msg.data[0]*0.1047198 )
+        # self.w4 = (msg.data[1]*0.1047198 )
         #self.get_logger().info(str(self.odom_ori_z))
-
-    def cmd_vel_callback_3(self, msg):
-        self.des_rot = msg.angular
-
+        
     def rotation_callback(self, msg): #EKF-IMU값 받아오기
         self.yaw = msg.data
 
@@ -134,12 +126,12 @@ class OdometryNode(Node):
             self.del_vel_z = math.radians((yaw - self.yaw_old) + 360)
         else:
             self.del_vel_z = math.radians(yaw - self.yaw_old)
-        del_x = (self.vel_x * np.cos(self.del_vel_z) - self.vel_y * np.sin(self.del_vel_z) ) * duration
-        del_y = (self.vel_x * np.sin(self.del_vel_z) + self.vel_y * np.cos(self.del_vel_z) ) * duration
+        del_x = (self.vel_x * np.cos(self.odom_ori_z) - self.vel_y * np.sin(self.odom_ori_z) ) * duration
+        del_y = (self.vel_x * np.sin(self.odom_ori_z) + self.vel_y * np.cos(self.odom_ori_z) ) * duration
         self.odom_pos_x += del_x
         self.odom_pos_y += del_y
         self.odom_ori_z += self.del_vel_z
-        self.get_logger().info(str(self.yaw))
+        #self.get_logger().info(str(self.del_vel_z)+str(self.odom_ori_z))
         #self.rot_old = self.rot_z
         #self.del_rot_z_vel_old = del_rot
         self.yaw_old = yaw
