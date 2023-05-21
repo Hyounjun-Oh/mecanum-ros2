@@ -142,9 +142,9 @@ class CmdVelSubscriber(Node):
             self.msg_vel.linear.y = Vy
             self.msg_vel.angular.z = Rz
             self.cmd_vel_loop_publisher.publish(self.msg_vel)
-            self.get_logger().info("한 번만 루프되었습니다.")
         else:
             pass
+            self.get_logger().info("cmd_vel이 변경되었습니다.")
         self.Vx_old = Vx
         self.Vy_old = Vy
         self.Rz_old = Rz
