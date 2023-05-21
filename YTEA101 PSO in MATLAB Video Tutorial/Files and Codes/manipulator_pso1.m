@@ -21,18 +21,18 @@ params.dh_parameter.d = [300 194 449.5 -190 360 183 228];
 params.dh_parameter.a = [0 0 0 0 0 0 0];
 params.dh_parameter.al = [pi/2 -pi/2 pi/2 -pi/2 pi/2 -pi/2 pi/2];
 
-params.desired_position = [0 500 0];
+params.desired_value = [0 -187 800 eul2quat([0 0 0])];
 %% Problem Definiton
 
-problem.nVar = 6;       % Number of Unknown (Decision) Variables
+problem.nVar = 10;       % Number of Unknown (Decision) Variables
 % 조인트 리밋 
-problem.VarMin = [-1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897];  % Lower Bound of Decision Variables
-problem.VarMax = [1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897];   % Upper Bound of Decision Variables
+problem.VarMin = [-3.0543 -3.0543 -3.0543 -3.0543 -3.0543 -3.0543 -3.0543];  % Lower Bound of Decision Variables
+problem.VarMax = [3.0543 3.0543 3.0543 3.0543 3.0543 3.0543 3.0543];   % Upper Bound of Decision Variables
 
 %% Parameters of PSO
  
-params.MaxIt = 100;        % Maximum Number of Iterations
-params.nPop = 10000;           % Population Size (Swarm Size)
+params.MaxIt = 10000;        % Maximum Number of Iterations
+params.nPop = 50;           % Population Size (Swarm Size)
 params.w = 1;               % Intertia Coefficient
 params.wdamp = 0.99;        % Damping Ratio of Inertia Coefficient
 params.c1 = 2;              % Personal Acceleration Coefficient
@@ -48,11 +48,11 @@ BestCosts = out.BestCosts;
 
 %% Results
 
-figure;
-% plot(BestCosts, 'LineWidth', 2);
-semilogy(BestCosts, 'LineWidth', 2);
-xlabel('Iteration');
-ylabel('Best Cost');
-grid on;
+% figure;
+% % plot(BestCosts, 'LineWidth', 2);
+% semilogy(BestCosts, 'LineWidth', 2);
+% xlabel('Iteration');
+% ylabel('Best Cost');
+% grid on;
 
 

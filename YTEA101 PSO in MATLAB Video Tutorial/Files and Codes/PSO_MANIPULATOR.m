@@ -36,7 +36,7 @@ function out = PSO_MANIPULATOR(problem, params)
 
     MaxVelocity = 0.2*(VarMax-VarMin);
     MinVelocity = -MaxVelocity;
-    desired_position = params.desired_position;
+    desired_value = params.desired_value;
     %% Initialization
 
     % The Particle Template
@@ -110,7 +110,7 @@ function out = PSO_MANIPULATOR(problem, params)
         % particle(i).Velocity.J7 = zeros(VarSize);
 
         % Evaluation
-        object_function_result = object_function(params.dh_parameter, desired_position, particle(i),1);
+        object_function_result = object_function(params.dh_parameter, desired_value, particle(i),1);
         particle(i).Cost = object_function_result.best_cost;
         particle(i).Best.Cost = object_function_result.best_cost;
         particle(i).Position = object_function_result.best_position;
@@ -155,7 +155,7 @@ function out = PSO_MANIPULATOR(problem, params)
             particle(i).Position = min(particle(i).Position, VarMax);
 
             % Evaluation
-            object_function_result = object_function(params.dh_parameter, desired_position, particle(i),2);
+            object_function_result = object_function(params.dh_parameter, desired_value, particle(i),2);
 
             particle(i).Cost = object_function_result.best_cost;
 

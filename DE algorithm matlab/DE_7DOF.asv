@@ -1,0 +1,30 @@
+% DE 알고리즘을 이용한 매니퓰레이터 해 구하기
+% 1. 랜덤 조인트 값들 초기화
+% 2. 랜덤 조인트 값들 목적함수로 평가
+% Iteration시작
+% 3. 초기화한 랜덤조인트
+clc
+clear
+close all
+
+%% Parameter 
+
+params.F = 0.6;
+params.CR = 1.0;
+params.alpha = 1;
+params.beta = 0.1;
+params.population = 50;
+params.iteration = 350;
+params.tolerance = 0.001;
+
+params.joint_limit.max = [175 175 175 175 175 175 175].*pi/180;
+params.joint_limit.min = -1*[175 175 175 175 175 175 175].*pi/180;
+
+%% Initialization
+
+for i = 1:params.population
+    for j = 1:length(params.joint_limit.max)
+        % 1 ~ 7번 Joint까지 랜덤 변수 초기화
+        position(i).joints(j) = (params.joint_limit.min(j) - params.joint_limit.max(j)_;
+    end
+end
