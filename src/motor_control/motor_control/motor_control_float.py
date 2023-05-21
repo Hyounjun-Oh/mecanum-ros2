@@ -147,7 +147,7 @@ class CmdVelSubscriber(Node):
         self.Rz_old = Rz
 
     def cmd_vel2rad(self):
-        alpha = 2.4 #속도 실측에 대한 가중치 알파
+        alpha = 2.4 #속도 실측에 대한 가중치 알파 2.4
         if self.arduino_num == 0:
             self.w1 = round((((self.Vx - self.Vy - self.Rz*((self.length + self.width)/2))/self.radius)/alpha*9.5492968),2)
             self.w2 = round((((self.Vx + self.Vy + self.Rz*((self.length + self.width)/2))/self.radius)/alpha*9.5492968),2)
