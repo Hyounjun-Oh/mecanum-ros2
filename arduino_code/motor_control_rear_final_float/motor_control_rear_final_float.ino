@@ -220,13 +220,13 @@ void serialEvent() {
   //noise filter
   if (targetRPM_1 == 0){
     targetRPM_1 = 0;
-  }else if(abs(targetRPM_1 - targetRPM_1_pre) >10){
+  }else if(abs(targetRPM_1 - targetRPM_1_pre) >20){
     targetRPM_1 = targetRPM_1_pre;
   }
   
   if (targetRPM_2 == 0){
     targetRPM_2 = 0;
-  }else if(abs(targetRPM_2 - targetRPM_2_pre) > 10){
+  }else if(abs(targetRPM_2 - targetRPM_2_pre) > 20){
     targetRPM_2 = targetRPM_2_pre;
   }
   Serial.println(String(2)+','+String(rpm_motor_1)+','+String(rpm_motor_2)); //이건 무조건 고정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
