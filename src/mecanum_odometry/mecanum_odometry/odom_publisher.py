@@ -131,7 +131,7 @@ class OdometryNode(Node):
         self.odom_pos_x += del_x
         self.odom_pos_y += del_y
         self.odom_ori_z += self.del_vel_z
-        #self.get_logger().info(str(self.del_vel_z)+str(self.odom_ori_z))
+        self.get_logger().info(str(del_x)+str(del_y))
         #self.rot_old = self.rot_z
         #self.del_rot_z_vel_old = del_rot
         self.yaw_old = yaw
