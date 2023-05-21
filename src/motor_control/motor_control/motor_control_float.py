@@ -82,13 +82,6 @@ class CmdVelSubscriber(Node):
         time.sleep(5)
 
     def get_cmd_vel(self, msg):
-        time = self.get_clock().now()
-        duration = self.time_old - time
-        self.get_logger().info(duration)
-        if duration < 0.001:
-            self.get_logger().info("0.001초 미만")
-        else:
-            self.get_logger().info("0.001초 이상")
         msg_motor_vel = Float32MultiArray()
         msg_motor_vel.data = [0.0,0.0,0.0]
         self.arduino_num= self.get_parameter('arduino_num').get_parameter_value().integer_value
@@ -134,7 +127,6 @@ class CmdVelSubscriber(Node):
                             pass
                     else:
                         pass
-        self.time_old = time
 
     def cmd_vel_loop(self):
         self.msg_vel = Twist()
