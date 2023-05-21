@@ -40,6 +40,9 @@ class CmdVelSubscriber(Node):
         self.Vx_old = 0.0
         self.Vy_old = 0.0
         self.Rz_old = 0.0
+        self.Vx = 0.0
+        self.Vy = 0.0
+        self.Rz = 0.0
         self.declare_parameter('mobile_robot_length', 0.30)
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
         self.declare_parameter('qos_depth', 10)
