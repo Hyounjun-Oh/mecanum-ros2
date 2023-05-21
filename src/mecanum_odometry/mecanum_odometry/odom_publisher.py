@@ -9,7 +9,9 @@ from geometry_msgs.msg import TransformStamped
 from std_msgs.msg import Float32MultiArray 
 #from sensor_msgs.msg import Imu
 from std_msgs.msg import Float64
+from geometry_msgs.msg import Twist
 from tf2_ros import TransformBroadcaster # base_footprint publish
+import tf2_ros
 
 class OdometryNode(Node):
 
@@ -31,8 +33,17 @@ class OdometryNode(Node):
         self.vel_y = 0.0
         self.rot_z = 0.0
         self.ori_z = 0.0
+        self.yaw = 0.0
         self.rot_old = 0.0
+        self.del_vel_z = 0.0
+        self.del_rot_z_vel_old = 0.0
+        self.ori_q_z_old = 0.0
+        self.ori_q_w_old = 0.0
+        self.yaw_old = 0.0
         self.odom_ori_z = 0.0
+        self.rot_z_vel = 0.0
+        self.rot_q_z = 0.0
+        self.rot_q_w = 0.0
         self.w1, self.w2, self.w3, self.w4 = 0,0,0,0
         self.odom_pos_y, self.odom_pos_x, self.odom_ori_z = 0,0,0
         self.old_time = self.get_clock().now().nanoseconds
@@ -49,12 +60,18 @@ class OdometryNode(Node):
             'motor_vel/rear',
             self.cmd_vel_callback_2,
             self.QoS_)
-        # self.imu_subscription = self.create_subscription(
-        #     Float64,
-        #     'imu/yaw',
-        #     self.imu_callback,
-        #     self.QoS_
-        #     )
+        self.cmd_subscription = self.create_subscription(
+            Twist,
+            'cmd_vel',
+            self.cmd_vel_callback_3,
+            self.QoS_
+        )
+        self.rotation_subscription = self.create_subscription(
+            Float64,
+            'imu/yaw',
+            self.rotation_callback,
+            self.QoS_
+            )
         self.joint_state_subscription = self.create_subscription(
             JointState,
             'joint_states',
@@ -85,33 +102,47 @@ class OdometryNode(Node):
 
     def cmd_vel_callback_1(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        self.w1 = (msg.data[0]*0.1047198 /1.2)*2 # rpm to rad/s
-        self.w2 = (msg.data[1]*0.1047198 /1.2)*2
+        # self.w1 = (msg.data[0]*0.1047198 /1.2)*2 # rpm to rad/s
+        # self.w2 = (msg.data[1]*0.1047198 /1.2)*2
+        self.w1 = (msg.data[0]*0.1047198) # rpm to rad/s
+        self.w2 = (msg.data[1]*0.1047198 )
             
     def cmd_vel_callback_2(self, msg): #속도값 받아오기
         self.vel_msg = msg
-        self.w3 = (msg.data[0]*0.1047198 /1.2)*2
-        self.w4 = (msg.data[1]*0.1047198 /1.2)*2
+        # self.w3 = (msg.data[0]*0.1047198 /1.2)*2
+        # self.w4 = (msg.data[1]*0.1047198 /1.2)*2
+        self.w3 = (msg.data[0]*0.1047198 )
+        self.w4 = (msg.data[1]*0.1047198 )
         #self.get_logger().info(str(self.odom_ori_z))
 
-    # def imu_callback(self, msg): #IMU값 받아오기
-    #     self.imu_msg = msg
-    #     self.yaw = self.imu_msg
+    def cmd_vel_callback_3(self, msg):
+        self.des_rot = msg.angular
+
+    def rotation_callback(self, msg): #EKF-IMU값 받아오기
+        self.yaw = msg.data
 
     def odom_calaulator(self): #Odometry값 계산하기
         self.time = self.get_clock().now().nanoseconds
         duration = (int(self.time) - int(self.old_time))/1000000000
         self.vel_x = (self.radius/4)*(self.w1 + self.w2 + self.w3 + self.w4)
         self.vel_y = (self.radius/4)*(-self.w1 + self.w2 + self.w3 - self.w4)
-        self.rot_z = (self.radius/4)*(4/(self.length + self.width))*(-self.w1 + self.w2 - self.w3 + self.w4) #2
-        del_rot = self.rot_z * duration
-        del_x = (self.vel_x * np.cos(self.odom_ori_z) - self.vel_y * np.sin(self.odom_ori_z) ) * duration
-        del_y = (self.vel_x * np.sin(self.odom_ori_z) + self.vel_y * np.cos(self.odom_ori_z) ) * duration
+        #self.rot_z = (self.radius/4)*(4/(self.length + self.width))*(-self.w1 + self.w2 - self.w3 + self.w4) #2
+        yaw = self.yaw
+        if yaw - self.yaw_old > 180:
+            self.del_vel_z = math.radians((yaw - self.yaw_old) - 360)
+        elif yaw - self.yaw_old < -180:
+            self.del_vel_z = math.radians((yaw - self.yaw_old) + 360)
+        else:
+            self.del_vel_z = math.radians(yaw - self.yaw_old)
+        del_x = (self.vel_x * np.cos(self.del_vel_z) - self.vel_y * np.sin(self.del_vel_z) ) * duration
+        del_y = (self.vel_x * np.sin(self.del_vel_z) + self.vel_y * np.cos(self.del_vel_z) ) * duration
         self.odom_pos_x += del_x
-        self.odom_pos_y += del_y 
-        self.odom_ori_z += del_rot
-        self.get_logger().info(str(self.odom_pos_x)+ " , "+str(self.odom_pos_y)+ " , "+str(self.odom_ori_z))
-        self.rot_old = self.rot_z
+        self.odom_pos_y += del_y
+        self.odom_ori_z += self.del_vel_z
+        self.get_logger().info(str(self.yaw))
+        #self.rot_old = self.rot_z
+        #self.del_rot_z_vel_old = del_rot
+        self.yaw_old = yaw
         self.old_time = self.time
 
     def publish(self): # Odometry와 tf발행
@@ -131,7 +162,7 @@ class OdometryNode(Node):
         msg_odom.pose.pose.orientation.w = orientation_quaternion[3]
         msg_odom.twist.twist.linear.x = self.vel_x
         msg_odom.twist.twist.linear.y = self.vel_y
-        msg_odom.twist.twist.angular.z = self.rot_z
+        msg_odom.twist.twist.angular.z = self.del_vel_z
 
         msg_tf = TransformStamped()
         msg_tf.header.frame_id = self.frame_id
@@ -173,9 +204,21 @@ class OdometryNode(Node):
         q[3] = cj*cc + sj*ss
 
         return q
-        
-        
     
+    def quaternion_to_euler(self, quaternion):
+        # 쿼터니언을 오일러 각도로 변환
+        roll = math.atan2(2.0 * (quaternion.w * quaternion.x + quaternion.y * quaternion.z),
+                        1.0 - 2.0 * (quaternion.x * quaternion.x + quaternion.y * quaternion.y))
+        pitch = math.asin(2.0 * (quaternion.w * quaternion.y - quaternion.z * quaternion.x))
+        yaw = math.atan2(2.0 * (quaternion.w * quaternion.z + quaternion.x * quaternion.y),
+                        1.0 - 2.0 * (quaternion.y * quaternion.y + quaternion.z * quaternion.z))
+
+        # 각도를 라디안에서도 도로 변환
+        roll_deg = math.degrees(roll)
+        pitch_deg = math.degrees(pitch)
+        yaw_deg = math.degrees(yaw)
+
+        return roll_deg, pitch_deg, yaw_deg
 
 
 def main(args=None):

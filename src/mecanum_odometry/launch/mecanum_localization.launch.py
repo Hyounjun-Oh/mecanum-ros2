@@ -52,7 +52,7 @@ def generate_launch_description():
   # Start robot localization using an Extended Kalman filter
   start_robot_localization_cmd = Node(
     package='robot_localization',
-    executable='ekf_node',
+    executable='ekf_node', #
     name='ekf_filter_node',
     output='screen',
     remappings=[('/odometry/filtered','/odom')],
