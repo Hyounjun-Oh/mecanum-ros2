@@ -37,6 +37,9 @@ class CmdVelSubscriber(Node):
         self.w2 = 0.0
         self.w3 = 0.0
         self.w4 = 0.0
+        self.Vx_old = 0.0
+        self.Vy_old = 0.0
+        self.Rz_old = 0.0
         self.declare_parameter('mobile_robot_length', 0.30)
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
         self.declare_parameter('qos_depth', 10)
@@ -52,6 +55,11 @@ class CmdVelSubscriber(Node):
         self.declare_parameter('arduino_num', 0)
         self.arduino_num= Parameter('arduino_num', Parameter.Type.INTEGER,1).value #시리얼 포트
         self.timeout = 10
+        self.cmd_vel_loop_publisher = self.create_publisher(
+            Twist,
+            'cmd_vel_loop',
+            qos_depth
+        )
         self.subscription = self.create_subscription(
             Twist,
             'cmd_vel',
@@ -127,6 +135,22 @@ class CmdVelSubscriber(Node):
                     else:
                         pass
         self.time_old = time
+
+    def cmd_vel_loop(self):
+        self.msg_vel = Twist()
+        Vx = self.Vx
+        Vy = self.Vy
+        Rz = self.Rz
+        if Vx == self.Vx_old and Vy == self.Vy_old and Rz == self.Rz_old:
+            self.msg_vel.linear.x = Vx
+            self.msg_vel.linear.y = Vy
+            self.msg_vel.angular.z = Rz
+            self.cmd_vel_loop_publisher.publish(self.msg_vel)
+        else:
+            pass
+        self.Vx_old = Vx
+        self.Vy_old = Vy
+        self.Rz_old = Rz
 
     def cmd_vel2rad(self):
         alpha = 2.4 #속도 실측에 대한 가중치 알파
