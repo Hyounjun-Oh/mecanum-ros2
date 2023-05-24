@@ -243,25 +243,25 @@
     <axis xyz="0.0 0.0 0.0"/>
   </joint>
   <joint name="rear_right_joint" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.145 -0.17 0.0625"/>
+    <origin rpy="0 0 0" xyz="-0.240 -0.22 0.0625"/>
     <parent link="base_link"/>
     <child link="rear_right_link"/>
     <axis xyz="0.0 -1.0 0.0"/>
   </joint>
   <joint name="front_right_joint" type="continuous">
-    <origin rpy="0 0 0" xyz="0.145 -0.17 0.0625"/>
+    <origin rpy="0 0 0" xyz="0.240 -0.22 0.0625"/>
     <parent link="base_link"/>
     <child link="front_right_link"/>
     <axis xyz="0.0 -1.0 0.0"/>
   </joint>
   <joint name="front_left_joint" type="continuous">
-    <origin rpy="0 0 0" xyz="0.145 0.17 0.0625"/>
+    <origin rpy="0 0 0" xyz="0.240 0.22 0.0625"/>
     <parent link="base_link"/>
     <child link="front_left_link"/>
     <axis xyz="0.0 1.0 0.0"/>
   </joint>
   <joint name="rear_left_joint" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.145 0.17 0.0625"/>
+    <origin rpy="0 0 0" xyz="-0.240 0.22 0.0625"/>
     <parent link="base_link"/>
     <child link="rear_left_link"/>
     <axis xyz="0.0 1.0 0.0"/>
