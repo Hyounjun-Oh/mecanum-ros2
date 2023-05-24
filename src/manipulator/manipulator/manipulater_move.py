@@ -33,6 +33,10 @@ class ManipulatorMove(Node):
             joint_msg.id = dxl_id
             joint_msg.position = joint_value
             self.man_joint_publisher.publish(joint_msg)
+        elif dxl_id == 5:
+            joint_msg.id = dxl_id
+            joint_msg.position = joint_value
+            self.man_joint_publisher.publish(joint_msg)
             
     def manipulator_joints_calculator(self):
         input_v = input('조인트 값 네 개를 스페이스바로 구분하여 입력하시오.').split(' ')
@@ -45,13 +49,19 @@ def main(args=None):
     move = ManipulatorMove()
     while 1:
         mode = input('MODE 를 설정하시오.')
-        joint_value = move.manipulator_joints_calculator()
-        print(joint_value)
-        if mode == 'g':
+        if mode == 'h':
+            print("Home Pose로 이동합니다.")
+            joint_value = [2048, 2048, 2048, 2048, 2048]
             for id in dxl_id:
-                move.publish_joint_value(id, joint_value[id-1]) #id가 1~4까지 일경우 id-1임. 아닐경우 변경 요망
-        elif mode == 'q':
-            break
+                    move.publish_joint_value(id, joint_value[id-1])
+        else:
+            joint_value = move.manipulator_joints_calculator()
+            print(joint_value)
+            if mode == 'g':
+                for id in dxl_id:
+                    move.publish_joint_value(id, joint_value[id-1]) #id가 1~4까지 일경우 id-1임. 아닐경우 변경 요망
+            elif mode == 'q':
+                break
     move.destroy_node()
     rclpy.shutdown()
 

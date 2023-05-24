@@ -23,9 +23,9 @@ class OdometryNode(Node):
         self.child_frame_id = 'base_footprint'
         self.last_joint_positions_ = [0,0,0,0]
         self.diff_joint_positions_ = [0,0,0,0]
-        self.declare_parameter('mobile_robot_length', 0.30)
+        self.declare_parameter('mobile_robot_length', 0.47)
         self.length = self.get_parameter('mobile_robot_length').value # 중심점으로부터 모터의 세로 위치
-        self.declare_parameter('mobile_robot_width', 0.40)
+        self.declare_parameter('mobile_robot_width', 0.46)
         self.width = self.get_parameter('mobile_robot_width').value # 중심점으로부터 모터의 가로 위치
         self.declare_parameter('mobile_robot_radius', 0.0625)
         self.radius = self.get_parameter('mobile_robot_radius').value # 메카넘휠 반지름
