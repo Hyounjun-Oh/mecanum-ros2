@@ -12,5 +12,5 @@ function foward_position = Homogeneous(dh_parameter, theta_array)
             T(iter).multiple_transform = T(iter-1).multiple_transform * T(iter).transform_matrix;
         end
     end
-    foward_position = T(iter).multiple_transform;
+    foward_position = T;
 end
