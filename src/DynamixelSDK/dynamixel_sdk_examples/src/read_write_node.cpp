@@ -103,7 +103,7 @@ ReadWriteNode::ReadWriteNode()
         portHandler,
         (uint8_t) msg->id,
         ADDR_PROFILE_VEL,
-        3506,
+        3000,
         &dxl_error
       );
       // Profile Acc
@@ -112,7 +112,7 @@ ReadWriteNode::ReadWriteNode()
         portHandler,
         (uint8_t) msg->id,
         ADDR_PROFILE_ACC,
-        4989,
+        2000,
         &dxl_error
       );
       // Write Goal Position (length : 4 bytes)

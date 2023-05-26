@@ -6,13 +6,12 @@ class ManipulatorMove(Node):
     def __init__(self):
         super().__init__('manipulator_move')
         self.QoS=10
-        self.home_position = [2048,2048,2048,2048] #초기 각도값 반영
+        self.home_position = [2048,2048,2048,2048,2048,2048] #초기 각도값 반영
         self.man_joint_publisher = self.create_publisher(
             SetPosition,
             'set_position',
             self.QoS
         )
-        
         
     def publish_joint_value(self, dxl_id, joint_value):
         joint_msg = SetPosition()
@@ -37,6 +36,10 @@ class ManipulatorMove(Node):
             joint_msg.id = dxl_id
             joint_msg.position = joint_value
             self.man_joint_publisher.publish(joint_msg)
+        elif dxl_id == 6:
+            joint_msg.id = dxl_id
+            joint_msg.position = joint_value
+            self.man_joint_publisher.publish(joint_msg)
             
     def manipulator_joints_calculator(self):
         input_v = input('조인트 값 네 개를 스페이스바로 구분하여 입력하시오.').split(' ')
@@ -45,13 +48,13 @@ class ManipulatorMove(Node):
             
 def main(args=None):
     rclpy.init(args=args)
-    dxl_id = [1,2,3,4]
+    dxl_id = [1,2,5,6,3,4]
     move = ManipulatorMove()
     while 1:
         mode = input('MODE 를 설정하시오.')
         if mode == 'h':
             print("Home Pose로 이동합니다.")
-            joint_value = [2048, 2048, 2048, 2048, 2048]
+            joint_value = [2048, 2048, 2048, 2048, 2048, 2048]
             for id in dxl_id:
                     move.publish_joint_value(id, joint_value[id-1])
         else:
