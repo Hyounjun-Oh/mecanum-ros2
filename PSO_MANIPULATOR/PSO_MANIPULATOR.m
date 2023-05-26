@@ -76,11 +76,11 @@ function out = PSO_MANIPULATOR(problem, params)
     % empty_particle.Best.Position.J6 = [];
     % empty_particle.Best.Cost.J6 = [];
 
-    empty_particle.Position.J7 = [];
-    % empty_particle.Velocity.J7 = [];
-    % empty_particle.Cost.J7 = [];
-    % empty_particle.Best.Position.J7 = [];
-    % empty_particle.Best.Cost.J7 = [];
+    % empty_particle.Position.J7 = [];
+    % % empty_particle.Velocity.J7 = [];
+    % % empty_particle.Cost.J7 = [];
+    % % empty_particle.Best.Position.J7 = [];
+    % % empty_particle.Best.Cost.J7 = [];
 
     % Create Population Array
     particle = repmat(empty_particle, nPop, 1);
@@ -98,10 +98,10 @@ function out = PSO_MANIPULATOR(problem, params)
         particle(i).Position.J4 = unifrnd(VarMin(4), VarMax(4), VarSize);
         particle(i).Position.J5 = unifrnd(VarMin(5), VarMax(5), VarSize);
         particle(i).Position.J6 = unifrnd(VarMin(6), VarMax(6), VarSize);
-        particle(i).Position.J7 = unifrnd(VarMin(7), VarMax(7), VarSize);
+        % particle(i).Position.J7 = unifrnd(VarMin(7), VarMax(7), VarSize);
 
         % Initialize Velocity
-        particle(i).Velocity = zeros(1,7);
+        particle(i).Velocity = zeros(1,6);
         % particle(i).Velocity.J2 = zeros(VarSize);
         % particle(i).Velocity.J3 = zeros(VarSize);
         % particle(i).Velocity.J4 = zeros(VarSize);

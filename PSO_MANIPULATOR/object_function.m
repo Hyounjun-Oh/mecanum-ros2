@@ -18,7 +18,7 @@ function object_function_result = object_function(dh_parameter, desired_position
      if mode == 1
         object_function_result.best_cost = inf;
         for iter = 1:length(x.Position.J1)
-            joint_position = [x.Position.J1(iter), x.Position.J2(iter), x.Position.J3(iter), x.Position.J4(iter), x.Position.J5(iter), x.Position.J6(iter), x.Position.J7(iter)];
+            joint_position = [x.Position.J1(iter), x.Position.J2(iter), x.Position.J3(iter), x.Position.J4(iter), x.Position.J5(iter), x.Position.J6(iter)];
             joint_error = abs(desired_position' - T_position(dh_parameter, joint_position));
             if sum(joint_error) < object_function_result.best_cost
                 object_function_result.best_cost = sum(joint_error);

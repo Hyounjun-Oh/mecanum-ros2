@@ -28,20 +28,20 @@ pub = ros2publisher(node,"joint_variables","std_msgs/Float32MultiArray");
 sub = ros2subscriber(node,"/desired_pose", @callback_desired_pose);
 %% DH parameter
 
-params.dh_parameter.d = [300 194 449.5 -190 360 183 228];
-params.dh_parameter.a = [0 0 0 0 0 0 0];
-params.dh_parameter.al = [pi/2 -pi/2 pi/2 -pi/2 pi/2 -pi/2 pi/2];
+params.dh_parameter.d = [330 0 0 0 0 0];
+params.dh_parameter.a = [0 70 25 0 255 0];
+params.dh_parameter.al = [90 0 90 -90 90 0];
 %% Problem Definiton
 
 problem.nVar = 6;       % Number of Unknown (Decision) Variables
 % 조인트 리밋 
-problem.VarMin = [-1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897 -1.570796326794897];  % Lower Bound of Decision Variables
-problem.VarMax = [1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897 1.570796326794897];   % Upper Bound of Decision Variables
+problem.VarMin = [-175 -100 -90 -175 -100 -175].*(pi/180);  % Lower Bound of Decision Variables
+problem.VarMax = [175 100 90 175 100 175].*(pi/180);   % Upper Bound of Decision Variables
 
 %% Parameters of PSO
  
-params.MaxIt = 1000;        % Maximum Number of Iterations
-params.nPop = 100;           % Population Size (Swarm Size)
+params.MaxIt = 2000;        % Maximum Number of Iterations
+params.nPop = 150;           % Population Size (Swarm Size)
 params.w = 1;               % Intertia Coefficient
 params.wdamp = 0.99;        % Damping Ratio of Inertia Coefficient
 params.c1 = 2;              % Personal Acceleration Coefficient
@@ -69,6 +69,7 @@ function callback_desired_pose(msg)
     global BestCosts
     global problem
     global pub
+    joint_conv = [0 0 0 0 0 0];
     desired_pose = [msg.data(1), msg.data(2), msg.data(3)];
     disp(desired_pose)
     if sum(desired_pose) ~= sum(desired_pose_old)
@@ -79,7 +80,22 @@ function callback_desired_pose(msg)
         BestSol = out.BestSol;
         BestCosts = out.BestCosts;
         if BestSol.Cost < 0.0001
-            msg.data = single([BestSol.Position(1),BestSol.Position(2),BestSol.Position(3),BestSol.Position(4),BestSol.Position(5),BestSol.Position(6),BestSol.Position(7)]);
+            joint = [BestSol.Position(1),BestSol.Position(2),BestSol.Position(3),BestSol.Position(4),BestSol.Position(5),BestSol.Position(6)];
+            disp(joint)
+            for i = 1:length(joint)
+                if joint(i) < 0
+                    proportion = (pi + joint(i))/(2*pi);
+                    joint_conv(i) = proportion*4096;
+                    disp(proportion)
+                elseif joint(i) > 0
+                    proportion = (pi + joint(i))/(2*pi);
+                    joint_conv(i) = proportion*4096;
+                    disp(proportion)
+                else
+                    joint_conv(i) = 2048;
+                end
+            end
+            msg.data = single(joint_conv);
             send(pub,msg);
             disp("Publish Joint Variables")
             params.desired_position = [0,0,0];
