@@ -22,15 +22,16 @@ global BesrSol
 global BestCosts
 global problem
 global pub
+global a
 
 node = ros2node("joint_calculator");
 pub = ros2publisher(node,"joint_variables","std_msgs/Float32MultiArray");
 sub = ros2subscriber(node,"/desired_pose", @callback_desired_pose);
 %% DH parameter
 
-params.dh_parameter.d = [330 0 0 0 0 0];
-params.dh_parameter.a = [0 70 25 0 255 0];
-params.dh_parameter.al = [90 0 90 -90 90 0];
+params.dh_parameter.d = [330 0 0 190 0 10];
+params.dh_parameter.a = [0 70 25 0 65 0];
+params.dh_parameter.al = [90 0 90 -90 90 0].*(pi/180);
 %% Problem Definiton
 
 problem.nVar = 6;       % Number of Unknown (Decision) Variables
@@ -40,8 +41,8 @@ problem.VarMax = [175 100 90 175 100 175].*(pi/180);   % Upper Bound of Decision
 
 %% Parameters of PSO
  
-params.MaxIt = 2000;        % Maximum Number of Iterations
-params.nPop = 150;           % Population Size (Swarm Size)
+params.MaxIt = 1000;        % Maximum Number of Iterations
+params.nPop = 500;           % Population Size (Swarm Size)
 params.w = 1;               % Intertia Coefficient
 params.wdamp = 0.99;        % Damping Ratio of Inertia Coefficient
 params.c1 = 2;              % Personal Acceleration Coefficient
@@ -69,9 +70,9 @@ function callback_desired_pose(msg)
     global BestCosts
     global problem
     global pub
-    joint_conv = [0 0 0 0 0 0];
+    global a
+    joint_conv = [0 0 0 0 0 0 0];
     desired_pose = [msg.data(1), msg.data(2), msg.data(3)];
-    disp(desired_pose)
     if sum(desired_pose) ~= sum(desired_pose_old)
         disp('published')
         msg = ros2message("std_msgs/Float32MultiArray");
@@ -81,23 +82,26 @@ function callback_desired_pose(msg)
         BestCosts = out.BestCosts;
         if BestSol.Cost < 0.0001
             joint = [BestSol.Position(1),BestSol.Position(2),BestSol.Position(3),BestSol.Position(4),BestSol.Position(5),BestSol.Position(6)];
-            disp(joint)
             for i = 1:length(joint)
+                joint_conv(1) = 0;
                 if joint(i) < 0
                     proportion = (pi + joint(i))/(2*pi);
-                    joint_conv(i) = proportion*4096;
-                    disp(proportion)
+                    joint_conv(i+1) = proportion*4096;
                 elseif joint(i) > 0
                     proportion = (pi + joint(i))/(2*pi);
-                    joint_conv(i) = proportion*4096;
-                    disp(proportion)
+                    joint_conv(i+1) = proportion*4096;
                 else
-                    joint_conv(i) = 2048;
+                    joint_conv(i+1) = 2048;
                 end
             end
-            msg.data = single(joint_conv);
+            for i = 1:length(joint_conv)
+                msg.data(i) = single(joint_conv(i));
+            end
+            disp(joint)
+            % msg.data = single(joint);
             send(pub,msg);
             disp("Publish Joint Variables")
+            a = joint;
             params.desired_position = [0,0,0];
         end
     end

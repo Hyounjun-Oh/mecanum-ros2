@@ -1,7 +1,7 @@
 function array = H_matrix(theta_array)
 %% DH파라미터 기입
-d = [330 0 0 0 0 10];
-a = [0 70 25 0 255 0];
+d = [330 0 0 190 0 10];
+a = [0 70 25 0 65 0];
 al = [90 0 90 -90 90 0].*(pi/180);
 q = [theta_array(1) theta_array(2) theta_array(3) theta_array(4) theta_array(5) theta_array(6)];
 %% 동차변환

@@ -24,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'manipulator_move=manipulator.manipulater_move:main',
+            'manipulator_pose_get=manipulator.manipulator_pose_get:main',
         ],
     },
 )
