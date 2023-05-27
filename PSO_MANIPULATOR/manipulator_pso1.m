@@ -36,8 +36,8 @@ params.dh_parameter.al = [90 0 90 -90 90 0].*(pi/180);
 
 problem.nVar = 6;       % Number of Unknown (Decision) Variables
 % 조인트 리밋 
-problem.VarMin = [-175 -100 -90 -175 -100 -175].*(pi/180);  % Lower Bound of Decision Variables
-problem.VarMax = [175 100 90 175 100 175].*(pi/180);   % Upper Bound of Decision Variables
+problem.VarMin = [-175 -10 -90 -175 -190 0].*(pi/180);  % Lower Bound of Decision Variables
+problem.VarMax = [175 190 90 175 5 358].*(pi/180);   % Upper Bound of Decision Variables
 
 %% Parameters of PSO
  
@@ -85,11 +85,30 @@ function callback_desired_pose(msg)
             for i = 1:length(joint)
                 joint_conv(1) = 0;
                 if joint(i) < 0
-                    proportion = (pi + joint(i))/(2*pi);
-                    joint_conv(i+1) = proportion*4096;
+                    if i == 2
+                        proportion = ((pi/2) + joint(i))/(2*pi);
+                        joint_conv(i+1) = proportion*4096;
+                    elseif i == 5
+                        proportion = ((pi*(3/2)) + joint(i))/(2*pi);
+                        joint_conv(i+1) = proportion*4096;
+                    else
+                        proportion = (pi + joint(i))/(2*pi);
+                        joint_conv(i+1) = proportion*4096;
+                    end   
                 elseif joint(i) > 0
-                    proportion = (pi + joint(i))/(2*pi);
-                    joint_conv(i+1) = proportion*4096;
+                    if i == 2
+                        proportion = ((pi/2) + joint(i))/(2*pi);
+                        joint_conv(i+1) = proportion*4096;
+                    elseif i == 5
+                        proportion = ((pi*(3/2)) + joint(i))/(2*pi);
+                        joint_conv(i+1) = proportion*4096;
+                    elseif i == 6
+                        proportion = joint(i)/(2*pi);
+                        joint_conv(i+1) = proportion*4096;
+                    else
+                        proportion = (pi + joint(i))/(2*pi);
+                        joint_conv(i+1) = proportion*4096;
+                    end
                 else
                     joint_conv(i+1) = 2048;
                 end
