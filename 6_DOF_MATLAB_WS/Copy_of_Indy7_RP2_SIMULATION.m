@@ -12,7 +12,7 @@ format default
 % DH PARAMETER
 d = [90 0 0 0 190 0 10];
 a_dh = [0 240 70 25 0 65 0];
-alpha = [0 0 0 90 -90 90 0].*(pi/180);
+alpha = [90 0 0 90 -90 90 0].*(pi/180);
 %% DATA INITIALIZATION
 % Value of each Actuator
 vi = [0 0 0 0 0 0];
@@ -25,7 +25,8 @@ ti = 0; tf = 1; t = linspace(ti,tf,100*(tf-ti));
 desired_pose_1 = [320 0 345 0 0 0];
 %% FIND INITIAL POSE
 %320 0 345
-initial_joints = [3.05432619099008	0.580411822713204	0.530575825356095	-0.900226424348870	-0.883946497048107	-1.49552534870361];
+% initial_joints = [0 90 0 0 -90 0].*(pi/180);
+initial_joints = [2.15321604295118	2.27964472638134	0.378914110929445	-3.05432619099008	-6.17618625059562e-15	-0.896066396987895];
 initial_pose = H_matrix(initial_joints);
 %% FIND TRAJECTORIES
 
@@ -68,7 +69,7 @@ for k = 1:length(t)-1
         p_dot_ref = vf + (0.*([pxd(k);pyd(k);pzd(k);0;0;0] - [Plot_Points(1:3,7);0;0;0]))./(t(k+1)-t(k));
         q_dot_f = jacobian7(qf) * p_dot_ref;
         qf = qf + q_dot_f*(t(k+1)-t(k));
-        plot3(Plot_Points(1,:),Plot_Points(2,:),Plot_Points(3,:),'-or','LineWidth',3);
+        plot3(Plot_Points(1,1:8),Plot_Points(2,1:8),Plot_Points(3,1:8),'-or','LineWidth',3);
         axis([-1000,1500,-1000,1500,-500,1500]);
         grid on
         pause(0.001)

@@ -28,16 +28,18 @@ node = ros2node("joint_calculator");
 pub = ros2publisher(node,"joint_variables","std_msgs/Float32MultiArray");
 sub = ros2subscriber(node,"/desired_pose", @callback_desired_pose);
 %% DH parameter
-
-params.dh_parameter.d = [330 0 0 190 0 10];
-params.dh_parameter.a = [0 70 25 0 65 0];
-params.dh_parameter.al = [90 0 90 -90 90 0].*(pi/180);
+% d = [90 0 0 0 0 190 0 75];
+% a = [0 240 30 70 25 0 0 0];
+% al = [90 0 0 0 90 -90 90 0].*(pi/180);
+params.dh_parameter.d = [90 0 0 0 0 190 0 75];
+params.dh_parameter.a = [0 240 30 70 25 0 0 0];
+params.dh_parameter.al = [90 0 0 0 90 -90 90 0].*(pi/180);
 %% Problem Definiton
 
 problem.nVar = 6;       % Number of Unknown (Decision) Variables
 % 조인트 리밋 
-problem.VarMin = [-175 -10 -90 -175 -190 0].*(pi/180);  % Lower Bound of Decision Variables
-problem.VarMax = [175 190 90 175 5 358].*(pi/180);   % Upper Bound of Decision Variables
+problem.VarMin = [-175 -5 -90 -175 -95 -175].*(pi/180);  % Lower Bound of Decision Variables
+problem.VarMax = [175 185 90 175 95 175].*(pi/180);   % Upper Bound of Decision Variables
 
 %% Parameters of PSO
  
@@ -88,9 +90,9 @@ function callback_desired_pose(msg)
                     if i == 2
                         proportion = ((pi/2) + joint(i))/(2*pi);
                         joint_conv(i+1) = proportion*4096;
-                    elseif i == 5
-                        proportion = ((pi*(3/2)) + joint(i))/(2*pi);
-                        joint_conv(i+1) = proportion*4096;
+                    % elseif i == 5
+                    %     proportion = ((pi*(3/2)) + joint(i))/(2*pi);
+                    %     joint_conv(i+1) = proportion*4096;
                     else
                         proportion = (pi + joint(i))/(2*pi);
                         joint_conv(i+1) = proportion*4096;
@@ -99,12 +101,12 @@ function callback_desired_pose(msg)
                     if i == 2
                         proportion = ((pi/2) + joint(i))/(2*pi);
                         joint_conv(i+1) = proportion*4096;
-                    elseif i == 5
-                        proportion = ((pi*(3/2)) + joint(i))/(2*pi);
-                        joint_conv(i+1) = proportion*4096;
-                    elseif i == 6
-                        proportion = joint(i)/(2*pi);
-                        joint_conv(i+1) = proportion*4096;
+                    % elseif i == 5
+                    %     proportion = ((pi*(3/2)) + joint(i))/(2*pi);
+                    %     joint_conv(i+1) = proportion*4096;
+                    % elseif i == 6
+                    %     proportion = joint(i)/(2*pi);
+                    %     joint_conv(i+1) = proportion*4096;
                     else
                         proportion = (pi + joint(i))/(2*pi);
                         joint_conv(i+1) = proportion*4096;
@@ -119,7 +121,7 @@ function callback_desired_pose(msg)
             disp(joint)
             % msg.data = single(joint);
             send(pub,msg);
-            disp("Publish Joint Variables")
+            disp(joint_conv)
             a = joint;
             params.desired_position = [0,0,0];
         end
