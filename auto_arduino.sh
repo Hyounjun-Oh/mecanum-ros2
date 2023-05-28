@@ -9,8 +9,8 @@ board_type_1="arduino:avr:mega"
 board_type_2="arduino:avr:mega"
 
 # 아두이노 포트
-front_port="/dev/ttyACM0"
-rear_port="/dev/ttyACM1"
+front_port="/dev/ttyFrontArduino"
+rear_port="/dev/ttyRearArduino"
 
 # 아두이노 스케치 컴파일 및 업로드
 arduino-cli compile --fqbn $board_type_2 $front_sketch
