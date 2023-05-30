@@ -68,6 +68,11 @@ def main(args=None):
             joint = [2048,2400,1450,2048,2400,2048]
             for id in dxl_id:
                 move.publish_joint_value(id, round(joint[id-1]))
+        elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 3:
+            dxl_id = [1,2,3,4,5,6]
+            joint = [1500,2500,1500,2048,2400,2048]
+            for id in dxl_id:
+                move.publish_joint_value(id, round(joint[id-1]))
         else:
             if abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 0:
                 flag = 0
