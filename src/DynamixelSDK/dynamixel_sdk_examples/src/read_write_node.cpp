@@ -87,7 +87,7 @@ ReadWriteNode::ReadWriteNode()
     {
       if (msg->id == 7){
         dxl_comm_result =
-        packetHandler->write4ByteTxRx(
+        packetHandler->write2ByteTxRx(
         portHandler,
         (uint8_t) msg->id,
         ADDR_xl320_GOAL_POSITION,
