@@ -31,9 +31,9 @@ sub = ros2subscriber(node,"/desired_pose", @callback_desired_pose);
 % d = [90 0 0 0 0 190 0 75];
 % a = [0 240 30 70 25 0 0 0];
 % al = [90 0 0 0 90 -90 90 0].*(pi/180);
-params.dh_parameter.d = [90 0 0 0 0 190 0 75];
-params.dh_parameter.a = [0 240 30 70 25 0 0 0];
-params.dh_parameter.al = [90 0 0 0 90 -90 90 0].*(pi/180);
+params.dh_parameter.d = [90 0 0 0 0 190 0 65 0 125];
+params.dh_parameter.a = [0 240 30 70 25 0 0 0 35 0];
+params.dh_parameter.al = [90 0 0 0 90 -90 90 0 0 0].*(pi/180);
 %% Problem Definiton
 
 problem.nVar = 6;       % Number of Unknown (Decision) Variables
@@ -54,15 +54,15 @@ params.ShowIterInfo = true; % Flag for Showing Iteration Informatin
 %% Calling PSO
 desired_pose_old = [0.0 0.0 0.0];
 desired_pose = [0.0 0.0 0.0];
-% %% Results
-% 
-% figure;
-% % plot(BestCosts, 'LineWidth', 2);
-% semilogy(BestCosts, 'LineWidth', 2);
-% xlabel('Iteration');
-% ylabel('Best Cost');
-% grid on;
-% clear manipulator_node
+%% Results
+
+figure;
+% plot(BestCosts, 'LineWidth', 2);
+semilogy(BestCosts, 'LineWidth', 2);
+xlabel('Iteration');
+ylabel('Best Cost');
+grid on;
+clear manipulator_node
 
 function callback_desired_pose(msg)
     global desired_pose
@@ -129,3 +129,9 @@ function callback_desired_pose(msg)
     desired_pose_old = desired_pose;
 end
 
+%% 디버깅용 
+% 
+% params.desired_position = [300 100 300]; %0 -187 1324
+% out = PSO_MANIPULATOR(problem, params);
+% BestSol = out.BestSol;
+% BestCosts = out.BestCosts;

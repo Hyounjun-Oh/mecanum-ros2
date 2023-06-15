@@ -10,9 +10,9 @@ clc
 format default
 %% INDY7-RP2 CONFIGURATION
 % DH PARAMETER
-d = [90 0 0 0 190 0 10];
-a_dh = [0 240 70 25 0 65 0];
-alpha = [90 0 0 90 -90 90 0].*(pi/180);
+d = [90 0 0 0 0 190 0 65 0 125];
+a_dh = [0 240 30 70 25 0 0 0 35 0];
+alpha = [90 0 0 0 90 -90 90 0 0 0].*(pi/180);
 %% DATA INITIALIZATION
 % Value of each Actuator
 vi = [0 0 0 0 0 0];
@@ -26,7 +26,7 @@ desired_pose_1 = [320 0 345 0 0 0];
 %% FIND INITIAL POSE
 %320 0 345
 % initial_joints = [0 90 0 0 -90 0].*(pi/180);
-initial_joints = [2.15321604295118	2.27964472638134	0.378914110929445	-3.05432619099008	-6.17618625059562e-15	-0.896066396987895];
+initial_joints = [0.108241419278129	2.27523960416609	-0.735271786236043	-1.08672032437284	0.340300426930686	-1.74832775521336];
 initial_pose = H_matrix(initial_joints);
 %% FIND TRAJECTORIES
 

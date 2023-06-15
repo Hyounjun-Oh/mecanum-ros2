@@ -180,6 +180,9 @@ function out = PSO_MANIPULATOR(problem, params)
         % Display Iteration Information
         if ShowIterInfo
             disp(['Iteration ' num2str(it) ': Best Cost = ' num2str(BestCosts(it))]);
+            if BestCosts(it) < 0.00001
+                break
+            end
         end
 
         % Damping Inertia Coefficient
