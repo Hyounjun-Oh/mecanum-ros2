@@ -14,7 +14,7 @@ class TomatoDetectionNode(Node):
         super().__init__('tomato_detection_node')
 
         # YOLOv5 모델 로드
-        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/ohj/mecanum-ros2/src/tomato_detection/tomato_detection/tomato.pt')
 
         # Realsense 카메라 설정
         self.pipeline = rs.pipeline()
@@ -26,7 +26,7 @@ class TomatoDetectionNode(Node):
         self.pipeline.start(self.config)
 
         # 카메라 캘리브레이션 정보 로드
-        calibration_file = 'camera_calibration.xml'
+        calibration_file = '/home/ohj/mecanum-ros2/src/tomato_detection/tomato_detection/camera_calibration.xml'
         calibration_data = cv2.FileStorage(calibration_file, cv2.FILE_STORAGE_READ)
         self.camera_matrix = calibration_data.getNode("camera_matrix").mat()
         self.dist_coeffs = calibration_data.getNode("dist_coeffs").mat()
