@@ -72,7 +72,7 @@ def generate_launch_description():
         ),
         Node(
             package='manipulator',
-            executable='manipulater_move',
+            executable='manipulator_move',
             name='manipulater_move',
             output='screen'),
         Node(
