@@ -85,6 +85,8 @@ ReadWriteNode::ReadWriteNode()
     QOS_RKL10V,
     [this](const SetPosition::SharedPtr msg) -> void
     {
+      uint8_t dxl_error = 0;
+      uint32_t goal_position = (unsigned int)msg->position;
       if (msg->id == 7){
         dxl_comm_result =
         packetHandler->write2ByteTxRx(
@@ -96,10 +98,9 @@ ReadWriteNode::ReadWriteNode()
         );
       }
       else{
-        uint8_t dxl_error = 0;
         // Position Value of X series is 4 byte data.
         // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-        uint32_t goal_position = (unsigned int)msg->position;  // Convert int32 -> uint32
+          // Convert int32 -> uint32
         // Drive Mode Setting
         dxl_drive_mode_result =
         packetHandler->write4ByteTxRx(
