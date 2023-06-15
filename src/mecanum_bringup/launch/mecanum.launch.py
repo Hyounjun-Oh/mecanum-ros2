@@ -70,14 +70,4 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 [motor_driver_pkg, '/motor_control.launch.py']),
         ),
-        Node(
-            package='manipulator',
-            executable='manipulator_move',
-            name='manipulater_move',
-            output='screen'),
-        Node(
-            package='dynamixel_sdk_examples',
-            executable='read_write_node',
-            name='dynamixel_sdk',
-            output='screen'),
     ])
