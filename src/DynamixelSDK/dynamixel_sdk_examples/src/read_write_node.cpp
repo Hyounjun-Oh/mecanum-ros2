@@ -48,6 +48,8 @@
 #define ADDR_DRIVE_MODE 10
 #define ADDR_PRESENT_POSITION 132
 
+#define ADDR_xl320_GOAL_POSITION 30
+
 // Protocol version
 #define PROTOCOL_VERSION 2.0  // Default Protocol version of DYNAMIXEL X series.
 
@@ -83,56 +85,68 @@ ReadWriteNode::ReadWriteNode()
     QOS_RKL10V,
     [this](const SetPosition::SharedPtr msg) -> void
     {
-      uint8_t dxl_error = 0;
-
-      // Position Value of X series is 4 byte data.
-      // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-      uint32_t goal_position = (unsigned int)msg->position;  // Convert int32 -> uint32
-      // Drive Mode Setting
-      dxl_drive_mode_result =
-      packetHandler->write4ByteTxRx(
+      if (msg->id == 7){
+        dxl_comm_result =
+        packetHandler->write4ByteTxRx(
         portHandler,
         (uint8_t) msg->id,
-        ADDR_OPERATING_MODE,
-        4,
-        &dxl_error
-      );
-      // Profile Velocity
-      dxl_profile_vel_result =
-      packetHandler->write4ByteTxRx(
-        portHandler,
-        (uint8_t) msg->id,
-        ADDR_PROFILE_VEL,
-        3000,
-        &dxl_error
-      );
-      // Profile Acc
-      dxl_profile_acc_result =
-      packetHandler->write4ByteTxRx(
-        portHandler,
-        (uint8_t) msg->id,
-        ADDR_PROFILE_ACC,
-        2000,
-        &dxl_error
-      );
-      // Write Goal Position (length : 4 bytes)
-      // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
-      dxl_comm_result =
-      packetHandler->write4ByteTxRx(
-        portHandler,
-        (uint8_t) msg->id,
-        ADDR_GOAL_POSITION,
+        ADDR_xl320_GOAL_POSITION,
         goal_position,
         &dxl_error
-      );
-
-      if (dxl_comm_result != COMM_SUCCESS) {
-        RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getTxRxResult(dxl_comm_result));
-      } else if (dxl_error != 0) {
-        RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getRxPacketError(dxl_error));
-      } else {
-        RCLCPP_INFO(this->get_logger(), "Set [ID: %d] [Goal Position: %d]", msg->id, msg->position);
+        );
       }
+      else{
+        uint8_t dxl_error = 0;
+        // Position Value of X series is 4 byte data.
+        // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
+        uint32_t goal_position = (unsigned int)msg->position;  // Convert int32 -> uint32
+        // Drive Mode Setting
+        dxl_drive_mode_result =
+        packetHandler->write4ByteTxRx(
+          portHandler,
+          (uint8_t) msg->id,
+          ADDR_OPERATING_MODE,
+          4,
+          &dxl_error
+        );
+        // Profile Velocity
+        dxl_profile_vel_result =
+        packetHandler->write4ByteTxRx(
+          portHandler,
+          (uint8_t) msg->id,
+          ADDR_PROFILE_VEL,
+          3000,
+          &dxl_error
+        );
+        // Profile Acc
+        dxl_profile_acc_result =
+        packetHandler->write4ByteTxRx(
+          portHandler,
+          (uint8_t) msg->id,
+          ADDR_PROFILE_ACC,
+          2000,
+          &dxl_error
+        );
+        // Write Goal Position (length : 4 bytes)
+        // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
+        dxl_comm_result =
+        packetHandler->write4ByteTxRx(
+          portHandler,
+          (uint8_t) msg->id,
+          ADDR_GOAL_POSITION,
+          goal_position,
+          &dxl_error
+        );
+
+        if (dxl_comm_result != COMM_SUCCESS) {
+          RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getTxRxResult(dxl_comm_result));
+        } else if (dxl_error != 0) {
+          RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getRxPacketError(dxl_error));
+        } else {
+          RCLCPP_INFO(this->get_logger(), "Set [ID: %d] [Goal Position: %d]", msg->id, msg->position);
+        }
+      }
+
     }
     );
 
