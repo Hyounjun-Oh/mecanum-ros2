@@ -38,8 +38,8 @@ params.dh_parameter.al = [90 0 0 0 90 -90 90 0 0 0].*(pi/180);
 
 problem.nVar = 6;       % Number of Unknown (Decision) Variables
 % 조인트 리밋 
-problem.VarMin = [-175 -5 -90 -175 -95 -175].*(pi/180);  % Lower Bound of Decision Variables
-problem.VarMax = [175 185 90 175 95 175].*(pi/180);   % Upper Bound of Decision Variables
+problem.VarMin = [-175 -5 -90 -10 -30 -10].*(pi/180);  % Lower Bound of Decision Variables
+problem.VarMax = [175 185 90 10 30 10].*(pi/180);   % Upper Bound of Decision Variables #175 95 175 4 5 6joints
 
 %% Parameters of PSO
  

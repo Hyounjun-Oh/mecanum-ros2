@@ -50,13 +50,17 @@ class PublishPose(Node):
             joint_msg.id = dxl_id
             joint_msg.position = joint_value
             self.man_joint_publisher.publish(joint_msg)
+        elif dxl_id == 7:
+            joint_msg.id = dxl_id
+            joint_msg.position = joint_value
+            self.man_joint_publisher.publish(joint_msg)
             
 def main(args=None):
     rclpy.init(args=args)
     move = PublishPose()
     desired_pose_old = [0.0, 0.0, 0.0]
     while 1:
-        input_v = input('원하는 포즈를 스페이스바로 구분하여 입력하시오.').split(' ')
+        input_v = input('원하는 포즈를 스페이스바로 구분하여 입력하시오.\n1 : zero\n2 : home\n3 : gripper open\n4 : gripper close\n5 : gripper twist\n6 : aproach bin\n7 : driving mode\n').split(' ')
         desired_pose = list(map(float,input_v))
         if abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 1:
             dxl_id = [1,2,3,4,5,6]
@@ -69,8 +73,28 @@ def main(args=None):
             for id in dxl_id:
                 move.publish_joint_value(id, round(joint[id-1]))
         elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 3:
+            dxl_id = [7]
+            joint = [650]
+            for id in dxl_id:
+                move.publish_joint_value(id, round(joint[0]))
+        elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 4:
+            dxl_id = [7]
+            joint = [440]
+            for id in dxl_id:
+                move.publish_joint_value(id, round(joint[0]))
+        elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 5:
+            dxl_id = [6]
+            joint = [3500]
+            for id in dxl_id:
+                move.publish_joint_value(id, round(joint[0]))
+        elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 6:
             dxl_id = [1,2,3,4,5,6]
-            joint = [1500,2500,1500,2048,2400,2048]
+            joint = [10,2400,1450,2048,1500,2048]
+            for id in dxl_id:
+                move.publish_joint_value(id, round(joint[id-1]))
+        elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 7:
+            dxl_id = [1,2,3,4,5,6]
+            joint = [2048,3400,1015,2048,1800,2048]
             for id in dxl_id:
                 move.publish_joint_value(id, round(joint[id-1]))
         else:
