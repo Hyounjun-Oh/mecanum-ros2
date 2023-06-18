@@ -36,7 +36,7 @@
 #include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rcutils/cmdline_parser.h"
-
+#include "std_msgs/msg/int16.hpp"
 #include "read_write_node.hpp"
 
 // Control table address for X series (except XL-320)
@@ -75,10 +75,8 @@ ReadWriteNode::ReadWriteNode()
   this->declare_parameter("qos_depth", 10);
   int8_t qos_depth = 0;
   this->get_parameter("qos_depth", qos_depth);
-
   const auto QOS_RKL10V =
     rclcpp::QoS(rclcpp::KeepLast(qos_depth)).reliable().durability_volatile();
-
   set_position_subscriber_ =
     this->create_subscription<SetPosition>(
     "set_position",
@@ -150,7 +148,8 @@ ReadWriteNode::ReadWriteNode()
 
     }
     );
-
+  auto mani_flag_ = this->create_publisher<std_msgs::msg::Int16>("manipulator_flag", QOS_RKL10V);
+  auto timer_ = this->create_wall_timer(std::chrono::milliseconds(1000),std::bind(&ReadWriteNode::manipulatorFlag, this));
   auto get_present_position =
     [this](
     const std::shared_ptr<GetPosition::Request> request,
@@ -181,6 +180,26 @@ ReadWriteNode::ReadWriteNode()
 
 ReadWriteNode::~ReadWriteNode()
 {
+}
+
+void ReadWriteNode::manipulatorFlag()
+{
+  int flag = 0;
+  auto message = std_msgs::msg::Int16();
+  for(int id_iter = 0;id_iter < 7;id_iter++)
+  {
+    int moving_status = packetHandler->read1ByteTx(
+      portHandler,
+      id_iter,
+      122
+    );
+    if (moving_status == 1)
+    {
+      flag = 1;
+    }
+  }
+  message.data = flag;
+  ReadWriteNode::mani_flag_->publish(message);
 }
 
 void setupDynamixel(uint8_t dxl_id)
