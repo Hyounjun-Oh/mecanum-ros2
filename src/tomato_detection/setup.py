@@ -21,7 +21,8 @@ setup(
     entry_points={
     'console_scripts': [
         'tomato_detection_node=tomato_detection.tomato_detection_node:main',
-        'tomato_detection_node_new=tomato_detection.tomato_detection_node_new:main'
+        'tomato_detection_node_new=tomato_detection.tomato_detection_node_new:main',
+        'tomato_detection_node_new_3=tomato_detection.tomato_detection_node_new_3:main'
         ],
     },
 )
