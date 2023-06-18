@@ -69,9 +69,9 @@ class PublishPose(Node):
         if self.tomato_id:
             if self.tomato_position[0] < 500:
                 self.tomato_pose_arr[self.tomato_id-1][0] = self.tomato_id
-                self.tomato_pose_arr[self.tomato_id-1][1] = self.tomato_position[0] -75
+                self.tomato_pose_arr[self.tomato_id-1][1] = self.tomato_position[0] -75 + 310
                 self.tomato_pose_arr[self.tomato_id-1][2] = self.tomato_position[1]
-                self.tomato_pose_arr[self.tomato_id-1][3] = self.tomato_position[2] +60
+                self.tomato_pose_arr[self.tomato_id-1][3] = self.tomato_position[2] +60 + 300
 
     def publish_joint_value(self, dxl_id, joint_value):
         joint_msg = SetPosition()
