@@ -79,7 +79,7 @@ class TomatoPublisher(Node):
 
                 # 토마토 개수에 따라 ID 할당
                 tomato_count += 1
-                print(f"Tomato {tomato_count}: X={x_cm:.2f}cm, Y={y_cm:.2f}cm, Z={z_cm:.2f}cm")
+                print(f"Tomato {tomato_count}: X={x_cm:.2f}mm, Y={y_cm:.2f}mm, Z={z_cm:.2f}mm")
 
                 # 토마토 메시지 발행
                 tomato = Float64MultiArray()
