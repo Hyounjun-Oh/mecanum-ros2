@@ -1,0 +1,4 @@
+[console_scripts]
+odom_publisher = mecanum_odometry.odom_publisher:main
+time_test = mecanum_odometry.time_test:main
+

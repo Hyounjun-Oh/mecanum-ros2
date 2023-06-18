@@ -1,0 +1,76 @@
+[0.681s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake /home/ohj/mecanum-ros2/src/stella_ahrs -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/stella_ahrs
+[1.021s] -- The C compiler identification is GNU 9.4.0
+[1.021s] -- The CXX compiler identification is GNU 9.4.0
+[1.021s] -- Detecting C compiler ABI info
+[1.021s] -- Detecting C compiler ABI info - done
+[1.021s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.021s] -- Detecting C compile features
+[1.021s] -- Detecting C compile features - done
+[1.021s] -- Detecting CXX compiler ABI info
+[1.021s] -- Detecting CXX compiler ABI info - done
+[1.021s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.021s] -- Detecting CXX compile features
+[1.021s] -- Detecting CXX compile features - done
+[1.021s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.021s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.021s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.021s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.040s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.051s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.205s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.273s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.429s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.548s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.554s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.577s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.578s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.664s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.664s] -- Looking for pthread_create in pthreads
+[1.728s] -- Looking for pthread_create in pthreads - not found
+[1.728s] -- Looking for pthread_create in pthread
+[1.823s] -- Looking for pthread_create in pthread - found
+[1.825s] -- Found Threads: TRUE  
+[1.999s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[2.097s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[2.111s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[2.398s] -- Configuring done (1.7s)
+[2.408s] -- Generating done (0.0s)
+[2.409s] -- Build files have been written to: /home/ohj/mecanum-ros2/build/stella_ahrs
+[2.421s] Invoked command in '/home/ohj/mecanum-ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake /home/ohj/mecanum-ros2/src/stella_ahrs -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/stella_ahrs
+[2.422s] Invoking command in '/home/ohj/mecanum-ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --build /home/ohj/mecanum-ros2/build/stella_ahrs -- -j20 -l20
+[2.457s] [ 16%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/src/listener.cpp.o[0m
+[2.458s] [ 33%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/list_ports_linux.cc.o[0m
+[2.458s] [ 50%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/serial.cc.o[0m
+[2.459s] [ 66%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/serial/unix.cc.o[0m
+[2.459s] [ 83%] [32mBuilding CXX object CMakeFiles/stella_ahrs_node.dir/mw/mw_ahrs.cpp.o[0m
+[2.661s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> > glob(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[2.662s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:66:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[2.662s]    66 |     for(int path_index = 0; [01;35m[Kpath_index < glob_results.gl_pathc[m[K; path_index++)
+[2.662s]       |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.662s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:57:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kglob_retval[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[2.662s]    57 |     int [01;35m[Kglob_retval[m[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);
+[2.662s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[2.666s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::string format(const char*, ...)[m[K’:
+[2.666s] [01m[K/home/ohj/mecanum-ros2/src/stella_ahrs/serial/list_ports_linux.cc:246:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[2.666s]   246 |         else if( [01;35m[Kreturn_value >= buffer_size_bytes[m[K )
+[2.666s]       |                  [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[3.712s] make[2]: *** [CMakeFiles/stella_ahrs_node.dir/build.make:76: CMakeFiles/stella_ahrs_node.dir/src/listener.cpp.o] Interrupt
+[3.712s] make[2]: *** [CMakeFiles/stella_ahrs_node.dir/build.make:132: CMakeFiles/stella_ahrs_node.dir/mw/mw_ahrs.cpp.o] Interrupt
+[3.712s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/stella_ahrs_node.dir/all] Interrupt
+[3.712s] make: *** [Makefile:146: all] Interrupt
+[3.712s] Traceback (most recent call last):
+[3.712s]   File "/home/ohj/.local/bin/cmake", line 8, in <module>
+[3.712s]     sys.exit(cmake())
+[3.712s]   File "/home/ohj/.local/lib/python3.8/site-packages/cmake/__init__.py", line 43, in cmake
+[3.715s]     raise SystemExit(_program('cmake', sys.argv[1:]))
+[3.715s]   File "/home/ohj/.local/lib/python3.8/site-packages/cmake/__init__.py", line 39, in _program
+[3.715s]     return subprocess.call([os.path.join(CMAKE_BIN_DIR, name)] + args, close_fds=False)
+[3.715s]   File "/usr/lib/python3.8/subprocess.py", line 342, in call
+[3.715s]     return p.wait(timeout=timeout)
+[3.715s]   File "/usr/lib/python3.8/subprocess.py", line 1083, in wait
+[3.715s]     return self._wait(timeout=timeout)
+[3.715s]   File "/usr/lib/python3.8/subprocess.py", line 1806, in _wait
+[3.715s]     (pid, sts) = self._try_wait(0)
+[3.715s]   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
+[3.715s]     (pid, sts) = os.waitpid(self.pid, wait_flags)
+[3.715s] KeyboardInterrupt

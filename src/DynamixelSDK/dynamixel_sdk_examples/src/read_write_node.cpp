@@ -148,8 +148,8 @@ ReadWriteNode::ReadWriteNode()
 
     }
     );
-  mani_flag_ = this->create_publisher<std_msgs::msg::Int16>("manipulator_flag", QOS_RKL10V);
-  timer_ = this->create_wall_timer(std::chrono::milliseconds(2000),std::bind(&ReadWriteNode::manipulatorFlag, this));
+  // mani_flag_ = this->create_publisher<std_msgs::msg::Int16>("manipulator_flag", QOS_RKL10V);
+  // timer_ = this->create_wall_timer(std::chrono::milliseconds(2000),std::bind(&ReadWriteNode::manipulatorFlag, this));
   auto get_present_position =
     [this](
     const std::shared_ptr<GetPosition::Request> request,
@@ -182,25 +182,25 @@ ReadWriteNode::~ReadWriteNode()
 {
 }
 
-void ReadWriteNode::manipulatorFlag()
-{
-  flag = 0;
-  auto message = std_msgs::msg::Int16();
-  for(int id_iter = 0;id_iter < 7;id_iter++)
-  {
-    int moving_status = packetHandler->read1ByteTx(
-      portHandler,
-      id_iter,
-      122
-    );
-    if (moving_status == 1)
-    {
-      flag = 1;
-    }
-  }
-  message.data = flag;
-  ReadWriteNode::mani_flag_->publish(message);
-}
+// void ReadWriteNode::manipulatorFlag()
+// {
+//   flag = 0;
+//   auto message = std_msgs::msg::Int16();
+//   for(int id_iter = 0;id_iter < 7;id_iter++)
+//   {
+//     int moving_status = packetHandler->read1ByteTx(
+//       portHandler,
+//       id_iter,
+//       122
+//     );
+//     if (moving_status == 1)
+//     {
+//       flag = 1;
+//     }
+//   }
+//   message.data = flag;
+//   ReadWriteNode::mani_flag_->publish(message);
+// }
 
 void setupDynamixel(uint8_t dxl_id)
 {

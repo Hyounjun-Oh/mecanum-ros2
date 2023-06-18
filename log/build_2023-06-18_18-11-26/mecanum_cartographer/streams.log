@@ -1,0 +1,40 @@
+[1.690s] Invoking command in '/home/ohj/mecanum-ros2/src/mecanum_cartographer': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_cartographer/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_cartographer build --build-base /home/ohj/mecanum-ros2/build/mecanum_cartographer/build install --record /home/ohj/mecanum-ros2/build/mecanum_cartographer/install.log --single-version-externally-managed
+[2.078s] running egg_info
+[2.078s] creating ../../build/mecanum_cartographer/mecanum_cartographer.egg-info
+[2.079s] writing ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/PKG-INFO
+[2.079s] writing dependency_links to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/dependency_links.txt
+[2.079s] writing entry points to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/entry_points.txt
+[2.079s] writing requirements to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/requires.txt
+[2.079s] writing top-level names to ../../build/mecanum_cartographer/mecanum_cartographer.egg-info/top_level.txt
+[2.081s] writing manifest file '../../build/mecanum_cartographer/mecanum_cartographer.egg-info/SOURCES.txt'
+[2.112s] reading manifest file '../../build/mecanum_cartographer/mecanum_cartographer.egg-info/SOURCES.txt'
+[2.113s] writing manifest file '../../build/mecanum_cartographer/mecanum_cartographer.egg-info/SOURCES.txt'
+[2.113s] running build
+[2.113s] running build_py
+[2.113s] creating /home/ohj/mecanum-ros2/build/mecanum_cartographer/build
+[2.113s] creating /home/ohj/mecanum-ros2/build/mecanum_cartographer/build/lib
+[2.113s] creating /home/ohj/mecanum-ros2/build/mecanum_cartographer/build/lib/mecanum_cartographer
+[2.113s] copying mecanum_cartographer/__init__.py -> /home/ohj/mecanum-ros2/build/mecanum_cartographer/build/lib/mecanum_cartographer
+[2.113s] running install
+[2.114s] running install_lib
+[2.114s] creating /home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages/mecanum_cartographer
+[2.115s] copying /home/ohj/mecanum-ros2/build/mecanum_cartographer/build/lib/mecanum_cartographer/__init__.py -> /home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages/mecanum_cartographer
+[2.115s] byte-compiling /home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages/mecanum_cartographer/__init__.py to __init__.cpython-38.pyc
+[2.116s] running install_data
+[2.117s] creating /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/ament_index
+[2.117s] creating /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/ament_index/resource_index
+[2.117s] creating /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/ament_index/resource_index/packages
+[2.117s] copying resource/mecanum_cartographer -> /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/ament_index/resource_index/packages
+[2.117s] copying package.xml -> /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer
+[2.117s] creating /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/launch
+[2.117s] copying launch/occupancy_grid.launch.py -> /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/launch
+[2.117s] copying launch/cartographer.launch.py -> /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/launch
+[2.118s] creating /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/config
+[2.118s] copying config/mecanum_2d.lua -> /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/config
+[2.118s] creating /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/rviz
+[2.118s] copying rviz/mecanum_cartographer.rviz -> /home/ohj/mecanum-ros2/install/mecanum_cartographer/share/mecanum_cartographer/rviz
+[2.118s] running install_egg_info
+[2.119s] Copying ../../build/mecanum_cartographer/mecanum_cartographer.egg-info to /home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages/mecanum_cartographer-0.0.0-py3.8.egg-info
+[2.119s] running install_scripts
+[2.134s] writing list of installed files to '/home/ohj/mecanum-ros2/build/mecanum_cartographer/install.log'
+[2.157s] Invoked command in '/home/ohj/mecanum-ros2/src/mecanum_cartographer' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mecanum_cartographer/prefix_override:/home/ohj/mecanum-ros2/install/mecanum_cartographer/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mecanum_cartographer build --build-base /home/ohj/mecanum-ros2/build/mecanum_cartographer/build install --record /home/ohj/mecanum-ros2/build/mecanum_cartographer/install.log --single-version-externally-managed
