@@ -43,7 +43,7 @@ private:
   rclcpp::TimerBase::SharedPtr timer_;
 
   int present_position;
-  int flag
+  int flag;
 };
 
 #endif  // READ_WRITE_NODE_HPP_
