@@ -13,7 +13,7 @@ class TomatoPublisher(Node):
         self.tomato_pub = self.create_publisher(Float64MultiArray, 'tomato_detection', 10)
 
         # YOLOv5 모델 로드
-        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/jetson/mecanum-ros2/src/tomato_detection/tomato_detection/tomato.pt')
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/jetson/mecanum-ros2/src/tomato_detection/tomato_detection/best.pt')
 
         # Realsense 카메라 설정
         self.pipeline = rs.pipeline()

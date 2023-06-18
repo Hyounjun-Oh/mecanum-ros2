@@ -28,11 +28,11 @@ node = ros2node("joint_calculator");
 pub = ros2publisher(node,"joint_variables","std_msgs/Float32MultiArray");
 sub = ros2subscriber(node,"/desired_pose", @callback_desired_pose);
 %% DH parameter
-% d = [90 0 0 0 0 190 0 75];
-% a = [0 240 30 70 25 0 0 0];
+d = [86 0 0 0 0 185 0 65 0 120];
+%a_dh = [0 240 35 70 25 0 0 0 25 0];
 % al = [90 0 0 0 90 -90 90 0].*(pi/180);
-params.dh_parameter.d = [90 0 0 0 0 190 0 65 0 125];
-params.dh_parameter.a = [0 240 30 70 25 0 0 0 35 0];
+params.dh_parameter.d = [86 0 0 0 0 185 0 65 0 120];
+params.dh_parameter.a = [0 240 35 70 25 0 0 0 25 0];
 params.dh_parameter.al = [90 0 0 0 90 -90 90 0 0 0].*(pi/180);
 %% Problem Definiton
 
