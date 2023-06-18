@@ -18,6 +18,7 @@ endif()
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(dynamixel_sdk REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(dynamixel_sdk_custom_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 
