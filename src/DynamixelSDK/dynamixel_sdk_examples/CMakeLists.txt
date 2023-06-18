@@ -30,6 +30,7 @@ ament_target_dependencies(read_write_node
   dynamixel_sdk_custom_interfaces
   dynamixel_sdk
   rclcpp
+  std_msgs
 )
 
 # Install

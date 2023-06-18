@@ -168,12 +168,12 @@ def main(args=None):
                 dxl_id = [7]
                 joint = move.gripper_pose[0][0]
                 for id in dxl_id:
-                    move.publish_joint_value(id, round(joint[0]))
+                    move.publish_joint_value(id, round(joint))
             elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 4:
                 dxl_id = [7]
-                joint = move.gripper_pose[0][1]
+                joint = move.gripper_pose[1][0]
                 for id in dxl_id:
-                    move.publish_joint_value(id, round(joint[0]))
+                    move.publish_joint_value(id, round(joint))
             elif abs(desired_pose[0]) + abs(desired_pose[1]) + abs(desired_pose[2]) == 5:
                 dxl_id = [6]
                 joint = [3500]
