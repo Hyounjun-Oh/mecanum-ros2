@@ -33,9 +33,29 @@ public:
   using SetPosition = dynamixel_sdk_custom_interfaces::msg::SetPosition;
   using GetPosition = dynamixel_sdk_custom_interfaces::srv::GetPosition;
   using manipulator_flag = std_msgs::msg::Int16;
-  void manipulatorFlag();
   ReadWriteNode();
   virtual ~ReadWriteNode();
+  void manipulatorFlag()
+  {
+    flag = 0;
+    auto message = std_msgs::msg::Int16();
+    // for(int id_iter = 0;id_iter < 7;id_iter++)
+    // {
+    //   int moving_status = packetHandler->read1ByteTx(
+    //     portHandler,
+    //     id_iter,
+    //     122
+    //   );
+    //   if (moving_status == 1)
+    //   {
+    //     flag = 1;
+    //   }
+    // }
+    message.data = flag;
+    RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.data);
+    
+    ReadWriteNode::mani_flag_->publish(message);
+  }
 
 private:
   rclcpp::Subscription<SetPosition>::SharedPtr set_position_subscriber_;
