@@ -26,46 +26,24 @@
 #include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
 #include "std_msgs/msg/int16.hpp"
 
-
 class ReadWriteNode : public rclcpp::Node
 {
 public:
   using SetPosition = dynamixel_sdk_custom_interfaces::msg::SetPosition;
   using GetPosition = dynamixel_sdk_custom_interfaces::srv::GetPosition;
   using manipulator_flag = std_msgs::msg::Int16;
+  void manipulatorFlag();
   ReadWriteNode();
   virtual ~ReadWriteNode();
-  mani_flag_ = this->create_publisher<std_msgs::msg::Int16>("manipulator_flag", QOS_RKL10V);
-  timer_ = this->create_wall_timer(std::chrono::milliseconds(500),std::bind(&ReadWriteNode::manipulatorFlag, this));
-  void manipulatorFlag()
-  {
-    flag = 0;
-    auto message = std_msgs::msg::Int16();
-    // for(int id_iter = 0;id_iter < 7;id_iter++)
-    // {
-    //   int moving_status = packetHandler->read1ByteTx(
-    //     portHandler,
-    //     id_iter,
-    //     122
-    //   );
-    //   if (moving_status == 1)
-    //   {
-    //     flag = 1;
-    //   }
-    // }
-    message.data = flag;
-    RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.data);
-    
-    ReadWriteNode::mani_flag_->publish(message);
-  }
 
 private:
   rclcpp::Subscription<SetPosition>::SharedPtr set_position_subscriber_;
   rclcpp::Service<GetPosition>::SharedPtr get_position_server_;
   rclcpp::Publisher<std_msgs::msg::Int16>::SharedPtr mani_flag_;
+  rclcpp::TimerBase::SharedPtr timer_;
 
   int present_position;
-  int flag;
+  int flag
 };
 
 #endif  // READ_WRITE_NODE_HPP_
