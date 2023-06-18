@@ -1,0 +1,48 @@
+[1.611s] Invoking command in '/home/ohj/mecanum-ros2/src/tomato_detection': PYTHONPATH=/home/ohj/mecanum-ros2/build/tomato_detection/prefix_override:/home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tomato_detection build --build-base /home/ohj/mecanum-ros2/build/tomato_detection/build install --record /home/ohj/mecanum-ros2/build/tomato_detection/install.log --single-version-externally-managed
+[1.819s] running egg_info
+[1.819s] creating ../../build/tomato_detection/tomato_detection.egg-info
+[1.819s] writing ../../build/tomato_detection/tomato_detection.egg-info/PKG-INFO
+[1.820s] writing dependency_links to ../../build/tomato_detection/tomato_detection.egg-info/dependency_links.txt
+[1.820s] writing entry points to ../../build/tomato_detection/tomato_detection.egg-info/entry_points.txt
+[1.820s] writing requirements to ../../build/tomato_detection/tomato_detection.egg-info/requires.txt
+[1.820s] writing top-level names to ../../build/tomato_detection/tomato_detection.egg-info/top_level.txt
+[1.821s] writing manifest file '../../build/tomato_detection/tomato_detection.egg-info/SOURCES.txt'
+[1.852s] reading manifest file '../../build/tomato_detection/tomato_detection.egg-info/SOURCES.txt'
+[1.853s] writing manifest file '../../build/tomato_detection/tomato_detection.egg-info/SOURCES.txt'
+[1.853s] running build
+[1.853s] running build_py
+[1.853s] creating /home/ohj/mecanum-ros2/build/tomato_detection/build
+[1.853s] creating /home/ohj/mecanum-ros2/build/tomato_detection/build/lib
+[1.854s] creating /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection
+[1.854s] copying tomato_detection/tomato_detection_node.py -> /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection
+[1.854s] copying tomato_detection/__init__.py -> /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection
+[1.854s] copying tomato_detection/tomato_detection_node_new.py -> /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection
+[1.854s] copying tomato_detection/tomato_detection_node_new_3.py -> /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection
+[1.854s] copying tomato_detection/tomato_detection_node_new_2.py -> /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection
+[1.854s] running install
+[1.854s] running install_lib
+[1.855s] creating /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection
+[1.855s] copying /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection/tomato_detection_node.py -> /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection
+[1.855s] copying /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection/__init__.py -> /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection
+[1.856s] copying /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection/tomato_detection_node_new.py -> /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection
+[1.856s] copying /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection/tomato_detection_node_new_3.py -> /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection
+[1.856s] copying /home/ohj/mecanum-ros2/build/tomato_detection/build/lib/tomato_detection/tomato_detection_node_new_2.py -> /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection
+[1.856s] byte-compiling /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection/tomato_detection_node.py to tomato_detection_node.cpython-38.pyc
+[1.858s] byte-compiling /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection/__init__.py to __init__.cpython-38.pyc
+[1.858s] byte-compiling /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection/tomato_detection_node_new.py to tomato_detection_node_new.cpython-38.pyc
+[1.859s] byte-compiling /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection/tomato_detection_node_new_3.py to tomato_detection_node_new_3.cpython-38.pyc
+[1.860s] byte-compiling /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection/tomato_detection_node_new_2.py to tomato_detection_node_new_2.cpython-38.pyc
+[1.861s] running install_data
+[1.867s] creating /home/ohj/mecanum-ros2/install/tomato_detection/share/ament_index
+[1.867s] creating /home/ohj/mecanum-ros2/install/tomato_detection/share/ament_index/resource_index
+[1.867s] creating /home/ohj/mecanum-ros2/install/tomato_detection/share/ament_index/resource_index/packages
+[1.867s] copying resource/tomato_detection -> /home/ohj/mecanum-ros2/install/tomato_detection/share/ament_index/resource_index/packages
+[1.868s] copying package.xml -> /home/ohj/mecanum-ros2/install/tomato_detection/share/tomato_detection
+[1.868s] running install_egg_info
+[1.868s] Copying ../../build/tomato_detection/tomato_detection.egg-info to /home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages/tomato_detection-0.0.0-py3.8.egg-info
+[1.869s] running install_scripts
+[1.880s] Installing tomato_detection_node script to /home/ohj/mecanum-ros2/install/tomato_detection/lib/tomato_detection
+[1.880s] Installing tomato_detection_node_new script to /home/ohj/mecanum-ros2/install/tomato_detection/lib/tomato_detection
+[1.880s] Installing tomato_detection_node_new_3 script to /home/ohj/mecanum-ros2/install/tomato_detection/lib/tomato_detection
+[1.880s] writing list of installed files to '/home/ohj/mecanum-ros2/build/tomato_detection/install.log'
+[1.905s] Invoked command in '/home/ohj/mecanum-ros2/src/tomato_detection' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/tomato_detection/prefix_override:/home/ohj/mecanum-ros2/install/tomato_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tomato_detection build --build-base /home/ohj/mecanum-ros2/build/tomato_detection/build install --record /home/ohj/mecanum-ros2/build/tomato_detection/install.log --single-version-externally-managed

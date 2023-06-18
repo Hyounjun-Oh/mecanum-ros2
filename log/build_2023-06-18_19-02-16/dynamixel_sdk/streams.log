@@ -1,0 +1,71 @@
+[0.072s] Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake /home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/dynamixel_sdk
+[1.105s] -- The C compiler identification is GNU 9.4.0
+[1.105s] -- The CXX compiler identification is GNU 9.4.0
+[1.105s] -- Detecting C compiler ABI info
+[1.105s] -- Detecting C compiler ABI info - done
+[1.105s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.105s] -- Detecting C compile features
+[1.105s] -- Detecting C compile features - done
+[1.106s] -- Detecting CXX compiler ABI info
+[1.107s] -- Detecting CXX compiler ABI info - done
+[1.107s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.107s] -- Detecting CXX compile features
+[1.108s] -- Detecting CXX compile features - done
+[1.108s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.108s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.108s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.108s] -- Configuring done (0.5s)
+[1.108s] -- Generating done (0.0s)
+[1.108s] -- Build files have been written to: /home/ohj/mecanum-ros2/build/dynamixel_sdk
+[1.111s] Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake /home/ohj/mecanum-ros2/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/dynamixel_sdk
+[1.111s] Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk -- -j20 -l20
+[1.144s] [ 10%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o[0m
+[1.144s] [ 20%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o[0m
+[1.145s] [ 30%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o[0m
+[1.145s] [ 40%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o[0m
+[1.145s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o[0m
+[1.145s] [ 60%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o[0m
+[1.145s] [ 80%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o[0m
+[1.146s] [ 80%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o[0m
+[1.157s] [ 90%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o[0m
+[1.763s] [100%] [32m[1mLinking CXX shared library libdynamixel_sdk.so[0m
+[1.832s] [100%] Built target dynamixel_sdk
+[1.841s] Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --build /home/ohj/mecanum-ros2/build/dynamixel_sdk -- -j20 -l20
+[1.918s] Invoking command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk
+[1.951s] -- Install configuration: ""
+[1.951s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include/
+[1.951s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk
+[1.951s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[1.951s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[1.951s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[1.951s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[1.953s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[1.953s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[1.953s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[1.953s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[1.953s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[1.953s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[1.953s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[1.954s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[1.954s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[1.959s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[1.959s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[1.959s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[1.959s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[1.959s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[1.960s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[1.961s] -- Installing: /home/ohj/mecanum-ros2/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[1.991s] Invoked command in '/home/ohj/mecanum-ros2/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --install /home/ohj/mecanum-ros2/build/dynamixel_sdk
