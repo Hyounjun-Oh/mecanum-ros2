@@ -1,0 +1,4 @@
+[console_scripts]
+manipulator_move = manipulator.manipulator_move:main
+manipulator_pose_get = manipulator.manipulator_pose_get:main
+

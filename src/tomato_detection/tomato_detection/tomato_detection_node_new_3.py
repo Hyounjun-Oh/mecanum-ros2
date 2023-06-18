@@ -10,7 +10,7 @@ class TomatoPublisher(Node):
     def __init__(self):
         super().__init__('tomato_publisher')
         self.tomato_count = 0
-        self.tomato_pub = self.create_publisher(Float64MultiArray, 'tomato_topic', 10)
+        self.tomato_pub = self.create_publisher(Float64MultiArray, 'tomato_detection', 10)
 
         # YOLOv5 모델 로드
         self.model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/ohj/mecanum-ros2/src/tomato_detection/tomato_detection/tomato.pt')
@@ -91,12 +91,12 @@ class TomatoPublisher(Node):
                 self.tomato_pub.publish(tomato)
 
         # 좌표계 원점 표시
-        origin_x, origin_y = int(color_image.shape[1] / 2), int(color_image.shape[0] / 2)
-        cv2.circle(color_image, (origin_x, origin_y), 5, (255, 0, 0), -1)
+        # origin_x, origin_y = int(color_image.shape[1] / 2), int(color_image.shape[0] / 2)
+        # cv2.circle(color_image, (origin_x, origin_y), 5, (255, 0, 0), -1)
 
-        # 프레임 출력
-        cv2.imshow('Webcam', color_image)
-        cv2.waitKey(1)
+        # # 프레임 출력
+        # cv2.imshow('Webcam', color_image)
+        # cv2.waitKey(1)
 
 def main(args=None):
     rclpy.init(args=args)

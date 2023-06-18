@@ -1,0 +1,52 @@
+[1.635s] Invoking command in '/home/ohj/mecanum-ros2/src/mobile_description': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/ohj/mecanum-ros2/build/mobile_description/build install --record /home/ohj/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed
+[2.005s] running egg_info
+[2.006s] creating ../../build/mobile_description/mobile_description.egg-info
+[2.006s] writing ../../build/mobile_description/mobile_description.egg-info/PKG-INFO
+[2.006s] writing dependency_links to ../../build/mobile_description/mobile_description.egg-info/dependency_links.txt
+[2.007s] writing entry points to ../../build/mobile_description/mobile_description.egg-info/entry_points.txt
+[2.007s] writing requirements to ../../build/mobile_description/mobile_description.egg-info/requires.txt
+[2.007s] writing top-level names to ../../build/mobile_description/mobile_description.egg-info/top_level.txt
+[2.009s] writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[2.053s] reading manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[2.057s] writing manifest file '../../build/mobile_description/mobile_description.egg-info/SOURCES.txt'
+[2.057s] running build
+[2.058s] running build_py
+[2.058s] creating /home/ohj/mecanum-ros2/build/mobile_description/build
+[2.060s] creating /home/ohj/mecanum-ros2/build/mobile_description/build/lib
+[2.060s] creating /home/ohj/mecanum-ros2/build/mobile_description/build/lib/mobile_description
+[2.061s] copying mobile_description/__init__.py -> /home/ohj/mecanum-ros2/build/mobile_description/build/lib/mobile_description
+[2.061s] running install
+[2.061s] running install_lib
+[2.061s] creating /home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description
+[2.061s] copying /home/ohj/mecanum-ros2/build/mobile_description/build/lib/mobile_description/__init__.py -> /home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description
+[2.062s] byte-compiling /home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description/__init__.py to __init__.cpython-38.pyc
+[2.062s] running install_data
+[2.062s] creating /home/ohj/mecanum-ros2/install/mobile_description/share/ament_index
+[2.062s] creating /home/ohj/mecanum-ros2/install/mobile_description/share/ament_index/resource_index
+[2.062s] creating /home/ohj/mecanum-ros2/install/mobile_description/share/ament_index/resource_index/packages
+[2.062s] copying resource/mobile_description -> /home/ohj/mecanum-ros2/install/mobile_description/share/ament_index/resource_index/packages
+[2.062s] copying package.xml -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description
+[2.062s] creating /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/launch
+[2.062s] copying launch/gazebo.launch.py -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/launch
+[2.062s] copying launch/display.launch.py -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/launch
+[2.062s] creating /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[2.062s] copying urdf/mobile.xacro -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[2.063s] copying urdf/materials.xacro -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[2.063s] copying urdf/mobile.gazebo -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[2.063s] copying urdf/mobile.trans -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[2.064s] copying urdf/mobile.urdf -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/urdf
+[2.064s] creating /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.064s] copying meshes/front_right_wheel_1.stl -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.064s] copying meshes/imu_1.stl -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.064s] copying meshes/rear_right_wheel_1.stl -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.064s] copying meshes/rear_left_wheel_1.stl -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.064s] copying meshes/front_left_wheel_1.stl -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.064s] copying meshes/base_link.stl -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.064s] copying meshes/lidar_1.stl -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/meshes
+[2.065s] creating /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/config
+[2.065s] copying config/display.rviz -> /home/ohj/mecanum-ros2/install/mobile_description/share/mobile_description/config
+[2.065s] running install_egg_info
+[2.068s] Copying ../../build/mobile_description/mobile_description.egg-info to /home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages/mobile_description-0.0.0-py3.8.egg-info
+[2.069s] running install_scripts
+[2.085s] writing list of installed files to '/home/ohj/mecanum-ros2/build/mobile_description/install.log'
+[2.104s] Invoked command in '/home/ohj/mecanum-ros2/src/mobile_description' returned '0': PYTHONPATH=/home/ohj/mecanum-ros2/build/mobile_description/prefix_override:/home/ohj/mecanum-ros2/install/mobile_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_description build --build-base /home/ohj/mecanum-ros2/build/mobile_description/build install --record /home/ohj/mecanum-ros2/build/mobile_description/install.log --single-version-externally-managed

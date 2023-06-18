@@ -1,0 +1,323 @@
+[0.970s] Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake /home/ohj/mecanum-ros2/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver
+[1.041s] -- The C compiler identification is GNU 9.4.0
+[1.109s] -- The CXX compiler identification is GNU 9.4.0
+[1.122s] -- Detecting C compiler ABI info
+[1.189s] -- Detecting C compiler ABI info - done
+[1.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.199s] -- Detecting C compile features
+[1.200s] -- Detecting C compile features - done
+[1.203s] -- Detecting CXX compiler ABI info
+[1.270s] -- Detecting CXX compiler ABI info - done
+[1.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.284s] -- Detecting CXX compile features
+[1.285s] -- Detecting CXX compile features - done
+[1.291s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.336s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.336s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.481s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.613s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.628s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.764s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.804s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.907s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.974s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.980s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.999s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.000s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.054s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.054s] -- Looking for pthread_create in pthreads
+[2.093s] -- Looking for pthread_create in pthreads - not found
+[2.094s] -- Looking for pthread_create in pthread
+[2.136s] -- Looking for pthread_create in pthread - found
+[2.138s] -- Found Threads: TRUE  
+[2.263s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[2.355s] -- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+[2.413s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[2.430s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[2.507s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.509s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.509s] -- Configured cppcheck include dirs: /home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src
+[2.509s] -- Configured cppcheck exclude dirs and/or files: 
+[2.510s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.511s] -- Configured cpplint exclude dirs and/or files: 
+[2.511s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.512s] -- Added test 'lint_cmake' to check CMake code style
+[2.513s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.515s] -- Added test 'uncrustify' to check C / C++ code style
+[2.515s] -- Configured uncrustify additional arguments: 
+[2.516s] -- Added test 'xmllint' to check XML markup files
+[2.518s] -- Configuring done (1.5s)
+[2.528s] -- Generating done (0.0s)
+[2.529s] -- Build files have been written to: /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver
+[2.540s] Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake /home/ohj/mecanum-ros2/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver
+[2.542s] Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver -- -j20 -l20
+[2.583s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[2.586s] [ 50%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o[0m
+[3.827s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.828s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.828s]    44 |   node->declare_parameter("port"[01;35m[K)[m[K;
+[3.828s]       |                                 [01;35m[K^[m[K
+[3.828s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.828s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.828s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.828s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.828s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.828s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.828s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.828s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.829s]    51 |   node->declare_parameter("ignore_array"[01;35m[K)[m[K;
+[3.829s]       |                                         [01;35m[K^[m[K
+[3.829s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.829s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.829s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.829s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.829s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.829s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.829s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.829s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:37:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.830s]    56 |   node->declare_parameter("frame_id"[01;35m[K)[m[K;
+[3.830s]       |                                     [01;35m[K^[m[K
+[3.830s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.830s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.830s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.830s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.830s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.830s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.830s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.830s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:37:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.830s]    62 |   node->declare_parameter("baudrate"[01;35m[K)[m[K;
+[3.830s]       |                                     [01;35m[K^[m[K
+[3.830s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.830s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.831s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.831s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.831s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.831s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.831s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.831s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.831s]    67 |   node->declare_parameter("lidar_type"[01;35m[K)[m[K;
+[3.831s]       |                                       [01;35m[K^[m[K
+[3.831s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.831s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.831s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.831s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.831s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.831s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.832s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.832s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:40:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.832s]    72 |   node->declare_parameter("device_type"[01;35m[K)[m[K;
+[3.832s]       |                                        [01;35m[K^[m[K
+[3.832s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.832s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.832s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.832s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.832s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.832s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.832s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.832s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:40:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.832s]    77 |   node->declare_parameter("sample_rate"[01;35m[K)[m[K;
+[3.832s]       |                                        [01;35m[K^[m[K
+[3.833s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.833s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.833s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.833s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.833s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.833s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.833s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.833s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.833s]    82 |   node->declare_parameter("abnormal_check_count"[01;35m[K)[m[K;
+[3.833s]       |                                                 [01;35m[K^[m[K
+[3.833s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.833s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.833s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.833s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.834s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.834s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.834s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.834s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:90:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.834s]    90 |   node->declare_parameter("fixed_resolution"[01;35m[K)[m[K;
+[3.834s]       |                                             [01;35m[K^[m[K
+[3.834s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.834s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.834s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.834s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.834s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.834s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.835s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.835s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.835s]    95 |   node->declare_parameter("reversion"[01;35m[K)[m[K;
+[3.835s]       |                                      [01;35m[K^[m[K
+[3.835s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.835s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.835s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.835s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.835s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.835s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.835s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.835s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:37:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.835s]   100 |   node->declare_parameter("inverted"[01;35m[K)[m[K;
+[3.835s]       |                                     [01;35m[K^[m[K
+[3.836s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.836s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.836s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.836s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.836s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.836s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.836s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.836s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:104:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.836s]   104 |   node->declare_parameter("auto_reconnect"[01;35m[K)[m[K;
+[3.836s]       |                                           [01;35m[K^[m[K
+[3.836s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.836s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.836s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.836s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.837s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.837s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.837s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.837s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.837s]   109 |   node->declare_parameter("isSingleChannel"[01;35m[K)[m[K;
+[3.837s]       |                                            [01;35m[K^[m[K
+[3.837s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.837s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.837s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.837s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.837s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.837s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.837s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.838s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.838s]   114 |   node->declare_parameter("intensity"[01;35m[K)[m[K;
+[3.838s]       |                                      [01;35m[K^[m[K
+[3.838s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.838s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.838s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.838s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.838s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.838s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.838s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.838s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.838s]   119 |   node->declare_parameter("support_motor_dtr"[01;35m[K)[m[K;
+[3.838s]       |                                              [01;35m[K^[m[K
+[3.838s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.839s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.839s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.839s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.839s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.839s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.839s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.839s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:126:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.839s]   126 |   node->declare_parameter("angle_max"[01;35m[K)[m[K;
+[3.839s]       |                                      [01;35m[K^[m[K
+[3.839s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.839s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.839s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.839s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.839s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.839s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.840s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.840s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:130:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.840s]   130 |   node->declare_parameter("angle_min"[01;35m[K)[m[K;
+[3.840s]       |                                      [01;35m[K^[m[K
+[3.840s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.840s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.840s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.840s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.840s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.840s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.840s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.840s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:135:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.840s]   135 |   node->declare_parameter("range_max"[01;35m[K)[m[K;
+[3.840s]       |                                      [01;35m[K^[m[K
+[3.841s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.841s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.841s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.841s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.841s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.841s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.841s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.841s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:139:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.841s]   139 |   node->declare_parameter("range_min"[01;35m[K)[m[K;
+[3.841s]       |                                      [01;35m[K^[m[K
+[3.841s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.841s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.842s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.842s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.842s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.842s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.842s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.842s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:144:38:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.842s]   144 |   node->declare_parameter("frequency"[01;35m[K)[m[K;
+[3.842s]       |                                      [01;35m[K^[m[K
+[3.842s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.842s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.842s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.842s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.842s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.843s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.843s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.843s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.843s]   149 |   node->declare_parameter("invalid_range_is_inf"[01;35m[K)[m[K;
+[3.843s]       |                                                 [01;35m[K^[m[K
+[3.843s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.843s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.843s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.843s]                  from [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[3.843s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.843s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.843s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.843s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[3.844s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:163:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.844s]   163 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[3.844s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[3.844s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:164:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.844s]   164 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[3.844s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.844s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:165:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.844s]   165 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[3.844s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[3.844s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[3.844s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:173:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.844s]   173 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[3.844s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[3.844s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:174:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.844s]   174 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[3.845s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.845s] [01m[K/home/ohj/mecanum-ros2/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:175:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.845s]   175 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[3.845s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[5.464s] [ 75%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
+[5.643s] [ 75%] Built target ydlidar_ros2_driver_node
+[7.106s] [100%] [32m[1mLinking CXX executable ydlidar_ros2_driver_client[0m
+[7.279s] [100%] Built target ydlidar_ros2_driver_client
+[7.286s] Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --build /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver -- -j20 -l20
+[7.327s] Invoking command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver
+[7.349s] -- Install configuration: ""
+[7.349s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[7.349s] -- Set runtime path of "/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""
+[7.350s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[7.351s] -- Set runtime path of "/home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client" to ""
+[7.351s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch
+[7.351s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[7.351s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[7.351s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[7.351s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params
+[7.351s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[7.352s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[7.353s] -- Installing: /home/ohj/mecanum-ros2/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[7.356s] Invoked command in '/home/ohj/mecanum-ros2/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/navigation2/install/nav2_simple_commander:/home/ohj/navigation2/install/nav2_gazebo_spawner:/home/ohj/mecanum-ros2/install/tomato_detection:/home/ohj/mecanum-ros2/install/teleop_keyboard:/home/ohj/mecanum-ros2/install/motor_control:/home/ohj/mecanum-ros2/install/mobile_description:/home/ohj/mecanum-ros2/install/mecanum_odometry:/home/ohj/mecanum-ros2/install/mecanum_cartographer:/home/ohj/mecanum-ros2/install/manipulator:/opt/ros/galactic /home/ohj/.local/bin/cmake --install /home/ohj/mecanum-ros2/build/ydlidar_ros2_driver
