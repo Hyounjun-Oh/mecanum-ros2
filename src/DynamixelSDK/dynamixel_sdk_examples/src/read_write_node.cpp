@@ -149,7 +149,7 @@ ReadWriteNode::ReadWriteNode()
     }
     );
   auto mani_flag_ = this->create_publisher<std_msgs::msg::Int16>("manipulator_flag", QOS_RKL10V);
-  auto timer_ = this->create_wall_timer(std::chrono::milliseconds(1000),std::bind(&ReadWriteNode::manipulatorFlag, this));
+  auto timer_ = this->create_wall_timer(std::chrono::milliseconds(500),std::bind(&ReadWriteNode::manipulatorFlag, this));
   auto get_present_position =
     [this](
     const std::shared_ptr<GetPosition::Request> request,
@@ -184,7 +184,7 @@ ReadWriteNode::~ReadWriteNode()
 
 void ReadWriteNode::manipulatorFlag()
 {
-  int flag = 0;
+  flag = 0;
   auto message = std_msgs::msg::Int16();
   // for(int id_iter = 0;id_iter < 7;id_iter++)
   // {

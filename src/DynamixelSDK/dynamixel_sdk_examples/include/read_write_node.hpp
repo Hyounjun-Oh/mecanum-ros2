@@ -24,6 +24,7 @@
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
 #include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
+#include "std_msgs/msg/int16.hpp"
 
 
 class ReadWriteNode : public rclcpp::Node
@@ -31,6 +32,7 @@ class ReadWriteNode : public rclcpp::Node
 public:
   using SetPosition = dynamixel_sdk_custom_interfaces::msg::SetPosition;
   using GetPosition = dynamixel_sdk_custom_interfaces::srv::GetPosition;
+  using manipulator_flag = std_msgs::msg::Int16;
   void manipulatorFlag();
   ReadWriteNode();
   virtual ~ReadWriteNode();
@@ -41,6 +43,7 @@ private:
   rclcpp::Publisher<std_msgs::msg::Int16>::SharedPtr mani_flag_;
 
   int present_position;
+  int flag;
 };
 
 #endif  // READ_WRITE_NODE_HPP_
