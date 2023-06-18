@@ -40,7 +40,7 @@ private:
   rclcpp::Subscription<SetPosition>::SharedPtr set_position_subscriber_;
   rclcpp::Service<GetPosition>::SharedPtr get_position_server_;
   rclcpp::Publisher<std_msgs::msg::Int16>::SharedPtr mani_flag_;
-  rclcpp::TimerBase::SharedPtr timer_;
+  rclcpp::TimerBase::SharedPtr timer_; 
 
   int present_position;
   int flag;

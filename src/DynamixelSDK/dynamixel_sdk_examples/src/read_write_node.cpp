@@ -186,18 +186,18 @@ void ReadWriteNode::manipulatorFlag()
 {
   flag = 0;
   auto message = std_msgs::msg::Int16();
-  // for(int id_iter = 0;id_iter < 7;id_iter++)
-  // {
-  //   int moving_status = packetHandler->read1ByteTx(
-  //     portHandler,
-  //     id_iter,
-  //     122
-  //   );
-  //   if (moving_status == 1)
-  //   {
-  //     flag = 1;
-  //   }
-  // }
+  for(int id_iter = 0;id_iter < 7;id_iter++)
+  {
+    int moving_status = packetHandler->read1ByteTx(
+      portHandler,
+      id_iter,
+      122
+    );
+    if (moving_status == 1)
+    {
+      flag = 1;
+    }
+  }
   message.data = flag;
   ReadWriteNode::mani_flag_->publish(message);
 }
