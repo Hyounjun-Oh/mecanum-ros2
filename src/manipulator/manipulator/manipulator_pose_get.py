@@ -28,12 +28,12 @@ class PublishPose(Node):
             self.sub_tomato,
             self.QoS
         )
-        # self.command_flag = self.create_subscription(
-        #     Int16,
-        #     'manipulator_flag',
-        #     self.manipulator_flag,
-        #     self.QoS
-        # )
+        self.command_flag = self.create_subscription(
+            Int16,
+            'manipulator_flag',
+            self.manipulator_flag,
+            self.QoS
+        )
         # self.get_position = self.create_client(
         #     ,
         #     'get_position',
@@ -41,7 +41,7 @@ class PublishPose(Node):
             
         # )
         self.tomato_position = []
-        self.tomato_pose_arr = np.zeros((10,4)) # 맥시멈 50개 4 : id, X, Y, Z
+        self.tomato_pose_arr = np.zeros((10,4),dtype=float) # 맥시멈 50개 4 : id, X, Y, Z
         self.joint_position_arr = np.array([
             [2048,2048,2048,2048,2048,2048], # Zero Pose
             [2048,2400,1450,2048,2400,2048], # Detection Pose
@@ -52,15 +52,16 @@ class PublishPose(Node):
             [650],# 열기
             [440] # 닫기
         ])
-        self.mani_flag = 0
+        self.mani_flag = 1
+        self.desired_pose = [0.0,0.0,0.0]
         
-    def publish_desired_pose(self,desired_pose):
+    def publish_desired_pose(self):
         msg = Float32MultiArray()
-        msg.data = desired_pose
+        msg.data = list(self.desired_pose)
         self.desired_joint_publisher.publish(msg)
         
-    # def manipulator_flag(self,msg):
-    #     self.mani_flag = msg.data
+    def manipulator_flag(self,msg):
+        self.mani_flag = msg.data
     
     def sub_tomato(self,msg):
         self.tomato = msg
@@ -72,6 +73,7 @@ class PublishPose(Node):
                 self.tomato_pose_arr[self.tomato_id-1][1] = self.tomato_position[0] -75 + 310
                 self.tomato_pose_arr[self.tomato_id-1][2] = self.tomato_position[1]
                 self.tomato_pose_arr[self.tomato_id-1][3] = self.tomato_position[2] +60 + 300
+        #self.get_logger().info(self.tomato_pose_arr)
 
     def publish_joint_value(self, dxl_id, joint_value):
         joint_msg = SetPosition()
@@ -112,44 +114,58 @@ def main(args=None):
     dxl_id = [1,2,3,4,5,6]
     while 1:
         if input_mode == 1:
+            ############################토마토 감지 포즈로 초기화#########################
             dxl_id = [1,2,3,4,5,6]
             joint = move.joint_position_arr[1][:]
             for id in dxl_id:
                 move.publish_joint_value(id, round(joint[id-1]))
-            time.sleep(4)
+            time.sleep(8)
+            #########################################################################
+            rclpy.spin_once(move)
+            print(move.tomato_pose_arr)
             if move.mani_flag == 0: #좌표값이 0이 아니며 매니퓰레이터가 정지한 상태
-                for id in move.tomato_pose_arr[:][0]:
-                    if id == 0:
-                        pass
+                print("플래그 감지 완료")
+                for id in range(0,np.size(move.tomato_pose_arr,0)):
+                    if move.tomato_pose_arr[id][0] == 0:
+                        print("{0}번 행렬 PASS".format(id))
                     else:
+                        print("ID{0} 수확시작".format(id+1))
                         # 수확 과정 알고리즘 적용
-                        if abs(move.tomato_pose_arr[id][1]) + abs(move.tomato_pose_arr[id][2]) + abs(move.tomato_pose_arr[id][3]) == 0: #좌표가 0이 아니어야함
-                            move.publish_desired_pose(move.tomato_pose_arr[id][1:]) #move노드에서 Matlab 돌리고 목표점까지 구동
+                        if abs(move.tomato_pose_arr[id][1]) + abs(move.tomato_pose_arr[id][2]) + abs(move.tomato_pose_arr[id][3]) != 0: #좌표가 0이 아니어야함
+                            move.desired_pose = move.tomato_pose_arr[id][1:]
+                            print(move.desired_pose)
+                            move.publish_desired_pose() #move노드에서 Matlab 돌리고 목표점까지 구동
                             time.sleep(8) #계산하는 동안은 매니퓰레이터가 작동을 안하므로 sleep으로 일정 텀을 준다.
                             
-                            move.publish_joint_value(7,move.gripper_pose[0][1]) # 그리퍼 클로즈
+                            move.publish_joint_value(7,440) # 그리퍼 클로즈
                             time.sleep(1)
                             
                             move.publish_joint_value(6,3500) # 6번조인트 트위스트
-
                             time.sleep(4)
-                            joint = move.joint_position_arr[1][:] # 디텍션 자세로 복귀
-                            for id_iter in dxl_id:
-                                move.publish_joint_value(dxl_id, round(joint[id_iter-1]))
+                            
+                            # joint = move.joint_position_arr[1][:] # 디텍션 자세로 복귀
+                            # for id_iter in dxl_id:
+                            #     move.publish_joint_value(dxl_id, round(joint[id_iter-1]))
+                            joint = move.joint_position_arr[1][:]
+                            for id in dxl_id:
+                                move.publish_joint_value(id, round(joint[id-1]))
 
                             time.sleep(4)
                             joint = move.joint_position_arr[2][:] # 바구니로 뒤쪽 회전
-                            for id_iter in dxl_id:
-                                move.publish_joint_value(dxl_id, round(joint[id_iter-1]))
-                            # while move.mani_flag == 1: # 매니퓰레이터가 작동을 멈출때까지 코드 일시 정지
-                            #         pass
+                            for id in dxl_id:
+                                move.publish_joint_value(id, round(joint[id-1]))
                             time.sleep(4)
+                            
+                            move.publish_joint_value(7,650) # 그리퍼 오픈
+                            time.sleep(1)
+                            
                             joint = move.joint_position_arr[1][:] # 디텍션 자세로 복귀
-                            for id_iter in dxl_id:
-                                move.publish_joint_value(dxl_id, round(joint[id_iter-1]))
+                            for id in dxl_id:
+                                move.publish_joint_value(id, round(joint[id-1]))
                             # while move.mani_flag == 1: # 매니퓰레이터가 작동을 멈출때까지 코드 일시 정지
                                     # pass
                             time.sleep(4)
+                            move.tomato_pose_arr = np.zeros((10,4),dtype=float)
             else:
                 print("Not published")
                 pass

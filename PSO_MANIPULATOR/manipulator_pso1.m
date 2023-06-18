@@ -75,7 +75,7 @@ function callback_desired_pose(msg)
     global a
     joint_conv = [0 0 0 0 0 0 0];
     desired_pose = [msg.data(1), msg.data(2), msg.data(3)];
-    if sum(desired_pose) ~= sum(desired_pose_old)
+    if sum(desired_pose) 
         disp('published')
         msg = ros2message("std_msgs/Float32MultiArray");
         params.desired_position = [desired_pose(1),desired_pose(2),desired_pose(3)]; %0 -187 1324
