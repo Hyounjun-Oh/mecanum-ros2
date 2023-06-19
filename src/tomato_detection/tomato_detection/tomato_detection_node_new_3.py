@@ -50,7 +50,7 @@ class TomatoPublisher(Node):
         tomato_count = 0  # 검출된 토마토 개수 초기화
 
         for detection in results.xyxy[0]:
-            if detection[5] in [0, 5]:  # "tomato" 또는 "upripe" 클래스 라벨을 나타내는 인덱스
+            if detection[4] >= 0.8 and detection[5] in [0, 5]:  # "tomato" 또는 "upripe" 클래스 라벨을 나타내는 인덱스
                 x, y, w, h = detection[:4]
                 label = f"{results.names[int(detection[5])]}: {detection[4]:.2f}"
                 cv2.rectangle(color_image, (int(x), int(y)), (int(w), int(h)), (0, 255, 0), 2)
